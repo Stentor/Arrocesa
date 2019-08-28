@@ -15,7 +15,8 @@
     'currency': 'EUR',
     'depends': [
         'mrp', 
-        'account'
+        'account',
+        'mrp_account'
     ],
     'data': [
         'views/mrp_workcenter_view.xml'

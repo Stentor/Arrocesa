@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+        <record id="view_generate_pay_fortnight" model="ir.ui.view">
+            <field name="name">view_payfortnight</field>
+            <field name="model">hr.wizard.pay</field>
+	    <field name="arch" type="xml">
+            <form string="Pago Quincenal">
+                <sheet>
+                      <field name="state" invisible="1"/>
+                    <group>
+                        <group states="init">
+                            <field name="periodo_desde" class="oe_inline" required="1"/> 
+                            <field name="periodo_hasta" class="oe_inline"  required="1"/>
+                        </group> 
+                        <group states="init">
+                            <field name="diario_id" required="1"/>
+                           
+                        </group> 
+                    </group>
+                    <group states="success">
+                        <h1>PAGOS REALIZADOS CON ÉXITO</h1>
+                    </group> 
+                           
+                </sheet>
+                <footer class="oe_right">
+                    <button  class="btn btn-danger" special="cancel"  string="Cancelar"/>
+                    <button states="init" name="gen_pay" class="btn btn-success"  string="Generar Pagos" type="object"/>
+                   
+                </footer>
+            </form>
+	    </field>
+	    </record>
+      
+      <act_window  id="action_pagos_quincenales"  
+            name="Pagos quincenales"  
+            res_model="hr.payfortnight"
+            view_mode="tree,form"  /> 
+
+      <menuitem  id="pagos_list"  
+            name="Pagos quincenales"  
+            action="action_pagos_quincenales"
+            parent="hr_payroll.menu_hr_payroll_root"
+            groups="hr_payroll.group_hr_payroll_manager"
+            sequence="20" />
+        
+    </data>
+</odoo>    

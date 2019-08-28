@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_payslip" inherit_id="hr_payroll.report_payslip">
+            <xpath expr="//div[@t-field='o.employee_id.address_home_id']" position="replace">
+                <div t-field="o.employee_id.address_home_id.street" />
+            </xpath>
+            <xpath expr="//table[@class='table table-sm']" position="replace">
+                <div class="row">
+                    <div class="col-6"><span><strong>INGRESOS</strong></span></div>
+                    <div class="col-6"><span><strong>EGRESOS</strong></span></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <t t-foreach="o.line_ids" t-as="payslip">
+                            <t t-if="payslip.category_id.parent_id and payslip.category_id.parent_id.code == 'ING'">
+                                <div class="row">
+                                <div class="col-8">
+                                    <span t-esc="payslip.name"/>
+                                </div>
+                                <div class="col-4">
+                                    <span t-esc="'%.2f' %(payslip.total)"/>
+                                </div>
+                                </div>
+                                <!-- <br/> -->
+                            </t>
+                        </t>
+                    </div>
+                    <div class="col-6">
+                        <t t-foreach="o.line_ids" t-as="payslip">
+                            <t t-if="payslip.category_id.parent_id and payslip.category_id.parent_id.code == 'EGRE'">
+                                <div class="row">
+                                <div class="col-8">
+                                    <span t-esc="payslip.name"/>
+                                </div>
+                                <div class="col-4">
+                                    <span t-esc="'%.2f' %(payslip.total)"/>
+                                </div>
+                                </div>
+                                <!-- <br/> -->
+                            </t>
+                        </t>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <t t-foreach="o.line_ids" t-as="payslip">
+                        <t t-if="payslip.code == 'TOTIN'">
+                            <div class="col-6">
+                                <div class="row">
+                                <div class="col-8">
+                                    <strong><span t-esc="payslip.name"/></strong>
+                                </div>
+                                <div class="col-4">
+                                    <strong><span t-esc="'%.2f' %(payslip.total)"/></strong>
+                                </div>
+                                </div>
+                            </div>
+                        </t>
+                        <t t-if="payslip.code == 'TOTEG'">
+                            <div class="col-6">
+                                <div class="row">
+                                <div class="col-8">
+                                    <strong><span t-esc="payslip.name"/></strong>
+                                </div>
+                                <div class="col-4">
+                                    <strong><span t-esc="'%.2f' %(payslip.total)"/></strong>
+                                </div>
+                                </div>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-6"><span></span></div>
+                    <div class="col-4"><span><strong>NETO A RECIBIR</strong></span></div>
+                    <div class="col-2" ><strong><span t-esc="'%.2f' %(o.amount)" /></strong></div>
+                </div>
+            </xpath>
+            <xpath expr="//p[@class='text-right']" position="replace">
+                <br/><br/>
+                <div class="row">
+                    <div class="col-1"/>
+                    <div class="col-3" style="border-top: 1px solid black;"><span>Autorizado</span></div>
+                    <div class="col-2"/>
+                    <div class="col-3" style="border-top: 1px solid black;"><span>Recibi Conforme</span></div>
+                </div>
+            </xpath>
+        </template>
+
+        <template id="external_layout_inherit" inherit_id="web.external_layout_standard">
+            <xpath expr="//div[@class='footer o_standard_footer']/div" position="before">
+                <div class="text-right">
+                    <span>Fecha Impresión: </span><span t-esc="time.strftime('%d-%m-%Y %H:%M', time.gmtime())" />
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

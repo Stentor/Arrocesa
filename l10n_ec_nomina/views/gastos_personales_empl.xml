@@ -1,0 +1,94 @@
+<odoo>
+    <data>
+        <record id="view_gastos_personales_empl" model="ir.ui.view">
+            <field name="name">view_gastos_personales_empl</field>
+            <field name="model">hr.employee.gastos</field>
+	    <field name="arch" type="xml">
+            <form string="Gastos Personales">
+                <sheet>
+                    <div class="oe_title">
+                        
+                        <h1>
+                            DECLARACIÓN DE GASTOS PERSONALES
+                        </h1>
+                    </div>
+                    
+                    <notebook colspan="4">
+                        <page string="DATOS EMPLEADO">
+                            <group>
+                                <group>
+                                        <field name="fecha_submission" invisible="1"/>
+                                        <field name="employee_id"/>
+                                        <field name="fiscal_year"/>
+                                        <field name="ciudad"/>
+                                        <field name="dia_sub"/>
+                                    
+                                </group>
+                                
+                            </group>
+                        </page>
+                    
+                        <page string="INGRESOS GRAVADOS PROYECTADOS">
+                            <group>
+                                <group>
+                                    
+                                        <field name="tot_ing_gravados"/>
+                                        <field name="tot_ing_gravados_other"/>
+                                        <field name="tot_ing_proyectados"/>
+                                    
+                                </group>
+                                
+                            </group>
+                        </page>
+                    
+                        <page string="GASTOS PROYECTADOS">
+                            <group>
+                                <group>
+                                    
+                                        <field name="gasto_vivienda"/>
+                                        <field name="gasto_educacion"/>
+                                        <field name="gasto_salud"/>
+                                        <field name="gasto_vestimenta"/>
+                                        <field name="gasto_alimentacion"/>
+                                        <field name="tot_gasto_proyectados"/>
+                                    
+                                </group>
+                                
+                            </group>
+                        </page>
+                        
+                    </notebook>              
+                            
+                </sheet>
+                
+            </form>
+	    </field>
+	    </record>
+      
+        <record id="view_gastos_personales_empl_tree" model="ir.ui.view">
+            <field name="name">view_gastos_personales_empl</field>
+            <field name="model">hr.employee.gastos</field>
+	    <field name="arch" type="xml">
+            <tree>
+               
+                            <field name="employee_id" />
+                            <field name="fiscal_year"/>
+                            <field name="ciudad" />
+                            <field name="tot_ing_gravados"/>
+                            <field name="tot_ing_gravados_other"/>
+                            <field name="tot_ing_proyectados"/>
+                            <field name="gasto_vivienda"/>
+                            <field name="gasto_educacion"/>
+                            <field name="gasto_salud"/>
+                            <field name="gasto_vestimenta"/>
+                            <field name="gasto_alimentacion"/>
+                            <field name="tot_gasto_proyectados"/>
+                       
+            </tree>
+	    </field>
+	    </record>
+
+
+
+    </data>
+</odoo>    

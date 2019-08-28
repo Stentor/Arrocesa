@@ -1,0 +1,932 @@
+<odoo>
+    <data noupdate="1">
+        <record id="rule_ProvDec14" model="hr.salary.rule">
+            <field name="code">ProvDec14</field>
+            <field name="name">Provisión 14 sueldo</field>
+            <field name="category_id" ref="rule_cat_PROV"></field>
+            <field name="active">True</field>
+            <field name="sequence">401</field>
+            <field name="appears_on_payslip">False</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = not employee.mensualize_14</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[
+if str(payslip.date_to)[8:10] != '30':
+    days =worked_days.WORK100.number_of_days + 30 - int(str(payslip.date_to)[8:10])
+else:
+    days = worked_days.WORK100.number_of_days
+result = 394.0/12.0/30 *days
+            ]]></field>
+            
+        </record>
+        <record id="rule_OtroDesc" model="hr.salary.rule">
+            <field name="code">OtroDesc</field>
+            <field name="name">Otros Descuentos</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">309</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">fix</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[]]></field>
+            
+        </record>
+        <record id="rule_LO" model="hr.salary.rule">
+            <field name="code">LO</field>
+            <field name="name">Loan</field>
+            <field name="category_id" ref="rule_cat_DED"></field>
+            <field name="active">True</field>
+            <field name="sequence">190</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = inputs.LO and - (inputs.LO.amount)]]></field>
+            
+        </record>
+        <record id="rule_FonResv" model="hr.salary.rule">
+            <field name="code">FonResv</field>
+            <field name="name">Provisión Fondos Reserva</field>
+            <field name="category_id" ref="rule_cat_PROV"></field>
+            <field name="active">True</field>
+            <field name="sequence">402</field>
+            <field name="appears_on_payslip">False</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = not employee.mensualize_fr and employee.has_13months(payslip.date_from)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[
+if str(payslip.date_to)[8:10] != '30':
+    days =worked_days.WORK100.number_of_days + 30 - int(str(payslip.date_to)[8:10])
+else:
+    days = worked_days.WORK100.number_of_days
+result = (categories.APOR* 8.33 /100)/30 *days]]></field>
+            
+        </record>
+        <record id="rule_FonResvM" model="hr.salary.rule">
+            <field name="code">FonResvM</field>
+            <field name="name">Fondo de Reserva Mensual</field>
+            <field name="category_id" ref="rule_cat_NOAPOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">202</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.mensualize_fr and employee.has_13months(payslip.date_from)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[
+if str(payslip.date_to)[8:10] != '30':
+    days =worked_days.WORK100.number_of_days + 30 - int(str(payslip.date_to)[8:10])
+else:
+    days = worked_days.WORK100.number_of_days
+result = (categories.APOR* 8.33 /100)/30 *days]]></field>
+            
+        </record>
+        <record id="rule_DescAlim" model="hr.salary.rule">
+            <field name="code">DescAlim</field>
+            <field name="name">Desc Alimentación</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">301</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = (inputs.DALI and inputs.DALI.amount) * -1]]></field>
+            
+        </record>
+        <record id="rule_NET" model="hr.salary.rule">
+            <field name="code">NET</field>
+            <field name="name">Salario neto</field>
+            <field name="category_id" ref="rule_cat_NET"></field>
+            <field name="active">True</field>
+            <field name="sequence">1000</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = categories.APOR + categories.NOAPOR + categories.DESC + ApIESSPer + categories.DED]]></field>
+            
+        </record>
+        <record id="rule_TOTIN" model="hr.salary.rule">
+            <field name="code">TOTIN</field>
+            <field name="name">Total Ingresos</field>
+            <field name="category_id" ref="rule_cat_NET"></field>
+            <field name="active">True</field>
+            <field name="sequence">250</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = categories.APOR + categories.NOAPOR]]></field>
+        </record>
+
+        <record id="rule_TOTEG" model="hr.salary.rule">
+            <field name="code">TOTEG</field>
+            <field name="name">Total Egresos</field>
+            <field name="category_id" ref="rule_cat_NET"></field>
+            <field name="active">True</field>
+            <field name="sequence">999</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = categories.DESC + ApIESSPer + categories.DED]]></field>
+            
+        </record>
+
+        <record id="rule_ABOQ" model="hr.salary.rule">
+            <field name="code">ABOQ</field>
+            <field name="name">Abono Quincena</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">310</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.has_payment(payslip.date_from)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[
+result = ((contract.wage * employee.porcentaje_sueldo) /100.0) * -1.0
+
+]]></field>
+            
+        </record>
+        <record id="rule_DescMat" model="hr.salary.rule">
+            <field name="code">DescMat</field>
+            <field name="name">Descuento Maternidad</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">311</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[]]></field>
+            
+        </record>
+        <record id="rule_PenAli" model="hr.salary.rule">
+            <field name="code">PenAli</field>
+            <field name="name">Pensión Alimenticia</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">312</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = (inputs.PEN and inputs.PEN.amount) * -1]]></field>
+            
+        </record>
+        <record id="rule_Util" model="hr.salary.rule">
+            <field name="code">Util</field>
+            <field name="name">Utilidades</field>
+            <field name="category_id" ref="rule_cat_Benef"></field>
+            <field name="active">True</field>
+            <field name="sequence">800</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">fix</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[]]></field>
+            
+        </record>
+        <record id="rule_Dec13Men" model="hr.salary.rule">
+            <field name="code">Dec13Men</field>
+            <field name="name">Décimo Tercero Mensual</field>
+            <field name="category_id" ref="rule_cat_NOAPOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">200</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.mensualize_13</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[
+if str(payslip.date_to)[8:10] != '30':
+    days =worked_days.WORK100.number_of_days + 30 - int(str(payslip.date_to)[8:10])
+else:
+    days = worked_days.WORK100.number_of_days
+result = (categories.APOR/12.0)/30 *days
+        ]]>
+            </field>
+            
+        </record>
+        <record id="rule_ApIESSPer" model="hr.salary.rule">
+            <field name="code">ApIESSPer</field>
+            <field name="name">Aporte IESS  Personal</field>
+            <field name="category_id" ref="rule_cat_APTES"></field>
+            <field name="active">True</field>
+            <field name="sequence">900</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = (categories.APOR * 9.45 / 100) * -1]]></field>
+            
+        </record>
+        <record id="rule_SUBIESS" model="hr.salary.rule">
+            <field name="code">SUBIESS</field>
+            <field name="name">Subsidios IESS</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">302</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">fix</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[]]></field>
+            
+        </record>
+        <record id="rule_ImpRent" model="hr.salary.rule">
+            <field name="code">ImpRent</field>
+            <field name="name">Impuesto a la Renta</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">303</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[result = (employee.impuesto_renta) * -1.0]]></field>
+            
+        </record>
+        <record id="rule_ApIESSPat" model="hr.salary.rule">
+            <field name="code">ApIESSPat</field>
+            <field name="name">Aporte IESS  Patronal</field>
+            <field name="category_id" ref="rule_cat_APTES"></field>
+            <field name="active">True</field>
+            <field name="sequence">901</field>
+            <field name="appears_on_payslip">False</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = categories.APOR * 12.15 / 100]]></field>
+            
+        </record>
+        <record id="rule_Movil" model="hr.salary.rule">
+            <field name="code">Movil</field>
+            <field name="name">Movilización</field>
+            <field name="category_id" ref="rule_cat_APOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">6</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">fix</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[result = inputs.MOVI and inputs.MOVI.amount]]></field>
+            
+        </record>
+        <record id="rule_HorSupl" model="hr.salary.rule">
+            <field name="code">HorSupl</field>
+            <field name="name">Horas Suplementarias</field>
+            <field name="category_id" ref="rule_cat_APOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">3</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.horas_suple</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = inputs.HSUP and inputs.HSUP.amount]]></field>
+            
+        </record>
+        <record id="rule_ProvDec13" model="hr.salary.rule">
+            <field name="code">ProvDec13</field>
+            <field name="name">Provisión 13 sueldo</field>
+            <field name="category_id" ref="rule_cat_PROV"></field>
+            <field name="active">True</field>
+            <field name="sequence">400</field>
+            <field name="appears_on_payslip">False</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = not employee.mensualize_13</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[
+if str(payslip.date_to)[8:10] != '30':
+    days =worked_days.WORK100.number_of_days + 30 - int(str(payslip.date_to)[8:10])
+else:
+    days = worked_days.WORK100.number_of_days
+result = (categories.APOR/12.0)/30 *days
+	
+]]>
+            </field>
+            
+        </record>
+        <record id="rule_Prest" model="hr.salary.rule">
+            <field name="code">Prest</field>
+            <field name="name">Préstamos</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">308</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">fix</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[]]></field>
+            
+        </record>
+        <record id="rule_PRESQUI" model="hr.salary.rule">
+            <field name="code">PRESQUI</field>
+            <field name="name">Préstamos Quirografarios</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">304</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = (inputs.PQUIR and inputs.PQUIR.amount) * -1]]></field>
+            
+        </record>
+        <record id="rule_HorExt" model="hr.salary.rule">
+            <field name="code">HorExt</field>
+            <field name="name">Horas Extra</field>
+            <field name="category_id" ref="rule_cat_APOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">2</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.horas_extra</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = inputs.HEXT and inputs.HEXT.amount]]></field>
+            
+        </record>
+        <record id="rule_PRESHIP" model="hr.salary.rule">
+            <field name="code">PRESHIP</field>
+            <field name="name">Préstamos Hipotecarios</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">305</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = (inputs.PHIP and inputs.PHIP.amount) * -1]]></field>
+            
+        </record>
+        <record id="rule_Multa" model="hr.salary.rule">
+            <field name="code">Multa</field>
+            <field name="name">Multas</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">307</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[result = ((inputs.FAL and inputs.FAL.amount) + (inputs.ATRA and inputs.ATRA.amount)) * -1]]></field>
+            
+        </record>
+        <record id="rule_Bonif" model="hr.salary.rule">
+            <field name="code">Bonif</field>
+            <field name="name">Bonificaciones</field>
+            <field name="category_id" ref="rule_cat_APOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">5</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[result = (inputs.BONIF and inputs.BONIF.amount)]]></field>
+            
+        </record>
+        <record id="rule_BASIC" model="hr.salary.rule">
+            <field name="code">BASIC</field>
+            <field name="name">Salario base total</field>
+            <field name="category_id" ref="rule_cat_APOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">1</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[
+if str(payslip.date_to)[8:10] != '30':
+    days =worked_days.WORK100.number_of_days + 30 - int(str(payslip.date_to)[8:10])
+else:
+    days = worked_days.WORK100.number_of_days
+result = worked_days.WORK100 and days * (contract.wage/30)
+]]></field>
+            
+        </record>
+        <record id="rule_Comi" model="hr.salary.rule">
+            <field name="code">Comi</field>
+            <field name="name">Comisiones</field>
+            <field name="category_id" ref="rule_cat_APOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">4</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[result = inputs.COMI and inputs.COMI.amount]]></field>
+            
+        </record>
+        <record id="rule_Dec14Men" model="hr.salary.rule">
+            <field name="code">Dec14Men</field>
+            <field name="name">Décimo Cuarto Mensual</field>
+            <field name="category_id" ref="rule_cat_NOAPOR"></field>
+            <field name="active">True</field>
+            <field name="sequence">201</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.mensualize_14</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[
+if str(payslip.date_to)[8:10] != '30':
+    days =worked_days.WORK100.number_of_days + 30 - int(str(payslip.date_to)[8:10])
+else:
+    days = worked_days.WORK100.number_of_days
+result = 394.0/12.0/30 *days
+]]></field>
+            
+        </record>
+        <record id="rule_ANTP" model="hr.salary.rule">
+            <field name="code">ANTP</field>
+            <field name="name">Anticipos</field>
+            <field name="category_id" ref="rule_cat_DESC"></field>
+            <field name="active">True</field>
+            <field name="sequence">306</field>
+            <field name="appears_on_payslip">True</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">fix</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[]]></field>
+            
+        </record>
+        <record id="rule_Vaca" model="hr.salary.rule">
+            <field name="code">Vaca</field>
+            <field name="name">Vacaciones</field>
+            <field name="category_id" ref="rule_cat_PROV"></field>
+            <field name="active">True</field>
+            <field name="sequence">403</field>
+            <field name="appears_on_payslip">False</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0</field>
+            <field name="amount_python_compute"><![CDATA[
+if str(payslip.date_to)[8:10] != '30':
+    days =worked_days.WORK100.number_of_days + 30 - int(str(payslip.date_to)[8:10])
+else:
+    days = worked_days.WORK100.number_of_days
+result = (categories.APOR/24)/30 *days]]></field>
+            
+        </record>
+        <record id="rule_ProvBonDes" model="hr.salary.rule">
+            <field name="code">ProvBonDes</field>
+            <field name="name">Provisión Bonificación por Desahucio</field>
+            <field name="category_id" ref="rule_cat_PROV"></field>
+            <field name="active">True</field>
+            <field name="sequence">404</field>
+            <field name="appears_on_payslip">False</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">fix</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[]]></field>
+            
+        </record>
+        <record id="rule_ProvJubPat" model="hr.salary.rule">
+            <field name="code">ProvJubPat</field>
+            <field name="name">Provisión Jubilación Patronal</field>
+            <field name="category_id" ref="rule_cat_PROV"></field>
+            <field name="active">True</field>
+            <field name="sequence">405</field>
+            <field name="appears_on_payslip">False</field>
+            <field name="condition_select">none</field>
+            <field name="condition_python">
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days
+                    # inputs: object containing the computed inputs
+
+                    # Note: returned value have to be set in the variable 'result'
+
+                    result = rules.NET > categories.NET * 0.10</field>
+            <field name="amount_select">fix</field>
+            <field name="amount_percentage_base"></field>
+            <field name="quantity">1</field>
+            <field name="amount_percentage">0</field>
+            <field name="amount_fix">0.00</field>
+            <field name="amount_python_compute"><![CDATA[]]></field>
+            
+        </record>
+        
+    </data>
+</odoo>

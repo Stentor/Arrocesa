@@ -1,0 +1,2 @@
+{% for employee in employees %}PA    {{employee.identifier}}    {{(employee.amount).rjust(8)}}    {{employee.type_account}}    {{employee.account_number}}    {{employee.reference}}    {{employee.month}}    {{employee.year}}    {{employee.identifier}}    {{employee.type_identifier}}    {{employee.name}}
+{% endfor %}

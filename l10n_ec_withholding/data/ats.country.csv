@@ -1,0 +1,259 @@
+name,is_fiscal_paradise,code,id
+AMERICAN SAMOA,0,16,tax_country_16
+BOUVET ISLAND,0,74,tax_country_74
+ARGENTINA,0,101,tax_country_101
+BOLIVIA,0,102,tax_country_102
+BRASIL,0,103,tax_country_103
+CANADA,0,104,tax_country_104
+COLOMBIA,0,105,tax_country_105
+COSTA RICA,0,106,tax_country_106
+CUBA,0,107,tax_country_107
+CHILE,0,108,tax_country_108
+ANGUILA,1,109,tax_country_109
+ESTADOS UNIDOS,0,110,tax_country_110
+GUATEMALA,0,111,tax_country_111
+HAITI,0,112,tax_country_112
+HONDURAS,0,113,tax_country_113
+JAMAICA,0,114,tax_country_114
+MALVINAS ISLAS,0,115,tax_country_115
+MEXICO,0,116,tax_country_116
+NICARAGUA,0,117,tax_country_117
+PANAMA,0,118,tax_country_118
+PARAGUAY,0,119,tax_country_119
+PERU,0,120,tax_country_120
+PUERTO RICO,1,121,tax_country_121
+REPUBLICA DOMINICANA,0,122,tax_country_122
+EL SALVADOR,0,123,tax_country_123
+TRINIDAD Y TOBAGO,0,124,tax_country_124
+URUGUAY,0,125,tax_country_125
+VENEZUELA,0,126,tax_country_126
+CURAZAO,1,127,tax_country_127
+BAHAMAS,1,129,tax_country_129
+BARBADOS,1,130,tax_country_130
+GRANADA,1,131,tax_country_131
+GUYANA,0,132,tax_country_132
+SURINAM,0,133,tax_country_133
+ANTIGUA Y BARBUDA,1,134,tax_country_134
+BELICE,1,135,tax_country_135
+DOMINICA,0,136,tax_country_136
+SAN CRISTOBAL Y NEVIS,1,137,tax_country_137
+SANTA LUCIA,0,138,tax_country_138
+SAN VICENTE Y LAS GRANAD.,0,139,tax_country_139
+ARUBA,1,141,tax_country_141
+BERMUDA,1,142,tax_country_142
+GUADALUPE,0,143,tax_country_143
+GUYANA FRANCESA,0,144,tax_country_144
+ISLAS CAIMAN,1,145,tax_country_145
+ISLAS VIRGENES (BRITANICAS),0,146,tax_country_146
+JOHNSTON ISLA,0,147,tax_country_147
+MARTINICA,0,148,tax_country_148
+MONTSERRAT ISLA,0,149,tax_country_149
+TURCAS  Y CAICOS ISLAS,0,151,tax_country_151
+"VIRGENES,ISLAS(NORT.AMER.)",0,152,tax_country_152
+ALBANIA,0,201,tax_country_201
+ALEMANIA,0,202,tax_country_202
+AUSTRIA,0,203,tax_country_203
+BELGICA,0,204,tax_country_204
+BULGARIA,0,205,tax_country_205
+ALBORAN Y PEREJIL,0,207,tax_country_207
+DINAMARCA,0,208,tax_country_208
+ESPAÑA,0,209,tax_country_209
+FRANCIA,0,211,tax_country_211
+FINLANDIA,0,212,tax_country_212
+REINO UNIDO,0,213,tax_country_213
+GRECIA,0,214,tax_country_214
+PAISES BAJOS (HOLANDA),1,215,tax_country_215
+HUNGRIA,0,216,tax_country_216
+IRLANDA,0,217,tax_country_217
+ISLANDIA,0,218,tax_country_218
+ITALIA,1,219,tax_country_219
+LUXEMBURGO,1,220,tax_country_220
+MALTA,0,221,tax_country_221
+NORUEGA,1,222,tax_country_222
+POLONIA,0,223,tax_country_223
+PORTUGAL,1,224,tax_country_224
+RUMANIA,0,225,tax_country_225
+SUECIA,0,226,tax_country_226
+SUIZA,0,227,tax_country_227
+CANARIAS  ISLAS,0,228,tax_country_228
+UCRANIA,0,229,tax_country_229
+RUSIA,0,230,tax_country_230
+YUGOSLAVIA,0,231,tax_country_231
+ANDORRA,0,233,tax_country_233
+LIECHTENSTEIN,0,234,tax_country_234
+MONACO,0,235,tax_country_235
+SAN MARINO,0,237,tax_country_237
+VATICANO (SANTA SEDE),0,238,tax_country_238
+GIBRALTAR,1,239,tax_country_239
+BELARUS,0,241,tax_country_241
+BOSNIA Y HERZEGOVINA,0,242,tax_country_242
+CROACIA,0,243,tax_country_243
+ESLOVENIA,0,244,tax_country_244
+ESTONIA,0,245,tax_country_245
+GEORGIA,0,246,tax_country_246
+GROENLANDIA,1,247,tax_country_247
+LETONIA,0,248,tax_country_248
+LITUANIA,0,249,tax_country_249
+MOLDOVA,0,250,tax_country_250
+MACEDONIA,0,251,tax_country_251
+ESLOVAQUIA,0,252,tax_country_252
+ISLAS FAROE,0,253,tax_country_253
+FRENCH SOUTHERN TERRITORIES,0,260,tax_country_260
+AFGANISTAN,0,301,tax_country_301
+ARABIA SAUDITA,0,302,tax_country_302
+MYANMAR (BURMA),0,303,tax_country_303
+CAMBOYA,0,304,tax_country_304
+COREA NORTE,0,306,tax_country_306
+TAIWAN (CHINA),0,307,tax_country_307
+FILIPINAS,0,308,tax_country_308
+INDIA,0,309,tax_country_309
+INDONESIA,0,310,tax_country_310
+IRAK,0,311,tax_country_311
+IRAN (REPUBLICA ISLAMICA),0,312,tax_country_312
+ISRAEL,0,313,tax_country_313
+JAPON,0,314,tax_country_314
+JORDANIA,0,315,tax_country_315
+KUWAIT,1,316,tax_country_316
+"LAOS, REP. POP. DEMOC.",0,317,tax_country_317
+LIBANO,0,318,tax_country_318
+MALASIA,0,319,tax_country_319
+MONGOLIA (MANCHURIA),0,321,tax_country_321
+PAKISTAN,0,322,tax_country_322
+SIRIA,0,323,tax_country_323
+TAILANDIA,0,325,tax_country_325
+BAHREIN,1,327,tax_country_327
+BANGLADESH,0,328,tax_country_328
+BUTAN,0,329,tax_country_329
+COREA DEL SUR,0,330,tax_country_330
+CHINA POPULAR,0,331,tax_country_331
+CHIPRE,0,332,tax_country_332
+EMIRATOS ARABES UNIDOS,1,333,tax_country_333
+QATAR,0,334,tax_country_334
+MALDIVAS,0,335,tax_country_335
+NEPAL,0,336,tax_country_336
+OMAN,0,337,tax_country_337
+SINGAPUR,0,338,tax_country_338
+SRI LANKA (CEILAN),0,339,tax_country_339
+VIETNAM,0,341,tax_country_341
+YEMEN,0,342,tax_country_342
+ISLAS HEARD Y MCDONALD,0,343,tax_country_343
+BRUNEI DARUSSALAM,1,344,tax_country_344
+TURQUIA,0,346,tax_country_346
+AZERBAIJAN,0,347,tax_country_347
+KAZAJSTAN,0,348,tax_country_348
+KIRGUIZISTAN,0,349,tax_country_349
+TAJIKISTAN,0,350,tax_country_350
+TURKMENISTAN,0,351,tax_country_351
+UZBEKISTAN,0,352,tax_country_352
+PALESTINA,0,353,tax_country_353
+HONG KONG,0,354,tax_country_354
+MACAO,0,355,tax_country_355
+ARMENIA,0,356,tax_country_356
+MONTENEGRO,0,382,tax_country_382
+BURKINA FASO,0,402,tax_country_402
+ARGELIA,0,403,tax_country_403
+BURUNDI,0,404,tax_country_404
+CAMERUN,0,405,tax_country_405
+CONGO,0,406,tax_country_406
+ETIOPIA,0,407,tax_country_407
+GAMBIA,0,408,tax_country_408
+GUINEA,0,409,tax_country_409
+LIBERIA,0,410,tax_country_410
+MADAGASCAR,0,412,tax_country_412
+MALAWI,0,413,tax_country_413
+MALI,0,414,tax_country_414
+MARRUECOS,0,415,tax_country_415
+MAURITANIA,0,416,tax_country_416
+NIGERIA,0,417,tax_country_417
+ZIMBABWE (RHODESIA),0,419,tax_country_419
+SENEGAL,0,420,tax_country_420
+SUDAN,0,421,tax_country_421
+SUDAFRICA  (CISKEI),0,422,tax_country_422
+SIERRA LEONA,0,423,tax_country_423
+TANZANIA,0,425,tax_country_425
+UGANDA,0,426,tax_country_426
+ZAMBIA,0,427,tax_country_427
+ÅLAND ISLANDS,0,428,tax_country_428
+BENIN,0,429,tax_country_429
+BOTSWANA,0,430,tax_country_430
+REPUBLICA CENTROAFRICANA,0,431,tax_country_431
+COSTA DE MARFIL,0,432,tax_country_432
+CHAD,0,433,tax_country_433
+EGIPTO,0,434,tax_country_434
+GABON,0,435,tax_country_435
+GHANA,0,436,tax_country_436
+GUINEA-BISSAU,0,437,tax_country_437
+GUINEA ECUATORIAL,0,438,tax_country_438
+KENIA,0,439,tax_country_439
+LESOTHO,0,440,tax_country_440
+MAURICIO,0,441,tax_country_441
+MOZAMBIQUE,0,442,tax_country_442
+MAYOTTE,0,443,tax_country_443
+NIGER,0,444,tax_country_444
+RWANDA,0,445,tax_country_445
+SEYCHELLES,0,446,tax_country_446
+SAHARA OCCIDENTAL,0,447,tax_country_447
+SOMALIA,0,448,tax_country_448
+SANTO TOME Y PRINCIPE,0,449,tax_country_449
+SWAZILANDIA,0,450,tax_country_450
+TOGO,0,451,tax_country_451
+TUNEZ,0,452,tax_country_452
+ZAIRE,0,453,tax_country_453
+ANGOLA,0,454,tax_country_454
+CABO VERDE,0,456,tax_country_456
+COMORAS,0,458,tax_country_458
+DJIBOUTI,0,459,tax_country_459
+NAMIBIA,0,460,tax_country_460
+ERITREA,0,463,tax_country_463
+MOROCCO,0,464,tax_country_464
+REUNION,0,465,tax_country_465
+SANTA ELENA,1,466,tax_country_466
+JERSEY,0,499,tax_country_499
+AUSTRALIA,0,501,tax_country_501
+NUEVA ZELANDA,0,503,tax_country_503
+SAMOA OCCIDENTAL,0,504,tax_country_504
+FIJI,0,506,tax_country_506
+PAPUA NUEVA GUINEA,0,507,tax_country_507
+TONGA,0,508,tax_country_508
+PALAO  (BELAU)  ISLAS,0,509,tax_country_509
+KIRIBATI,0,510,tax_country_510
+MARSHALL ISLAS,0,511,tax_country_511
+MICRONESIA,0,512,tax_country_512
+NAURU,0,513,tax_country_513
+SALOMON  ISLAS,0,514,tax_country_514
+TUVALU,0,515,tax_country_515
+VANUATU,0,516,tax_country_516
+GUAM,1,517,tax_country_517
+ISLAS COCOS (KEELING),1,518,tax_country_518
+ISLAS COOK,1,519,tax_country_519
+ISLAS NAVIDAD,1,520,tax_country_520
+MIDWAY ISLAS,0,521,tax_country_521
+NIUE ISLA,0,522,tax_country_522
+NORFOLK ISLA,0,523,tax_country_523
+NUEVA  CALEDONIA,0,524,tax_country_524
+"PITCAIRN, ISLA",0,525,tax_country_525
+POLINESIA FRANCESA,0,526,tax_country_526
+TIMOR DEL ESTE,0,529,tax_country_529
+TOKELAI,0,530,tax_country_530
+WAKE ISLA,0,531,tax_country_531
+"WALLIS Y FUTUNA, ISLAS",0,532,tax_country_532
+SINT MAARTEN (DUTCH PART),0,534,tax_country_534
+SAINT BARTHELEMY,0,590,tax_country_590
+ECUADOR,0,593,tax_country_593
+AGUAS INTERNACIONALES,0,594,tax_country_594
+ALTO VOLTA,0,595,tax_country_595
+BIELORRUSIA,0,596,tax_country_596
+COTE D'IVOIRE,0,597,tax_country_597
+CYPRUS,0,598,tax_country_598
+REPUBLICA CHECA,0,599,tax_country_599
+FALKLAND ISLANDS,0,600,tax_country_600
+LATVIA,0,601,tax_country_601
+LIBIA,0,602,tax_country_602
+NORTHERN MARIANA ISL,0,603,tax_country_603
+ST. PIERRE AND MIQUE,0,604,tax_country_604
+SYRIAN ARAB REPUBLIC,0,605,tax_country_605
+TERRITORIO ANTARTICO BRITANICO,0,606,tax_country_606
+TERRITORIO BRITANICO OCEANO IN,0,607,tax_country_607
+SERBIA,0,688,tax_country_688
+GUERNSEY,0,831,tax_country_831
+ISLE OF MAN,1,833,tax_country_833

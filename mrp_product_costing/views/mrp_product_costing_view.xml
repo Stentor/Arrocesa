@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<odoo>
+   <record id="mrp_production_costing_form_view" model="ir.ui.view">
+         <field name="name">costfigures.mrp.production.form</field>
+         <field name="model">mrp.production</field>
+         <field name="type">form</field>
+         <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+         <field name="arch" type="xml">
+            <notebook>
+               <page string="Costing">
+                    <group name='Product Costing' col="4">
+                        <group string='Standard Costs'>
+                          <field name="prod_std_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                          <field name="cur_std_mat_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                          <field name="cur_std_lab_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                          <field name="cur_std_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                          <field name="currency_id" invisible="1"/>
+                        </group>
+                        <group string='Actual Costs'>
+                            <field name="mat_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="lab_mac_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="fixed_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="by_product_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        </group>     
+                        <group string='Actual Costs Unit'>
+                            <field name="mat_cost_unit" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="lab_mac_cost_unit" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="qty_produced"/>
+                        </group>
+                        <group string='Overheads Costs'>
+                          <field name="fixed_ovh_lab_mac_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                          <field name="variable_ovh_lab_mac_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                          <field name="fixed_ovh_mat_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                          <field name="variable_ovh_mat_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        </group>      
+                    </group>
+               </page>
+            </notebook>
+         </field>
+   </record>
+
+   <report 
+            id="mrp_account.action_cost_struct_product_template"
+            model="product.product"
+            string="Cost Structure Analysis"
+            report_type="qweb-html"
+            name="mrp_account.product_template_cost_structure"
+            file="mrp_account.product_template_cost_structure"
+            print_report_name="'Cost Structure Analysis - %s' % object.name"
+        />
+</odoo>

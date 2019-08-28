@@ -1,0 +1,108 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * hr_employee_updation
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: hr (8.0)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-18 13:10+0000\n"
+"PO-Revision-Date: 2015-08-13 14:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: Spanish (http://www.transifex.com/oca/OCA-hr-8-0/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__joining_date
+msgid "Joining Date"
+msgstr "Día de Ingreso"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__member_contact
+msgid "Contact No"
+msgstr "No Contacto"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__personal_mobile
+msgid "Mobile"
+msgstr "Movil"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__employee_ref
+msgid "Is Employee"
+msgstr "Es Empleado"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_employee_inherit_form_view
+msgid "Passport ID"
+msgstr "Datos del Pasaporte"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_employee_inherit_form_view
+msgid "Identification ID"
+msgstr "Datos de Identificación"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_employee_inherit_form_view
+msgid "Emergency Contact"
+msgstr "Contacto de Emergencia"
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:78
+#: code:addons/hr_employee_updation/models/hr_employee.py:92
+#, python-format
+msgid "Hello"
+msgstr "Hola"
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:78
+#, python-format
+msgid ",<br>Your ID "
+msgstr ",<br>Su ifentificación "
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:92
+#, python-format
+msgid ",<br>Your Passport "
+msgstr ",<br>Su Pasaporte "
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:78
+#: code:addons/hr_employee_updation/models/hr_employee.py:92
+#, python-format
+msgid "is going to expire on "
+msgstr " esta por expirar el "
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:79
+#: code:addons/hr_employee_updation/models/hr_employee.py:93
+#, python-format
+msgid ". Please renew it before expiry date"
+msgstr ". Por favor renuevela antes de la fecha de expiración"
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:81
+#, python-format
+msgid "ID-%s Expired On %s"
+msgstr "Identificación-%s Expirada el %s"
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:81
+#, python-format
+msgid "Passport-%s Expired On %s"
+msgstr "Pasaporte-%s Expirado el %s"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__id_attachment_id
+msgid "Attachment"
+msgstr "Adjunto"
+
+#. module: hr_employee_firstname
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__id_expiry_date
+msgid "Expiry Date"
+msgstr "Fecha Expiración"

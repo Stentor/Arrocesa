@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+        <record id="view_account_payment_term" model="ir.ui.view">
+            <field name="name">account.payment.term.dinardap</field>
+            <field name="model">account.payment.term</field>
+            <field name="inherit_id" ref="account.view_payment_term_form"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="report_dinardap"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="dinardap_company_form" model="ir.ui.view">
+            <field name="name">dinardap_company_form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="l10n_ec_partner.view_res_company_ec_form"/>
+            <field name="arch" type="xml">
+                <field name="accountant_id" position="before">
+                    <field name="dinardap_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="dinardap_payment_form" model="ir.ui.view">
+            <field name="name">dinardap_payment_form</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_invoice_form"/>
+            <field name="arch" type="xml">
+                <field name="payment_date" position="after">
+                    <field name="dinardap_pay_method"/>
+                </field>
+            </field>
+        </record>
+
+
+        <record id="view_partner_dinardap" model="ir.ui.view">
+            <field name="name">view_partner_dinardap</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//notebook" position="inside">
+                    <page string="Dinardap" attrs="{ 'invisible' : [('customer', '=', False)]}">
+                    <group>
+                        <group>
+                            <field name="dinardap_id_type"/>
+                            <field name="dinardap_sexo" attrs="{ 'required' : [('dinardap_class', '!=', 'J'), ('customer', '=', True)]}"/>
+                            <field name="dinardap_origin" attrs="{ 'required' : [('dinardap_class', '!=', 'J'), ('customer', '=', True)]}"/>
+                        </group>
+                        <group>
+                            <field name="dinardap_class"/>
+                            <field name="dinardap_civil_state" attrs="{ 'required' : [('dinardap_class', '!=', 'J'), ('supplier', '=', True)]}"/>
+                            <field name="dinardap_province"/>
+                            <field name="dinardap_canton" domain="[('province_id', '=', dinardap_province )]"/>
+                            <field name="dinardap_parroquia" domain="[('canton_id', '=', dinardap_canton )]"/>
+                        </group>
+                    </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

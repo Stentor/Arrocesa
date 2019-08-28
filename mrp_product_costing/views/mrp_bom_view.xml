@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="mrp_bom_view" model="ir.ui.view">
+        <field name="name">mrp.bom.form</field>
+        <field name="model">mrp.bom</field>
+        <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
+        <field name="arch" type="xml">
+            <notebook>
+                <page string="Costing Data">
+                    <group name='bom costing data'>
+                        <group string='Overhead Costs'>       
+                            <label for="costs_overheads_fixed_percentage"/>
+                            <div class="o_row">
+                                <field name="costs_overheads_fixed_percentage" required="True"/>
+                                %
+                            </div>
+                            <field name="costs_overheads_fixed_analytic_account_id" groups="analytic.group_analytic_accounting" required="True"/>
+                            <label for="costs_overheads_variable_percentage"/>
+                            <div class="o_row">
+                                <field name="costs_overheads_variable_percentage" required="True"/>
+                                %
+                            </div>
+                            <field name="costs_overheads_variable_analytic_account_id" groups="analytic.group_analytic_accounting" required="True"/>
+                        </group> 
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

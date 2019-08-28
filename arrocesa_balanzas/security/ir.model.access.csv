@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_arrocesa_balanzas_arrocesa_balanzas,arrocesa_balanzas_arrocesa_balanzas,model_arrocesa_balanzas_weighting,,1,1,1,1
+access_arrocesa_balanzas_arrocesa_balanzas2,arrocesa_balanzas_arrocesa_balanzas2,model_arrocesa_balanzas_weighting,purchase.group_purchase_user,1,1,1,1

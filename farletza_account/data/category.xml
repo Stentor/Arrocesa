@@ -1,0 +1,377 @@
+<odoo>
+    <data>
+        <record id="account_group_1" model="account.group">
+            <field name="code_prefix">1</field>
+            <field name="name">ACTIVOS</field>
+        </record>
+        <record id="account_group_11" model="account.group">
+            <field name="code_prefix">11</field>
+            <field name="name">ACTIVOS CORRIENTES</field>
+            <field name="parent_id" ref="account_group_1"/>
+        </record>
+        <record id="account_group_111" model="account.group">
+            <field name="code_prefix">111</field>
+            <field name="name">CAJA Y BANCOS</field>
+            <field name="parent_id" ref="account_group_11"/>
+        </record>
+        <record id="account_group_1111" model="account.group">
+            <field name="code_prefix">1111</field>
+            <field name="name">CAJA</field>
+            <field name="parent_id" ref="account_group_111"/>
+        </record>
+        <record id="account_group_11111" model="account.group">
+            <field name="code_prefix">11111</field>
+            <field name="name">CAJA CHICA </field>
+            <field name="parent_id" ref="account_group_1111"/>
+        </record>
+        <record id="account_group_11112" model="account.group">
+            <field name="code_prefix">11112</field>
+            <field name="name">CAJA GENERAL</field>
+            <field name="parent_id" ref="account_group_1111"/>
+        </record>
+        <record id="account_group_1112" model="account.group">
+            <field name="code_prefix">1112</field>
+            <field name="name">BANCOS</field>
+            <field name="parent_id" ref="account_group_111"/>
+        </record>
+        <record id="account_group_1113" model="account.group">
+            <field name="code_prefix">1113</field>
+            <field name="name">INVERSIONES</field>
+            <field name="parent_id" ref="account_group_111"/>
+        </record>
+        <record id="account_group_112" model="account.group">
+            <field name="code_prefix">112</field>
+            <field name="name">CUENTAS POR COBRAR</field>
+            <field name="parent_id" ref="account_group_11"/>
+        </record>
+        <record id="account_group_1121" model="account.group">
+            <field name="code_prefix">1121</field>
+            <field name="name">CUENTAS POR COBRAR CLIENTES</field>
+            <field name="parent_id" ref="account_group_112"/>
+        </record>
+        <record id="account_group_1122" model="account.group">
+            <field name="code_prefix">1122</field>
+            <field name="name">CUENTAS POR COBRAR EMPLEADOS</field>
+            <field name="parent_id" ref="account_group_112"/>
+        </record>
+        <record id="account_group_1123" model="account.group">
+            <field name="code_prefix">1123</field>
+            <field name="name">OTRAS CUENTAS POR COBRAR</field>
+            <field name="parent_id" ref="account_group_112"/>
+        </record>
+        <record id="account_group_1124" model="account.group">
+            <field name="code_prefix">1124</field>
+            <field name="name">PAGOS ANTICIPADOS</field>
+            <field name="parent_id" ref="account_group_112"/>
+        </record>
+        <record id="account_group_1125" model="account.group">
+            <field name="code_prefix">1125</field>
+            <field name="name">VALORES POR RECUPERAR</field>
+            <field name="parent_id" ref="account_group_112"/>
+        </record>
+        <record id="account_group_1126" model="account.group">
+            <field name="code_prefix">1126</field>
+            <field name="name">CREDITOS TRIBUTARIOS</field>
+            <field name="parent_id" ref="account_group_112"/>
+        </record>
+        <record id="account_group_12" model="account.group">
+            <field name="code_prefix">12</field>
+            <field name="name">ACTIVOS NO CORRIENTES</field>
+            <field name="parent_id" ref="account_group_1"/>
+        </record>
+        <record id="account_group_121" model="account.group">
+            <field name="code_prefix">121</field>
+            <field name="name">ACTIVOS FIJOS</field>
+            <field name="parent_id" ref="account_group_12"/>
+        </record>
+        <record id="account_group_1211" model="account.group">
+            <field name="code_prefix">1211</field>
+            <field name="name">ACTIVOS FIJOS DEPRECIABLES</field>
+            <field name="parent_id" ref="account_group_121"/>
+        </record>
+        <record id="account_group_1212" model="account.group">
+            <field name="code_prefix">1212</field>
+            <field name="name">DEPRECIACIONES </field>
+            <field name="parent_id" ref="account_group_121"/>
+        </record>
+        <record id="account_group_13" model="account.group">
+            <field name="code_prefix">13</field>
+            <field name="name">OTROS ACTIVOS</field>
+            <field name="parent_id" ref="account_group_1"/>
+        </record>
+        <record id="account_group_131" model="account.group">
+            <field name="code_prefix">131</field>
+            <field name="name">PAGOS ANTICIPADOS</field>
+            <field name="parent_id" ref="account_group_13"/>
+        </record>
+        <record id="account_group_1311" model="account.group">
+            <field name="code_prefix">1311</field>
+            <field name="name">PAGOS ANTICIPADOS</field>
+            <field name="parent_id" ref="account_group_131"/>
+        </record>
+        <record id="account_group_1312" model="account.group">
+            <field name="code_prefix">1312</field>
+            <field name="name">PAGOS ANTICIPADOS TRIBUTARIO</field>
+            <field name="parent_id" ref="account_group_131"/>
+        </record>
+        <record id="account_group_2" model="account.group">
+            <field name="code_prefix">2</field>
+            <field name="name">PASIVOS</field>
+        </record>
+        <record id="account_group_21" model="account.group">
+            <field name="code_prefix">21</field>
+            <field name="name">PASIVOS CORRIENTES</field>
+            <field name="parent_id" ref="account_group_2"/>
+        </record>
+        <record id="account_group_211" model="account.group">
+            <field name="code_prefix">211</field>
+            <field name="name">CUENTAS Y DOCUMENTOS POR PAGAR</field>
+            <field name="parent_id" ref="account_group_21"/>
+        </record>
+        <record id="account_group_2111" model="account.group">
+            <field name="code_prefix">2111</field>
+            <field name="name">CUENTAS POR PAGAR  NAVIERAS</field>
+            <field name="parent_id" ref="account_group_211"/>
+        </record>
+        <record id="account_group_2112" model="account.group">
+            <field name="code_prefix">2112</field>
+            <field name="name">CUENTAS POR PAGAR EXTERIOR</field>
+            <field name="parent_id" ref="account_group_211"/>
+        </record>
+        <record id="account_group_2113" model="account.group">
+            <field name="code_prefix">2113</field>
+            <field name="name">CUENTAS POR PAGAR PROVEEDORES</field>
+            <field name="parent_id" ref="account_group_211"/>
+        </record>
+        <record id="account_group_2114" model="account.group">
+            <field name="code_prefix">2114</field>
+            <field name="name">PROVISION DE COSTOS</field>
+            <field name="parent_id" ref="account_group_211"/>
+        </record>
+        <record id="account_group_212" model="account.group">
+            <field name="code_prefix">212</field>
+            <field name="name">GASTOS ACUMULADOS POR PAGAR</field>
+            <field name="parent_id" ref="account_group_21"/>
+        </record>
+        <record id="account_group_2121" model="account.group">
+            <field name="code_prefix">2121</field>
+            <field name="name">SUELDOS A EMPLEADOS </field>
+            <field name="parent_id" ref="account_group_212"/>
+        </record>
+        <record id="account_group_2123" model="account.group">
+            <field name="code_prefix">2123</field>
+            <field name="name">IMPUESTOS A PAGAR</field>
+            <field name="parent_id" ref="account_group_212"/>
+        </record>
+        <record id="account_group_2124" model="account.group">
+            <field name="code_prefix">2124</field>
+            <field name="name">PARTICIPACION UTILIDADES</field>
+            <field name="parent_id" ref="account_group_212"/>
+        </record>
+        <record id="account_group_22" model="account.group">
+            <field name="code_prefix">22</field>
+            <field name="name">PASIVOS NO CORRIENTES</field>
+            <field name="parent_id" ref="account_group_2"/>
+        </record>
+        <record id="account_group_3" model="account.group">
+            <field name="code_prefix">3</field>
+            <field name="name">PATRIMONIO</field>
+        </record>
+        <record id="account_group_31" model="account.group">
+            <field name="code_prefix">31</field>
+            <field name="name">CAPITAL SOCIAL</field>
+            <field name="parent_id" ref="account_group_3"/>
+        </record>
+        <record id="account_group_311" model="account.group">
+            <field name="code_prefix">311</field>
+            <field name="name">PARTICIPACIONES </field>
+            <field name="parent_id" ref="account_group_31"/>
+        </record>
+        <record id="account_group_32" model="account.group">
+            <field name="code_prefix">32</field>
+            <field name="name">RESERVAS</field>
+            <field name="parent_id" ref="account_group_3"/>
+        </record>
+        <record id="account_group_321" model="account.group">
+            <field name="code_prefix">321</field>
+            <field name="name">RESERVAS</field>
+            <field name="parent_id" ref="account_group_32"/>
+        </record>
+        <record id="account_group_33" model="account.group">
+            <field name="code_prefix">33</field>
+            <field name="name">RESULTADOS</field>
+            <field name="parent_id" ref="account_group_3"/>
+        </record>
+        <record id="account_group_331" model="account.group">
+            <field name="code_prefix">331</field>
+            <field name="name">UTILIDAD</field>
+            <field name="parent_id" ref="account_group_33"/>
+        </record>
+        <record id="account_group_4" model="account.group">
+            <field name="code_prefix">4</field>
+            <field name="name">INGRESOS</field>
+        </record>
+        <record id="account_group_41" model="account.group">
+            <field name="code_prefix">41</field>
+            <field name="name">INGRESOS OPERACIONALES</field>
+            <field name="parent_id" ref="account_group_4"/>
+        </record>
+        <record id="account_group_411" model="account.group">
+            <field name="code_prefix">411</field>
+            <field name="name">INGRESOS OPERACIONALES IMPORTACIONES</field>
+            <field name="parent_id" ref="account_group_41"/>
+        </record>
+        <record id="account_group_412" model="account.group">
+            <field name="code_prefix">412</field>
+            <field name="name">INGRESOS OPERACIONALES EXPORTACIONES</field>
+            <field name="parent_id" ref="account_group_41"/>
+        </record>
+        <record id="account_group_42" model="account.group">
+            <field name="code_prefix">42</field>
+            <field name="name">INGRESOS NO OPERACIONALES</field>
+            <field name="parent_id" ref="account_group_4"/>
+        </record>
+        <record id="account_group_421" model="account.group">
+            <field name="code_prefix">421</field>
+            <field name="name">INGRESOS NO OPERACIONALES</field>
+            <field name="parent_id" ref="account_group_42"/>
+        </record>
+        <record id="account_group_5" model="account.group">
+            <field name="code_prefix">5</field>
+            <field name="name">COSTOS DE VENTA</field>
+        </record>
+        <record id="account_group_51" model="account.group">
+            <field name="code_prefix">51</field>
+            <field name="name">COSTOS DE VENTA</field>
+            <field name="parent_id" ref="account_group_5"/>
+        </record>
+        <record id="account_group_511" model="account.group">
+            <field name="code_prefix">511</field>
+            <field name="name">COSTO DE VENTA IMPORTACIONES LOCALES</field>
+            <field name="parent_id" ref="account_group_51"/>
+        </record>
+        <record id="account_group_521" model="account.group">
+            <field name="code_prefix">521</field>
+            <field name="name">COSTO DE VENTA EXPORTACIONES LOCALES</field>
+        </record>
+        <record id="account_group_6" model="account.group">
+            <field name="code_prefix">6</field>
+            <field name="name">GASTOS  </field>
+        </record>
+        <record id="account_group_61" model="account.group">
+            <field name="code_prefix">61</field>
+            <field name="name">GASTOS  IMPORTACIONES</field>
+            <field name="parent_id" ref="account_group_6"/>
+        </record>
+        <record id="account_group_611" model="account.group">
+            <field name="code_prefix">611</field>
+            <field name="name">GASTOS ADMINISTRATIVOS</field>
+            <field name="parent_id" ref="account_group_61"/>
+        </record>
+        <record id="account_group_6110" model="account.group">
+            <field name="code_prefix">6110</field>
+            <field name="name">GASTOS FINANCIEROS</field>
+            <field name="parent_id" ref="account_group_611"/>
+        </record>
+        <record id="account_group_6111" model="account.group">
+            <field name="code_prefix">6111</field>
+            <field name="name">SUELDOS Y SALARIOS</field>
+            <field name="parent_id" ref="account_group_611"/>
+        </record>
+        <record id="account_group_6112" model="account.group">
+            <field name="code_prefix">6112</field>
+            <field name="name">BENEFICIOS SOCIALES</field>
+            <field name="parent_id" ref="account_group_611"/>
+        </record>
+        <record id="account_group_6113" model="account.group">
+            <field name="code_prefix">6113</field>
+            <field name="name">ARRIENDOS</field>
+            <field name="parent_id" ref="account_group_611"/>
+        </record>
+        <record id="account_group_6114" model="account.group">
+            <field name="code_prefix">6114</field>
+            <field name="name">ATENCION AL PERSONAL </field>
+            <field name="parent_id" ref="account_group_611"/>
+        </record>
+        <record id="account_group_6116" model="account.group">
+            <field name="code_prefix">6116</field>
+            <field name="name">SERVICIOS BASICOS</field>
+            <field name="parent_id" ref="account_group_611"/>
+        </record>
+        <record id="account_group_6117" model="account.group">
+            <field name="code_prefix">6117</field>
+            <field name="name">DEPRECIACIONES</field>
+            <field name="parent_id" ref="account_group_611"/>
+        </record>
+        <record id="account_group_6118" model="account.group">
+            <field name="code_prefix">6118</field>
+            <field name="name">GASTOS DE MANTENIMIENTO</field>
+            <field name="parent_id" ref="account_group_611"/>
+        </record>
+        <record id="account_group_612" model="account.group">
+            <field name="code_prefix">612</field>
+            <field name="name">GASTOS VENTAS</field>
+            <field name="parent_id" ref="account_group_61"/>
+        </record>
+        <record id="account_group_6121" model="account.group">
+            <field name="code_prefix">6121</field>
+            <field name="name">SUELDOS Y HONORARIOS</field>
+            <field name="parent_id" ref="account_group_612"/>
+        </record>
+        <record id="account_group_6122" model="account.group">
+            <field name="code_prefix">6122</field>
+            <field name="name">BENEFICIOS SOCIALES</field>
+            <field name="parent_id" ref="account_group_612"/>
+        </record>
+        <record id="account_group_6123" model="account.group">
+            <field name="code_prefix">6123</field>
+            <field name="name">ATENCION AL PERSONAL </field>
+            <field name="parent_id" ref="account_group_612"/>
+        </record>
+        <record id="account_group_6124" model="account.group">
+            <field name="code_prefix">6124</field>
+            <field name="name">SERVICIOS BASICOS</field>
+            <field name="parent_id" ref="account_group_612"/>
+        </record>
+        <record id="account_group_62" model="account.group">
+            <field name="code_prefix">62</field>
+            <field name="name">GASTOS EXPORTACIONES</field>
+            <field name="parent_id" ref="account_group_6"/>
+        </record>
+        <record id="account_group_621" model="account.group">
+            <field name="code_prefix">621</field>
+            <field name="name">GASTOS ADMINISTRATIVOS</field>
+            <field name="parent_id" ref="account_group_62"/>
+        </record>
+        <record id="account_group_6211" model="account.group">
+            <field name="code_prefix">6211</field>
+            <field name="name">SUELDOS Y HONORARIOS</field>
+            <field name="parent_id" ref="account_group_621"/>
+        </record>
+        <record id="account_group_622" model="account.group">
+            <field name="code_prefix">622</field>
+            <field name="name">GASTOS VENTAS</field>
+            <field name="parent_id" ref="account_group_62"/>
+        </record>
+        <record id="account_group_6221" model="account.group">
+            <field name="code_prefix">6221</field>
+            <field name="name">SUELDOS Y HONORARIOS</field>
+            <field name="parent_id" ref="account_group_622"/>
+        </record>
+        <record id="account_group_6222" model="account.group">
+            <field name="code_prefix">6222</field>
+            <field name="name">BENEFICIOS SOCIALES</field>
+            <field name="parent_id" ref="account_group_622"/>
+        </record>
+        <record id="account_group_6223" model="account.group">
+            <field name="code_prefix">6223</field>
+            <field name="name">ATENCION AL PERSONAL </field>
+            <field name="parent_id" ref="account_group_622"/>
+        </record>
+        <record id="account_group_6224" model="account.group">
+            <field name="code_prefix">6224</field>
+            <field name="name">SERVICIOS BASICOS</field>
+            <field name="parent_id" ref="account_group_622"/>
+        </record>
+    </data>
+</odoo>

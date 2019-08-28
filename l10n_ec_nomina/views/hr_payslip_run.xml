@@ -1,0 +1,66 @@
+<odoo>
+    <data>
+        <record id="hr_payslip_run_button_form" model="ir.ui.view">
+            <field name="name">hr.payslip.run.button.form</field>
+            <field name="model">hr.payslip.run</field>
+            <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='draft_payslip_run']" position="after">
+                    <button name="action_paid" string="Pagar Nomina" states="close" type="object" class="oe_highlight"/>
+                    <button name="print_xlsx_payroll" string="Imprimir Nomina Excel" type="object" class="oe_highlight"/>
+                    <button name="print_xlsx_comision" string="Imprimir Comisiones Excel" type="object" class="oe_highlight"/>
+                </xpath>
+                <field name="slip_ids" position="replace">
+                    <field name="slip_ids">
+                        <tree create="false">
+                            <field name="number"/>
+                            <field name="employee_id"/>
+                            <field name="name"/>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="amount" sum="Total"/>
+                            <field name="state"/>
+                        </tree>
+                    </field>
+                </field>
+            </field>
+        </record>
+
+        <record id="hr_payslip_run_total_tree" model="ir.ui.view">
+            <field name="name">hr.payslip.run.total.tree</field>
+            <field name="model">hr.payslip.run</field>
+            <field name="inherit_id" ref="hr_payroll.hr_payslip_run_tree"/>
+            <field name="arch" type="xml">
+                <field name="journal_id" position="after">
+                    <field name="amount" widget="monetary"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="hr_payslip_pivot">
+        <field name="name">hr.payslip.pivot</field>
+        <field name="model">hr.payslip</field>
+        <field name="arch" type="xml">
+            <pivot string="Reporte de Nomina" disable_linking="True" display_quantity="true">
+                <field name="company_id" type="row"/>
+                <field name="struct_id" type="row"/>
+                <field name="employee_id" type="row"/>
+                <field name="date_from" interval="year" type="col"/>
+                <field name="date_to" type="col"/>
+                <field name="amount" string="Monto" type="measure"/>
+            </pivot>
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="hr_payslip_filter_inherit">
+        <field name="name">hr.payslip.filter.inherit</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='done']" position="after">
+                <filter string="Pagado" name="paid" domain="[('state','=','paid')]" help="Paid Slip"/>
+            </xpath>    
+        </field>
+        </record>
+    </data>
+</odoo>

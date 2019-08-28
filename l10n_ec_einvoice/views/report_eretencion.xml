@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="report_eretencion">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="web.external_layout">
+            
+                <div class="page">
+                    <div class="row">
+                                <div class="col-5">
+                                    <div class="logo" style="width: 330px; height: 180px;">
+                                        <img t-if="res_company.logo" t-att-src="'data:image/png;base64,%s' % res_company.logo.decode()"/>
+                                    </div><br/>
+                                    <h4><span t-esc="res_company.name"/></h4>
+                                    <span><strong>Dirección Matriz: </strong></span><strong></strong><span t-esc="res_company.street"/><br/>
+                                    <span><strong>Dirección Sucursal: </strong></span><strong></strong><span t-esc="res_company.street"/><br/>
+                                    <span><strong>Contribuyente Especial Nro.: </strong></span>
+                                    <span t-esc="res_company.company_registry or '000' "/><br/>
+                                    <span><strong>Obligado a Llevar contabilidad: </strong> SI</span>
+                                </div>
+                                <div class="col-7">
+                                    <span><strong>RUC </strong></span> <span t-esc="res_company.partner_id.identifier"/><br/>
+                                    <span><h4 style="text-align: center;">COMPROBANTE DE RETENCIÓN</h4></span><br/>
+                                    <span><strong>No.</strong> </span><span t-esc="o.name"/><br/>
+                                    <span><strong>NÚMERO DE AUTORIZACIÓN</strong></span><br/>
+                                    <span t-esc="o.numero_autorizacion"/><br/>
+                                    <span><strong>FECHA Y HORA DE AUTORIZACIÓN: </strong></span><span t-esc="o.fecha_autorizacion"/><br/>
+                                    <br/>
+                                    <span><strong>AMBIENTE: </strong></span><span t-esc="res_company.env_service == '1' and 'PRUEBAS' or 'PRODUCCION'"/><br/>
+                                    <span><strong>EMISIÓN: </strong><span t-esc="res_company.emission_code == '1' and 'NORMAL' or 'INDISPONIBILIDAD'"/></span><br/>
+                                    <br/>
+                                    <span><strong>CLAVE DE ACCESO</strong></span><br/>
+                                    <div class="text-align: left;">
+                                        <img style="text-align: left;" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s&amp;humanreadable=1' % ('Code128', o.clave_acceso, 450, 60)"/>
+                                    </div><br/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row" style="background-color: silver;  border: 1px solid black; font-size: 12px;">
+                                <div class="col-3" style="padding-left: 0px;">
+                                    <span><strong>RAZÓN SOCIAL</strong></span>
+                                </div>
+                                <div class="col-5" style="padding-left: 0px;">
+                                    <span t-esc="o.partner_id.name.upper()"/>
+                                </div>
+                                <div class="col-2" style="padding-left: 0px; padding-right: 0px;">
+                                    <span><strong>IDENTIFICACIÓN</strong></span>
+                                </div>
+                                <div class="col-2" style="padding-left: 0px;">
+                                    <span t-esc="o.partner_id.identifier"/>
+                                </div>
+                            </div>
+                            <div class="row" style="background-color: silver; margin-bottom: 12px; border: 1px solid black; font-size: 12px;">
+                                <div class="col-3" style="padding-left: 0px;">
+                                    <span><strong>FECHA DE EMISIÓN</strong></span>
+                                </div>
+                                <div class="col-5" style="padding-left: 0px;">
+                                    <span t-esc="o.date"/>
+                                </div>
+                                <div class="col-2" style="padding-left: 0px;">
+                                    <span></span>
+                                </div>
+                                <div class="col-2">
+                                    <br/>
+                                </div>
+                            </div>
+                            <div class="row" style="background-color: silver; text-align: center; margin-bottom: 12px;">
+                                <div class="col-1" style="padding-left: 0px; font-size: 11px; border: 1px solid black;">
+                                    <span><strong>COMPROBANTE</strong></span>
+                                </div>
+                                <div class="col-2" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                    <span><strong>NÚMERO</strong></span>
+                                </div>
+                                <div class="col-1" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                    <span><strong>FECHA EMISIÓN</strong></span>
+                                </div>
+                                <div class="col-1" style="padding-left: 0px; font-size: 10px; border: 1px solid black;">
+                                    <span><strong>EJERCICIO FISCAL</strong></span>
+                                </div>
+                                <div class="col-2" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                    <span><strong>BASE IMPONIBLE RET.</strong></span>
+                                </div>
+                                <div class="col-2" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                    <span><strong>IMPUESTO</strong></span>
+                                </div>
+                                <div class="col-1" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                    <span><strong>% RET.</strong></span>
+                                </div>
+                                <div class="col-2" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                    <span><strong>VALOR RETENIDO</strong></span>
+                                </div>
+                            </div>
+                            <t t-foreach="o.tax_ids" t-as="tax">
+                                <div class="row">
+                                    <div class="col-1" style="padding-left: 0px; font-size: 11px; border: 1px solid black;">
+                                        <t t-if="o.invoice_id.type in ('out_invoice','in_invoice')">
+                                            <span>FACTURA</span>
+                                        </t>
+                                        <t t-if="o.invoice_id.type in ('out_refund','in_refund')">
+                                            <span>NOTA DE CREDITO</span>
+                                        </t>
+                                    </div>
+                                    <div class="col-2" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                        <span t-set="numero" t-value="o.invoice_id.number" t-esc="o.invoice_id.invoice_number"/>
+                                    </div>
+                                    <div class="col-1" style="padding-left: 0px; font-size: 10px; border: 1px solid black;">
+                                        <span t-set="emision" t-value="o.invoice_id.date" t-esc="o.invoice_id.date"/>
+                                    </div>
+                                    <div class="col-1" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                        <span t-set="fiscal_year" t-value="tax.fiscal_year" t-esc="tax.fiscal_year"/>
+                                    </div>
+                                    <div class="col-2" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                        <span>
+                                            <t t-set="base" t-esc="'%0.2f' %(tax.amount/tax.tax_id.amount*100)"/>
+                                        </span>
+                                    </div>
+                                    <div class="col-2" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                        <span>
+                                            <t t-set="name" t-value="tax.tax_id.name" t-esc="tax.tax_id.name"/>
+                                        </span>
+                                    </div>
+                                    <div class="col-1" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                        <span>
+                                            <t t-set="amount_tax" t-value="tax.tax_id.amount" t-esc="tax.tax_id.amount"/>
+                                        </span>
+                                    </div>
+                                    <div class="col-2" style="padding-left: 0px; font-size: 12px; border: 1px solid black;">
+                                        <span>
+                                            <t t-set="amount" t-value="tax.amount" t-esc="tax.amount"/>
+                                        </span>
+                                    </div>
+                                </div>
+                            </t>
+                            <br/>
+                            <div class="row">
+                                <div class="col-6" style="background-color: silver;">
+                                    <span><strong>Información Adicional</strong></span><br/><br/>
+                                    <span><strong>Dirección: </strong></span><span t-esc="o.partner_id.street or '**'"/><br/>
+                                    <span><strong>Teléfono: </strong></span><span t-esc="o.partner_id.phone or '**'"/><br/>
+                                    <span><strong>Email: </strong></span><span t-esc="o.partner_id.email"/><br/>
+                                </div>
+                                
+                            
+                            </div>
+                        
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+
+    </data>
+</openerp>

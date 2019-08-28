@@ -1,0 +1,854 @@
+<odoo>
+    <data noupdate="1">
+        <record id="rama_A1110000000" model="iess.sectorial.rama">
+            <field name="code">A1110000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A11" />
+        </record>
+        <record id="rama_A0101011112" model="iess.sectorial.rama">
+            <field name="code">A0101011112</field>
+            <field name="name">PLANTACIONES DE PALMA AFRICANA</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A0920030000" model="iess.sectorial.rama">
+            <field name="code">A0920030000</field>
+            <field name="name">ELABORACIÓN DE JOYAS Y ARTÍCULOS CONEXOS</field>
+            <field name="comision_id" ref="comision_A06" />
+        </record>
+        <record id="rama_A2211749409" model="iess.sectorial.rama">
+            <field name="code">A2211749409</field>
+            <field name="name">PRODUCTORES DE FONOGRAMAS</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A1810000000" model="iess.sectorial.rama">
+            <field name="code">A1810000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A18" />
+        </record>
+        <record id="rama_A0704155101" model="iess.sectorial.rama">
+            <field name="code">A0704155101</field>
+            <field name="name">DESTILACIÓN, RECTIFICACIÓN Y MEZCLA DE BEBIDAS ESPIRITUOSAS O AL</field>
+            <field name="comision_id" ref="comision_A07" />
+        </record>
+        <record id="rama_A2220000001" model="iess.sectorial.rama">
+            <field name="code">A2220000001</field>
+            <field name="name">MRL-NUEVOS CARGOS- ACTIVIDADES DE CINEMATOGRAFIA,  RADIO Y TELEVI</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A1615923300" model="iess.sectorial.rama">
+            <field name="code">A1615923300</field>
+            <field name="name">TRABAJADORES DE PARQUES NACIONALES Y ÁREAS NATURALES</field>
+            <field name="comision_id" ref="comision_A16" />
+        </record>
+        <record id="rama_A0504154309" model="iess.sectorial.rama">
+            <field name="code">A0504154309</field>
+            <field name="name">PROCESAMIENTO DE CACAO, Y ELABORACIÓN DE CHOCOLATE Y ARTÍCULOS D</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A1330000000" model="iess.sectorial.rama">
+            <field name="code">A1330000000</field>
+            <field name="name">MRL-PRODUCCIÓN DE GAS, DISTRIBUCIÓN Y COMERCIALIZACIÓN  DE COMBUS</field>
+            <field name="comision_id" ref="comision_A13" />
+        </record>
+        <record id="rama_A0504151401" model="iess.sectorial.rama">
+            <field name="code">A0504151401</field>
+            <field name="name">EXTRACTORAS DE ACEITE ROJO CRUDO DE PALMA</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A1004292603" model="iess.sectorial.rama">
+            <field name="code">A1004292603</field>
+            <field name="name">FABRICACIÓN DE TEJIDOS DE PUNTO, CONFECCIÓN DE PRENDAS DE VESTIR</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1709630101" model="iess.sectorial.rama">
+            <field name="code">A1709630101</field>
+            <field name="name">SISTEMA PORTUARIO ECUATORIANO CODG 706 - 702: RECINTOS PORTUARIO</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A2020000001" model="iess.sectorial.rama">
+            <field name="code">A2020000001</field>
+            <field name="name">MRL-OTROS TIPOS DE ENSEÑANZA</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A0204151101" model="iess.sectorial.rama">
+            <field name="code">A0204151101</field>
+            <field name="name">PRODUCCIÓN AVÍCOLA</field>
+            <field name="comision_id" ref="comision_A02" />
+        </record>
+        <record id="rama_A1220000000" model="iess.sectorial.rama">
+            <field name="code">A1220000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A12" />
+        </record>
+        <record id="rama_A0302050000" model="iess.sectorial.rama">
+            <field name="code">A0302050000</field>
+            <field name="name">FAENAS DE PESCA DE ALTURA Y COSTERA Y/O TRIPULANTES DE BUQUES PE</field>
+            <field name="comision_id" ref="comision_A03" />
+        </record>
+        <record id="rama_A1310000000" model="iess.sectorial.rama">
+            <field name="code">A1310000000</field>
+            <field name="name">MRL-PRODUCCIÓN DE GAS, DISTRIBUCIÓN Y COMERCIALIZACIÓN  DE COMBUS</field>
+            <field name="comision_id" ref="comision_A13" />
+        </record>
+        <record id="rama_A1911740000" model="iess.sectorial.rama">
+            <field name="code">A1911740000</field>
+            <field name="name">SERVICIOS EN GENERAL: CONSERJERÍA, PORTERÍA, LIMPIEZA, LAVANDERÍ</field>
+            <field name="comision_id" ref="comision_A19" />
+        </record>
+        <record id="rama_A1004182009" model="iess.sectorial.rama">
+            <field name="code">A1004182009</field>
+            <field name="name">FABRICACIÓN DE ALFOMBRAS</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1020000006" model="iess.sectorial.rama">
+            <field name="code">A1020000006</field>
+            <field name="name">MRL-NUEVOS CARGOS-FABRICACIÓN DE COLCHONES</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1716950008" model="iess.sectorial.rama">
+            <field name="code">A1716950008</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1608552090" model="iess.sectorial.rama">
+            <field name="code">A1608552090</field>
+            <field name="name">SERVICIOS DE ALIMENTACIÓN: ABASTECIMIENTO DE COMIDA POR ENCARGO</field>
+            <field name="comision_id" ref="comision_A16" />
+        </record>
+        <record id="rama_A1010000008" model="iess.sectorial.rama">
+            <field name="code">A1010000008</field>
+            <field name="name">MRL-NUEVOS CARGOS-INDUSTRIA  DE CORDELERÍA</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1209642000" model="iess.sectorial.rama">
+            <field name="code">A1209642000</field>
+            <field name="name">TÉCNICOS EN TELECOMUNICACIONES</field>
+            <field name="comision_id" ref="comision_A12" />
+        </record>
+        <record id="rama_A0101011310" model="iess.sectorial.rama">
+            <field name="code">A0101011310</field>
+            <field name="name">PLANTACIONES DE CACAO</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A0101011311" model="iess.sectorial.rama">
+            <field name="code">A0101011311</field>
+            <field name="name">ESCOGIDA DE CAFÉ, CACAO Y OTROS PRODUCTOS DESTINADOS A LA EXPORT</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A1716950011" model="iess.sectorial.rama">
+            <field name="code">A1716950011</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A2215921300" model="iess.sectorial.rama">
+            <field name="code">A2215921300</field>
+            <field name="name">ESTACIONES DE RADIO</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A0504151101" model="iess.sectorial.rama">
+            <field name="code">A0504151101</field>
+            <field name="name">FAENAMIENTO AVICOLA</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0403111000" model="iess.sectorial.rama">
+            <field name="code">A0403111000</field>
+            <field name="name">PRODUCCION DE PETROLEO CRUDO Y GAS NATURAL, SU PROCESAMIENTO, EN</field>
+            <field name="comision_id" ref="comision_A04" />
+        </record>
+        <record id="rama_A2013801001" model="iess.sectorial.rama">
+            <field name="code">A2013801001</field>
+            <field name="name">PERSONAL DE ESTABLECIMIENTOS  PARTICULARES DE NIVELES: BÁSICO</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A2013802000" model="iess.sectorial.rama">
+            <field name="code">A2013802000</field>
+            <field name="name">PERSONAL DE ESTABLECIMIENTOS  PARTICULARES DE NIVELES: BACHILLERA</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A1730600000" model="iess.sectorial.rama">
+            <field name="code">A1730600000</field>
+            <field name="name">MRL-EMPRESAS DE TRANSPORTE AÉREO, EN SERVICIO REGULAR,  NO REGUL</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A0109630100" model="iess.sectorial.rama">
+            <field name="code">A0109630100</field>
+            <field name="name">ESCOGIDA DE CAFÉ, CACAO Y OTROS PRODUCTOS DESTINADOS A LA EXPORT</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A0504154401" model="iess.sectorial.rama">
+            <field name="code">A0504154401</field>
+            <field name="name">FABRICACIÓN DE FIDEOS, MACARRONES, GALLETAS Y OTROS PRODUCTOS SE</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A1730000005" model="iess.sectorial.rama">
+            <field name="code">A1730000005</field>
+            <field name="name">MRL-OTRAS ACTIVIDADES RELACIONADAS CON TRASPORTE, LOGÍSTICA Y AL</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A0510000000" model="iess.sectorial.rama">
+            <field name="code">A0510000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0504151100" model="iess.sectorial.rama">
+            <field name="code">A0504151100</field>
+            <field name="name">FAENAMIENTO DE GANADO, PREPARACIÓN Y CONSERVACIÓN DE CARNES</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0810000000" model="iess.sectorial.rama">
+            <field name="code">A0810000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A08" />
+        </record>
+        <record id="rama_A1420000000" model="iess.sectorial.rama">
+            <field name="code">A1420000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A14" />
+        </record>
+        <record id="rama_A2110000000" model="iess.sectorial.rama">
+            <field name="code">A2110000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A21" />
+        </record>
+        <record id="rama_A0403000000" model="iess.sectorial.rama">
+            <field name="code">A0403000000</field>
+            <field name="name">EXTRACCION DE MINERALES METÁLICOS Y NO METÁLICOS, Y MATERIALES D</field>
+            <field name="comision_id" ref="comision_A04" />
+        </record>
+        <record id="rama_A0904202921" model="iess.sectorial.rama">
+            <field name="code">A0904202921</field>
+            <field name="name">ELABORACIÓN DE PRODUCTOS DE FIBRAS NATURALES</field>
+            <field name="comision_id" ref="comision_A06" />
+        </record>
+        <record id="rama_A1430000000" model="iess.sectorial.rama">
+            <field name="code">A1430000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:30000000)</field>
+            <field name="comision_id" ref="comision_A14" />
+        </record>
+        <record id="rama_A0304151200" model="iess.sectorial.rama">
+            <field name="code">A0304151200</field>
+            <field name="name">PRODUCCION E INDUSTRIALIZACION  DE PESCADO Y OTROS PRODUCTOS MARI</field>
+            <field name="comision_id" ref="comision_A03" />
+        </record>
+        <record id="rama_A2010000002" model="iess.sectorial.rama">
+            <field name="code">A2010000002</field>
+            <field name="name">MRL-NUEVOS CARGOS-ENSEÑANZA  SUPERIOR</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A0101020010" model="iess.sectorial.rama">
+            <field name="code">A0101020010</field>
+            <field name="name">EXTRACCION DE LA MADERA</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A1709621000" model="iess.sectorial.rama">
+            <field name="code">A1709621000</field>
+            <field name="name">EMPRESAS DE TRANSPORTE AÉREO, EN LOS SECTORES DE: TRIPULACIÓN, O</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A0420000000" model="iess.sectorial.rama">
+            <field name="code">A0420000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A04" />
+        </record>
+        <record id="rama_A0504154109" model="iess.sectorial.rama">
+            <field name="code">A0504154109</field>
+            <field name="name">ELABORACIÓN DE PRODUCTOS DE PANADERÍA Y PASTELERÍA</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0520000000" model="iess.sectorial.rama">
+            <field name="code">A0520000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0101011301" model="iess.sectorial.rama">
+            <field name="code">A0101011301</field>
+            <field name="name">PLANTACIONES DE BANANO</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A2210000000" model="iess.sectorial.rama">
+            <field name="code">A2210000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A1716950006" model="iess.sectorial.rama">
+            <field name="code">A1716950006</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1320000000" model="iess.sectorial.rama">
+            <field name="code">A1320000000</field>
+            <field name="name">MRL-PRODUCCIÓN DE GAS, DISTRIBUCIÓN Y COMERCIALIZACIÓN  DE COMBUS</field>
+            <field name="comision_id" ref="comision_A13" />
+        </record>
+        <record id="rama_A2020000000" model="iess.sectorial.rama">
+            <field name="code">A2020000000</field>
+            <field name="name">MRL-NUEVOS CARGOS-CENTROS  DE DESARROLLO INFANTIL</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A1406452000" model="iess.sectorial.rama">
+            <field name="code">A1406452000</field>
+            <field name="name">CONSTRUCCIÓN Y SERVICIOS TÉCNICOS Y ARQUITECTÓNICOS</field>
+            <field name="comision_id" ref="comision_A14" />
+        </record>
+        <record id="rama_A1716950012" model="iess.sectorial.rama">
+            <field name="code">A1716950012</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A2230000000" model="iess.sectorial.rama">
+            <field name="code">A2230000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:30000000)</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A2211749402" model="iess.sectorial.rama">
+            <field name="code">A2211749402</field>
+            <field name="name">ESTUDIOS Y LABORATORIOS FOTOGRÁFICOS</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A1608551004" model="iess.sectorial.rama">
+            <field name="code">A1608551004</field>
+            <field name="name">ESTABLECIMIENTOS  QUE PRESTAN SERVICIOS DE ALOJAMIENTO TURÍSTICO,</field>
+            <field name="comision_id" ref="comision_A16" />
+        </record>
+        <record id="rama_A0504154900" model="iess.sectorial.rama">
+            <field name="code">A0504154900</field>
+            <field name="name">INDUSTRIALIZACIÓN  DEL TÉ Y OTRAS HIERBAS AROMÁTICAS NATURALES</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A2215922000" model="iess.sectorial.rama">
+            <field name="code">A2215922000</field>
+            <field name="name">PERIODISTAS</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A1811749900" model="iess.sectorial.rama">
+            <field name="code">A1811749900</field>
+            <field name="name">BANCOS PRIVADOS</field>
+            <field name="comision_id" ref="comision_A18" />
+        </record>
+        <record id="rama_A1609630401" model="iess.sectorial.rama">
+            <field name="code">A1609630401</field>
+            <field name="name">AGENCIAS DE VIAJES Y TURISMO</field>
+            <field name="comision_id" ref="comision_A16" />
+        </record>
+        <record id="rama_A0504154201" model="iess.sectorial.rama">
+            <field name="code">A0504154201</field>
+            <field name="name">INGENIOS Y REFINERÍAS DE AZÚCAR</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A1104341001" model="iess.sectorial.rama">
+            <field name="code">A1104341001</field>
+            <field name="name">ENSAMBLAJE DE AUTOMOTORES, FABRICACIÓN DE SUS PARTES  Y PIEZAS</field>
+            <field name="comision_id" ref="comision_A11" />
+        </record>
+        <record id="rama_A1520000000" model="iess.sectorial.rama">
+            <field name="code">A1520000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A15" />
+        </record>
+        <record id="rama_A1004369911" model="iess.sectorial.rama">
+            <field name="code">A1004369911</field>
+            <field name="name">FABRICACIÓN DE BOTONES Y SEMIELABORADOS  DE BOTONES</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1720000008" model="iess.sectorial.rama">
+            <field name="code">A1720000008</field>
+            <field name="name">PROCESOS DE EMBARQUE Y DESEMBARQUE DE FRUTAS EN BUQUES DE ALTO A</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1010000007" model="iess.sectorial.rama">
+            <field name="code">A1010000007</field>
+            <field name="name">MRL-NUEVOS CARGOS-FABRICACIÓN DE HILADO, TEJIDO (PUNTO/PLANO) Y</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1004369912" model="iess.sectorial.rama">
+            <field name="code">A1004369912</field>
+            <field name="name">FABRICACIÓN DE CIERRES</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1220030001" model="iess.sectorial.rama">
+            <field name="code">A1220030001</field>
+            <field name="name">ENSAMBLAJE Y MANTENIMIENTO DE EQUIPOS DE COMPUTACIÓN Y ELECTRÓNI</field>
+            <field name="comision_id" ref="comision_A12" />
+        </record>
+        <record id="rama_A0920000000" model="iess.sectorial.rama">
+            <field name="code">A0920000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A06" />
+        </record>
+        <record id="rama_A1930000000" model="iess.sectorial.rama">
+            <field name="code">A1930000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:30000000)</field>
+            <field name="comision_id" ref="comision_A19" />
+        </record>
+        <record id="rama_A1709630102" model="iess.sectorial.rama">
+            <field name="code">A1709630102</field>
+            <field name="name">PROCESOS DE EMBARQUE Y DESEMBARQUE DE FRUTAS EN BUQUES DE ALTO B</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A2215921309" model="iess.sectorial.rama">
+            <field name="code">A2215921309</field>
+            <field name="name">ESTACIONES DE TELEVISIÓN Y EMPRESAS PRODUCTORAS</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A0302050003" model="iess.sectorial.rama">
+            <field name="code">A0302050003</field>
+            <field name="name">PRODUCCION Y LABORATORIOS DE CRIA DE LARVAS</field>
+            <field name="comision_id" ref="comision_A03" />
+        </record>
+        <record id="rama_A1716950010" model="iess.sectorial.rama">
+            <field name="code">A1716950010</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A2114851101" model="iess.sectorial.rama">
+            <field name="code">A2114851101</field>
+            <field name="name">HOSPITALES, SANATORIOS, CLÍNICAS, CONSULTORIOS, LABORATORIOS Y O</field>
+            <field name="comision_id" ref="comision_A21" />
+        </record>
+        <record id="rama_A0504154921" model="iess.sectorial.rama">
+            <field name="code">A0504154921</field>
+            <field name="name">PROCESAMIENTO DE SAL</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0504151400" model="iess.sectorial.rama">
+            <field name="code">A0504151400</field>
+            <field name="name">INDUSTRIAS DE ACEITES Y GRASAS VEGETALES Y ANIMALES</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A1716950001" model="iess.sectorial.rama">
+            <field name="code">A1716950001</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1004261023" model="iess.sectorial.rama">
+            <field name="code">A1004261023</field>
+            <field name="name">FABRICACIÓN DE COLCHONES</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1920000000" model="iess.sectorial.rama">
+            <field name="code">A1920000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A19" />
+        </record>
+        <record id="rama_A1716950004" model="iess.sectorial.rama">
+            <field name="code">A1716950004</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1710600000" model="iess.sectorial.rama">
+            <field name="code">A1710600000</field>
+            <field name="name">MRL-EMPRESAS DE TRANSPORTE AÉREO, EN SERVICIO REGULAR,  NO REGUL</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A0920030001" model="iess.sectorial.rama">
+            <field name="code">A0920030001</field>
+            <field name="name">FABRICACIÓN ARTESANAL DE MUEBLES Y ACCESORIOS DE MADERA</field>
+            <field name="comision_id" ref="comision_A06" />
+        </record>
+        <record id="rama_A2010000001" model="iess.sectorial.rama">
+            <field name="code">A2010000001</field>
+            <field name="name">MRL-NUEVOS CARGOS-ENSEÑANZA  A NIVEL BACHILLERATO</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A1918200001" model="iess.sectorial.rama">
+            <field name="code">A1918200001</field>
+            <field name="name">SERVICIOS EN GENERAL/TRABAJADOR EN GENERAL</field>
+            <field name="comision_id" ref="comision_A19" />
+        </record>
+        <record id="rama_A1608552002" model="iess.sectorial.rama">
+            <field name="code">A1608552002</field>
+            <field name="name">ESTABLECIMIENTOS  QUE PRESTAN SERVICIOS DE COMIDAS Y BEBIDAS.</field>
+            <field name="comision_id" ref="comision_A16" />
+        </record>
+        <record id="rama_A0504155403" model="iess.sectorial.rama">
+            <field name="code">A0504155403</field>
+            <field name="name">ELABORACIÓN DEL HIELO</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A2230000001" model="iess.sectorial.rama">
+            <field name="code">A2230000001</field>
+            <field name="name">MRL-NUEVOS CARGOS- ACTIVIDADES DE CINEMATOGRAFIA,  RADIO Y TELEVI</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A2030000001" model="iess.sectorial.rama">
+            <field name="code">A2030000001</field>
+            <field name="name">MRL-OTROS TIPOS DE ENSEÑANZA</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A0430000000" model="iess.sectorial.rama">
+            <field name="code">A0430000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:30000000)</field>
+            <field name="comision_id" ref="comision_A04" />
+        </record>
+        <record id="rama_A2013803001" model="iess.sectorial.rama">
+            <field name="code">A2013803001</field>
+            <field name="name">PERSONAL DE ESTABLECIMIENTOS  PARTICULARES DE NIVELES: SUPERIOR</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A1404269909" model="iess.sectorial.rama">
+            <field name="code">A1404269909</field>
+            <field name="name">FABRICACIÓN DE OTROS PRODUCTOS MINERALES NO METÁLICOS (PRODUCTOS</field>
+            <field name="comision_id" ref="comision_A14" />
+        </record>
+        <record id="rama_A0804289300" model="iess.sectorial.rama">
+            <field name="code">A0804289300</field>
+            <field name="name">FABRICACIÓN DE CUCHILLERÍA, HERRAMIENTAS MANUALES Y ARTÍCULOS DE</field>
+            <field name="comision_id" ref="comision_A08" />
+        </record>
+        <record id="rama_A1510000000" model="iess.sectorial.rama">
+            <field name="code">A1510000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A15" />
+        </record>
+        <record id="rama_A0504151301" model="iess.sectorial.rama">
+            <field name="code">A0504151301</field>
+            <field name="name">INDUSTRIAS ENVASADORAS Y CONSERVERAS DE LEGUMBRES Y FRUTAS</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A1020000007" model="iess.sectorial.rama">
+            <field name="code">A1020000007</field>
+            <field name="name">MRL-NUEVOS CARGOS-FABRICACIÓN DE HILADO, TEJIDO (PUNTO/PLANO) Y</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1130000000" model="iess.sectorial.rama">
+            <field name="code">A1130000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:30000000)</field>
+            <field name="comision_id" ref="comision_A11" />
+        </record>
+        <record id="rama_A2215921401" model="iess.sectorial.rama">
+            <field name="code">A2215921401</field>
+            <field name="name">ARTISTAS PROFESIONALES</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A2020000003" model="iess.sectorial.rama">
+            <field name="code">A2020000003</field>
+            <field name="name">MRL-OTROS TIPOS DE ENSEÑANZA</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A1716950003" model="iess.sectorial.rama">
+            <field name="code">A1716950003</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1210000000" model="iess.sectorial.rama">
+            <field name="code">A1210000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A12" />
+        </record>
+        <record id="rama_A2013801000" model="iess.sectorial.rama">
+            <field name="code">A2013801000</field>
+            <field name="name">PERSONAL DE ESTABLECIMIENTOS  PARTICULARES DE EDUCACIÓN INICIAL (</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A2220000000" model="iess.sectorial.rama">
+            <field name="code">A2220000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A1220030002" model="iess.sectorial.rama">
+            <field name="code">A1220030002</field>
+            <field name="name">ENSAMBLAJE Y MANTENIMIENTO DE EQUIPOS DE COMPUTACIÓN Y ELECTRÓNI</field>
+            <field name="comision_id" ref="comision_A12" />
+        </record>
+        <record id="rama_A1716950005" model="iess.sectorial.rama">
+            <field name="code">A1716950005</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1709630100" model="iess.sectorial.rama">
+            <field name="code">A1709630100</field>
+            <field name="name">ESTIBA DE CAFÉ, CACAO Y OTROS PRODUCTOS DESTINADOS A LA EXPORTAC</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A0504154910" model="iess.sectorial.rama">
+            <field name="code">A0504154910</field>
+            <field name="name">ELABORACIÓN DE OTROS PRODUCTOS ALIMENTICIOS: MAICENA Y SUS DERIV</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0101011312" model="iess.sectorial.rama">
+            <field name="code">A0101011312</field>
+            <field name="name">PLANTACIONES DE CAFE</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A0101011210" model="iess.sectorial.rama">
+            <field name="code">A0101011210</field>
+            <field name="name">PRODUCCION DE FLORES NATURALES Y PLANTAS ORNAMENTALES Y MEDICINA</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A1720000005" model="iess.sectorial.rama">
+            <field name="code">A1720000005</field>
+            <field name="name">MRL-OTRAS ACTIVIDADES RELACIONADAS CON TRASPORTE, LOGÍSTICA Y AL</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A0504153100" model="iess.sectorial.rama">
+            <field name="code">A0504153100</field>
+            <field name="name">PILADORAS DE ARROZ</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A1004172300" model="iess.sectorial.rama">
+            <field name="code">A1004172300</field>
+            <field name="name">INDUSTRIA DE CORDELERÍA</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A0604314001" model="iess.sectorial.rama">
+            <field name="code">A0604314001</field>
+            <field name="name">FABRICACION DE ACUMULADORES (BATERIAS Y PILAS)</field>
+            <field name="comision_id" ref="comision_A06" />
+        </record>
+        <record id="rama_A1507500000" model="iess.sectorial.rama">
+            <field name="code">A1507500000</field>
+            <field name="name">COMERCIO AL POR MAYOR Y MENOR</field>
+            <field name="comision_id" ref="comision_A15" />
+        </record>
+        <record id="rama_A1230000000" model="iess.sectorial.rama">
+            <field name="code">A1230000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:30000000)</field>
+            <field name="comision_id" ref="comision_A12" />
+        </record>
+        <record id="rama_A1305401000" model="iess.sectorial.rama">
+            <field name="code">A1305401000</field>
+            <field name="name">ELECTRICIDAD</field>
+            <field name="comision_id" ref="comision_A13" />
+        </record>
+        <record id="rama_A2215921400" model="iess.sectorial.rama">
+            <field name="code">A2215921400</field>
+            <field name="name">TEATROS Y CINES</field>
+            <field name="comision_id" ref="comision_A22" />
+        </record>
+        <record id="rama_A1410000000" model="iess.sectorial.rama">
+            <field name="code">A1410000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A14" />
+        </record>
+        <record id="rama_A2030000000" model="iess.sectorial.rama">
+            <field name="code">A2030000000</field>
+            <field name="name">MRL-NUEVOS CARGOS-ENSEÑANZA  A NIVEL BACHILLERATO</field>
+            <field name="comision_id" ref="comision_A20" />
+        </record>
+        <record id="rama_A0820000000" model="iess.sectorial.rama">
+            <field name="code">A0820000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A08" />
+        </record>
+        <record id="rama_A1220030000" model="iess.sectorial.rama">
+            <field name="code">A1220030000</field>
+            <field name="name">ENSAMBLAJE Y MANTENIMIENTO DE EQUIPOS DE COMPUTACIÓN Y ELECTRÓNI</field>
+            <field name="comision_id" ref="comision_A12" />
+        </record>
+        <record id="rama_A0410000000" model="iess.sectorial.rama">
+            <field name="code">A0410000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A04" />
+        </record>
+        <record id="rama_A1406455000" model="iess.sectorial.rama">
+            <field name="code">A1406455000</field>
+            <field name="name">OPERADORES Y MECÁNICOS DE EQUIPO PESADO Y CAMINERO, DE EXCAVACIÓ</field>
+            <field name="comision_id" ref="comision_A14" />
+        </record>
+        <record id="rama_A1020000000" model="iess.sectorial.rama">
+            <field name="code">A1020000000</field>
+            <field name="name">MRL-NUEVOS CARGOS-CONFECCIÓN DE PRENDAS DE VESTIR Y OTRAS MANUFA</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A0704155401" model="iess.sectorial.rama">
+            <field name="code">A0704155401</field>
+            <field name="name">INDUSTRIAS DE BEBIDAS NO ALCOHÓLICAS, AGUAS GASEOSAS Y MINERALES</field>
+            <field name="comision_id" ref="comision_A07" />
+        </record>
+        <record id="rama_A1716950002" model="iess.sectorial.rama">
+            <field name="code">A1716950002</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1709602300" model="iess.sectorial.rama">
+            <field name="code">A1709602300</field>
+            <field name="name">OPERADORES Y MECÁNICOS DE EQUIPO PESADO EN ACTIVIDADES AGRÍCOLAS</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A2120000000" model="iess.sectorial.rama">
+            <field name="code">A2120000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A21" />
+        </record>
+        <record id="rama_A1004182001" model="iess.sectorial.rama">
+            <field name="code">A1004182001</field>
+            <field name="name">FABRICACION DE CALZADO, CARTERAS, PRENDAS, DE VESTIR, CINTURONES</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1020000008" model="iess.sectorial.rama">
+            <field name="code">A1020000008</field>
+            <field name="name">MRL-NUEVOS CARGOS-INDUSTRIA  DE CORDELERÍA</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1720000000" model="iess.sectorial.rama">
+            <field name="code">A1720000000</field>
+            <field name="name">MRL-NUEVOS CARGOS-OPERADORES Y MECÁNICOS DE EQUIPO PESADO EN ACT</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1107502000" model="iess.sectorial.rama">
+            <field name="code">A1107502000</field>
+            <field name="name">TALLERES DE REPARACION Y MANTENIMIENTO  DE AUTOMOTORES</field>
+            <field name="comision_id" ref="comision_A11" />
+        </record>
+        <record id="rama_A0720000001" model="iess.sectorial.rama">
+            <field name="code">A0720000001</field>
+            <field name="name">MRL-CULTIVO Y ELABORACIÓN PRELIMINAR DEL TABACO</field>
+            <field name="comision_id" ref="comision_A07" />
+        </record>
+        <record id="rama_A0830000000" model="iess.sectorial.rama">
+            <field name="code">A0830000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:30000000)</field>
+            <field name="comision_id" ref="comision_A08" />
+        </record>
+        <record id="rama_A1716950000" model="iess.sectorial.rama">
+            <field name="code">A1716950000</field>
+            <field name="name">CHOFERES PROFESIONALES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A0504152001" model="iess.sectorial.rama">
+            <field name="code">A0504152001</field>
+            <field name="name">ELABORACIÓN DE PRODUCTOS LÁCTEOS</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0810000001" model="iess.sectorial.rama">
+            <field name="code">A0810000001</field>
+            <field name="name">MRL-NUEVOS CARGOS-FABRICACIÓN DE CUCHILLERÍA, HERRAMIENNTAS MANU</field>
+            <field name="comision_id" ref="comision_A08" />
+        </record>
+        <record id="rama_A1004182000" model="iess.sectorial.rama">
+            <field name="code">A1004182000</field>
+            <field name="name">CURTIEMBRES Y TENERÍAS</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A1910000000" model="iess.sectorial.rama">
+            <field name="code">A1910000000</field>
+            <field name="name">MRL-RESTO DE RAMAS (CIIU:10000000)</field>
+            <field name="comision_id" ref="comision_A19" />
+        </record>
+        <record id="rama_A1020000005" model="iess.sectorial.rama">
+            <field name="code">A1020000005</field>
+            <field name="name">MRL-NUEVOS CARGOS-FABRICACIÓN DE CALZADO, CARTERAS, PRENDAS DE V</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A0403132000" model="iess.sectorial.rama">
+            <field name="code">A0403132000</field>
+            <field name="name">EXTRACCION DE MINERALES METÁLICOS Y NO METÁLICOS, Y MATERIALES D</field>
+            <field name="comision_id" ref="comision_A04" />
+        </record>
+        <record id="rama_A1120000000" model="iess.sectorial.rama">
+            <field name="code">A1120000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A11" />
+        </record>
+        <record id="rama_A1911730000" model="iess.sectorial.rama">
+            <field name="code">A1911730000</field>
+            <field name="name">PROFESIONALES EN GENERAL</field>
+            <field name="comision_id" ref="comision_A19" />
+        </record>
+        <record id="rama_A0120000000" model="iess.sectorial.rama">
+            <field name="code">A0120000000</field>
+            <field name="name">MRL-OTROS CULTIVOS</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A0504154901" model="iess.sectorial.rama">
+            <field name="code">A0504154901</field>
+            <field name="name">INDUSTRIALIZACIÓN  DEL CAFÉ</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A1709610000" model="iess.sectorial.rama">
+            <field name="code">A1709610000</field>
+            <field name="name">TRÁFICO FLUVIAL, COSTANERO E INTERNACIONAL</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1020000004" model="iess.sectorial.rama">
+            <field name="code">A1020000004</field>
+            <field name="name">MRL-NUEVOS CARGOS-FABRICACIÓN DE BOTONES, BROCHES DE PRESIÓN Y C</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A0804289900" model="iess.sectorial.rama">
+            <field name="code">A0804289900</field>
+            <field name="name">FABRICACIÓN DE OTROS PRODUCTOS METÁLICOS (ENVASES, RECIPIENTES,</field>
+            <field name="comision_id" ref="comision_A08" />
+        </record>
+        <record id="rama_A0704160000" model="iess.sectorial.rama">
+            <field name="code">A0704160000</field>
+            <field name="name">INDUSTRIA DEL TABACO</field>
+            <field name="comision_id" ref="comision_A07" />
+        </record>
+        <record id="rama_A0101011113" model="iess.sectorial.rama">
+            <field name="code">A0101011113</field>
+            <field name="name">PLANTACIONES DE ABACA</field>
+            <field name="comision_id" ref="comision_A01" />
+        </record>
+        <record id="rama_A1720600000" model="iess.sectorial.rama">
+            <field name="code">A1720600000</field>
+            <field name="name">MRL-EMPRESAS DE TRANSPORTE AÉREO, EN SERVICIO REGULAR,  NO REGUL</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1716950007" model="iess.sectorial.rama">
+            <field name="code">A1716950007</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A1020000003" model="iess.sectorial.rama">
+            <field name="code">A1020000003</field>
+            <field name="name">MRL-NUEVOS CARGOS- FABRICACIÓN DE ALFOMBRAS</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A0704155300" model="iess.sectorial.rama">
+            <field name="code">A0704155300</field>
+            <field name="name">INDUSTRIAS DE BEBIDAS MALTEADAS Y MALTA (CERVEZA)</field>
+            <field name="comision_id" ref="comision_A07" />
+        </record>
+        <record id="rama_A1004243002" model="iess.sectorial.rama">
+            <field name="code">A1004243002</field>
+            <field name="name">FABRICACION DE PRODUCTOS TEXTILES, HILADO, TEJIDO Y ACABADO DE P</field>
+            <field name="comision_id" ref="comision_A10" />
+        </record>
+        <record id="rama_A0511749500" model="iess.sectorial.rama">
+            <field name="code">A0511749500</field>
+            <field name="name">EMPACADORAS DE CAMARÓN</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0820000001" model="iess.sectorial.rama">
+            <field name="code">A0820000001</field>
+            <field name="name">MRL-NUEVOS CARGOS-FABRICACIÓN DE CUCHILLERÍA, HERRAMIENNTAS MANU</field>
+            <field name="comision_id" ref="comision_A08" />
+        </record>
+        <record id="rama_A1716950009" model="iess.sectorial.rama">
+            <field name="code">A1716950009</field>
+            <field name="name">MRL-CHOFERES/CONDUCTORES</field>
+            <field name="comision_id" ref="comision_A17" />
+        </record>
+        <record id="rama_A0504153111" model="iess.sectorial.rama">
+            <field name="code">A0504153111</field>
+            <field name="name">INDUSTRIAS DE PRODUCTOS DE MOLINERÍA</field>
+            <field name="comision_id" ref="comision_A05" />
+        </record>
+        <record id="rama_A0920030002" model="iess.sectorial.rama">
+            <field name="code">A0920030002</field>
+            <field name="name">FABRICACION DE PRODUCTOS ARTESANALES, HILADO, TEJIDO Y ACABADOS</field>
+            <field name="comision_id" ref="comision_A06" />
+        </record>
+        <record id="rama_A0720000000" model="iess.sectorial.rama">
+            <field name="code">A0720000000</field>
+            <field name="name">MRL-PARA TODAS LAS RAMAS DE INDUSTRIALIZACIÓN</field>
+            <field name="comision_id" ref="comision_A07" />
+        </record>
+        <record id="rama_A0220000000" model="iess.sectorial.rama">
+            <field name="code">A0220000000</field>
+            <field name="name">MRL-TODAS LAS RAMAS (CIIU:20000000)</field>
+            <field name="comision_id" ref="comision_A02" />
+        </record>
+        <record id="rama_A1918200000" model="iess.sectorial.rama">
+            <field name="code">A1918200000</field>
+            <field name="name">PROFESIONALES EN GENERAL/GERENTE  GENERAL</field>
+            <field name="comision_id" ref="comision_A19" />
+        </record>
+        <record id="rama_A0830000001" model="iess.sectorial.rama">
+            <field name="code">A0830000001</field>
+            <field name="name">MRL-NUEVOS CARGOS-FABRICACIÓN DE CUCHILLERÍA, HERRAMIENNTAS MANU</field>
+            <field name="comision_id" ref="comision_A08" />
+        </record>
+    </data>
+</odoo>

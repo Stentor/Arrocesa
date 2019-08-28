@@ -1,0 +1,752 @@
+<odoo>
+    <data>
+        <record id="tax_ice3023" model="account.tax">
+            <field name="name">ICE-PRODUCTOS DEL TABACO Y SUCEDÁNEOS DEL TABACO EXCEPTO CIGARRILLOS</field>
+            <field name="description">3023</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">150</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3031" model="account.tax">
+            <field name="name">ICE-BEBIDAS ALCOHÓLICAS</field>
+            <field name="description">3031</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">75</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3043" model="account.tax">
+            <field name="name">ICE-CERVEZA ARTESANAL</field>
+            <field name="description">3043</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">75</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3054" model="account.tax">
+            <field name="name">ICE BEBIDAS GASEOSAS CON BAJO CONTENIDO DE AZUCAR</field>
+            <field name="description">3054</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">10</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3072" model="account.tax">
+            <field name="name">ICE-CAMIONETAS Y FURGONES CUYO PVP SEA HASTA DE 30000 USD</field>
+            <field name="description">3072</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">5</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3073" model="account.tax">
+            <field name="name">ICE-VEHÍCULOS MOTORIZADOS CUYO PVP SEA HASTA DE 20000 USD</field>
+            <field name="description">3073</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">5</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3074" model="account.tax">
+            <field name="name">ICE-VEHÍCULOS MOTORIZADOS EXCEPTO CAMIONETAS Y FURGONETAS ENTRE 20000 Y 30000</field>
+            <field name="description">3074</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">10</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3075" model="account.tax">
+            <field name="name">ICE-VEHÍCULOS MOTORIZADOS PVP ENTRE 30000 Y 40000</field>
+            <field name="description">3075</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">15</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3077" model="account.tax">
+            <field name="name">ICE-VEHÍCULOS MOTORIZADOS CUYO PVP SUPERIOR USD 40.000 HASTA 50.000</field>
+            <field name="description">3077</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">20</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3078" model="account.tax">
+            <field name="name">ICE-VEHÍCULOS MOTORIZADOS CUYO PVP SUPERIOR USD 50.000 HASTA 60.000</field>
+            <field name="description">3078</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">25</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3079" model="account.tax">
+            <field name="name">ICE-VEHÍCULOS MOTORIZADOS CUYO PVP SUPERIOR USD 60.000 HASTA 70.000</field>
+            <field name="description">3079</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">30</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3080" model="account.tax">
+            <field name="name">ICE-VEHÍCULOS MOTORIZADOS CUYO PVP SUPERIOR USD 70.000</field>
+            <field name="description">3080</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">35</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3081" model="account.tax">
+            <field name="name">ICE-AVIONES,TRICARES,YATES,BARCOS DE REC</field>
+            <field name="description">3081</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">15</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3092" model="account.tax">
+            <field name="name">ICE-SERVICIOS DE TELEVISIÓN PREPAGADA</field>
+            <field name="description">3092</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">15</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3093" model="account.tax">
+            <field name="name">ICE-SERVICIOS TELEFONIA</field>
+            <field name="description">3093</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">15</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3101" model="account.tax">
+            <field name="name">ICE BEBIDAS ENERGIZANTES</field>
+            <field name="description">3101</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">10</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3171" model="account.tax">
+            <field name="name">ICE VEHÍCULOS HÍBRIDOS O ELÉCTRICOS CUYO PVP SEA DE HASTA USD. 35.000</field>
+            <field name="description">3171</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">2</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3172" model="account.tax">
+            <field name="name">ICE VEHIC HÍBRIDOS O ELÉCTRICOS CUYO PVP MAYOR A USD. 35.000 HASTA USD 40.000</field>
+            <field name="description">3172</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">8</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3173" model="account.tax">
+            <field name="name">ICE VEHIC HÍBRIDOS O ELÉCTRICOS CUYO PVP MAYOR A USD. 40.000  HASTA USD 50.000</field>
+            <field name="description">3173</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">14</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3174" model="account.tax">
+            <field name="name">ICE VEHIC HÍBRIDOS O ELÉCTRICOS CUYO PVP MAYOR A USD. 50.000  HASTA USD 60.000</field>
+            <field name="description">3174</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">20</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3175" model="account.tax">
+            <field name="name">ICE VEHIC HÍBRIDOS O ELÉCTRICOS CUYO PVP MAYOR A USD. 60.000  HASTA USD 70.000</field>
+            <field name="description">3175</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">26</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3176" model="account.tax">
+            <field name="name">ICE VEHIC HÍBRIDOS O ELÉCTRICOS CUYO PVP MAYOR A USD. 70.000</field>
+            <field name="description">3176</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">28</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3531" model="account.tax">
+            <field name="name">ICEBEBIDA ALCOHOLICA SENAE</field>
+            <field name="description">3531</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">75</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3541" model="account.tax">
+            <field name="name">ICE CERVEZA INDUSTRIAL</field>
+            <field name="description">3541</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">75</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3545" model="account.tax">
+            <field name="name">ICE CERVEZA ARTESANAL SENAE</field>
+            <field name="description">3545</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">75</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3553" model="account.tax">
+            <field name="name">ICE BEBIDAS GASEOSAS CON BAJO CONTENIDO DE AZUCAR SENAE</field>
+            <field name="description">3553</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">10</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3601" model="account.tax">
+            <field name="name">ICE BEBIDAS ENERGIZANTES SENAE</field>
+            <field name="description">3601</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">10</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3610" model="account.tax">
+            <field name="name">ICE-PERFUMES Y AGUAS DE TOCADOR</field>
+            <field name="description">3610</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">20</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3620" model="account.tax">
+            <field name="name">ICE-VIDEOJUEGOS</field>
+            <field name="description">3620</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">35</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3630" model="account.tax">
+            <field name="name">ICE-ARMAS DE FUEGO, ARMAS DEPORTIVAS Y MUNICIONES</field>
+            <field name="description">3630</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">300</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3640" model="account.tax">
+            <field name="name">ICE-FOCOS INCANDESCENTES</field>
+            <field name="description">3640</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">100</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3660" model="account.tax">
+            <field name="name">ICE-CUOTAS MEMBRESÍAS AFILIACIONES ACCIONES</field>
+            <field name="description">3660</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">35</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3670" model="account.tax">
+            <field name="name">ICE COCINAS, CALEFONES Y OTROS DE USO DOMÉSTICO A GAS SRI</field>
+            <field name="description">3670</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">100</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+        <record id="tax_ice3770" model="account.tax">
+            <field name="name">ICE COCINAS, CALEFONES Y OTROS DE USO DOMÉSTICO A GAS SENAE</field>
+            <field name="description">3770</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="percent_report">100</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if tax.percent_report:
+    coeff = tax.percent_report
+    result = base*float(coeff)/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

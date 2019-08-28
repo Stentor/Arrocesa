@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+        <record id="email_template_report_payslip" model="mail.template">
+            <field name="name">Reporte de Nomina</field>
+            <field name="model_id" ref="model_hr_payslip"/>
+            <field name="subject">Se realizo el pago de ${object.payslip_run_id.name}</field>
+            <field name="body_html"><![CDATA[
+            Estimado(a) ${object.employee_id.name},<br><br>
+
+            Se realizo el correspondiente pago de ${object.payslip_run_id.name}, adicional se adjunta 
+            el rol correspondiente.
+            ]]>
+            </field>
+            <field name="email_from">${user.partner_id.email | safe}</field>
+            <field name="email_to">${object.employee_id.work_email}</field>
+            <field name="report_template" ref="hr_payroll.action_report_payslip"/>
+            <field name="auto_delete">True</field>
+        </record>
+    </data>
+</odoo>

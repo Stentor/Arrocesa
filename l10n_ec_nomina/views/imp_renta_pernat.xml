@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <record id="view_imp_renta_pernat" model="ir.ui.view">
+            <field name="name">view_imp_renta_pernat</field>
+            <field name="model">hr.impuesto.renta</field>
+	    <field name="arch" type="xml">
+            <form action="">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code" />
+                            <field name="frac_bas"/>
+                            <field name="exceso_hasta" />
+                            <field name="imp_frac_bas"/>
+                            <field name="porc_imp_frac_exc"/>
+                        </group>
+                        
+                    </group>
+                </sheet>
+            </form>
+	    </field>
+	    </record>
+        
+        <record id="view_imp_renta_pernat_tree" model="ir.ui.view">
+            <field name="name">view_imp_renta_pernat</field>
+            <field name="model">hr.impuesto.renta</field>
+	    <field name="arch" type="xml">
+            <tree>
+               
+                            <field name="code" />
+                            <field name="frac_bas"/>
+                            <field name="exceso_hasta" />
+                            <field name="imp_frac_bas"/>
+                            <field name="porc_imp_frac_exc"/>
+                       
+            </tree>
+	    </field>
+	    </record>
+        
+    </data>
+</odoo>

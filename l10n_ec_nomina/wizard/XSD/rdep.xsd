@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:simpleType name="anioTyp">
+        <xs:annotation>
+            <xs:documentation>Anio de presentacion del anexo.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="2004" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="numRucTyp">
+        <xs:annotation>
+            <xs:documentation>El RUC de la sociedad o persona que informa; esto
+                es, quien
+                realizo la retencion (empleador)
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+            <xs:minLength value="13" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="idRetTyp">
+        <xs:annotation>
+            <xs:documentation>El identificador de la persona a la que se le
+                efectua la
+                retencion. (Cedula de Identidad o Pasaporte) Relacion de depencia.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+            <xs:minLength value="3" />
+            <xs:pattern value="[0-9a-zA-Z]{3,13}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipIdRetTyp">
+        <xs:annotation>
+            <xs:documentation>Tipo de documento de identificacion del Retenido:
+                Es eltipo de identificacion del retenido otros conceptos. (Cedula de
+                identidad , Pasaporte, Extranjeros)
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="C" />
+            <xs:enumeration value="P" />
+            <xs:enumeration value="E" />
+        </xs:restriction>
+    </xs:simpleType>
+        <xs:simpleType name="tipIdDiscapTyp">
+        <xs:annotation>
+            <xs:documentation>Tipo de documento de identificacion de la persona discapacitada
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="C" />
+            <xs:enumeration value="P" />
+            <xs:enumeration value="E" />
+            <xs:enumeration value="N" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="apeNombreTyp">
+        <xs:annotation>
+            <xs:documentation>Apellidos y nombres del empleado
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z\s]{2,100}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="sisSalNetTyp">
+        <xs:annotation>
+            <xs:documentation>Es el campo mediante el cual se identificara si la
+                manera de realizar la retencion es en base al sistema de salario neto o no. TABLA C.
+                Los valores posibles son:1.- Sin Sistema de Salario Neto 2.- Con sistema de
+                Salario neto
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="2" />
+        </xs:restriction>
+    </xs:simpleType>    <xs:simpleType name="numeroPositivoTyp">
+        <xs:annotation>
+            <xs:documentation>
+                Representa un valor positivo
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"/>
+            <xs:totalDigits value="13"/>
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="9999999999.99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="numeroPositivoGrandeTyp">
+        <xs:annotation>
+            <xs:documentation>
+                Representa un valor positivo grande
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2" />
+            <xs:totalDigits value="15" />
+            <xs:minInclusive value="0" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="porcentajePositivoTyp">
+        <xs:annotation>
+            <xs:documentation>
+                Representa un valor de porcentaje positivo
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="estabTyp">
+        <xs:annotation>
+            <xs:documentation>Codigo de establecimiento. Tres digitos mayor a
+                partir de 001.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="paisResidenciaTyp">
+        <xs:annotation>
+            <xs:documentation>Pais de residencia del trabajador.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="resciTyp">
+        <xs:annotation>
+            <xs:documentation>Codigo de residencia del trabajador. </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="2" />
+            <xs:enumeration value="00" />
+            <xs:enumeration value="01" />
+            <xs:enumeration value="02" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="convImposTyp">
+        <xs:annotation>
+            <xs:documentation>Aplica convenio para evitar doble imposicion en el pago </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="2" />
+            <xs:enumeration value="SI" />
+            <xs:enumeration value="NO" />
+            <xs:enumeration value="NA" />
+            <xs:enumeration value="SD" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="discapTyp">
+        <xs:annotation>
+            <xs:documentation>01 Trabajador con discapacidad,
+                02 Trabajador que actua en calidad de sustituto de una persona con
+                discapacidad,
+                03 Trabajador tiene conyuge, pareja en union de hecho o hijo con
+                discapacidad y se encuentra bajo su cuidado y/o responsabilidad,
+                04 No Aplica.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="2" />
+            <xs:enumeration value="00" />
+            <xs:enumeration value="01" />
+            <xs:enumeration value="02" />
+            <xs:enumeration value="03" />
+            <xs:enumeration value="04" />
+        </xs:restriction>
+    </xs:simpleType>    <xs:complexType name="rdep">
+        <xs:annotation>
+            <xs:documentation>Informacion de Renta en relacion de
+                dependencia.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="numRuc" type="numRucTyp" />
+            <xs:element name="anio" type="anioTyp" />
+            <xs:element name="retRelDep" type="retRelDepTyp"
+                minOccurs="0">
+                <xs:unique name="RegistroRelacionDependenciaDuplicado">
+                    <xs:selector xpath="./datRetRelDep/empleado" />
+                    <xs:field xpath="idRet" />
+                    <xs:field xpath="tipIdRet" />
+                </xs:unique>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="retRelDepTyp">
+        <xs:annotation>
+            <xs:documentation>Retenciones en relacion de
+                dependencia
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="datRetRelDep" type="datRetRelDepTyp"
+                minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="empTyp">
+        <xs:annotation>
+            <xs:documentation>Empleado</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="datosEmpleado" type="datEmpTyp"
+                minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="datRetRelDepTyp">
+        <xs:annotation>
+            <xs:documentation>Datos de las Retenciones en relacion de
+                dependencia
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- DATOS EMPLEADO -->
+            <xs:element name="empleado" type="datEmpTyp" minOccurs="1"
+                maxOccurs="1" />
+            <!-- DATOS EMPLEADO -->
+
+            <!-- INGRESOS -->
+            <xs:element name="suelSal" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="sobSuelComRemu" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="partUtil" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="intGrabGen" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="impRentEmpl" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="decimTer" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="decimCuar" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="fondoReserva" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="salarioDigno" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="otrosIngRenGrav" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="ingGravConEsteEmpl"
+                type="numeroPositivoTyp" minOccurs="1" maxOccurs="1" />
+            <!-- INGRESOS --> <!-- GASTOS -->
+            <xs:element name="sisSalNet" type="sisSalNetTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="apoPerIess" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="aporPerIessConOtrosEmpls"
+                type="numeroPositivoTyp" minOccurs="1" maxOccurs="1" />
+
+            <xs:element name="deducVivienda" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="deducSalud" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="deducEduca" type="numeroPositivoTyp"
+                minOccurs="0" maxOccurs="1" />
+            <xs:element name="deducEducartcult" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="deducAliement" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="deducVestim" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="deducArtycult" type="numeroPositivoTyp"
+                minOccurs="0" maxOccurs="1" />            
+            <xs:element name="exoDiscap" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="exoTerEd" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <!-- GASTOS -->
+
+            <!-- RESUMEN IMPOSITIVO -->
+            <xs:element name="basImp" type="numeroPositivoGrandeTyp"
+                minOccurs="1" maxOccurs="1" />
+            <xs:element name="impRentCaus"
+                type="numeroPositivoGrandeTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="valRetAsuOtrosEmpls"
+                type="numeroPositivoTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="valImpAsuEsteEmpl"
+                type="numeroPositivoTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="valRet" type="numeroPositivoTyp"
+                minOccurs="1" maxOccurs="1" />
+            <!-- RESUMEN IMPOSITIVO -->
+
+            <xs:element name="contribucion" type="contribucionType"
+                maxOccurs="1" minOccurs="0"></xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="datEmpTyp">
+        <xs:annotation>
+            <xs:documentation>Datos del empleado</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="benGalpg" type="benGalpgType" maxOccurs="1" minOccurs="1"></xs:element>
+            <xs:element name="enfcatastro" type="enfcatastroType" maxOccurs="1" minOccurs="1"></xs:element>
+            <xs:element name="tipIdRet">
+                <xs:simpleType>
+                    <xs:restriction base="tipIdRetTyp" />
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="idRet">
+                <xs:simpleType>
+                    <xs:restriction base="idRetTyp" />
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="apellidoTrab" type="apeNombreTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="nombreTrab" type="apeNombreTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="estab" type="estabTyp" minOccurs="1"  maxOccurs="1" />
+            <xs:element name="residenciaTrab" type="resciTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="paisResidencia" type="paisResidenciaTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="aplicaConvenio" type="convImposTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="tipoTrabajDiscap" type="discapTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="porcentajeDiscap" type="porcentajePositivoTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="tipIdDiscap" type="tipIdDiscapTyp" minOccurs="1" maxOccurs="1" />
+            <xs:element name="idDiscap" type="idRetTyp" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="rdep" type="rdep">
+        <xs:annotation>
+            <xs:documentation>Anexos Renta</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="contribucionType">
+        <xs:sequence>
+            <xs:element name="remunContrEstEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="remunContrOtrEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="exonRemunContr" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="totRemunContr" type="numeroPositivoGrandeTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="numMesTrabContrEstEmpl" type="numeroMesesContribucionType"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="numMesTrabContrOtrEmpl" type="numeroMesesContribucionType"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="totNumMesTrabContr" type="numeroMesesContribucionType"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="remunMenPromContr" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="numMesContrGenEstEmpl" type="numeroMesesContribucionType"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="numMesContrGenOtrEmpl" type="numeroMesesContribucionType"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="totNumMesContrGen" type="numeroMesesContribucionType"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="totContrGen" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="credTribDonContrOtrEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="credTribDonContrEstEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="credTribDonContrNOEstEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="totCredTribDonContr" type="numeroPositivoGrandeTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="contrPag" type="numeroPositivoGrandeTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="contrAsuOtrEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="contrRetOtrEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="contrAsuEstEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+            <xs:element name="contrRetEstEmpl" type="numeroPositivoTyp"
+                maxOccurs="1" minOccurs="1">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="numeroMesesContribucionType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="8"></xs:maxInclusive>
+            <xs:pattern value="[0-8]{1}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="benGalpgType">
+        <xs:restriction base="xs:string">
+            <xs:length value="2"></xs:length>
+            <xs:enumeration value="SI"></xs:enumeration>
+            <xs:enumeration value="NO"></xs:enumeration>
+            <xs:whiteSpace value="collapse"></xs:whiteSpace>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="enfcatastroType">
+        <xs:restriction base="xs:string">
+            <xs:length value="2"></xs:length>
+            <xs:enumeration value="SI"></xs:enumeration>
+            <xs:enumeration value="NO"></xs:enumeration>
+            <xs:whiteSpace value="collapse"></xs:whiteSpace>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>

@@ -1,0 +1,130 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="guia_remision_list">
+      <field name="name">Guias de remision</field>
+      <field name="model">account.guia.remision</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="guia_remision_form">
+      <field name="name">Guia de remision</field>
+      <field name="model">account.guia.remision</field>
+      <field name="arch" type="xml">
+        <form>
+          <header>
+            <button name="validate" type="object" string="Validar" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+            <button name="action_generate_document" type="object" string="Documento Electronico" attrs="{'invisible': [('state', 'in', ['draft', 'sent', 'cancel'])]}"/>
+            <button name="cancel" type="object" string="Anular" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+            <field name="state" widget="statusbar"/>
+          </header>
+          <sheet>
+            <h1>
+                <field name="name" readonly="1"/>
+            </h1>
+            <group>
+              <group>
+                <field name="transporter_id" required="1"/>
+                <field name="placa"  required="1"/>
+                <field name="company_id" invisible="1" />
+
+              </group>
+              <group>
+              
+                <field name="auth_id" domain="[('in_type','=','interno'),('type_id.code', '=', '06')]" context="{'default_in_type': 'interno', 'default_type_code': '06'}" />
+                <field name="date_start" required="1"/>
+                <field name="date_end" required="1"/>
+              </group>
+            </group>
+            <notebook>
+              <page string="Detalles" name="details">
+                <field name="line_ids">
+                  <tree editable="bottom">
+                    <field name="picking_id"/>
+                    <field name="invoice_id"/>
+                    <field name="partner_id"/>
+                    <field name="motivo"/>
+                    <field name="dau"/>
+                    <field name="route_id"/>
+                  </tree>
+                </field>
+              </page>
+              <page string="SRI" name="sri">
+              <group>
+                <group>
+                  <field name="clave_acceso"/>
+                  <field name="numero_autorizacion"/>
+                  <field name="fecha_autorizacion"/>
+                </group>
+                <group>
+                  <field name="estado_autorizacion"/>
+                  <field name="ambiente"/>
+                  <field name="autorizado_sri"/>
+                </group>
+              </group>
+              </page>
+            </notebook>
+          </sheet>
+         
+            <div class="oe_chatter">
+                <field name="message_follower_ids" widget="mail_followers"/>
+                <field name="activity_ids" widget="mail_activity"/>
+                <field name="message_ids" widget="mail_thread"/>
+            </div>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_res_partner_form" model="ir.ui.view">
+            <field name="name">remision.contact</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='category_id']" position="after">
+                    <field name="is_transporter"/>
+                    <field name="cont_especial"/>
+                    <field name="rise"/>
+                </xpath>
+                
+            </field>
+        </record>
+
+        <record id="view_invoice_form" model="ir.ui.view">
+            <field name="name">account.invoice.reference.cust.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Guias de remision">
+                      <field name="guia_ids">
+                        <tree>
+                          <field name="name"/>
+                        </tree>
+                      </field>
+                    </page>
+                    
+                </xpath>
+            </field>
+        </record>
+    
+    <record model="ir.actions.act_window" id="l10n_ec_remision.action_window">
+      <field name="name">Guia de remision</field>
+      <field name="res_model">account.guia.remision</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    
+    <menuitem name="Guias de remision" id="l10n_ec_remision.menu_1_list" parent="account.menu_finance_receivables"
+              action="l10n_ec_remision.action_window"/>
+
+    <menuitem name="Guias de remision" id="l10n_ec_remision.menu_2_list" parent="stock.menu_stock_root"
+              action="l10n_ec_remision.action_window"/>
+    
+  </data>
+</odoo>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<iva>
+	<TipoIDInformante>{{ TipoIDInformante}}</TipoIDInformante>
+	<IdInformante>{{ IdInformante }}</IdInformante>
+	<razonSocial>{{ razonSocial }}</razonSocial>
+	<Anio>{{ Anio }}</Anio>
+	<Mes>{{ Mes }}</Mes>
+	<numEstabRuc>{{ numEstabRuc }}</numEstabRuc>
+	<totalVentas>{{ totalVentas }}</totalVentas>
+	<codigoOperativo>{{ codigoOperativo }}</codigoOperativo>
+	<compras>
+	{% for compra in compras %}
+		<detalleCompras>
+			<codSustento>{{ compra.codSustento }}</codSustento>
+			<tpIdProv>{{ compra.tpIdProv }}</tpIdProv>
+			<idProv>{{ compra.idProv }}</idProv>
+			<tipoComprobante>{{ compra.tipoComprobante }}</tipoComprobante>
+			<parteRel>{{ compra.parteRel }}</parteRel>
+			<fechaRegistro>{{ compra.fechaRegistro }}</fechaRegistro>
+			<establecimiento>{{ compra.establecimiento }}</establecimiento>
+			<puntoEmision>{{ compra.puntoEmision }}</puntoEmision>
+			<secuencial>{{ compra.secuencial }}</secuencial>
+			<fechaEmision>{{ compra.fechaEmision }}</fechaEmision>
+			<autorizacion>{{ compra.autorizacion }}</autorizacion>
+			<baseNoGraIva>{{ compra.baseNoGraIva }}</baseNoGraIva>
+			<baseImponible>{{ compra.baseImponible }}</baseImponible>
+			<baseImpGrav>{{ compra.baseImpGrav }}</baseImpGrav>
+			<baseImpExe>{{ compra.baseImpExe }}</baseImpExe>
+			<montoIce>{{ compra.montoIce }}</montoIce>
+			<montoIva>{{ compra.montoIva}}</montoIva>
+			<valRetBien10>{{ compra.valRetBien10 }}</valRetBien10>
+			<valRetServ20>{{ compra.valRetServ20 }}</valRetServ20>
+			<valorRetBienes>{{ compra.valorRetBienes }}</valorRetBienes>
+			<valRetServ50>{{ compra.valRetServ50 }}</valRetServ50>
+			<valorRetServicios>{{ compra.valorRetServicios }}</valorRetServicios>
+			<valRetServ100>{{ compra.valRetServ100 }}</valRetServ100>
+			<totbasesImpReemb>{{ compra.totbasesImpReemb }}</totbasesImpReemb>
+			<pagoExterior>
+				<pagoLocExt>{{ compra.pagoExterior.pagoLocExt }}</pagoLocExt>
+				<tipoRegi>{{ compra.pagoExterior.tipoRegi }}</tipoRegi>
+				{% if compra.pagoExterior.tipoRegi == '01' %}
+					<paisEfecPagoGen>{{ compra.pagoExterior.pais.code}}</paisEfecPagoGen>
+				{% endif %}
+				{% if compra.pagoExterior.tipoRegi == '02' %}
+					<paisEfecPagoParFis>{{ compra.pagoExterior.pais.code }}</paisEfecPagoGen>
+				{% endif %}
+				{% if compra.pagoExterior.tipoRegi == '03' %}
+					<paisEfecPago>{{ compra.pagoExterior.pais.code }}</paisEfecPagoGen>
+					<denopago>{{ compra.pagoExterior.denopago }}</denopago>
+					<aplicConvDobTrib>{{ compra.pagoExterior.aplicConvDobTrib }}</aplicConvDobTrib>
+					<pagExtSujRetNorLeg>{{ compra.pagoExterior.pagExtSujRetNorLeg }}</pagExtSujRetNorLeg>
+					<pagoRegFis><{{ compra.pagoExterior.pago_reg_fis }}</pagoRegFis>
+				{% endif %}
+			</pagoExterior>
+			<formasDePago>
+				<formaPago>{{ compra.formaPago }}</formaPago>
+			</formasDePago>
+			{% if compra.detalleAir %}
+			<air>
+				{% for air in compra.detalleAir %}
+				<detalleAir>
+					<codRetAir>{{ air.codRetAir }}</codRetAir>
+					<baseImpAir>{{ air.baseImpAir }}</baseImpAir>
+					<porcentajeAir>{{ air.porcentajeAir }}</porcentajeAir>
+					<valRetAir>{{ air,valRetAir }}</valRetAir>
+				</detalleAir>
+				{% endfor %}
+			</air>
+			{% endif %}
+			<estabRetencion1>{{ compra.estabRetencion1 }}</estabRetencion1>
+			<ptoEmiRetencion1>{{ compra.ptoEmiRetencion1 }}</ptoEmiRetencion1>
+			<secRetencion1>{{ compra.secRetencion1 }}</secRetencion1>
+			<autRetencion1>{{ compra.autRetencion1 }}</autRetencion1>
+			<fechaEmiRet1>{{ compra.fechaEmiRet1 }}</fechaEmiRet1>
+			{% if compra.reembolsos %}
+			<reembolsos>
+				{% for reembolso in compra.reembolsos %}
+				<reembolso>
+					<tipoComprobanteReemb>{{ reembolso.tipoComprobanteReemb }}</tipoComprobanteReemb>
+					<tpIdProvReemb>{{ reembolso.tpIdProvReemb }}</tpIdProvReemb>
+					<idProvReemb>{{ reembolso.idProvReemb }}</idProvReemb>
+					<establecimientoReemb>{{ reembolso.establecimientoReemb }}</establecimientoReemb>
+					<puntoEmisionReemb>{{ reembolso.puntoEmisionReemb }}</puntoEmisionReemb>
+					<secuencialReemb>{{ reembolso.secuencialReemb }}</secuencialReemb>
+					<fechaEmisionReemb>{{ reembolso.fechaEmisionReemb }}</fechaEmisionReemb>
+					<autorizacionReemb>{{ reembolso.autorizacionReemb }}</autorizacionReemb>
+					<baseImponibleReemb>{{ reembolso.baseImponibleReemb }}</baseImponibleReemb>
+					<baseImpGravReemb>{{ reembolso.baseImpGravReemb }}</baseImpGravReemb>
+					<baseNoGraIvaReemb>{{ reembolso.baseNoGraIvaReemb }}</baseNoGraIvaReemb>
+					<baseImpExeReemb>{{ reembolso.baseImpExeReemb }}</baseImpExeReemb>
+					<montoIceRemb>{{ reembolso.montoIceRemb }}</montoIceRemb>
+					<montoIvaRemb>{{ reembolso.montoIvaRemb }}</montoIvaRemb>
+				</reembolso>
+				{% endfor %}
+			</reembolsos>
+			{% endif %}
+		</detalleCompras>
+		{% endfor %}
+	</compras>
+	<ventas>
+	{% for venta in ventas %}
+		<detalleVentas>
+			<tpIdCliente>{{venta.tpIdCliente}}</tpIdCliente>
+			<idCliente>{{venta.idCliente}}</idCliente>
+			<parteRelVtas>{{venta.parteRelVtas}}</parteRelVtas>
+			<tipoComprobante>{{venta.tipoComprobante}}</tipoComprobante>
+			<tipoEmision>{{venta.tipoEmision}}</tipoEmision>
+			<numeroComprobantes>{{venta.numeroComprobantes}}</numeroComprobantes>
+			<baseNoGraIva>{{venta.baseNoGraIva}}</baseNoGraIva>
+			<baseImponible>{{venta.baseImponible}}</baseImponible>
+			<baseImpGrav>{{venta.baseImpGrav}}</baseImpGrav>
+			<montoIva>{{venta.montoIva}}</montoIva>
+			<montoIce>{{venta.montoIce}}</montoIce>
+			<valorRetIva>{{venta.valorRetIva}}</valorRetIva>
+			<valorRetRenta>{{venta.valorRetRenta}}</valorRetRenta>
+			<formasDePago>
+				<formaPago>{{venta.formasDePago.formaPago}}</formaPago>
+			</formasDePago>
+		</detalleVentas>
+		{% endfor %}
+	</ventas>
+	<ventasEstablecimiento>
+		<ventaEst>
+			<codEstab>{{codEstab}}</codEstab>
+			<ventasEstab>{{ventasEstab}}</ventasEstab>
+			<ivaComp>{{ivaComp}}</ivaComp>
+		</ventaEst>
+	</ventasEstablecimiento>
+	<anulados>
+	{% for anulado in anulados %}
+		<detalleAnulados>
+			<tipoComprobante>{{anulado.tipoComprobante}}</tipoComprobante>
+			<establecimiento>{{anulado.establecimiento}}</establecimiento>
+			<puntoEmision>{{anulado.ptoEmision}}</puntoEmision>
+			<secuencialInicio>{{anulado.secuencialInicio}}</secuencialInicio>
+			<secuencialFin>{{anulado.secuencialFin}}</secuencialFin>
+			<autorizacion>{{anulado.autorizacion}}</autorizacion>
+		</detalleAnulados>
+		{% endfor %}
+	</anulados>
+</iva>

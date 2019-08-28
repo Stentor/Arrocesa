@@ -1,0 +1,13 @@
+id,name,parent_id/id
+product.product_category_2,Interno,product.product_category_1
+product.product_category_3,Servicios,product.product_category_1
+product.product_category_4,Software,product.product_category_1
+product.product_category_5,Físico,product.product_category_1
+product.product_category_consumable,Consumible,product.product_category_all
+product.product_category_6,Envejecido,product.product_category_1
+product.product_category_7,Natural ,product.product_category_1
+product.product_category_8,Integral,product.product_category_1
+product.product_category_9,Subproductos,product.product_category_1
+product.product_category_10,Insumos,product.product_category_1
+product.product_category_11,Materia Prima,product.product_category_1
+product.product_category_12,Precocido,product.product_category_1

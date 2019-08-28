@@ -1,0 +1,3 @@
+id,name,category_id/id,uom_type,measure_type
+uom.product_uom_saca,saca,uom.product_uom_categ_kgm,bigger,weight
+uom.product_uom_quital,quintal,uom.product_uom_categ_kgm,bigger,weight

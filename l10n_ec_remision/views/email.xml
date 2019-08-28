@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="email_template_eremision" model="mail.template">
+      <field name="name">Send eInvoice</field>
+      <field name="email_from">${('noresponder@sample.com')|safe}</field>
+      <field name="subject">GUIA DE REMISION ${object.company_id.name}</field>
+      <field name="partner_to">${object.transporter_id.id}</field>
+      <field name="model_id" ref="l10n_ec_remision.model_account_guia_remision"/>
+      <field name="auto_delete" eval="True"/>
+      <field name="report_template" ref="account_remisiones"/>
+      <field name="report_name">GUIA DE REMISION_${(object.name or '').replace('/','_')}</field>
+      <field name="lang">${object.transporter_id.lang}</field>
+      <field name="body_html"><![CDATA[
+      Estimad@ ${ object.transporter_id.name },
+
+      adjunto encontrará su guia de remision electrónica número ${ object.name }.
+
+      ]]>
+      </field>
+    </record>
+    </data>
+</odoo>

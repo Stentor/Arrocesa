@@ -1,0 +1,12 @@
+<odoo>
+    <data noupdate="1">
+        <record id="rule_cat_ING" model="hr.salary.rule.category">
+            <field name="code">ING</field>
+            <field name="name">Ingresos</field>
+        </record>
+        <record id="rule_cat_EGRE" model="hr.salary.rule.category">
+            <field name="code">EGRE</field>
+            <field name="name">Egresos</field>
+        </record>
+    </data>
+</odoo>

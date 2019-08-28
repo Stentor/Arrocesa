@@ -1,0 +1,1043 @@
+id,canton_id/id,code,name
+ote_parroquia_010150,ote_canton_0101,50,CUENCA
+ote_parroquia_010151,ote_canton_0101,51,BAÑOS
+ote_parroquia_010152,ote_canton_0101,52,CUMBE
+ote_parroquia_010153,ote_canton_0101,53,CHAUCHA
+ote_parroquia_010154,ote_canton_0101,54,CHECA (JIDCAY)
+ote_parroquia_010155,ote_canton_0101,55,CHIQUINTAD
+ote_parroquia_010156,ote_canton_0101,56,LLACAO
+ote_parroquia_010157,ote_canton_0101,57,MOLLETURO
+ote_parroquia_010158,ote_canton_0101,58,NULTI
+ote_parroquia_010159,ote_canton_0101,59,OCTAVIO CORDERO PALACIOS (STA. ROSA)
+ote_parroquia_010160,ote_canton_0101,60,PACCHA
+ote_parroquia_010161,ote_canton_0101,61,QUINGEO
+ote_parroquia_010162,ote_canton_0101,62,RICAURTE
+ote_parroquia_010163,ote_canton_0101,63,SAN JOAQUIN
+ote_parroquia_010164,ote_canton_0101,64,SANTA ANA
+ote_parroquia_010165,ote_canton_0101,65,SAYAUSI
+ote_parroquia_010166,ote_canton_0101,66,SIDCAY
+ote_parroquia_010167,ote_canton_0101,67,SININCAY
+ote_parroquia_010168,ote_canton_0101,68,TARQUI
+ote_parroquia_010169,ote_canton_0101,69,TURI
+ote_parroquia_010170,ote_canton_0101,70,VALLE
+ote_parroquia_010171,ote_canton_0101,71,VICTORIA DEL PORTETE (IRQUIS)
+ote_parroquia_010250,ote_canton_0102,50,GIRON
+ote_parroquia_010251,ote_canton_0102,51,LA ASUNCION
+ote_parroquia_010252,ote_canton_0102,52,SAN GERARDO
+ote_parroquia_010350,ote_canton_0103,50,GUALACEO
+ote_parroquia_010352,ote_canton_0103,52,DANIEL CORDOVA TORAL (EL ORIENTE)
+ote_parroquia_010353,ote_canton_0103,53,JADAN
+ote_parroquia_010354,ote_canton_0103,54,MARIANO MORENO
+ote_parroquia_010356,ote_canton_0103,56,REMIGIO CRESPO TORAL (GULAG)
+ote_parroquia_010357,ote_canton_0103,57,SAN JUAN
+ote_parroquia_010358,ote_canton_0103,58,ZHIDMAD
+ote_parroquia_010359,ote_canton_0103,59,LUIS CORDERO VEGA
+ote_parroquia_010360,ote_canton_0103,60,SIMON BOLIVAR (CAB. EN GAÑANZOL)
+ote_parroquia_010450,ote_canton_0104,50,NABON
+ote_parroquia_010451,ote_canton_0104,51,COCHAPATA
+ote_parroquia_010452,ote_canton_0104,52,EL PROGRESO (CAB. EN ZHOTA)
+ote_parroquia_010453,ote_canton_0104,53,LAS NIEVES (CHAYA)
+ote_parroquia_010550,ote_canton_0105,50,PAUTE
+ote_parroquia_010552,ote_canton_0105,52,BULAN (JOSE VICTOR IZQUIERDO)
+ote_parroquia_010553,ote_canton_0105,53,CHICAN (GUILLERMO ORTEGA)
+ote_parroquia_010554,ote_canton_0105,54,EL CABO
+ote_parroquia_010556,ote_canton_0105,56,GUARAINAG
+ote_parroquia_010559,ote_canton_0105,59,SAN CRISTOBAL (CARLOS ORDOÑEZ LAZO)
+ote_parroquia_010561,ote_canton_0105,61,TOMEBAMBA
+ote_parroquia_010562,ote_canton_0105,62,DUG DUG
+ote_parroquia_010650,ote_canton_0106,50,PUCARA
+ote_parroquia_010652,ote_canton_0106,52,SAN RAFAEL DE SHARUG
+ote_parroquia_010750,ote_canton_0107,50,SAN FERNANDO
+ote_parroquia_010751,ote_canton_0107,51,CHUMBLIN
+ote_parroquia_010850,ote_canton_0108,50,SANTA ISABEL (CHAGUARURCO)
+ote_parroquia_010851,ote_canton_0108,51,ABDON CALDERON (LA UNION)
+ote_parroquia_010852,ote_canton_0108,52,EL CARMEN DE PIJILI
+ote_parroquia_010853,ote_canton_0108,53,ZHAGLLI (SHAGLLI )
+ote_parroquia_010854,ote_canton_0108,54,SAN SALVADOR DE CAÑARIBAMBA
+ote_parroquia_010950,ote_canton_0109,50,SIGSIG
+ote_parroquia_010951,ote_canton_0109,51,CUCHIL
+ote_parroquia_010952,ote_canton_0109,52,GIMA
+ote_parroquia_010953,ote_canton_0109,53,GUEL
+ote_parroquia_010954,ote_canton_0109,54,LUDO
+ote_parroquia_010955,ote_canton_0109,55,SAN BARTOLOME
+ote_parroquia_010956,ote_canton_0109,56,SAN JOSE DE RARANGA
+ote_parroquia_011050,ote_canton_0110,50,SAN FELIPE DE OÑA
+ote_parroquia_011051,ote_canton_0110,51,SUSUDEL
+ote_parroquia_011150,ote_canton_0111,50,CHORDELEG
+ote_parroquia_011151,ote_canton_0111,51,PRINCIPAL
+ote_parroquia_011152,ote_canton_0111,52,LA UNION
+ote_parroquia_011153,ote_canton_0111,53,LUIS GALARZA ORELLANA (CAB. EN DELEGSOL)
+ote_parroquia_011154,ote_canton_0111,54,SAN MARTIN DE PUZHIO
+ote_parroquia_011250,ote_canton_0112,50,EL PAN
+ote_parroquia_011253,ote_canton_0112,53,SAN VICENTE
+ote_parroquia_011350,ote_canton_0113,50,SEVILLA DE ORO
+ote_parroquia_011351,ote_canton_0113,51,AMALUZA
+ote_parroquia_011352,ote_canton_0113,52,PALMAS
+ote_parroquia_011450,ote_canton_0114,50,GUACHAPALA
+ote_parroquia_011550,ote_canton_0115,50,CAMILO PONCE ENRIQUEZ
+ote_parroquia_020150,ote_canton_0201,50,GUARANDA
+ote_parroquia_020151,ote_canton_0201,51,FACUNDO VELA
+ote_parroquia_020153,ote_canton_0201,53,JULIO E. MORENO (CATANAHUAN GRANDE)
+ote_parroquia_020155,ote_canton_0201,55,SALINAS
+ote_parroquia_020156,ote_canton_0201,56,SAN LORENZO
+ote_parroquia_020157,ote_canton_0201,57,SAN SIMON (YACOTO)
+ote_parroquia_020158,ote_canton_0201,58,SANTA FE (SANTA FE)
+ote_parroquia_020159,ote_canton_0201,59,SIMIATUG
+ote_parroquia_020160,ote_canton_0201,60,SAN LUIS DE PAMBIL
+ote_parroquia_020250,ote_canton_0202,50,CHILLANES
+ote_parroquia_020251,ote_canton_0202,51,SAN JOSE DEL TAMBO (TAMBOPAMBA)
+ote_parroquia_020350,ote_canton_0203,50,SAN JOSE DE CHIMBO
+ote_parroquia_020351,ote_canton_0203,51,ASUNCION (ASANCOTO)
+ote_parroquia_020353,ote_canton_0203,53,LA MAGDALENA (CHAPACOTO)
+ote_parroquia_020354,ote_canton_0203,54,SAN SEBASTIAN
+ote_parroquia_020355,ote_canton_0203,55,TELIMBELA
+ote_parroquia_020450,ote_canton_0204,50,ECHEANDIA
+ote_parroquia_020550,ote_canton_0205,50,SAN MIGUEL
+ote_parroquia_020551,ote_canton_0205,51,BALSAPAMBA
+ote_parroquia_020552,ote_canton_0205,52,BILOVAN
+ote_parroquia_020553,ote_canton_0205,53,REGULO DE MORA
+ote_parroquia_020554,ote_canton_0205,54,SAN PABLO (SAN PABLO DE ATENAS)
+ote_parroquia_020555,ote_canton_0205,55,SANTIAGO
+ote_parroquia_020556,ote_canton_0205,56,SAN VICENTE
+ote_parroquia_020650,ote_canton_0206,50,CALUMA
+ote_parroquia_020750,ote_canton_0207,50,LAS NAVES
+ote_parroquia_030150,ote_canton_0301,50,AZOGUES
+ote_parroquia_030151,ote_canton_0301,51,COJITAMBO
+ote_parroquia_030153,ote_canton_0301,53,GUAPAN
+ote_parroquia_030154,ote_canton_0301,54,JAVIER LOYOLA (CHUQUIPATA)
+ote_parroquia_030155,ote_canton_0301,55,LUIS CORDERO
+ote_parroquia_030156,ote_canton_0301,56,PINDILIG
+ote_parroquia_030157,ote_canton_0301,57,RIVERA
+ote_parroquia_030158,ote_canton_0301,58,SAN MIGUEL
+ote_parroquia_030160,ote_canton_0301,60,TADAY
+ote_parroquia_030250,ote_canton_0302,50,BIBLIAN
+ote_parroquia_030251,ote_canton_0302,51,NAZON (CAB. EN PAMPA DE DOMINGUEZ)
+ote_parroquia_030252,ote_canton_0302,52,SAN FRANCISCO DE SAGEO
+ote_parroquia_030253,ote_canton_0302,53,TURUPAMBA
+ote_parroquia_030254,ote_canton_0302,54,JERUSALEN
+ote_parroquia_030350,ote_canton_0303,50,CAÑAR
+ote_parroquia_030351,ote_canton_0303,51,CHONTAMARCA
+ote_parroquia_030352,ote_canton_0303,52,CHOROCOPTE
+ote_parroquia_030353,ote_canton_0303,53,GENERAL MORALES (SOCARTE)
+ote_parroquia_030354,ote_canton_0303,54,GUALLETURO
+ote_parroquia_030355,ote_canton_0303,55,HONORATO VASQUEZ (TAMBO VIEJO)
+ote_parroquia_030356,ote_canton_0303,56,INGAPIRCA
+ote_parroquia_030357,ote_canton_0303,57,JUNCAL
+ote_parroquia_030358,ote_canton_0303,58,SAN ANTONIO
+ote_parroquia_030361,ote_canton_0303,61,ZHUD
+ote_parroquia_030362,ote_canton_0303,62,VENTURA
+ote_parroquia_030363,ote_canton_0303,63,DUCUR
+ote_parroquia_030450,ote_canton_0304,50,LA TRONCAL
+ote_parroquia_030451,ote_canton_0304,51,MANUEL J. CALLE
+ote_parroquia_030452,ote_canton_0304,52,PANCHO NEGRO
+ote_parroquia_030550,ote_canton_0305,50,EL TAMBO
+ote_parroquia_030650,ote_canton_0306,50,DELEG
+ote_parroquia_030651,ote_canton_0306,51,SOLANO
+ote_parroquia_030750,ote_canton_0307,50,SUSCAL
+ote_parroquia_040150,ote_canton_0401,50,TULCAN
+ote_parroquia_040151,ote_canton_0401,51,EL CARMELO (EL PUN)
+ote_parroquia_040153,ote_canton_0401,53,JULIO ANDRADE (OREJUELA)
+ote_parroquia_040154,ote_canton_0401,54,MALDONADO
+ote_parroquia_040155,ote_canton_0401,55,PIOTER
+ote_parroquia_040156,ote_canton_0401,56,TOBAR DONOSO (LA BOCANA DE CAMUMBI)
+ote_parroquia_040157,ote_canton_0401,57,TUFIÑO
+ote_parroquia_040158,ote_canton_0401,58,URBINA (TAYA)
+ote_parroquia_040159,ote_canton_0401,59,EL CHICAL
+ote_parroquia_040161,ote_canton_0401,61,SANTA MARTHA DE CUBA
+ote_parroquia_040250,ote_canton_0402,50,BOLIVAR
+ote_parroquia_040251,ote_canton_0402,51,GARCIA MORENO
+ote_parroquia_040252,ote_canton_0402,52,LOS ANDES
+ote_parroquia_040253,ote_canton_0402,53,MONTE OLIVO
+ote_parroquia_040254,ote_canton_0402,54,SAN VICENTE DE PUSIR
+ote_parroquia_040255,ote_canton_0402,55,SAN RAFAEL
+ote_parroquia_040350,ote_canton_0403,50,EL ANGEL
+ote_parroquia_040351,ote_canton_0403,51,EL GOALTAL
+ote_parroquia_040352,ote_canton_0403,52,LA LIBERTAD (ALIZO)
+ote_parroquia_040353,ote_canton_0403,53,SAN ISIDRO
+ote_parroquia_040450,ote_canton_0404,50,MIRA (CHONTAHUASI)
+ote_parroquia_040451,ote_canton_0404,51,CONCEPCION
+ote_parroquia_040452,ote_canton_0404,52,JIJON Y CAAMAÑO (CAB. EN RIO BLANCO)
+ote_parroquia_040453,ote_canton_0404,53,JUAN MONTALVO (SAN IGNACIO DE QUIL)
+ote_parroquia_040550,ote_canton_0405,50,SAN GABRIEL
+ote_parroquia_040551,ote_canton_0405,51,CRISTOBAL COLON
+ote_parroquia_040552,ote_canton_0405,52,CHITAN DE NAVARRETE
+ote_parroquia_040553,ote_canton_0405,53,FERNANDEZ SALVADOR
+ote_parroquia_040554,ote_canton_0405,54,LA PAZ
+ote_parroquia_040555,ote_canton_0405,55,PIARTAL
+ote_parroquia_040650,ote_canton_0406,50,HUACA
+ote_parroquia_040651,ote_canton_0406,51,MARISCAL SUCRE
+ote_parroquia_050150,ote_canton_0501,50,LATACUNGA
+ote_parroquia_050151,ote_canton_0501,51,ALAQUEZ (ALAQUES)
+ote_parroquia_050152,ote_canton_0501,52,BELISARIO QUEVEDO (GUANAILIN)
+ote_parroquia_050153,ote_canton_0501,53,GUAYTACAMA (GUAITACAMA)
+ote_parroquia_050154,ote_canton_0501,54,JOSEGUANGO BAJO
+ote_parroquia_050156,ote_canton_0501,56,MULALO
+ote_parroquia_050157,ote_canton_0501,57,11 DE NOVIEMBRE (ILINCHISI)
+ote_parroquia_050158,ote_canton_0501,58,POALO
+ote_parroquia_050159,ote_canton_0501,59,SAN JUAN DE PASTOCALLE
+ote_parroquia_050161,ote_canton_0501,61,TANICUCHI
+ote_parroquia_050162,ote_canton_0501,62,TOACASO
+ote_parroquia_050250,ote_canton_0502,50,LA MANA
+ote_parroquia_050251,ote_canton_0502,51,GUASAGANDA (CAB. EN GUASAGANDA CENTRO)
+ote_parroquia_050252,ote_canton_0502,52,PUCAYACU
+ote_parroquia_050350,ote_canton_0503,50,EL CORAZON
+ote_parroquia_050351,ote_canton_0503,51,MORASPUNGO
+ote_parroquia_050352,ote_canton_0503,52,PINLLOPATA
+ote_parroquia_050353,ote_canton_0503,53,RAMON CAMPAÑA
+ote_parroquia_050450,ote_canton_0504,50,PUJILI
+ote_parroquia_050451,ote_canton_0504,51,ANGAMARCA
+ote_parroquia_050453,ote_canton_0504,53,GUANGAJE
+ote_parroquia_050455,ote_canton_0504,55,LA VICTORIA
+ote_parroquia_050456,ote_canton_0504,56,PILALO
+ote_parroquia_050457,ote_canton_0504,57,TINGO
+ote_parroquia_050458,ote_canton_0504,58,ZUMBAHUA
+ote_parroquia_050550,ote_canton_0505,50,SAN MIGUEL
+ote_parroquia_050551,ote_canton_0505,51,ANTONIO JOSE HOLGUIN (SANTA LUCIA)
+ote_parroquia_050552,ote_canton_0505,52,CUSUBAMBA
+ote_parroquia_050553,ote_canton_0505,53,MULALILLO
+ote_parroquia_050554,ote_canton_0505,54,MULLIQUINDIL (SANTA ANA)
+ote_parroquia_050555,ote_canton_0505,55,PANSALEO
+ote_parroquia_050650,ote_canton_0506,50,SAQUISILI
+ote_parroquia_050651,ote_canton_0506,51,CANCHAGUA
+ote_parroquia_050652,ote_canton_0506,52,CHANTILIN
+ote_parroquia_050653,ote_canton_0506,53,COCHAPAMBA
+ote_parroquia_050750,ote_canton_0507,50,SIGCHOS
+ote_parroquia_050751,ote_canton_0507,51,CHUGCHILLAN
+ote_parroquia_050752,ote_canton_0507,52,ISINLIVI
+ote_parroquia_050753,ote_canton_0507,53,LAS PAMPAS
+ote_parroquia_050754,ote_canton_0507,54,PALO QUEMADO
+ote_parroquia_060150,ote_canton_0601,50,RIOBAMBA
+ote_parroquia_060151,ote_canton_0601,51,CACHA (CAB. EN MACHANGARA)
+ote_parroquia_060152,ote_canton_0601,52,CALPI
+ote_parroquia_060153,ote_canton_0601,53,CUBIJIES
+ote_parroquia_060154,ote_canton_0601,54,FLORES
+ote_parroquia_060155,ote_canton_0601,55,LICAN
+ote_parroquia_060156,ote_canton_0601,56,LICTO
+ote_parroquia_060157,ote_canton_0601,57,PUNGALA
+ote_parroquia_060158,ote_canton_0601,58,PUNIN
+ote_parroquia_060159,ote_canton_0601,59,QUIMIAG
+ote_parroquia_060160,ote_canton_0601,60,SAN JUAN
+ote_parroquia_060161,ote_canton_0601,61,SAN LUIS
+ote_parroquia_060250,ote_canton_0602,50,ALAUSI
+ote_parroquia_060251,ote_canton_0602,51,ACHUPALLAS
+ote_parroquia_060253,ote_canton_0602,53,GUASUNTOS
+ote_parroquia_060254,ote_canton_0602,54,HUIGRA
+ote_parroquia_060255,ote_canton_0602,55,MULTITUD
+ote_parroquia_060256,ote_canton_0602,56,PISTISHI (NARIZ DEL DIABLO)
+ote_parroquia_060257,ote_canton_0602,57,PUMALLACTA
+ote_parroquia_060258,ote_canton_0602,58,SEVILLA
+ote_parroquia_060259,ote_canton_0602,59,SIBAMBE
+ote_parroquia_060260,ote_canton_0602,60,TIXAN
+ote_parroquia_060350,ote_canton_0603,50,VILLA LA UNION (CAJABAMBA)
+ote_parroquia_060351,ote_canton_0603,51,CAÑI
+ote_parroquia_060352,ote_canton_0603,52,COLUMBE
+ote_parroquia_060353,ote_canton_0603,53,JUAN DE VELASCO (PANGOR)
+ote_parroquia_060354,ote_canton_0603,54,SANTIAGO DE QUITO (CAB. EN SAN ANTONIO DE QUITO)
+ote_parroquia_060450,ote_canton_0604,50,CHAMBO
+ote_parroquia_060550,ote_canton_0605,50,CHUNCHI
+ote_parroquia_060551,ote_canton_0605,51,CAPZOL
+ote_parroquia_060552,ote_canton_0605,52,COMPUD
+ote_parroquia_060553,ote_canton_0605,53,GONZOL
+ote_parroquia_060554,ote_canton_0605,54,LLAGOS
+ote_parroquia_060650,ote_canton_0606,50,GUAMOTE
+ote_parroquia_060651,ote_canton_0606,51,CEBADAS
+ote_parroquia_060652,ote_canton_0606,52,PALMIRA
+ote_parroquia_060750,ote_canton_0607,50,GUANO
+ote_parroquia_060751,ote_canton_0607,51,GUANANDO
+ote_parroquia_060752,ote_canton_0607,52,ILAPO
+ote_parroquia_060753,ote_canton_0607,53,LA PROVIDENCIA
+ote_parroquia_060754,ote_canton_0607,54,SAN ANDRES
+ote_parroquia_060755,ote_canton_0607,55,SAN GERARDO DE PACAICAGUAN
+ote_parroquia_060756,ote_canton_0607,56,SAN ISIDRO DE PATULU
+ote_parroquia_060757,ote_canton_0607,57,SAN JOSE DEL CHAZO
+ote_parroquia_060758,ote_canton_0607,58,SANTA FE DE GALAN
+ote_parroquia_060759,ote_canton_0607,59,VALPARAISO
+ote_parroquia_060850,ote_canton_0608,50,PALLATANGA
+ote_parroquia_060950,ote_canton_0609,50,PENIPE
+ote_parroquia_060951,ote_canton_0609,51,EL ALTAR
+ote_parroquia_060952,ote_canton_0609,52,MATUS
+ote_parroquia_060953,ote_canton_0609,53,PUELA
+ote_parroquia_060954,ote_canton_0609,54,SAN ANTONIO DE BAYUSHIG
+ote_parroquia_060955,ote_canton_0609,55,LA CANDELARIA
+ote_parroquia_060956,ote_canton_0609,56,BILBAO (CAB. EN QUILLUYACU)
+ote_parroquia_061050,ote_canton_0610,50,CUMANDA
+ote_parroquia_070150,ote_canton_0701,50,MACHALA
+ote_parroquia_070152,ote_canton_0701,52,EL RETIRO
+ote_parroquia_070250,ote_canton_0702,50,ARENILLAS
+ote_parroquia_070251,ote_canton_0702,51,CHACRAS
+ote_parroquia_070254,ote_canton_0702,54,PALMALES
+ote_parroquia_070255,ote_canton_0702,55,CARCABON
+ote_parroquia_070256,ote_canton_0702,56,LA CUCA
+ote_parroquia_070350,ote_canton_0703,50,PACCHA
+ote_parroquia_070351,ote_canton_0703,51,AYAPAMBA
+ote_parroquia_070352,ote_canton_0703,52,CORDONCILLO
+ote_parroquia_070353,ote_canton_0703,53,MILAGRO
+ote_parroquia_070354,ote_canton_0703,54,SAN JOSE
+ote_parroquia_070355,ote_canton_0703,55,SAN JUAN DE CERRO AZUL
+ote_parroquia_070450,ote_canton_0704,50,BALSAS
+ote_parroquia_070451,ote_canton_0704,51,BELLAMARIA
+ote_parroquia_070550,ote_canton_0705,50,CHILLA
+ote_parroquia_070650,ote_canton_0706,50,EL GUABO
+ote_parroquia_070651,ote_canton_0706,51,BARBONES (SUCRE)
+ote_parroquia_070652,ote_canton_0706,52,LA IBERIA
+ote_parroquia_070653,ote_canton_0706,53,TENDALES (CAB. EN PUERTO TENDALES)
+ote_parroquia_070654,ote_canton_0706,54,RIO BONITO
+ote_parroquia_070750,ote_canton_0707,50,HUAQUILLAS
+ote_parroquia_070850,ote_canton_0708,50,MARCABELI
+ote_parroquia_070851,ote_canton_0708,51,EL INGENIO
+ote_parroquia_070950,ote_canton_0709,50,PASAJE
+ote_parroquia_070951,ote_canton_0709,51,BUENAVISTA
+ote_parroquia_070952,ote_canton_0709,52,CASACAY
+ote_parroquia_070953,ote_canton_0709,53,LA PEAÑA
+ote_parroquia_070954,ote_canton_0709,54,PROGRESO
+ote_parroquia_070955,ote_canton_0709,55,UZHCURRUMI
+ote_parroquia_070956,ote_canton_0709,56,CAÑAQUEMADA
+ote_parroquia_071050,ote_canton_0710,50,PIÑAS
+ote_parroquia_071051,ote_canton_0710,51,CAPIRO (CAB. EN LA CAPILLA DE CAPIRO)
+ote_parroquia_071052,ote_canton_0710,52,LA BOCANA
+ote_parroquia_071053,ote_canton_0710,53,MOROMORO (CAB. EN EL VADO)
+ote_parroquia_071054,ote_canton_0710,54,PIEDRAS
+ote_parroquia_071055,ote_canton_0710,55,SAN ROQUE (AMBROSIO MALDONADO)
+ote_parroquia_071056,ote_canton_0710,56,SARACAY
+ote_parroquia_071150,ote_canton_0711,50,PORTOVELO
+ote_parroquia_071151,ote_canton_0711,51,CURTINCAPA
+ote_parroquia_071152,ote_canton_0711,52,MORALES
+ote_parroquia_071153,ote_canton_0711,53,SALATI
+ote_parroquia_071250,ote_canton_0712,50,SANTA ROSA
+ote_parroquia_071251,ote_canton_0712,51,BELLAVISTA
+ote_parroquia_071252,ote_canton_0712,52,JAMBELI
+ote_parroquia_071253,ote_canton_0712,53,LA AVANZADA
+ote_parroquia_071254,ote_canton_0712,54,SAN ANTONIO
+ote_parroquia_071255,ote_canton_0712,55,TORATA
+ote_parroquia_071256,ote_canton_0712,56,VICTORIA
+ote_parroquia_071257,ote_canton_0712,57,BELLAMARIA
+ote_parroquia_071350,ote_canton_0713,50,ZARUMA
+ote_parroquia_071351,ote_canton_0713,51,ABAÑIN
+ote_parroquia_071352,ote_canton_0713,52,ARCAPAMBA
+ote_parroquia_071353,ote_canton_0713,53,GUANAZAN
+ote_parroquia_071354,ote_canton_0713,54,GUIZHAGUIÑA
+ote_parroquia_071355,ote_canton_0713,55,HUERTAS
+ote_parroquia_071356,ote_canton_0713,56,MALVAS
+ote_parroquia_071357,ote_canton_0713,57,MULUNCAY GRANDE
+ote_parroquia_071358,ote_canton_0713,58,SINSAO
+ote_parroquia_071359,ote_canton_0713,59,SALVIAS
+ote_parroquia_071450,ote_canton_0714,50,LA VICTORIA
+ote_parroquia_071451,ote_canton_0714,51,LA LIBERTAD
+ote_parroquia_071452,ote_canton_0714,52,EL PARAISO
+ote_parroquia_071453,ote_canton_0714,53,SAN ISIDRO
+ote_parroquia_080150,ote_canton_0801,50,ESMERALDAS
+ote_parroquia_080152,ote_canton_0801,52,CAMARONES (CAB. EN SAN VICENTE)
+ote_parroquia_080153,ote_canton_0801,53,CORONEL CARLOS CONCHA TORRES (CAB. EN HUELE)
+ote_parroquia_080154,ote_canton_0801,54,CHINCA
+ote_parroquia_080159,ote_canton_0801,59,MAJUA
+ote_parroquia_080163,ote_canton_0801,63,SAN MATEO
+ote_parroquia_080165,ote_canton_0801,65,TABIAZO
+ote_parroquia_080166,ote_canton_0801,66,TACHINA
+ote_parroquia_080168,ote_canton_0801,68,VUELTA LARGA
+ote_parroquia_080250,ote_canton_0802,50,VALDEZ (LIMONES)
+ote_parroquia_080251,ote_canton_0802,51,ANCHAYACU
+ote_parroquia_080252,ote_canton_0802,52,ATAHUALPA (CAB. EN CAMARONES)
+ote_parroquia_080253,ote_canton_0802,53,BORBON
+ote_parroquia_080254,ote_canton_0802,54,LA TOLA
+ote_parroquia_080255,ote_canton_0802,55,LUIS VARGAS TORRES (CAB. EN PLAYA DE ORO)
+ote_parroquia_080256,ote_canton_0802,56,MALDONADO
+ote_parroquia_080257,ote_canton_0802,57,PAMPANAL DE BOLIVAR
+ote_parroquia_080258,ote_canton_0802,58,SAN FRANCISCO DE ONZOLE
+ote_parroquia_080259,ote_canton_0802,59,SANTO DOMINGO DE ONZOLE
+ote_parroquia_080260,ote_canton_0802,60,SELVA ALEGRE
+ote_parroquia_080261,ote_canton_0802,61,TELEMBI
+ote_parroquia_080262,ote_canton_0802,62,COLON ELOY DEL MARIA
+ote_parroquia_080263,ote_canton_0802,63,SAN JOSE DE CAYAPAS
+ote_parroquia_080264,ote_canton_0802,64,TIMBIRE
+ote_parroquia_080265,ote_canton_0802,65,SANTA LUCIA DE LAS PEÑAS
+ote_parroquia_080350,ote_canton_0803,50,MUISNE
+ote_parroquia_080351,ote_canton_0803,51,BOLIVAR
+ote_parroquia_080352,ote_canton_0803,52,DAULE
+ote_parroquia_080353,ote_canton_0803,53,GALERA
+ote_parroquia_080354,ote_canton_0803,54,QUINGUE (OLMEDO PERDOMO FRANCO)
+ote_parroquia_080355,ote_canton_0803,55,SALIMA
+ote_parroquia_080356,ote_canton_0803,56,SAN FRANCISCO
+ote_parroquia_080357,ote_canton_0803,57,SAN GREGORIO
+ote_parroquia_080358,ote_canton_0803,58,SAN JOSE DE CHAMANGA
+ote_parroquia_080450,ote_canton_0804,50,ROSA ZARATE (QUININDE)
+ote_parroquia_080451,ote_canton_0804,51,CUBE
+ote_parroquia_080452,ote_canton_0804,52,CHURA (CHANCAMA) (CAB. EN EL YERBERO)
+ote_parroquia_080453,ote_canton_0804,53,MALIMPIA
+ote_parroquia_080454,ote_canton_0804,54,VICHE
+ote_parroquia_080455,ote_canton_0804,55,LA UNION
+ote_parroquia_080550,ote_canton_0805,50,SAN LORENZO
+ote_parroquia_080551,ote_canton_0805,51,ALTO TAMBO (CAB EN GUADUAL)
+ote_parroquia_080552,ote_canton_0805,52,ANCON (PICHANGAL) (CAB. EN PALMA REAL)
+ote_parroquia_080553,ote_canton_0805,53,CALDERON
+ote_parroquia_080554,ote_canton_0805,54,CARONDELET
+ote_parroquia_080555,ote_canton_0805,55,5 DE JUNIO (CAB. EN UIMBI)
+ote_parroquia_080556,ote_canton_0805,56,CONCEPCION
+ote_parroquia_080557,ote_canton_0805,57,MATAJE (CAB. EN SANTANDER)
+ote_parroquia_080558,ote_canton_0805,58,SAN JAVIER DE CACHAVI (CAB. EN SAN JAVIER)
+ote_parroquia_080559,ote_canton_0805,59,SANTA RITA
+ote_parroquia_080560,ote_canton_0805,60,TAMBILLO
+ote_parroquia_080561,ote_canton_0805,61,TULULBI (CAB. EN RICAURTE)
+ote_parroquia_080562,ote_canton_0805,62,URBINA
+ote_parroquia_080650,ote_canton_0806,50,ATACAMES
+ote_parroquia_080651,ote_canton_0806,51,LA UNION
+ote_parroquia_080652,ote_canton_0806,52,SUA (CAB. EN LA BOCANA)
+ote_parroquia_080653,ote_canton_0806,53,TONCHIGUE
+ote_parroquia_080654,ote_canton_0806,54,TONSUPA
+ote_parroquia_080750,ote_canton_0807,50,RIOVERDE
+ote_parroquia_080751,ote_canton_0807,51,CHONTADURO
+ote_parroquia_080752,ote_canton_0807,52,CHUMUNDE
+ote_parroquia_080753,ote_canton_0807,53,LAGARTO
+ote_parroquia_080754,ote_canton_0807,54,MONTALVO (CAB EN HORQUETA)
+ote_parroquia_080755,ote_canton_0807,55,ROCAFUERTE
+ote_parroquia_090150,ote_canton_0901,50,GUAYAQUIL
+ote_parroquia_090152,ote_canton_0901,52,JUAN GOMEZ RENDON (PROGRESO)
+ote_parroquia_090153,ote_canton_0901,53,MORRO
+ote_parroquia_090156,ote_canton_0901,56,POSORJA
+ote_parroquia_090157,ote_canton_0901,57,PUNA
+ote_parroquia_090158,ote_canton_0901,58,TENGUEL
+ote_parroquia_090250,ote_canton_0902,50,ALFREDO BAQUERIZO MORENO (JUJAN)
+ote_parroquia_090350,ote_canton_0903,50,BALAO
+ote_parroquia_090450,ote_canton_0904,50,BALZAR
+ote_parroquia_090550,ote_canton_0905,50,COLIMES
+ote_parroquia_090551,ote_canton_0905,51,SAN JACINTO
+ote_parroquia_090650,ote_canton_0906,50,DAULE
+ote_parroquia_090652,ote_canton_0906,52,JUAN BAUTISTA AGUIRRE (LOS TINTOS)
+ote_parroquia_090653,ote_canton_0906,53,LAUREL
+ote_parroquia_090654,ote_canton_0906,54,LIMONAL
+ote_parroquia_090656,ote_canton_0906,56,LOS LOJAS (ENRIQUE BAQUERIZO MORENO)
+ote_parroquia_090750,ote_canton_0907,50,ELOY ALFARO (DURAN)
+ote_parroquia_090850,ote_canton_0908,50,VELASCO IBARRA (CAB. EL EMPALME)
+ote_parroquia_090851,ote_canton_0908,51,GUAYAS (PUEBLO NUEVO)
+ote_parroquia_090852,ote_canton_0908,52,EL ROSARIO
+ote_parroquia_090950,ote_canton_0909,50,EL TRIUNFO
+ote_parroquia_091050,ote_canton_0910,50,MILAGRO
+ote_parroquia_091051,ote_canton_0910,51,CHOBO
+ote_parroquia_091053,ote_canton_0910,53,MARISCAL SUCRE (HUAQUES)
+ote_parroquia_091054,ote_canton_0910,54,ROBERTO ASTUDILLO (CAB. EN CRUCE DE VENECIA)
+ote_parroquia_091150,ote_canton_0911,50,NARANJAL
+ote_parroquia_091151,ote_canton_0911,51,JESUS MARIA
+ote_parroquia_091152,ote_canton_0911,52,SAN CARLOS
+ote_parroquia_091153,ote_canton_0911,53,SANTA ROSA DE FLANDES
+ote_parroquia_091154,ote_canton_0911,54,TAURA
+ote_parroquia_091250,ote_canton_0912,50,NARANJITO
+ote_parroquia_091350,ote_canton_0913,50,PALESTINA
+ote_parroquia_091450,ote_canton_0914,50,PEDRO CARBO
+ote_parroquia_091451,ote_canton_0914,51,VALLE DE LA VIRGEN
+ote_parroquia_091452,ote_canton_0914,52,SABANILLA
+ote_parroquia_091650,ote_canton_0916,50,SAMBORONDON
+ote_parroquia_091651,ote_canton_0916,51,TARIFA
+ote_parroquia_091850,ote_canton_0918,50,SANTA LUCIA
+ote_parroquia_091950,ote_canton_0919,50,EL SALITRE (LAS RAMAS)
+ote_parroquia_091951,ote_canton_0919,51,GENERAL VERNAZA (DOS ESTEROS)
+ote_parroquia_091952,ote_canton_0919,52,LA VICTORIA (ÑAUZA)
+ote_parroquia_091953,ote_canton_0919,53,JUNQUILLAL
+ote_parroquia_092050,ote_canton_0920,50,SAN JACINTO DE YAGUACHI
+ote_parroquia_092053,ote_canton_0920,53,GENERAL PEDRO J. MONTERO (BOLICHE)
+ote_parroquia_092055,ote_canton_0920,55,YAGUACHI VIEJO (CONE)
+ote_parroquia_092056,ote_canton_0920,56,VIRGEN DE FATIMA
+ote_parroquia_092150,ote_canton_0921,50,GENERAL VILLAMIL (PLAYAS)
+ote_parroquia_092250,ote_canton_0922,50,SIMON BOLIVAR
+ote_parroquia_092251,ote_canton_0922,51,CORONEL LORENZO DE GARAYCOA (PEDREGAL)
+ote_parroquia_092350,ote_canton_0923,50,CORONEL MARCELINO MARIDUEÑA (SAN CARLOS)
+ote_parroquia_092450,ote_canton_0924,50,LOMAS DE SARGENTILLO
+ote_parroquia_092550,ote_canton_0925,50,NARCISA DE JESUS
+ote_parroquia_092750,ote_canton_0927,50,GENERAL ANTONIO ELIZALDE (BUCAY)
+ote_parroquia_092850,ote_canton_0928,50,ISIDRO AYORA
+ote_parroquia_100150,ote_canton_1001,50,SAN MIGUEL DE IBARRA
+ote_parroquia_100151,ote_canton_1001,51,AMBUQUI
+ote_parroquia_100152,ote_canton_1001,52,ANGOCHAGUA
+ote_parroquia_100153,ote_canton_1001,53,CAROLINA
+ote_parroquia_100154,ote_canton_1001,54,LA ESPERANZA
+ote_parroquia_100155,ote_canton_1001,55,LITA
+ote_parroquia_100156,ote_canton_1001,56,SALINAS
+ote_parroquia_100157,ote_canton_1001,57,SAN ANTONIO
+ote_parroquia_100250,ote_canton_1002,50,ATUNTAQUI
+ote_parroquia_100251,ote_canton_1002,51,IMBAYA (SAN LUIS DE COBUENDO)
+ote_parroquia_100252,ote_canton_1002,52,SAN FRANCISCO DE NATABUELA
+ote_parroquia_100253,ote_canton_1002,53,SAN JOSE DE CHALTURA
+ote_parroquia_100254,ote_canton_1002,54,SAN ROQUE
+ote_parroquia_100350,ote_canton_1003,50,COTACACHI
+ote_parroquia_100351,ote_canton_1003,51,APUELA
+ote_parroquia_100352,ote_canton_1003,52,GARCIA MORENO (LLURIMAGUA)
+ote_parroquia_100353,ote_canton_1003,53,IMANTAG
+ote_parroquia_100354,ote_canton_1003,54,PEÑAHERRERA
+ote_parroquia_100355,ote_canton_1003,55,PLAZA GUTIERREZ (CALVARIO)
+ote_parroquia_100356,ote_canton_1003,56,QUIROGA
+ote_parroquia_100357,ote_canton_1003,57,SEIS DE JULIO DE CUELLAJE (CAB. EN CUELLAJE)
+ote_parroquia_100358,ote_canton_1003,58,VACAS GALINDO (EL CHURO) (CAB. EN SAN MIGUEL ALTO)
+ote_parroquia_100450,ote_canton_1004,50,OTAVALO
+ote_parroquia_100451,ote_canton_1004,51,DOCTOR MIGUEL EGAS CABEZAS (PEGUCHE)
+ote_parroquia_100452,ote_canton_1004,52,EUGENIO ESPEJO (CALPAQUI)
+ote_parroquia_100453,ote_canton_1004,53,GONZALEZ SUAREZ
+ote_parroquia_100454,ote_canton_1004,54,PATAQUI
+ote_parroquia_100455,ote_canton_1004,55,SAN JOSE DE QUICHINCHE
+ote_parroquia_100456,ote_canton_1004,56,SAN JUAN DE ILUMAN
+ote_parroquia_100457,ote_canton_1004,57,SAN PABLO
+ote_parroquia_100458,ote_canton_1004,58,SAN RAFAEL
+ote_parroquia_100459,ote_canton_1004,59,SELVA ALEGRE (CAB. EN SAN MIGUEL DE PAMPLONA)
+ote_parroquia_100550,ote_canton_1005,50,PIMAMPIRO
+ote_parroquia_100551,ote_canton_1005,51,CHUGA
+ote_parroquia_100552,ote_canton_1005,52,MARIANO ACOSTA
+ote_parroquia_100553,ote_canton_1005,53,SAN FRANCISCO DE SIGSIPAMBA
+ote_parroquia_100650,ote_canton_1006,50,URCUQUI
+ote_parroquia_100651,ote_canton_1006,51,CAHUASQUI
+ote_parroquia_100652,ote_canton_1006,52,LA MERCED DE BUENOS AIRES
+ote_parroquia_100653,ote_canton_1006,53,PABLO ARENAS
+ote_parroquia_100654,ote_canton_1006,54,SAN BLAS
+ote_parroquia_100655,ote_canton_1006,55,TUMBABIRO
+ote_parroquia_110150,ote_canton_1101,50,LOJA
+ote_parroquia_110151,ote_canton_1101,51,CHANTACO
+ote_parroquia_110152,ote_canton_1101,52,CHUQUIRIBAMBA
+ote_parroquia_110153,ote_canton_1101,53,EL CISNE
+ote_parroquia_110154,ote_canton_1101,54,GUALEL
+ote_parroquia_110155,ote_canton_1101,55,JIMBILLA
+ote_parroquia_110156,ote_canton_1101,56,MALACATOS (VALLADOLID)
+ote_parroquia_110157,ote_canton_1101,57,SAN LUCAS
+ote_parroquia_110158,ote_canton_1101,58,SAN PEDRO DE VILCABAMBA
+ote_parroquia_110159,ote_canton_1101,59,SANTIAGO
+ote_parroquia_110160,ote_canton_1101,60,TAQUIL (MIGUEL RIOFRIO)
+ote_parroquia_110161,ote_canton_1101,61,VILCABAMBA (VICTORIA)
+ote_parroquia_110162,ote_canton_1101,62,YANGANA (ARSENIO CASTILLO)
+ote_parroquia_110163,ote_canton_1101,63,QUINARA
+ote_parroquia_110250,ote_canton_1102,50,CARIAMANGA
+ote_parroquia_110251,ote_canton_1102,51,COLAISACA
+ote_parroquia_110252,ote_canton_1102,52,EL LUCERO
+ote_parroquia_110253,ote_canton_1102,53,UTUANA
+ote_parroquia_110254,ote_canton_1102,54,SANGUILLIN
+ote_parroquia_110350,ote_canton_1103,50,CATAMAYO (LA TOMA)
+ote_parroquia_110351,ote_canton_1103,51,EL TAMBO
+ote_parroquia_110352,ote_canton_1103,52,GUAYQUICHUMA
+ote_parroquia_110353,ote_canton_1103,53,SAN PEDRO DE LA BENDITA
+ote_parroquia_110354,ote_canton_1103,54,ZAMBI
+ote_parroquia_110450,ote_canton_1104,50,CELICA
+ote_parroquia_110451,ote_canton_1104,51,CRUZPAMBA (CAB EN CARLOS BUSTAMANTE)
+ote_parroquia_110455,ote_canton_1104,55,POZUL (SAN JUAN DE POZUL)
+ote_parroquia_110456,ote_canton_1104,56,SABANILLA
+ote_parroquia_110457,ote_canton_1104,57,TENIENTE MAXIMILIANO RODRIGUEZ LOAIZA
+ote_parroquia_110550,ote_canton_1105,50,CHAGUARPAMBA
+ote_parroquia_110551,ote_canton_1105,51,BUENAVISTA
+ote_parroquia_110552,ote_canton_1105,52,EL ROSARIO
+ote_parroquia_110553,ote_canton_1105,53,SANTA RUFINA
+ote_parroquia_110554,ote_canton_1105,54,AMARILLOS
+ote_parroquia_110650,ote_canton_1106,50,AMALUZA
+ote_parroquia_110651,ote_canton_1106,51,BELLAVISTA
+ote_parroquia_110652,ote_canton_1106,52,JIMBURA
+ote_parroquia_110653,ote_canton_1106,53,SANTA TERESITA
+ote_parroquia_110654,ote_canton_1106,54,27 DE ABRIL (CAB. EN LA NARANJA)
+ote_parroquia_110655,ote_canton_1106,55,EL INGENIO
+ote_parroquia_110656,ote_canton_1106,56,EL AIRO
+ote_parroquia_110750,ote_canton_1107,50,GONZANAMA
+ote_parroquia_110751,ote_canton_1107,51,CHANGAIMINA (LA LIBERTAD)
+ote_parroquia_110753,ote_canton_1107,53,NAMBACOLA
+ote_parroquia_110754,ote_canton_1107,54,PURUNUMA (EGUIGUREN)
+ote_parroquia_110756,ote_canton_1107,56,SACAPALCA
+ote_parroquia_110850,ote_canton_1108,50,MACARA
+ote_parroquia_110851,ote_canton_1108,51,LARAMA
+ote_parroquia_110852,ote_canton_1108,52,LA VICTORIA
+ote_parroquia_110853,ote_canton_1108,53,SABIANGO (LA CAPILLA)
+ote_parroquia_110950,ote_canton_1109,50,CATACOCHA
+ote_parroquia_110951,ote_canton_1109,51,CANGONAMA
+ote_parroquia_110952,ote_canton_1109,52,GUACHANAMA
+ote_parroquia_110954,ote_canton_1109,54,LAURO GUERRERO
+ote_parroquia_110956,ote_canton_1109,56,ORIANGA
+ote_parroquia_110957,ote_canton_1109,57,SAN ANTONIO
+ote_parroquia_110958,ote_canton_1109,58,CASANGA
+ote_parroquia_110959,ote_canton_1109,59,YAMANA
+ote_parroquia_111050,ote_canton_1110,50,ALAMOR
+ote_parroquia_111051,ote_canton_1110,51,CIANO
+ote_parroquia_111052,ote_canton_1110,52,EL ARENAL
+ote_parroquia_111053,ote_canton_1110,53,EL LIMO (MARIANA DE JESUS)
+ote_parroquia_111054,ote_canton_1110,54,MERCADILLO
+ote_parroquia_111055,ote_canton_1110,55,VICENTINO
+ote_parroquia_111150,ote_canton_1111,50,SARAGURO
+ote_parroquia_111151,ote_canton_1111,51,EL PARAISO DE CELEN
+ote_parroquia_111152,ote_canton_1111,52,EL TABLON
+ote_parroquia_111153,ote_canton_1111,53,LLUZHAPA
+ote_parroquia_111154,ote_canton_1111,54,MANU
+ote_parroquia_111155,ote_canton_1111,55,SAN ANTONIO DE QUMBE (CUMBE)
+ote_parroquia_111156,ote_canton_1111,56,SAN PABLO DE TENTA
+ote_parroquia_111157,ote_canton_1111,57,SAN SEBASTIAN DE YULUC
+ote_parroquia_111158,ote_canton_1111,58,SELVA ALEGRE
+ote_parroquia_111159,ote_canton_1111,59,URDANETA (PAQUISHAPA)
+ote_parroquia_111160,ote_canton_1111,60,SUMAYPAMBA
+ote_parroquia_111250,ote_canton_1112,50,SOZORANGA
+ote_parroquia_111251,ote_canton_1112,51,NUEVA FATIMA
+ote_parroquia_111252,ote_canton_1112,52,TACAMOROS
+ote_parroquia_111350,ote_canton_1113,50,ZAPOTILLO
+ote_parroquia_111351,ote_canton_1113,51,MANGAHURCO
+ote_parroquia_111352,ote_canton_1113,52,GARZAREAL
+ote_parroquia_111353,ote_canton_1113,53,LIMONES
+ote_parroquia_111354,ote_canton_1113,54,PALETILLAS
+ote_parroquia_111355,ote_canton_1113,55,BOLASPAMBA
+ote_parroquia_111356,ote_canton_1113,56,CAZADEROS
+ote_parroquia_111450,ote_canton_1114,50,PINDAL
+ote_parroquia_111451,ote_canton_1114,51,CHAQUINAL
+ote_parroquia_111452,ote_canton_1114,52,12 DE DICIEMBRE (CAB. EN ACHIOTES)
+ote_parroquia_111453,ote_canton_1114,53,MILAGROS
+ote_parroquia_111550,ote_canton_1115,50,QUILANGA
+ote_parroquia_111551,ote_canton_1115,51,FUNDOCHAMBA
+ote_parroquia_111552,ote_canton_1115,52,SAN ANTONIO DE LAS ARADAS (CAB. EN LAS ARADAS)
+ote_parroquia_111650,ote_canton_1116,50,OLMEDO
+ote_parroquia_111651,ote_canton_1116,51,LA TINGUE
+ote_parroquia_120150,ote_canton_1201,50,BABAHOYO
+ote_parroquia_120152,ote_canton_1201,52,CARACOL
+ote_parroquia_120153,ote_canton_1201,53,FEBRES CORDERO (LAS JUNTAS)
+ote_parroquia_120154,ote_canton_1201,54,PIMOCHA
+ote_parroquia_120155,ote_canton_1201,55,LA UNION
+ote_parroquia_120250,ote_canton_1202,50,BABA
+ote_parroquia_120251,ote_canton_1202,51,GUARE
+ote_parroquia_120252,ote_canton_1202,52,ISLA DE BEJUCAL
+ote_parroquia_120350,ote_canton_1203,50,MONTALVO
+ote_parroquia_120351,ote_canton_1203,51,LA ESMERALDA
+ote_parroquia_120450,ote_canton_1204,50,PUEBLOVIEJO
+ote_parroquia_120451,ote_canton_1204,51,PUERTO PECHICHE
+ote_parroquia_120452,ote_canton_1204,52,SAN JUAN
+ote_parroquia_120550,ote_canton_1205,50,QUEVEDO
+ote_parroquia_120553,ote_canton_1205,53,SAN CARLOS
+ote_parroquia_120555,ote_canton_1205,55,LA ESPERANZA
+ote_parroquia_120650,ote_canton_1206,50,CATARAMA
+ote_parroquia_120651,ote_canton_1206,51,RICAURTE
+ote_parroquia_120750,ote_canton_1207,50,VENTANAS
+ote_parroquia_120752,ote_canton_1207,52,ZAPOTAL
+ote_parroquia_120753,ote_canton_1207,53,CHACARITA
+ote_parroquia_120754,ote_canton_1207,54,LOS ANGELES
+ote_parroquia_120850,ote_canton_1208,50,VINCES
+ote_parroquia_120851,ote_canton_1208,51,ANTONIO SOTOMAYOR (CAB. EN PLAYAS DE VINCES)
+ote_parroquia_120950,ote_canton_1209,50,PALENQUE
+ote_parroquia_121050,ote_canton_1210,50,SAN JACINTO DE BUENA FE
+ote_parroquia_121051,ote_canton_1210,51,PATRICIA PILAR
+ote_parroquia_121150,ote_canton_1211,50,VALENCIA
+ote_parroquia_121250,ote_canton_1212,50,MOCACHE
+ote_parroquia_121350,ote_canton_1213,50,QUINSALOMA
+ote_parroquia_130150,ote_canton_1301,50,PORTOVIEJO
+ote_parroquia_130151,ote_canton_1301,51,ABDON CALDERON (SAN FRANCISCO)
+ote_parroquia_130152,ote_canton_1301,52,ALHAJUELA (BAJO GRANDE)
+ote_parroquia_130153,ote_canton_1301,53,CRUCITA
+ote_parroquia_130154,ote_canton_1301,54,PUEBLO NUEVO
+ote_parroquia_130155,ote_canton_1301,55,RIOCHICO (RIO CHICO)
+ote_parroquia_130156,ote_canton_1301,56,SAN PLACIDO
+ote_parroquia_130157,ote_canton_1301,57,CHIRIJOS
+ote_parroquia_130250,ote_canton_1302,50,CALCETA
+ote_parroquia_130251,ote_canton_1302,51,MEMBRILLO
+ote_parroquia_130252,ote_canton_1302,52,QUIROGA
+ote_parroquia_130350,ote_canton_1303,50,CHONE
+ote_parroquia_130351,ote_canton_1303,51,BOYACA
+ote_parroquia_130352,ote_canton_1303,52,CANUTO
+ote_parroquia_130353,ote_canton_1303,53,CONVENTO
+ote_parroquia_130354,ote_canton_1303,54,CHIBUNGA
+ote_parroquia_130355,ote_canton_1303,55,ELOY ALFARO
+ote_parroquia_130356,ote_canton_1303,56,RICAURTE
+ote_parroquia_130357,ote_canton_1303,57,SAN ANTONIO
+ote_parroquia_130450,ote_canton_1304,50,EL CARMEN
+ote_parroquia_130451,ote_canton_1304,51,WILFRIDO LOOR MOREIRA (MAICITO)
+ote_parroquia_130452,ote_canton_1304,52,SAN PEDRO DE SUMA
+ote_parroquia_130453,ote_canton_1304,53,SANTA MARIA (CAB EN SANTA MARIA)
+ote_parroquia_130454,ote_canton_1304,54,EL PARAISO LA 14 (CAB EN EL PARAISO)
+ote_parroquia_130550,ote_canton_1305,50,FLAVIO ALFARO
+ote_parroquia_130551,ote_canton_1305,51,SAN FRANCISCO DE NOVILLO (CAB. EN NOVILLO)
+ote_parroquia_130552,ote_canton_1305,52,ZAPALLO
+ote_parroquia_130650,ote_canton_1306,50,JIPIJAPA
+ote_parroquia_130651,ote_canton_1306,51,AMERICA
+ote_parroquia_130652,ote_canton_1306,52,EL ANEGADO (CAB. EN ELOY ALFARO)
+ote_parroquia_130653,ote_canton_1306,53,JULCUY
+ote_parroquia_130654,ote_canton_1306,54,LA UNION
+ote_parroquia_130656,ote_canton_1306,56,MEMBRILLAL
+ote_parroquia_130657,ote_canton_1306,57,PEDRO PABLO GOMEZ
+ote_parroquia_130658,ote_canton_1306,58,PUERTO DE CAYO
+ote_parroquia_130750,ote_canton_1307,50,JUNIN
+ote_parroquia_130850,ote_canton_1308,50,MANTA
+ote_parroquia_130851,ote_canton_1308,51,SAN LORENZO
+ote_parroquia_130852,ote_canton_1308,52,SANTA MARIANITA (BOCA DE PACOCHE)
+ote_parroquia_130950,ote_canton_1309,50,MONTECRISTI
+ote_parroquia_130952,ote_canton_1309,52,LA PILA
+ote_parroquia_131050,ote_canton_1310,50,PAJAN
+ote_parroquia_131051,ote_canton_1310,51,CAMPOZANO (LA PALMA DE PAJAN)
+ote_parroquia_131052,ote_canton_1310,52,CASCOL
+ote_parroquia_131053,ote_canton_1310,53,GUALE
+ote_parroquia_131054,ote_canton_1310,54,LASCANO
+ote_parroquia_131150,ote_canton_1311,50,PICHINCHA
+ote_parroquia_131151,ote_canton_1311,51,BARRAGANETE
+ote_parroquia_131152,ote_canton_1311,52,SAN SEBASTIAN
+ote_parroquia_131250,ote_canton_1312,50,ROCAFUERTE
+ote_parroquia_131350,ote_canton_1313,50,SANTA ANA DE VUELTA LARGA
+ote_parroquia_131351,ote_canton_1313,51,AYACUCHO
+ote_parroquia_131352,ote_canton_1313,52,HONORATO VASQUEZ (CAB EN VASQUEZ)
+ote_parroquia_131353,ote_canton_1313,53,LA UNION
+ote_parroquia_131355,ote_canton_1313,55,SAN PABLO (CAB EN PUEBLO NUEVO)
+ote_parroquia_131450,ote_canton_1314,50,BAHIA DE CARAQUEZ
+ote_parroquia_131453,ote_canton_1314,53,CHARAPOTO
+ote_parroquia_131457,ote_canton_1314,57,SAN ISIDRO
+ote_parroquia_131550,ote_canton_1315,50,TOSAGUA
+ote_parroquia_131551,ote_canton_1315,51,BACHILLERO
+ote_parroquia_131552,ote_canton_1315,52,ANGEL PEDRO GILER (LA ESTANCILLA)
+ote_parroquia_131650,ote_canton_1316,50,SUCRE
+ote_parroquia_131651,ote_canton_1316,51,BELLAVISTA
+ote_parroquia_131652,ote_canton_1316,52,NOBOA
+ote_parroquia_131653,ote_canton_1316,53,ARQUITECTO SIXTO DURAN BALLEN
+ote_parroquia_131750,ote_canton_1317,50,PEDERNALES
+ote_parroquia_131751,ote_canton_1317,51,COJIMIES
+ote_parroquia_131752,ote_canton_1317,52,DIEZ DE AGOSTO
+ote_parroquia_131753,ote_canton_1317,53,ATAHUALPA
+ote_parroquia_131850,ote_canton_1318,50,OLMEDO
+ote_parroquia_131950,ote_canton_1319,50,PUERTO LOPEZ
+ote_parroquia_131951,ote_canton_1319,51,MACHALILLA
+ote_parroquia_131952,ote_canton_1319,52,SALANGO
+ote_parroquia_132050,ote_canton_1320,50,JAMA
+ote_parroquia_132150,ote_canton_1321,50,JARAMIJO
+ote_parroquia_132250,ote_canton_1322,50,SAN VICENTE
+ote_parroquia_132251,ote_canton_1322,51,CANOA
+ote_parroquia_140150,ote_canton_1401,50,MACAS
+ote_parroquia_140151,ote_canton_1401,51,ALSHI (CAB EN 9 DE OCTUBRE)
+ote_parroquia_140153,ote_canton_1401,53,GENERAL PROAÑO
+ote_parroquia_140156,ote_canton_1401,56,SAN ISIDRO
+ote_parroquia_140157,ote_canton_1401,57,SEVILLA DON BOSCO
+ote_parroquia_140158,ote_canton_1401,58,SINAI
+ote_parroquia_140160,ote_canton_1401,60,ZUÑA (ZUÑAC)
+ote_parroquia_140162,ote_canton_1401,62,CUCHAENTZA
+ote_parroquia_140164,ote_canton_1401,64,RIO BLANCO
+ote_parroquia_140250,ote_canton_1402,50,GUALAQUIZA
+ote_parroquia_140251,ote_canton_1402,51,AMAZONAS (ROSARIO DE CUYES)
+ote_parroquia_140252,ote_canton_1402,52,BERMEJOS
+ote_parroquia_140253,ote_canton_1402,53,BOMBOIZA
+ote_parroquia_140254,ote_canton_1402,54,CHIGUINDA
+ote_parroquia_140255,ote_canton_1402,55,EL ROSARIO
+ote_parroquia_140256,ote_canton_1402,56,NUEVA TARQUI
+ote_parroquia_140257,ote_canton_1402,57,SAN MIGUEL DE CUYES
+ote_parroquia_140258,ote_canton_1402,58,EL IDEAL
+ote_parroquia_140350,ote_canton_1403,50,GENERAL LEONIDAS PLAZA GUTIERREZ
+ote_parroquia_140351,ote_canton_1403,51,INDANZA
+ote_parroquia_140353,ote_canton_1403,53,SAN ANTONIO (CAB EN SAN ANTONIO CENTRO)
+ote_parroquia_140356,ote_canton_1403,56,SAN MIGUEL DE CONCHAY
+ote_parroquia_140357,ote_canton_1403,57,STA SUSANA DE CHIVIAZA (CAB EN CHIVIAZA)
+ote_parroquia_140358,ote_canton_1403,58,YUNGANZA (CAB EN EL ROSARIO)
+ote_parroquia_140450,ote_canton_1404,50,PALORA (METZERA)
+ote_parroquia_140451,ote_canton_1404,51,ARAPICOS
+ote_parroquia_140452,ote_canton_1404,52,CUMANDA (CAB EN COLONIA AGRICOLA SEVILLA DEL ORO)
+ote_parroquia_140454,ote_canton_1404,54,SANGAY (CAB EN NAYAMANACA)
+ote_parroquia_140455,ote_canton_1404,55,16 DE AGOSTO
+ote_parroquia_140550,ote_canton_1405,50,SANTIAGO DE MENDEZ
+ote_parroquia_140551,ote_canton_1405,51,COPAL
+ote_parroquia_140552,ote_canton_1405,52,CHUPIANZA
+ote_parroquia_140553,ote_canton_1405,53,PATUCA
+ote_parroquia_140554,ote_canton_1405,54,SAN LUIS DE EL ACHO (CAB EN EL ACHO)
+ote_parroquia_140556,ote_canton_1405,56,TAYUZA
+ote_parroquia_140557,ote_canton_1405,57,SAN FRANCISCO DE CHINIMBIMI
+ote_parroquia_140650,ote_canton_1406,50,SUCUA
+ote_parroquia_140651,ote_canton_1406,51,ASUNCION
+ote_parroquia_140652,ote_canton_1406,52,HUAMBI
+ote_parroquia_140655,ote_canton_1406,55,SANTA MARIANITA DE JESUS
+ote_parroquia_140750,ote_canton_1407,50,HUAMBOYA
+ote_parroquia_140751,ote_canton_1407,51,CHIGUAZA
+ote_parroquia_140850,ote_canton_1408,50,SAN JUAN BOSCO
+ote_parroquia_140851,ote_canton_1408,51,PAN DE AZUCAR
+ote_parroquia_140852,ote_canton_1408,52,SAN CARLOS DE LIMON
+ote_parroquia_140853,ote_canton_1408,53,SAN JACINTO DE WAKAMBEIS
+ote_parroquia_140854,ote_canton_1408,54,SANTIAGO DE PANANZA
+ote_parroquia_140950,ote_canton_1409,50,TAISHA
+ote_parroquia_140951,ote_canton_1409,51,HUASAGA (CAB EN WAMPUIK)
+ote_parroquia_140952,ote_canton_1409,52,MACUMA
+ote_parroquia_140953,ote_canton_1409,53,TUUTINENTZA
+ote_parroquia_140954,ote_canton_1409,54,PUMPUENTSA
+ote_parroquia_141050,ote_canton_1410,50,LOGROÑO
+ote_parroquia_141051,ote_canton_1410,51,YAUPI
+ote_parroquia_141052,ote_canton_1410,52,SHIMPIS
+ote_parroquia_141150,ote_canton_1411,50,PABLO SEXTO
+ote_parroquia_141250,ote_canton_1412,50,SANTIAGO
+ote_parroquia_141251,ote_canton_1412,51,SAN JOSE DE MORONA
+ote_parroquia_150150,ote_canton_1501,50,TENA
+ote_parroquia_150151,ote_canton_1501,51,AHUANO
+ote_parroquia_150153,ote_canton_1501,53,CHONTAPUNTA
+ote_parroquia_150154,ote_canton_1501,54,PANO
+ote_parroquia_150155,ote_canton_1501,55,PUERTO MISAHUALLI
+ote_parroquia_150156,ote_canton_1501,56,PUERTO NAPO
+ote_parroquia_150157,ote_canton_1501,57,TALAG
+ote_parroquia_150158,ote_canton_1501,58,SAN JUAN DE MUYUNA
+ote_parroquia_150350,ote_canton_1503,50,ARCHIDONA
+ote_parroquia_150352,ote_canton_1503,52,COTUNDO
+ote_parroquia_150354,ote_canton_1503,54,SAN PABLO DE USHPAYACU
+ote_parroquia_150356,ote_canton_1503,56,HATUN SUMAKU
+ote_parroquia_150450,ote_canton_1504,50,EL CHACO
+ote_parroquia_150451,ote_canton_1504,51,GONZALO DIAZ DE PINEDA (EL BOMBON)
+ote_parroquia_150452,ote_canton_1504,52,LINARES
+ote_parroquia_150453,ote_canton_1504,53,OYACACHI
+ote_parroquia_150454,ote_canton_1504,54,SANTA ROSA
+ote_parroquia_150455,ote_canton_1504,55,SARDINAS
+ote_parroquia_150750,ote_canton_1507,50,BAEZA
+ote_parroquia_150751,ote_canton_1507,51,COSANGA
+ote_parroquia_150752,ote_canton_1507,52,CUYUJA
+ote_parroquia_150753,ote_canton_1507,53,PAPALLACTA
+ote_parroquia_150754,ote_canton_1507,54,SAN FRANCISCO DE BORJA (VIRGILIO DAVILA)
+ote_parroquia_150756,ote_canton_1507,56,SUMACO
+ote_parroquia_150950,ote_canton_1509,50,CARLOS JULIO AROSEMENA TOLA
+ote_parroquia_160150,ote_canton_1601,50,PUYO
+ote_parroquia_160152,ote_canton_1601,52,CANELOS
+ote_parroquia_160154,ote_canton_1601,54,DIEZ DE AGOSTO
+ote_parroquia_160155,ote_canton_1601,55,FATIMA
+ote_parroquia_160156,ote_canton_1601,56,MONTALVO (ANDOAS)
+ote_parroquia_160157,ote_canton_1601,57,POMONA
+ote_parroquia_160158,ote_canton_1601,58,RIO CORRIENTES
+ote_parroquia_160159,ote_canton_1601,59,RIO TIGRE
+ote_parroquia_160161,ote_canton_1601,61,SARAYACU
+ote_parroquia_160162,ote_canton_1601,62,SIMON BOLIVAR (CAB. EN MUSHULLACTA)
+ote_parroquia_160163,ote_canton_1601,63,TARQUI
+ote_parroquia_160164,ote_canton_1601,64,TENIENTE HUGO ORTIZ
+ote_parroquia_160165,ote_canton_1601,65,VERACRUZ (INDILLAMA) (CAB. EN INDILLAMA)
+ote_parroquia_160166,ote_canton_1601,66,EL TRIUNFO
+ote_parroquia_160250,ote_canton_1602,50,MERA
+ote_parroquia_160251,ote_canton_1602,51,MADRE TIERRA
+ote_parroquia_160252,ote_canton_1602,52,SHELL
+ote_parroquia_160350,ote_canton_1603,50,SANTA CLARA
+ote_parroquia_160351,ote_canton_1603,51,SAN JOSE
+ote_parroquia_160450,ote_canton_1604,50,ARAJUNO
+ote_parroquia_160451,ote_canton_1604,51,CURARAY
+ote_parroquia_170150,ote_canton_1701,50,QUITO
+ote_parroquia_170151,ote_canton_1701,51,ALANGASI
+ote_parroquia_170152,ote_canton_1701,52,AMAGUAÑA
+ote_parroquia_170153,ote_canton_1701,53,ATAHUALPA (HABASPAMBA)
+ote_parroquia_170154,ote_canton_1701,54,CALACALI
+ote_parroquia_170155,ote_canton_1701,55,CALDERON (CARAPUNGO)
+ote_parroquia_170156,ote_canton_1701,56,CONOCOTO
+ote_parroquia_170157,ote_canton_1701,57,CUMBAYA
+ote_parroquia_170158,ote_canton_1701,58,CHAVEZPAMBA
+ote_parroquia_170159,ote_canton_1701,59,CHECA (CHILPA)
+ote_parroquia_170160,ote_canton_1701,60,EL QUINCHE
+ote_parroquia_170161,ote_canton_1701,61,GUALEA
+ote_parroquia_170162,ote_canton_1701,62,GUANGOPOLO
+ote_parroquia_170163,ote_canton_1701,63,GUAYLLABAMBA
+ote_parroquia_170164,ote_canton_1701,64,LA MERCED
+ote_parroquia_170165,ote_canton_1701,65,LLANO CHICO
+ote_parroquia_170166,ote_canton_1701,66,LLOA
+ote_parroquia_170168,ote_canton_1701,68,NANEGAL
+ote_parroquia_170169,ote_canton_1701,69,NANEGALITO
+ote_parroquia_170170,ote_canton_1701,70,NAYON
+ote_parroquia_170171,ote_canton_1701,71,NONO
+ote_parroquia_170172,ote_canton_1701,72,PACTO
+ote_parroquia_170174,ote_canton_1701,74,PERUCHO
+ote_parroquia_170175,ote_canton_1701,75,PIFO
+ote_parroquia_170176,ote_canton_1701,76,PINTAG
+ote_parroquia_170177,ote_canton_1701,77,POMASQUI
+ote_parroquia_170178,ote_canton_1701,78,PUELLARO
+ote_parroquia_170179,ote_canton_1701,79,PUEMBO
+ote_parroquia_170180,ote_canton_1701,80,SAN ANTONIO
+ote_parroquia_170181,ote_canton_1701,81,SAN JOSE DE MINAS
+ote_parroquia_170183,ote_canton_1701,83,TABABELA
+ote_parroquia_170184,ote_canton_1701,84,TUMBACO
+ote_parroquia_170185,ote_canton_1701,85,YARUQUI
+ote_parroquia_170186,ote_canton_1701,86,ZAMBIZA
+ote_parroquia_170250,ote_canton_1702,50,CAYAMBE
+ote_parroquia_170251,ote_canton_1702,51,ASCAZUBI
+ote_parroquia_170252,ote_canton_1702,52,CANGAHUA
+ote_parroquia_170253,ote_canton_1702,53,OLMEDO (PESILLO)
+ote_parroquia_170254,ote_canton_1702,54,OTON
+ote_parroquia_170255,ote_canton_1702,55,SANTA ROSA DE CUZUBAMBA
+ote_parroquia_170256,ote_canton_1702,56,SAN JOSE DE AYORA
+ote_parroquia_170350,ote_canton_1703,50,MACHACHI
+ote_parroquia_170351,ote_canton_1703,51,ALOAG
+ote_parroquia_170352,ote_canton_1703,52,ALOASI
+ote_parroquia_170353,ote_canton_1703,53,CUTUGLAHUA
+ote_parroquia_170354,ote_canton_1703,54,EL CHAUPI
+ote_parroquia_170355,ote_canton_1703,55,MANUEL CORNEJO ASTORGA (TANDAPI)
+ote_parroquia_170356,ote_canton_1703,56,TAMBILLO
+ote_parroquia_170357,ote_canton_1703,57,UYUMBICHO
+ote_parroquia_170450,ote_canton_1704,50,TABACUNDO
+ote_parroquia_170451,ote_canton_1704,51,LA ESPERANZA
+ote_parroquia_170452,ote_canton_1704,52,MALCHINGUI
+ote_parroquia_170453,ote_canton_1704,53,TOCACHI
+ote_parroquia_170454,ote_canton_1704,54,TUPIGACHI
+ote_parroquia_170550,ote_canton_1705,50,SANGOLQUI
+ote_parroquia_170551,ote_canton_1705,51,COTOGCHOA
+ote_parroquia_170552,ote_canton_1705,52,RUMIPAMBA
+ote_parroquia_170750,ote_canton_1707,50,SAN MIGUEL DE LOS BANCOS
+ote_parroquia_170751,ote_canton_1707,51,MINDO
+ote_parroquia_170850,ote_canton_1708,50,PEDRO VICENTE MALDONADO
+ote_parroquia_170950,ote_canton_1709,50,PUERTO QUITO
+ote_parroquia_180150,ote_canton_1801,50,AMBATO
+ote_parroquia_180151,ote_canton_1801,51,AMBATILLO
+ote_parroquia_180152,ote_canton_1801,52,ATAHUALPA (CHISALATA)
+ote_parroquia_180153,ote_canton_1801,53,AUGUSTO N. MARTINEZ (MUNDUGLEO)
+ote_parroquia_180154,ote_canton_1801,54,CONSTANTINO FERNANDEZ (CAB. EN CULLITAHUA)
+ote_parroquia_180155,ote_canton_1801,55,HUACHI GRANDE
+ote_parroquia_180156,ote_canton_1801,56,IZAMBA
+ote_parroquia_180157,ote_canton_1801,57,JUAN BENIGNO VELA
+ote_parroquia_180158,ote_canton_1801,58,MONTALVO
+ote_parroquia_180159,ote_canton_1801,59,PASA
+ote_parroquia_180160,ote_canton_1801,60,PICAIGUA
+ote_parroquia_180161,ote_canton_1801,61,PILAGUIN (PILAHUIN)
+ote_parroquia_180162,ote_canton_1801,62,QUISAPINCHA (QUIZAPINCHA)
+ote_parroquia_180163,ote_canton_1801,63,SAN BARTOLOME DE PINLLOG
+ote_parroquia_180164,ote_canton_1801,64,SAN FERNANDO (PASA SAN FERNANDO)
+ote_parroquia_180165,ote_canton_1801,65,SANTA ROSA
+ote_parroquia_180166,ote_canton_1801,66,TOTORAS
+ote_parroquia_180167,ote_canton_1801,67,CUNCHIBAMBA
+ote_parroquia_180168,ote_canton_1801,68,UNAMUNCHO
+ote_parroquia_180250,ote_canton_1802,50,BAÑOS DE AGUA SANTA
+ote_parroquia_180251,ote_canton_1802,51,LLIGUA
+ote_parroquia_180252,ote_canton_1802,52,RIO NEGRO
+ote_parroquia_180253,ote_canton_1802,53,RIO VERDE
+ote_parroquia_180254,ote_canton_1802,54,ULBA
+ote_parroquia_180350,ote_canton_1803,50,CEVALLOS
+ote_parroquia_180450,ote_canton_1804,50,MOCHA
+ote_parroquia_180451,ote_canton_1804,51,PINGUILI
+ote_parroquia_180550,ote_canton_1805,50,PATATE
+ote_parroquia_180551,ote_canton_1805,51,EL TRIUNFO
+ote_parroquia_180552,ote_canton_1805,52,LOS ANDES (CAB. EN POATUG)
+ote_parroquia_180553,ote_canton_1805,53,SUCRE (CAB. EN SUCRE-PATATE URCU)
+ote_parroquia_180650,ote_canton_1806,50,QUERO
+ote_parroquia_180651,ote_canton_1806,51,RUMIPAMBA
+ote_parroquia_180652,ote_canton_1806,52,YANAYACU - MOCHAPATA (CAB. EN YANAYACU)
+ote_parroquia_180750,ote_canton_1807,50,PELILEO
+ote_parroquia_180751,ote_canton_1807,51,BENITEZ (PACHANLICA)
+ote_parroquia_180752,ote_canton_1807,52,BOLIVAR
+ote_parroquia_180753,ote_canton_1807,53,COTALO
+ote_parroquia_180754,ote_canton_1807,54,CHIQUICHA (CAB. EN CHIQUICHA GRANDE)
+ote_parroquia_180755,ote_canton_1807,55,EL ROSARIO (RUMICHACA)
+ote_parroquia_180756,ote_canton_1807,56,GARCIA MORENO (CHUMAQUI)
+ote_parroquia_180757,ote_canton_1807,57,GUAMBALO (HUAMBALO)
+ote_parroquia_180758,ote_canton_1807,58,SALASACA
+ote_parroquia_180850,ote_canton_1808,50,PILLARO
+ote_parroquia_180851,ote_canton_1808,51,BAQUERIZO MORENO
+ote_parroquia_180852,ote_canton_1808,52,EMILIO MARIA TERAN (RUMIPAMBA)
+ote_parroquia_180853,ote_canton_1808,53,MARCOS ESPINEL (CHACATA)
+ote_parroquia_180854,ote_canton_1808,54,PRESIDENTE URBINA (CHAGRAPAMBA -PATZUCUL)
+ote_parroquia_180855,ote_canton_1808,55,SAN ANDRES
+ote_parroquia_180856,ote_canton_1808,56,SAN JOSE DE POALO
+ote_parroquia_180857,ote_canton_1808,57,SAN MIGUELITO
+ote_parroquia_180950,ote_canton_1809,50,TISALEO
+ote_parroquia_180951,ote_canton_1809,51,QUINCHICOTO
+ote_parroquia_190150,ote_canton_1901,50,ZAMORA
+ote_parroquia_190151,ote_canton_1901,51,CUMBARATZA
+ote_parroquia_190152,ote_canton_1901,52,GUADALUPE
+ote_parroquia_190153,ote_canton_1901,53,IMBANA (LA VICTORIA DE IMBANA)
+ote_parroquia_190155,ote_canton_1901,55,SABANILLA
+ote_parroquia_190156,ote_canton_1901,56,TIMBARA
+ote_parroquia_190158,ote_canton_1901,58,SAN CARLOS DE LAS MINAS
+ote_parroquia_190250,ote_canton_1902,50,ZUMBA
+ote_parroquia_190251,ote_canton_1902,51,CHITO
+ote_parroquia_190252,ote_canton_1902,52,EL CHORRO
+ote_parroquia_190254,ote_canton_1902,54,LA CHONTA
+ote_parroquia_190256,ote_canton_1902,56,PUCAPAMBA
+ote_parroquia_190259,ote_canton_1902,59,SAN ANDRES
+ote_parroquia_190350,ote_canton_1903,50,GUAYZIMI
+ote_parroquia_190351,ote_canton_1903,51,ZURMI
+ote_parroquia_190352,ote_canton_1903,52,NUEVO PARAISO
+ote_parroquia_190353,ote_canton_1903,53,NANKAIS (CAB EN SANTA ELENA)
+ote_parroquia_190450,ote_canton_1904,50,28 DE MAYO (SAN JOSE DE YACUAMBI)
+ote_parroquia_190451,ote_canton_1904,51,LA PAZ
+ote_parroquia_190452,ote_canton_1904,52,TUTUPALI
+ote_parroquia_190550,ote_canton_1905,50,YANTZAZA (YANZATZA)
+ote_parroquia_190551,ote_canton_1905,51,CHICAÑA
+ote_parroquia_190553,ote_canton_1905,53,LOS ENCUENTROS
+ote_parroquia_190650,ote_canton_1906,50,EL PANGUI
+ote_parroquia_190651,ote_canton_1906,51,EL GUISME
+ote_parroquia_190652,ote_canton_1906,52,PACHICUTZA
+ote_parroquia_190653,ote_canton_1906,53,TUNDAYME
+ote_parroquia_190750,ote_canton_1907,50,ZUMBI
+ote_parroquia_190752,ote_canton_1907,52,TRIUNFO-DORADO
+ote_parroquia_190753,ote_canton_1907,53,PANGUINTZA
+ote_parroquia_190850,ote_canton_1908,50,PALANDA
+ote_parroquia_190851,ote_canton_1908,51,EL PORVENIR DEL CARMEN
+ote_parroquia_190852,ote_canton_1908,52,SAN FRANCISCO DEL VERGEL
+ote_parroquia_190853,ote_canton_1908,53,VALLADOLID
+ote_parroquia_190854,ote_canton_1908,54,LA CANELA
+ote_parroquia_190950,ote_canton_1909,50,PAQUISHA
+ote_parroquia_190951,ote_canton_1909,51,BELLAVISTA
+ote_parroquia_190952,ote_canton_1909,52,NUEVO QUITO
+ote_parroquia_200150,ote_canton_2001,50,PUERTO BAQUERIZO MORENO
+ote_parroquia_200151,ote_canton_2001,51,EL PROGRESO
+ote_parroquia_200152,ote_canton_2001,52,ISLA SANTA MARÍA (FLOREANA) (CAB. EN  PTO. VELASCO IBARRA)
+ote_parroquia_200250,ote_canton_2002,50,PUERTO VILLAMIL
+ote_parroquia_200251,ote_canton_2002,51,TOMAS DE BERLANGA (SANTO TOMAS)
+ote_parroquia_200350,ote_canton_2003,50,PUERTO AYORA
+ote_parroquia_200351,ote_canton_2003,51,BELLA VISTA
+ote_parroquia_200352,ote_canton_2003,52,SANTA ROSA
+ote_parroquia_210150,ote_canton_2101,50,NUEVA LOJA
+ote_parroquia_210152,ote_canton_2101,52,DURENO
+ote_parroquia_210153,ote_canton_2101,53,GENERAL FARFAN
+ote_parroquia_210155,ote_canton_2101,55,EL ENO
+ote_parroquia_210156,ote_canton_2101,56,PACAYACU
+ote_parroquia_210157,ote_canton_2101,57,JAMBELI
+ote_parroquia_210158,ote_canton_2101,58,SANTA CECILIA
+ote_parroquia_210160,ote_canton_2101,60,10 DE AGOSTO
+ote_parroquia_210250,ote_canton_2102,50,LUMBAQUI
+ote_parroquia_210251,ote_canton_2102,51,EL REVENTADOR
+ote_parroquia_210252,ote_canton_2102,52,GONZALO PIZARRO
+ote_parroquia_210254,ote_canton_2102,54,PUERTO LIBRE
+ote_parroquia_210350,ote_canton_2103,50,PUERTO EL CARMEN DEL PUTUMAYO
+ote_parroquia_210351,ote_canton_2103,51,PALMA ROJA
+ote_parroquia_210352,ote_canton_2103,52,PUERTO BOLIVAR (PUERTO MONTUFAR)
+ote_parroquia_210353,ote_canton_2103,53,PUERTO RODRIGUEZ
+ote_parroquia_210354,ote_canton_2103,54,SANTA ELENA
+ote_parroquia_210450,ote_canton_2104,50,SHUSHUFINDI
+ote_parroquia_210451,ote_canton_2104,51,LIMONCOCHA
+ote_parroquia_210452,ote_canton_2104,52,PAÑACOCHA
+ote_parroquia_210453,ote_canton_2104,53,SAN ROQUE (CAB. EN SAN VICENTE)
+ote_parroquia_210454,ote_canton_2104,54,SAN PEDRO DE LOS COFANES
+ote_parroquia_210455,ote_canton_2104,55,SIETE DE JULIO
+ote_parroquia_210550,ote_canton_2105,50,LA BONITA
+ote_parroquia_210551,ote_canton_2105,51,EL PLAYON DE SAN FRANCISCO
+ote_parroquia_210552,ote_canton_2105,52,LA SOFIA
+ote_parroquia_210553,ote_canton_2105,53,ROSA FLORIDA
+ote_parroquia_210554,ote_canton_2105,54,SANTA BARBARA
+ote_parroquia_210650,ote_canton_2106,50,EL DORADO DE CASCALES
+ote_parroquia_210651,ote_canton_2106,51,SANTA ROSA DE SUCUMBIOS
+ote_parroquia_210652,ote_canton_2106,52,SEVILLA
+ote_parroquia_210653,ote_canton_2106,53,NUEVA TRONCAL (CAB EN NUEVA TRONCAL)
+ote_parroquia_210750,ote_canton_2107,50,TARAPOA
+ote_parroquia_210751,ote_canton_2107,51,CUYABENO
+ote_parroquia_210752,ote_canton_2107,52,AGUAS NEGRAS
+ote_parroquia_220150,ote_canton_2201,50,PUERTO FRANCISCO DE ORELLANA (EL COCA)
+ote_parroquia_220151,ote_canton_2201,51,DAYUMA
+ote_parroquia_220152,ote_canton_2201,52,TARACOA (NUEVA ESPERANZA: YUCA)
+ote_parroquia_220153,ote_canton_2201,53,ALEJANDRO LABAKA
+ote_parroquia_220154,ote_canton_2201,54,EL DORADO
+ote_parroquia_220155,ote_canton_2201,55,EL EDEN
+ote_parroquia_220156,ote_canton_2201,56,GARCIA MORENO
+ote_parroquia_220157,ote_canton_2201,57,INES ARANGO (CAB. EN WESTERN)
+ote_parroquia_220158,ote_canton_2201,58,LA BELLEZA
+ote_parroquia_220159,ote_canton_2201,59,NUEVO PARAISO (CAB. EN UNION )
+ote_parroquia_220160,ote_canton_2201,60,SAN JOSE DE GUAYUSA
+ote_parroquia_220161,ote_canton_2201,61,SAN LUIS DE ARMENIA
+ote_parroquia_220250,ote_canton_2202,50,NUEVO ROCAFUERTE
+ote_parroquia_220251,ote_canton_2202,51,CAPITAN AUGUSTO RIVADENEYRA
+ote_parroquia_220252,ote_canton_2202,52,CONONACO
+ote_parroquia_220253,ote_canton_2202,53,SANTA MARIA DE HUIRIRIMA
+ote_parroquia_220254,ote_canton_2202,54,TIPUTINI
+ote_parroquia_220255,ote_canton_2202,55,YASUNI
+ote_parroquia_220350,ote_canton_2203,50,LA JOYA DE LOS SACHAS
+ote_parroquia_220351,ote_canton_2203,51,ENOKANQUI
+ote_parroquia_220352,ote_canton_2203,52,POMPEYA
+ote_parroquia_220353,ote_canton_2203,53,SAN CARLOS
+ote_parroquia_220354,ote_canton_2203,54,SAN SEBASTIAN DEL COCA
+ote_parroquia_220355,ote_canton_2203,55,LAGO SAN PEDRO
+ote_parroquia_220356,ote_canton_2203,56,RUMIPAMBA
+ote_parroquia_220357,ote_canton_2203,57,TRES DE NOVIEMBRE
+ote_parroquia_220358,ote_canton_2203,58,UNION MILAGREÑA
+ote_parroquia_220450,ote_canton_2204,50,LORETO
+ote_parroquia_220451,ote_canton_2204,51,AVILA (CAB. EN HUIRUNO)
+ote_parroquia_220452,ote_canton_2204,52,PUERTO MURIALDO
+ote_parroquia_220453,ote_canton_2204,53,SAN JOSE DE PAYAMINO
+ote_parroquia_220454,ote_canton_2204,54,SAN JOSE DE DAHUANO
+ote_parroquia_220455,ote_canton_2204,55,SAN VICENTE DE HUATICOCHA
+ote_parroquia_230150,ote_canton_2301,50,SANTO DOMINGO DE LOS COLORADOS
+ote_parroquia_230151,ote_canton_2301,51,ALLURIQUIN
+ote_parroquia_230152,ote_canton_2301,52,PUERTO LIMON
+ote_parroquia_230153,ote_canton_2301,53,LUZ DE AMERICA
+ote_parroquia_230154,ote_canton_2301,54,SAN JACINTO DEL BUA
+ote_parroquia_230155,ote_canton_2301,55,VALLE HERMOSO
+ote_parroquia_230156,ote_canton_2301,56,EL ESFUERZO
+ote_parroquia_230157,ote_canton_2301,57,SANTA MARIA DEL TOACHI
+ote_parroquia_230250,ote_canton_2302,50,LA CONCORDIA
+ote_parroquia_230251,ote_canton_2302,51,MONTERREY
+ote_parroquia_230252,ote_canton_2302,52,LA VILLEGAS
+ote_parroquia_230253,ote_canton_2302,53,PLAN PILOTO
+ote_parroquia_240150,ote_canton_2401,50,SANTA ELENA
+ote_parroquia_240151,ote_canton_2401,51,ATAHUALPA
+ote_parroquia_240152,ote_canton_2401,52,COLONCHE
+ote_parroquia_240153,ote_canton_2401,53,CHANDUY
+ote_parroquia_240154,ote_canton_2401,54,MANGLARALTO
+ote_parroquia_240155,ote_canton_2401,55,SIMON BOLIVAR (JULIO MORENO)
+ote_parroquia_240156,ote_canton_2401,56,SAN JOSE DE ANCON
+ote_parroquia_240250,ote_canton_2402,50,LA LIBERTAD
+ote_parroquia_240350,ote_canton_2403,50,SALINAS
+ote_parroquia_240351,ote_canton_2403,51,ANCONCITO
+ote_parroquia_240352,ote_canton_2403,52,JOSE LUIS TAMAYO (MUEY)

@@ -1,0 +1,152 @@
+id,default_code,name,standard_price,list_price,type,categ_id,uom_id,uom_po_id,purchase_ok,sale_ok,route_ids/id
+arrocesa_product_001,MPARR-01,ARROZ HÚMEDO GRANO LARGO ,,,Storable Product,All / Saleable / Materia Prima,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_002,MPARR-02,ARROZ HÚMEDO GRANO EXTRA LARGO,,,Storable Product,All / Saleable / Materia Prima,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_003,MPARR-04,ARROZ PILADO LARGO,,,Storable Product,All / Saleable / Materia Prima,quintal,quintal,True,False,mrp.route_warehouse0_manufacture
+arrocesa_product_004,MPARR-05,ARROZ PILADO EXTRA LARGO,,,Storable Product,All / Saleable / Materia Prima,quintal,quintal,True,False,mrp.route_warehouse0_manufacture
+arrocesa_product_005,MPARR-06,ARROZ PRECOCIDO LARGO,,,Storable Product,All / Saleable / Materia Prima,quintal,quintal,True,False,mrp.route_warehouse0_manufacture
+arrocesa_product_006,PTRE02-06-13,"RESERVA ESPECIAL ENVEJECIDO FUNDA 2 kg, BULTO 13u.",2.00,3.08,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_007,PTRE02-03,RESERVA ESPECIAL ENVEJECIDO @ - 11.34 kg - 25Lbs,8.50,12.78,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_008,PTRE02-01,RESERVA ESPECIAL ENVEJECIDO Saco 45.36 kg,33.00,49.62,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_009,PTRE01-06-13,"RESERVA ESPECIAL NATURAL FUNDA 2 kg, BULTO 13u.",1.86,2.86,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_010,PTRE01-03,RESERVA ESPECIAL NATURAL @ - 11.34 kg - 25Lbs,7.75,,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_011,PTRE01-01,RESERVA ESPECIAL NATURAL quintal - 45.36 kg - 100 Lbs,30.00,47.49,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_012,PTLE02-10-24,"LIRA EXPRESS ENVEJECIDO FUNDA 454 g - 1Lbs, BULTO 24u.",0.39,0.60,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_013,PTLE02-07-30,"LIRA EXPRESS ENVEJECIDO FUNDA 1 kg, BULTO 30u.",0.98,1.51,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_014,PTLE02-06-13,"LIRA EXPRESS ENVEJECIDO FUNDA 2 kg, BULTO 13u.",1.96,3.02,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_015,PTLE02-05-06,"LIRA EXPRESS ENVEJECIDO FUNDA 5 kg, BULTO 6u.",5.04,7.75,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_016,PTLE02-03,LIRA EXPRESS ENVEJECIDO @ - 11.34 kg - 25Lbs,8.13,11.61,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_017,PTLE02-01,LIRA EXPRESS ENVEJECIDO quintal - 45.36 kg - 100 Lbs,31.50,45.00,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_018,PTLE01-10-24,"LIRA EXPRESS NATURAL FUNDA 454 g - 1Lbs, BULTO 24u.",0.36,0.55,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_019,PTLE01-07-30,"LIRA EXPRESS NATURAL FUNDA 1 kg, BULTO 30u.",0.98,1.51,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_020,PTLE01-06-13,"LIRA EXPRESS NATURAL FUNDA 2 kg, BULTO 13u.",1.96,3.02,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_021,PTLE01-05-06,"LIRA EXPRESS NATURAL FUNDA 5 kg, BULTO 6u.",5.04,7.75,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_022,PTLE01-03,LIRA EXPRESS NATURAL @ - 11.34 kg - 25Lbs,8.25,,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_023,PTGR02-03,GOOD RICE ENVEJECIDO @ - 11.34 kg - 25 Lbs,7.88,11.61,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_024,PTGR02-01,GOOD RICE ENVEJECIDO quintal - 45.36 kg - 100 Lbs,30.50,45.00,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_025,PTGR02-01,GOOD RICE ENVEJECIDO Saco Blanco Laminado quintal - 45.36 kg - 100 Lbs,30.50,45.00,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_026,PTAN02-03,ARNEJO'S ENVEJECIDO @ - 11.34 kg - 25 Lbs,8.00,11.43,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_027,PTAN02-01,ARNEJO'S ENVEJECIDO quintal - 45.36 kg - 100 Lbs,31.00,44.29,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_028,PTAN01-03,ARNEJO'S NATURAL @ - 11.34 kg - 25 Lbs,7.75,11.07,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_029,PTAN01-01,ARNEJO'S NATURAL quintal - 45.36 kg - 100 lbs,30.00,42.86,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_030,PTAN01-01,ARNEJO'S NATURAL SACO BLANCO LAMINADO FAVORITA quintal - 45.36 kg - 100 lbs,30.00,42.86,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_031,PTAN02-06-13,"ARNEJO'S ENVEJECIDO FUNDA 2 kg, BULTO 13u.",1.98,3.05,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_032,PTAN02-05-06,"ARNEJO'S ENVEJECIDO FUNDA 5 kg, BULTO 6u.",5.06,7.78,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_033,PTAN01-06-13,"ARNEJO'S NATURAL FUNDA 2 kg, BULTO 13u.",1.84,2.83,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_034,PTAN01-05-04,"ARNEJO'S NATURAL FUNDA 5 kg, BULTO  6u.",4.70,7.23,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_035,PTCAM02-04,CASA DEL ARROZ MACAREÑO ENVEJECIDO 10kg,,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_036,PTCAM02-01,CASA DEL ARROZ MACAREÑO ENVEJECIDO quintal - 45.36 kg - 100 Lb,,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_037,PTCAG02-07-30,"CASA DEL ARROZ GOURMET ENVEJECIDO 1kg, BULTO 30u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_038,PTCAG02-06-13,"CASA DEL ARROZ GOURMET ENVEJECIDO 2kg, BULTO 13u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_039,PTCAG02-05-06,"CASA DEL ARROZ GOURMET ENVEJECIDO 5kg, BULTO 6u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_040,PTCAG01-07-30,"CASA DEL ARROZ GOURMET NATURAL 1kg, BULTO 30u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_041,PTCAG01-06-13,"CASA DEL ARROZ GOURMET NATURAL 2kg, BULTO 13u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_042,PTCAG01-05-06,"CASA DEL ARROZ GOURMET NATURAL 5kg, BULTO 6u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_043,PTCAI00-07-30,"CASA DEL ARROZ INTEGRAL 1kg, BULTO 30u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_044,PTCAI00-06-13,"CASA DEL ARROZ INTEGRAL 2kg, BULTO 13u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_045,PTCAI00-05-06,"CASA DEL ARROZ INTEGRAL 5kg, BULTO 6u.",,,Storable Product,All / Saleable / Insumos,kg,kg,True,True,mrp.route_warehouse0_manufacture
+arrocesa_product_046,PTREN01-05,"RENDIDOR 5 kg NATURAL LARGO, BULTO 6u.                                 ",,4.347,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_047,PTREN01-06-13,"RENDIDOR 2 kg NATURAL LARGO, BULTO 13u.                                    ",,1.739,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_048,PTREN01-06-15,"RENDIDOR 2 kg NATURAL LARGO, BULTO 15u.                                     ",,1.739,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_049,PTREN01-04,RENDIDOR 10 kg NATURAL LARGO                                    ,,8.49,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_050,PTREN02-03,RENDIDOR ENVEJECIDO EXTRA LARGO @ - 11.34 kg - 25 Lbs                    ,,9.573,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_051,PTGSV01-10-24,"GUSTADINA VITAMINAS 1 Lbs NATURAL EXTRA LARGO, BULTO 24u.                          ",,0.810,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_052,PTGSV01-09-30,"GUSTADINA VITAMINAS 2 Lbs NATURAL EXTRA LARGO, BULTO 30 u.                          ",,0.810,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_053,PTGSV01-06-13,"GUSTADINA VITAMINAS 2kg NATURAL EXTRA LARGO, BULTO 13u.                         ",,1.785,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_054,PTGSV01-06-15,"GUSTADINA VITAMINAS 2kg NATURAL EXTRA LARGO, BULTO 15u.                        ",,1.785,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_055,PTGSV01-05-06,"GUSTADINA VITAMINAS 5kg NATURAL EXTRA LARGO, BULTO 6u.                        ",,4.463,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_056,PTGSV01-04,GUSTADINA VITAMINAS 10kg NATURAL EXTRA LARGO                          ,,8.724,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_057,PTGSB01-08-05,"GUSTADINA BLANCO 10 Lbs NESTLE NATURAL EXTRA LARGO, BULTO 5u.                        ",,,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_058,PTGSI00-07-30,"GUSTADINA INTEGRAL 1kg EXTRA LARGO, BULTO 30u.                           ",,0.827,Storable Product,All / Saleable / Integral,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_059,PTGSI00-06-13,"GUSTADINA INTEGRAL 2kg EXTRA LARGO, BULTO 13u.                          ",,1.655,Storable Product,All / Saleable / Integral,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_060,PTGSI00-06-15,"GUSTADINA INTEGRAL 2kg EXTRA LARGO, BULTO 15u.                          ",,1.655,Storable Product,All / Saleable / Integral,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_061,PTGSV02-06-13,"GUSTADINA VITAMINAS 2kg ENVEJECIDO EXTRA LARGO, BULTO 13u.                           ",,1.785,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_062,PTGSV02-06-15,"GUSTADINA VITAMINAS 2kg ENVEJECIDO EXTRA LARGO, BULTO 15u.                           ",,1.785,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_063,PTGSV02-05-06,"GUSTADINA VITAMINAS 5kg ENVEJECIDO EXTRA LARGO, BULTO 6u.                      ",,4.463,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_064,PTGSP03-05-06,"GUSTADINA 5kg PRECOCIDO MP EXTERNA, BULTO 6u.                           ",,4.946,Storable Product,All / Saleable / Precocido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_065,PTGSP03-06-13,"GUSTADINA 2kg PRECOCIDO MP EXTERNA, BULTO 13u.",,1.979,Storable Product,All / Saleable / Precocido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_066,PTGSP03-06-15,"GUSTADINA 2kg PRECOCIDO MP EXTERNA, BULTO 15u.",,1.979,Storable Product,All / Saleable / Precocido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_067,PTSAN02-01,SANTA MARIA ENVEJECIDO LARGO quintal - 45.36 kg - 100 Lbs,,34.02,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_068,PTSAN02-03,SANTA MARIA ENVEJECIDO LARGO @ - 11.34 kg - 25 Lbs,,8.94,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_069,PTSAN02-03,SANTA MARIA RESERVA ESPECIAL ENVEJECIDO EXTRA LARGO @ - 11.34 kg - 25 Lbs                ,,9.59,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_070,PTSAN02-09-13,"SANTA MARIA 4 Lbs EMPAQUETADO ENVEJECIDO LARGO, BULTO 13u.            ",,1.7761,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_071,PTSAN02-08-06,"SANTA MARIA 10 Lbs EMPAQUETADO ENVEJECIDO LARGO, BULTO 6u.",,4.5116,Storable Product,All / Saleable / Envejecido,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_072,PTARB01-01,ARROZ BLANCO NATURAL LARGO                          ,,,Storable Product,All / Saleable / Natural ,Unit(s),Unit(s),False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_073,SPARR01-34,ARROCILLO 3/4 NATURAL quintal - 45.36 kg - 100 Lbs ,,,Storable Product,All / Saleable / Subproductos,kg,kg,False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_074,SPARR02-34,ARROCILLO 3/4 ENVEJECIDO quintal - 45.36 kg - 100 Lbs,,,Storable Product,All / Saleable / Subproductos,kg,kg,False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_075,SPARR01-12,ARROCILLO MEDIO            ,,15.4,Storable Product,All / Saleable / Subproductos,quintal,quintal,False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_076,SPPOLVI-01,POLVILLO TN                                       ,,,Storable Product,All / Saleable / Subproductos,t,t,False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_077,SPPOLVI-02,POLVILLO quintal                                       ,,13.5,Storable Product,All / Saleable / Subproductos,kg,kg,False,True,mrp.route_warehouse0_manufacture
+arrocesa_product_078,SPTAMO-00,TAMO GRANEL TN                                            ,,30,Consumible,All / Saleable / Insumos,t,t,False,True,mrp.route_warehouse0_buy
+arrocesa_product_079,SERVC-01,SERVICIO DE ALMACENAJE                            ,,,service,All / Saleable / Servicios,Unit(s),Unit(s),False,True,mrp.route_warehouse0_buy
+arrocesa_product_080,SERVC-02,SERVICIO DE PESAJE ,,,service,All / Saleable / Servicios,Unit(s),Unit(s),False,True,mrp.route_warehouse0_buy
+arrocesa_product_081,ME000000,SACOS BLANCOS 60 x 70                                ,,,Consumible,All / Consumible,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_082,MX330016,LAMINA ENFARDADO 24 Lbs   ,2.7,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_083,ME330028,LAMINA ENFARDADO 30kg / 60lb  (980mm),2.7,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_084,ME,LAMINA TRANSPARENTE 10 LB.,3.2,,Consumible,All / Saleable / Insumos,kg,kg,True,False,mrp.route_warehouse0_buy
+arrocesa_product_085,ME3300,LAMINA ARROZ GUSTADINA INTEG. 2kg,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_086,ME330061,LAMINA GUSTAD ENVEJ C/VITAM 2kg  ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_087,ME330062,LAMINA GUSTAD ENVEJ C/VITAM 5kg  ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_088,ME330053,LAMINA GUSTADINA C/VITAM 1 LB    ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_089,ME330056,LAMINA GUSTADINA C/VITAM 2kg     ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_090,ME330054,LAMINA GUSTADINA C/VITAM 2LB     ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_091,ME330057,LAMINA GUSTADINA C/VITAM 5kg     ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_092,ME330030,LAMINA ARROZ RENDIDOR 2kg     ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_093,ME,LAMINA ARROZ RENDIDOR 10kg     ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_094,ME330031,LAMINA ARROZ RENDIDOR 5kg     ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_095,ME330063,LAMINA GUSTADINA INTEGRAL 1kg ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_096,ME330033,LAMINA ARROZ GUSTADINA PORBOL. 2kg ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_097,ME330034,LAMINA ARROZ GUSTADINA PORBOL. 5kg ,4.46,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_098,ME,LAMINA RESERVA ESPECIAL ENVEJECIDO FUNDA 2 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_099,ME,LAMINA RESERVA ESPECIAL NATURAL FUNDA 2 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_100,ME,LAMINA LIRA EXPRESS ENVEJECIDO FUNDA 454 g - 1Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_101,ME,LAMINA LIRA EXPRESS ENVEJECIDO FUNDA 1 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_102,ME,LAMINA LIRA EXPRESS ENVEJECIDO FUNDA 2 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_103,ME,LAMINA LIRA EXPRESS ENVEJECIDO FUNDA 5 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_104,ME,LAMINA LIRA EXPRESS NATURAL FUNDA 454 g - 1Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_105,ME,LAMINA LIRA EXPRESS NATURAL FUNDA 1 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_106,ME,LAMINA LIRA EXPRESS NATURAL FUNDA 2 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_107,ME,LAMINA LIRA EXPRESS NATURAL FUNDA 5 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_108,ME,LAMINA ARNEJO'S ENVEJECIDO FUNDA 2 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_109,ME,LAMINA ARNEJO'S ENVEJECIDO FUNDA 5 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_110,ME,LAMINA ARNEJO'S NATURAL FUNDA 2 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_111,ME,LAMINA ARNEJO'S NATURAL FUNDA 5 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_112,ME,LAMINA CASA DEL ARROZ MACAREÑO ENVEJECIDO 10kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_113,ME,"LAMINA CASA DEL ARROZ GOURMET ENVEJECIDO 1kg, BULTO 30u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_114,ME,"LAMINA CASA DEL ARROZ GOURMET ENVEJECIDO 2kg, BULTO 13u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_115,ME,"LAMINA CASA DEL ARROZ GOURMET ENVEJECIDO 5kg, BULTO 6u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_116,ME,"LAMINA CASA DEL ARROZ GOURMET NATURAL 1kg, BULTO 30u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_117,ME,"LAMINA CASA DEL ARROZ GOURMET NATURAL 2kg, BULTO 13u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_118,ME,"LAMINACASA DEL ARROZ GOURMET NATURAL 5kg, BULTO 6u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_119,ME,"LAMINA CASA DEL ARROZ INTEGRAL 1kg, BULTO 30u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_120,ME,"LAMINA CASA DEL ARROZ INTEGRAL 2kg, BULTO 13u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_121,ME,"LAMINA CASA DEL ARROZ INTEGRAL 5kg, BULTO 6u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_122,ME,LAMINA SANTA MARIA RESERVA ESPECIAL ENVEJECIDO EXTRA LARGO @ - 11.34 kg - 25 Lbs                ,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_123,ME,"LAMINA SANTA MARIA 4 Lbs EMPAQUETADO ENVEJECIDO LARGO, BULTO 13u.            ",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_124,ME,"LAMINA SANTA MARIA 10 Lbs EMPAQUETADO ENVEJECIDO LARGO, BULTO 6u.",,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_125,ME,SACOS RESERVA ESPECIAL ENVEJECIDO @ - 11.34 kg - 25Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_126,ME,SACOS RESERVA ESPECIAL ENVEJECIDO quintal - 45.36 kg,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_127,ME,SACOS RESERVA ESPECIAL NATURAL @ - 11.34 kg - 25Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_128,ME,SACOS RESERVA ESPECIAL NATURAL quintal - 45.36 kg - 100 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_129,ME,SACOS LIRA EXPRESS ENVEJECIDO @ - 11.34 kg - 25Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_130,ME,SACOS LIRA EXPRESS ENVEJECIDO quintal - 45.36 kg - 100 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_131,ME,SACOS LIRA EXPRESS NATURAL @ - 11.34 kg - 25Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_132,ME,SACOS GOOD RICE ENVEJECIDO @ - 11.34 kg - 25 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_133,ME1002004,SACOS GOOD RICE ENVEJECIDO quintal - 45.36 kg - 100 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_134,ME,SACOS GOOD RICE ENVEJECIDO Saco Blanco Laminado quintal - 45.36 kg - 100 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_135,ME,SACOS ARNEJO'S ENVEJECIDO @ - 11.34 kg - 25 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_136,ME,SACOS ARNEJO'S ENVEJECIDO quintal - 45.36 kg - 100 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_137,ME,SACOS ARNEJO'S NATURAL @ - 11.34 kg - 25 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_138,ME,SACOS ARNEJO'S NATURAL quintal - 45.36 kg - 100 lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_139,ME,SACOS ARNEJO'S NATURAL SACO BLANCO LAMINADO FAVORITA quintal - 45.36 kg - 100 lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_140,ME,SACOS CASA DEL ARROZ MACAREÑO ENVEJECIDO quintal - 45.36 kg - 100 Lb,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_141,ME060065,SACOS ARROZ GUSTADINA VITAMINAS 10 kg. -  AGARRADERAS,0.17,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_142,ME00009757,SACOS ARROZ RENDIDOR 10 kg. - AGARRADERA,0.17,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_143,ME,SACOS ARROZ RENDIDOR 25 LBS. - AGARRADERA,0.1774,,Consumible,All / Saleable / Insumos,Unit(s),Unit(s),True,False,mrp.route_warehouse0_buy
+arrocesa_product_144,ME,SACOS ARROZ RENDIDOR 25 LBS. - TROQUEL,0.165,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_145,ME,SACOS CASA DEL ARROZ - MACAREÑO ENVEJECIDO,0.23,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_146,ME,SACO SANTA MARIA ENVEJECIDO LARGO quintal - 45.36 kg - 100 Lbs,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_147,ME1003036,SACO SANTA MARIA ENVEJECIDO LARGO @ - 11.34 kg - 25 Lbs,0.1774,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_148,ME,SACOS CRIOLLITO quintal  ,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_149,ME,SACOS 1001 quintal DIPROMA,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_150,ME,SACOS 1001 quintal PRODICEREAL,,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy
+arrocesa_product_151,ME,SACOS BIGBAG POLVILLO,8.93,,Consumible,All / Saleable / Insumos,saca,saca,True,False,mrp.route_warehouse0_buy

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="wizard_export_dinardap_form" model="ir.ui.view">
+            <field name="name">Exportar Dinardap</field>
+            <field name="model">wizard.dinardap</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Exportar Archivo Dinardap" version="7.0">
+                    <field name="state" invisible="1"/>
+                    <group states="choose">
+                        <separator string="Se exportara la información de la empresa a la que pertenece el usuario actual." colspan="4"/>
+                        
+                        <field name="period_end" required="1"/>
+                        <field name="company_id" required="1" readonly="1" options="{'no_open': True}"/>
+                    </group>
+                    <group states="export">
+                        <separator string="Archivo generado correctamente, guardelo en su ubicación de preferencia." colspan="4"/>
+                        <field name="fcname" invisible="1"/>
+                        <field name="data" filename="fcname" widget="download_link" readonly="1"/>
+                    </group>
+                    <group states="export_error">
+                        <separator string="Error de validacion del xml." colspan="4"/>
+
+                        <field name="fcname" invisible="1"/>
+                        <field name="data" filename="fcname" widget="download_link" readonly="1"/>
+                    </group>
+                    <footer class="oe_right">
+                        <button icon="gtk-cancel" class="oe_link" special="cancel" states="choose" string="Cancelar"/>
+                        <button icon="gtk-execute" name="act_export_dinardap" states="choose" string="Exportar archivo" type="object"/>
+                        <button icon="gtk-ok" states="export" string="Cerrar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_export_dinardap" model="ir.actions.act_window">
+            <field name="name">Exportar Reporte Dinardap</field>
+            <field name="res_model">wizard.dinardap</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem action="action_export_dinardap" id="menu_export_dinardap" parent="l10n_ec_withholding.menu_sri_reporting"/>
+
+    </data>
+</openerp>

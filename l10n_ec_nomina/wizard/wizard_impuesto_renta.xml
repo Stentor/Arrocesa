@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+        <report
+        id="report_impuesto_renta"
+        model="hr.wizard.impuesto.renta"
+        string="FORMULARIO 107"
+        report_type="qweb-pdf"
+        name="l10n_ec_nomina.report_impuesto_renta"
+        file="l10n_ec_nomina.report_impuesto_renta"
+        attachment_use="True"
+        attachment="('Formulario 107 '+(object.name.name or '').replace('/','')+'.pdf')"
+        />
+
+        <record id="hr_impuesto_renta_report_form" model="ir.ui.view">
+            <field name="name">hr.wizard.impuesto.renta</field>
+            <field name="model">hr.wizard.impuesto.renta</field>
+            <field name="arch" type="xml">
+                <form>
+                    <h4>FORMULARIO 107</h4>
+                    <group>
+                        <field name="name" domain="[('active','=','1')]" options="{'no_create':True}" required="1"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="fecha" required="1"/>
+                        <field name="anio" required="1"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="util" required="1"/>
+                        <field name="ing_grav_otroempl" required="1"/>
+                        <field name="otros_ing" required="1"/>
+                        <field name="apor_iess" required="1"/>
+                        <field name="imp_ret_asum" required="1"/>
+                        <field name="exo_discapacidad" required="1"/>
+                        <field name="exo_ter_edad" required="1"/>
+                        <field name="imp_asum_estempl" required="1"/>
+                    </group>
+                    <footer>
+                        <button name="print_107" string="Imprimir" type="object" class="btn btn-primary" icon="fa-print"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_impuesto_renta_report_action" model="ir.actions.act_window">
+            <field name="name">Formulario 107</field>
+            <field name="res_model">hr.wizard.impuesto.renta</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="hr_impuesto_renta_report_form"/>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="menu_hr_payroll_report_impuesto_renta" name="Formulario 107" action="hr_impuesto_renta_report_action"
+            parent="menu_hr_payroll_report" sequence="3" groups="hr_payroll.group_hr_payroll_manager"/>
+    </data>
+</odoo>

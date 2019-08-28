@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="tax_ice" model="account.tax">
+            <field name="name">ICE</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="l10n_ec_tax.ice"/>
+            <field name="amount">0</field>
+            <field name="python_compute">
+                <![CDATA[
+base = max(
+    product.standard_price*1.25,
+    base_amount/(1.0515)
+)
+if product.ice_id:
+    coeff = product.ice_id.value
+    result = base*coeff/100.0
+else:
+    result = 0           
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

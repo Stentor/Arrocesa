@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_tenths_template" >
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set="mes" t-value="o.month_in_letter()"/>
+                    <t t-set="color" t-value="silver"/>
+                    <t t-call="web.external_layout">
+                        <div class="page" >
+                            <div>
+                                <t t-if="o.name == 'ProvDec13'">
+                                    <center><h2><strong>DECIMO TERCERO <span t-esc="o.period"/></strong></h2> <t t-esc="type_report"/></center>
+                                </t>
+                                <t t-if="o.name == 'ProvDec14'">
+                                    <center><h2><strong>DECIMO CUARTO <span t-esc="o.period"/></strong></h2> <t t-esc="type_report"/></center>
+                                </t>
+                            </div><br/>
+                            <div class="row">
+                                <div class="col-2"><span><strong>Desde</strong></span></div>
+                                <div class="col-2"><span t-esc="o.date_from"/></div>
+                                <div class="col-2"><span><strong>Hasta</strong></span></div>
+                                <div class="col-2"><span t-esc="o.date_to"/></div>
+                            </div>
+                            <div class="row" style="background-color: silver; font-size: 9px">
+                                <div style="width: 9.33333333%; border: 1px solid black;"><span><strong>NOMBRE</strong></span></div>
+                                <div style="width: 5.53333333%; border: 1px solid black"><span><strong>CEDULA</strong></span></div>
+                                <!-- <div style="width: 5.33333333%; border: 1px solid black"><span><strong>LOCAL</strong></span></div> -->
+                                <div style="width: 5.33333333%; border: 1px solid black"><span><strong>SECTORIAL</strong></span></div>
+                                <div style="width: 5.53333333%; border: 1px solid black"><span><strong>CARGO</strong></span></div>
+                                <!-- <div style="width: 5.33333333%; border: 1px solid black"><span><strong>GENERO</strong></span></div> -->
+                                <div style="width: 6.33333333%; border: 1px solid black"><span><strong>CTA. BANCARIA</strong></span></div>
+                                <div style="width: 5.43333333%; border: 1px solid black"><span><strong>FECHA INGRESO</strong></span></div>
+                                <t t-foreach="o.range_month()" t-as="month">
+                                    <div style="width: 4.33333333%; border: 1px solid black"><strong><span t-esc="mes[month-1]" /></strong></div>
+                                </t>
+                                <t t-if="o.name == 'ProvDec13'">
+                                    <div style="width: 5.33333333%; border: 1px solid black"><span><strong>DECIMO TERCERO<span t-esc="type"/></strong></span></div>
+                                </t>
+                                <t t-if="o.name == 'ProvDec14'">
+                                    <div style="width: 5.33333333%; border: 1px solid black"><span><strong>DECIMO CUARTO<span t-esc="type"/></strong></span></div>
+                                </t>
+                                <div style="width: 6.33333333%; border: 1px solid black"><span><strong>OBSERVACION</strong></span></div>
+                            </div>
+                            <!-- <div class="col"> -->
+                            <t t-foreach="o.contract_active()" t-as="contract">
+                                <t t-if="o.total_tenths(contract.employee_id) != 0">
+                                    <div class="row" style="font-size: 9px; background-color: color">
+                                        <div style="width: 9.33333333%; border: 1px solid black"><span t-esc="contract.employee_id.name"/></div>
+                                        <div style="width: 5.53333333%; border: 1px solid black"><span t-esc="contract.employee_id.identification_id"/></div>
+                                        <!-- <div style="width: 5.33333333%; border: 1px solid black"><span t-esc="contract.employee_id.work_location"/></div> -->
+                                        <div style="width: 5.33333333%; border: 1px solid black"><span t-esc="contract.sectoral_id.code" /></div>
+                                        <div style="width: 5.53333333%; border: 1px solid black"><span t-esc="contract.job_id.name"/></div>
+                                        <!-- <div style="width: 5.33333333%; border: 1px solid black"><span t-esc="contract.employee_id.gender"/></div> -->
+                                        <div style="width: 6.33333333%; border: 1px solid black"><span t-esc="contract.employee_id.bank_account_id.acc_number"/></div>
+                                        <div style="width: 5.43333333%; border: 1px solid black"><span t-esc="contract.date_start"/></div>
+                                        <t t-foreach="o.range_month()" t-as="months">
+                                            <t t-if="o.name == 'ProvDec13'">
+                                                <t t-if="months == 12">
+                                                    <div style="width: 4.33333333%; border: 1px solid black"><span>$</span>
+                                                        <span t-esc="o.payslip_in_period(o.period_range((int(o.period)-1),months),contract.employee_id)"/>
+                                                    </div>
+                                                </t>
+                                                <t t-if="months != 12">
+                                                    <div style="width: 4.33333333%; border: 1px solid black"><span>$</span>
+                                                        <span t-esc="o.payslip_in_period(o.period_range(o.period,months),contract.employee_id)"/>
+                                                    </div>
+                                                </t>
+                                            </t>
+                                            <t t-if="o.name != 'ProvDec13'">
+                                                <t t-if="months in (1,2) and o.region_id in ('cost','island')">
+                                                    <div style="width: 4.33333333%; border: 1px solid black"><span>$</span>
+                                                        <span t-esc="o.payslip_in_period(o.period_range((int(o.period)+1),months),contract.employee_id)"/>
+                                                    </div>
+                                                </t>
+                                                <t t-if="months not in (1,2) and o.region_id in ('cost','island') ">
+                                                    <div style="width: 4.33333333%; border: 1px solid black"><span>$</span>
+                                                        <span t-esc="o.payslip_in_period(o.period_range(o.period,months),contract.employee_id)"/>
+                                                    </div>
+                                                </t>
+                                                <t t-if="months &lt; 7 and o.region_id in ('sierra','amazon')">
+                                                    <div style="width: 4.33333333%; border: 1px solid black"><span>$</span>
+                                                        <span t-esc="o.payslip_in_period(o.period_range((int(o.period)+1),months),contract.employee_id)"/>
+                                                    </div>
+                                                </t>
+                                                <t t-if="months &gt; 6 and o.region_id in ('sierra','amazon')">
+                                                    <div style="width: 4.33333333%; border: 1px solid black"><span>$</span>
+                                                        <span t-esc="o.payslip_in_period(o.period_range(o.period,months),contract.employee_id)"/>
+                                                    </div>
+                                                </t>
+                                            </t>
+                                        </t>
+                                        <div style="width: 5.33333333%; border: 1px solid black"><span>$</span><span t-esc="o.total_tenths(contract.employee_id)"/></div>
+                                        <div style="width: 6.33333333%; border: 1px solid black"><span /></div>
+                                    </div>
+                                </t>
+                            </t>
+                            <t t-set="total" t-value="0"/>
+                            <t t-foreach="o.contract_active()" t-as="contract">
+                                <t t-set="total" t-value="total + o.total_tenths(contract.employee_id)"/>
+                            </t>
+                            <div class="row" style="font-size: 9px">
+                                <div style="width: 84.1%"/>
+                                <div style="width: 4.33333333%"><span>TOTAL</span></div>
+                                <div style="width: 5.33333333%"><span>$</span><span t-esc="'%.2f' % (total)"/></div>
+                            </div>
+                            <div class="row" style="margin-top: 30px;">
+                            <div class="col-2"/>
+                            <div class="col-3" style="border-top: 1px solid black;">
+                                <center><span><strong>Elaborado Por</strong></span></center>
+                            </div>
+                            <div class="col-1"/>
+                            <div class="col-3" style="border-top: 1px solid black;">
+                                <center><span><strong>Aprobado Por</strong></span></center>
+                            </div>
+                            <div class="col-1"/>
+                
+                        </div>
+                            <!-- </div> -->
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+        <template id="report_utilities_template" >
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div><center>
+                                <h2><strong>REPORTE DE UTILIDADES <span t-esc="o.period"/></strong></h2>
+                            </center></div>
+                            <div class="row" style="background-color: silver; font-size: 10px">
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>CEDULA</span></strong></div>
+                                <div style="width: 6.53333333%; border: 1px solid black;"><strong><span>NOMBRE</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>SECTORIAL</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>CARGAS FAMILIARES</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>DIAS LABORADOS</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>TIPO PAGO</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>JORNADA PARCIAL</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>HORAS J. PARCIAL</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>DISCAPACIDAD</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>13ERO</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>14TO</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>PARTICIPACION PAGO UTILIDADES</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>SALARIOS</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>FONDO RESERVA</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>COMISIONES</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>BENEFICIOS</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>RET. JUDICIAL</span></strong></div>
+                                <div style="width: 5.53333333%; border: 1px solid black;"><strong><span>IMP. RET.</span></strong></div>
+                            </div>
+                            <t t-foreach="o.contract_active()" t-as="contract">
+                                <div class="row" style="font-size: 10px">                                
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="contract.employee_id.identification_id"/></div>
+                                    <div style="width: 6.53333333%; border: 1px solid black;"><span t-esc="contract.employee_id.name"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="contract.sectoral_id.code"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="o.family_count(contract.employee_id)"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span /></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span /></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span /></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span /></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="contract.employee_id.discapacitado"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="o.total_tenths(contract.employee_id,'ProvDec13')"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="o.total_tenths(contract.employee_id,'ProvDec14')"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span /></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="o.total_tenths(contract.employee_id,'BASIC')"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="o.total_tenths(contract.employee_id,'FonResv')"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="o.total_tenths(contract.employee_id,'Comi')"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span /></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="o.total_tenths(contract.employee_id,'PenAli')"/></div>
+                                    <div style="width: 5.53333333%; border: 1px solid black;"><span t-esc="o.total_tenths(contract.employee_id,'ImpRent')"/></div>
+                                </div>
+                            </t>
+                            <div class="row" style="margin-top: 10px;">
+                            <div class="col-1"/>
+                            <div class="col-3" style="border-top: 1px solid black;">
+                                <center><span><strong>Elaborado Por</strong></span></center>
+                            </div>
+                            <div class="col-1"/>
+                            <div class="col-3" style="border-top: 1px solid black;">
+                                <center><span><strong>Aprobado Por</strong></span></center>
+                            </div>
+                        </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

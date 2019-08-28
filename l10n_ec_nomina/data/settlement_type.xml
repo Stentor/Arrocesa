@@ -1,0 +1,14 @@
+<odoo>
+    <data noupdate="1">
+        <record id="hr_settlement_volunteer" model="hr.settlement.type">
+            <field name="code">volunteer</field>
+            <field name="name">Voluntaria</field>
+            <field name="active">1</field>
+        </record>
+        <record id="hr_settlement_intempestivo" model="hr.settlement.type">
+            <field name="code">intempestivo</field>
+            <field name="name">Intempestivo</field>
+            <field name="active">1</field>
+        </record>
+    </data>
+</odoo>

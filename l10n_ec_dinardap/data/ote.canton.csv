@@ -1,0 +1,222 @@
+id,province_id/id,code,name
+ote_canton_0101,ote_province_01,01,CUENCA
+ote_canton_0102,ote_province_01,02,GIRON
+ote_canton_0103,ote_province_01,03,GUALACEO
+ote_canton_0104,ote_province_01,04,NABON
+ote_canton_0105,ote_province_01,05,PAUTE
+ote_canton_0106,ote_province_01,06,PUCARA
+ote_canton_0107,ote_province_01,07,SAN FERNANDO
+ote_canton_0108,ote_province_01,08,SANTA ISABEL
+ote_canton_0109,ote_province_01,09,SIGSIG
+ote_canton_0110,ote_province_01,10,OÑA
+ote_canton_0111,ote_province_01,11,CHORDELEG
+ote_canton_0112,ote_province_01,12,EL PAN
+ote_canton_0113,ote_province_01,13,SEVILLA DE ORO
+ote_canton_0114,ote_province_01,14,GUACHAPALA
+ote_canton_0115,ote_province_01,15,CAMILO PONCE ENRIQUEZ
+ote_canton_0201,ote_province_02,01,GUARANDA
+ote_canton_0202,ote_province_02,02,CHILLANES
+ote_canton_0203,ote_province_02,03,CHIMBO
+ote_canton_0204,ote_province_02,04,ECHEANDIA
+ote_canton_0205,ote_province_02,05,SAN MIGUEL
+ote_canton_0206,ote_province_02,06,CALUMA
+ote_canton_0207,ote_province_02,07,LAS NAVES
+ote_canton_0301,ote_province_03,01,AZOGUES
+ote_canton_0302,ote_province_03,02,BIBLIAN
+ote_canton_0303,ote_province_03,03,CAÑAR
+ote_canton_0304,ote_province_03,04,LA TRONCAL
+ote_canton_0305,ote_province_03,05,EL TAMBO
+ote_canton_0306,ote_province_03,06,DELEG
+ote_canton_0307,ote_province_03,07,SUSCAL
+ote_canton_0401,ote_province_04,01,TULCAN
+ote_canton_0402,ote_province_04,02,BOLIVAR
+ote_canton_0403,ote_province_04,03,ESPEJO
+ote_canton_0404,ote_province_04,04,MIRA
+ote_canton_0405,ote_province_04,05,MONTUFAR
+ote_canton_0406,ote_province_04,06,SAN PEDRO DE HUACA
+ote_canton_0501,ote_province_05,01,LATACUNGA
+ote_canton_0502,ote_province_05,02,LA MANA
+ote_canton_0503,ote_province_05,03,PANGUA
+ote_canton_0504,ote_province_05,04,PUJILI
+ote_canton_0505,ote_province_05,05,SALCEDO
+ote_canton_0506,ote_province_05,06,SAQUISILI
+ote_canton_0507,ote_province_05,07,SIGCHOS
+ote_canton_0601,ote_province_06,01,RIOBAMBA
+ote_canton_0602,ote_province_06,02,ALAUSI
+ote_canton_0603,ote_province_06,03,COLTA
+ote_canton_0604,ote_province_06,04,CHAMBO
+ote_canton_0605,ote_province_06,05,CHUNCHI
+ote_canton_0606,ote_province_06,06,GUAMOTE
+ote_canton_0607,ote_province_06,07,GUANO
+ote_canton_0608,ote_province_06,08,PALLATANGA
+ote_canton_0609,ote_province_06,09,PENIPE
+ote_canton_0610,ote_province_06,10,CUMANDA
+ote_canton_0701,ote_province_07,01,MACHALA
+ote_canton_0702,ote_province_07,02,ARENILLAS
+ote_canton_0703,ote_province_07,03,ATAHUALPA
+ote_canton_0704,ote_province_07,04,BALSAS
+ote_canton_0705,ote_province_07,05,CHILLA
+ote_canton_0706,ote_province_07,06,EL GUABO
+ote_canton_0707,ote_province_07,07,HUAQUILLAS
+ote_canton_0708,ote_province_07,08,MARCABELI
+ote_canton_0709,ote_province_07,09,PASAJE
+ote_canton_0710,ote_province_07,10,PIÑAS
+ote_canton_0711,ote_province_07,11,PORTOVELO
+ote_canton_0712,ote_province_07,12,SANTA ROSA
+ote_canton_0713,ote_province_07,13,ZARUMA
+ote_canton_0714,ote_province_07,14,LAS LAJAS
+ote_canton_0801,ote_province_08,01,ESMERALDAS
+ote_canton_0802,ote_province_08,02,ELOY ALFARO
+ote_canton_0803,ote_province_08,03,MUISNE
+ote_canton_0804,ote_province_08,04,QUININDE
+ote_canton_0805,ote_province_08,05,SAN LORENZO
+ote_canton_0806,ote_province_08,06,ATACAMES
+ote_canton_0807,ote_province_08,07,RIOVERDE
+ote_canton_0901,ote_province_09,01,GUAYAQUIL
+ote_canton_0902,ote_province_09,02,ALFREDO BAQUERIZO MORENO
+ote_canton_0903,ote_province_09,03,BALAO
+ote_canton_0904,ote_province_09,04,BALZAR
+ote_canton_0905,ote_province_09,05,COLIMES
+ote_canton_0906,ote_province_09,06,DAULE
+ote_canton_0907,ote_province_09,07,DURAN
+ote_canton_0908,ote_province_09,08,EL EMPALME
+ote_canton_0909,ote_province_09,09,EL TRIUNFO
+ote_canton_0910,ote_province_09,10,MILAGRO
+ote_canton_0911,ote_province_09,11,NARANJAL
+ote_canton_0912,ote_province_09,12,NARANJITO
+ote_canton_0913,ote_province_09,13,PALESTINA
+ote_canton_0914,ote_province_09,14,PEDRO CARBO
+ote_canton_0916,ote_province_09,16,SAMBORONDON
+ote_canton_0918,ote_province_09,18,SANTA LUCIA
+ote_canton_0919,ote_province_09,19,SALITRE
+ote_canton_0920,ote_province_09,20,SAN JACINTO DE YAGUACHI
+ote_canton_0921,ote_province_09,21,PLAYAS
+ote_canton_0922,ote_province_09,22,SIMON BOLIVAR
+ote_canton_0923,ote_province_09,23,CORONEL MARCELINO MARIDUEÑA
+ote_canton_0924,ote_province_09,24,LOMAS DE SARGENTILLO
+ote_canton_0925,ote_province_09,25,NOBOL
+ote_canton_0927,ote_province_09,27,GENERAL  ANTONIO ELIZALDE
+ote_canton_0928,ote_province_09,28,ISIDRO AYORA
+ote_canton_1001,ote_province_10,01,IBARRA
+ote_canton_1002,ote_province_10,02,ANTONIO ANTE
+ote_canton_1003,ote_province_10,03,COTACACHI
+ote_canton_1004,ote_province_10,04,OTAVALO
+ote_canton_1005,ote_province_10,05,PIMAMPIRO
+ote_canton_1006,ote_province_10,06,SAN MIGUEL DE URCUQUI
+ote_canton_1101,ote_province_11,01,LOJA
+ote_canton_1102,ote_province_11,02,CALVAS
+ote_canton_1103,ote_province_11,03,CATAMAYO
+ote_canton_1104,ote_province_11,04,CELICA
+ote_canton_1105,ote_province_11,05,CHAGUARPAMBA
+ote_canton_1106,ote_province_11,06,ESPINDOLA
+ote_canton_1107,ote_province_11,07,GONZANAMA
+ote_canton_1108,ote_province_11,08,MACARA
+ote_canton_1109,ote_province_11,09,PALTAS
+ote_canton_1110,ote_province_11,10,PUYANGO
+ote_canton_1111,ote_province_11,11,SARAGURO
+ote_canton_1112,ote_province_11,12,SOZORANGA
+ote_canton_1113,ote_province_11,13,ZAPOTILLO
+ote_canton_1114,ote_province_11,14,PINDAL
+ote_canton_1115,ote_province_11,15,QUILANGA
+ote_canton_1116,ote_province_11,16,OLMEDO
+ote_canton_1201,ote_province_12,01,BABAHOYO
+ote_canton_1202,ote_province_12,02,BABA
+ote_canton_1203,ote_province_12,03,MONTALVO
+ote_canton_1204,ote_province_12,04,PUEBLOVIEJO
+ote_canton_1205,ote_province_12,05,QUEVEDO
+ote_canton_1206,ote_province_12,06,URDANETA
+ote_canton_1207,ote_province_12,07,VENTANAS
+ote_canton_1208,ote_province_12,08,VINCES
+ote_canton_1209,ote_province_12,09,PALENQUE
+ote_canton_1210,ote_province_12,10,BUENA FE
+ote_canton_1211,ote_province_12,11,VALENCIA
+ote_canton_1212,ote_province_12,12,MOCACHE
+ote_canton_1213,ote_province_12,13,QUINSALOMA
+ote_canton_1301,ote_province_13,01,PORTOVIEJO
+ote_canton_1302,ote_province_13,02,BOLIVAR
+ote_canton_1303,ote_province_13,03,CHONE
+ote_canton_1304,ote_province_13,04,EL CARMEN
+ote_canton_1305,ote_province_13,05,FLAVIO ALFARO
+ote_canton_1306,ote_province_13,06,JIPIJAPA
+ote_canton_1307,ote_province_13,07,JUNIN
+ote_canton_1308,ote_province_13,08,MANTA
+ote_canton_1309,ote_province_13,09,MONTECRISTI
+ote_canton_1310,ote_province_13,10,PAJAN
+ote_canton_1311,ote_province_13,11,PICHINCHA
+ote_canton_1312,ote_province_13,12,ROCAFUERTE
+ote_canton_1313,ote_province_13,13,SANTA ANA
+ote_canton_1314,ote_province_13,14,SUCRE
+ote_canton_1315,ote_province_13,15,TOSAGUA
+ote_canton_1316,ote_province_13,16,24 DE MAYO
+ote_canton_1317,ote_province_13,17,PEDERNALES
+ote_canton_1318,ote_province_13,18,OLMEDO
+ote_canton_1319,ote_province_13,19,PUERTO LOPEZ
+ote_canton_1320,ote_province_13,20,JAMA
+ote_canton_1321,ote_province_13,21,JARAMIJO
+ote_canton_1322,ote_province_13,22,SAN VICENTE
+ote_canton_1401,ote_province_14,01,MORONA
+ote_canton_1402,ote_province_14,02,GUALAQUIZA
+ote_canton_1403,ote_province_14,03,LIMON INDANZA
+ote_canton_1404,ote_province_14,04,PALORA
+ote_canton_1405,ote_province_14,05,SANTIAGO
+ote_canton_1406,ote_province_14,06,SUCUA
+ote_canton_1407,ote_province_14,07,HUAMBOYA
+ote_canton_1408,ote_province_14,08,SAN JUAN BOSCO
+ote_canton_1409,ote_province_14,09,TAISHA
+ote_canton_1410,ote_province_14,10,LOGROÑO
+ote_canton_1411,ote_province_14,11,PABLO SEXTO
+ote_canton_1412,ote_province_14,12,TIWINTZA
+ote_canton_1501,ote_province_15,01,TENA
+ote_canton_1503,ote_province_15,03,ARCHIDONA
+ote_canton_1504,ote_province_15,04,EL CHACO
+ote_canton_1507,ote_province_15,07,QUIJOS
+ote_canton_1509,ote_province_15,09,CARLOS JULIO AROSEMENA TOLA
+ote_canton_1601,ote_province_16,01,PASTAZA
+ote_canton_1602,ote_province_16,02,MERA
+ote_canton_1603,ote_province_16,03,SANTA CLARA
+ote_canton_1604,ote_province_16,04,ARAJUNO
+ote_canton_1701,ote_province_17,01,DISTRITO METROPOLITANO DE QUITO
+ote_canton_1702,ote_province_17,02,CAYAMBE
+ote_canton_1703,ote_province_17,03,MEJIA
+ote_canton_1704,ote_province_17,04,PEDRO MONCAYO
+ote_canton_1705,ote_province_17,05,RUMIÑAHUI
+ote_canton_1707,ote_province_17,07,SAN MIGUEL DE LOS BANCOS
+ote_canton_1708,ote_province_17,08,PEDRO VICENTE MALDONADO
+ote_canton_1709,ote_province_17,09,PUERTO QUITO
+ote_canton_1801,ote_province_18,01,AMBATO
+ote_canton_1802,ote_province_18,02,BAÑOS DE AGUA SANTA
+ote_canton_1803,ote_province_18,03,CEVALLOS
+ote_canton_1804,ote_province_18,04,MOCHA
+ote_canton_1805,ote_province_18,05,PATATE
+ote_canton_1806,ote_province_18,06,QUERO
+ote_canton_1807,ote_province_18,07,SAN PEDRO DE PELILEO
+ote_canton_1808,ote_province_18,08,SANTIAGO DE PILLARO
+ote_canton_1809,ote_province_18,09,TISALEO
+ote_canton_1901,ote_province_19,01,ZAMORA
+ote_canton_1902,ote_province_19,02,CHINCHIPE
+ote_canton_1903,ote_province_19,03,NANGARITZA
+ote_canton_1904,ote_province_19,04,YACUAMBI
+ote_canton_1905,ote_province_19,05,YANTZAZA
+ote_canton_1906,ote_province_19,06,EL PANGUI
+ote_canton_1907,ote_province_19,07,CENTINELA DEL CONDOR
+ote_canton_1908,ote_province_19,08,PALANDA
+ote_canton_1909,ote_province_19,09,PAQUISHA
+ote_canton_2001,ote_province_20,01,SAN CRISTOBAL
+ote_canton_2002,ote_province_20,02,ISABELA
+ote_canton_2003,ote_province_20,03,SANTA CRUZ
+ote_canton_2101,ote_province_21,01,LAGO AGRIO
+ote_canton_2102,ote_province_21,02,GONZALO PIZARRO
+ote_canton_2103,ote_province_21,03,PUTUMAYO
+ote_canton_2104,ote_province_21,04,SHUSHUFINDI
+ote_canton_2105,ote_province_21,05,SUCUMBIOS
+ote_canton_2106,ote_province_21,06,CASCALES
+ote_canton_2107,ote_province_21,07,CUYABENO
+ote_canton_2201,ote_province_22,01,ORELLANA
+ote_canton_2202,ote_province_22,02,AGUARICO
+ote_canton_2203,ote_province_22,03,LA JOYA DE LOS SACHAS
+ote_canton_2204,ote_province_22,04,LORETO
+ote_canton_2301,ote_province_23,01,SANTO DOMINGO
+ote_canton_2302,ote_province_23,02,LA CONCORDIA
+ote_canton_2401,ote_province_24,01,SANTA ELENA
+ote_canton_2402,ote_province_24,02,LA LIBERTAD
+ote_canton_2403,ote_province_24,03,SALINAS

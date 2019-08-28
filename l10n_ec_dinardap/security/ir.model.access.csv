@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ote_province,access_ote_province,model_ote_province,account.group_account_invoice,1,1,1,1
+access_ote_canton,access_ote_canton,model_ote_canton,account.group_account_invoice,1,1,1,1
+access_ote_parroquia,access_ote_parroquia,model_ote_parroquia,account.group_account_invoice,1,1,1,1
+

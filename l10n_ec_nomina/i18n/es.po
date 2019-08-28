@@ -1,0 +1,813 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_ec_nomina
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: hr (8.0)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-18 13:10+0000\n"
+"PO-Revision-Date: 2015-08-13 14:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: Spanish (http://www.transifex.com/oca/OCA-hr-8-0/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:sale.field_product_template__expense_policy
+#: model_terms:ir.ui.view,arch_db:sale.product_template_form_view_invoice_policy
+msgid "Re-Invoice Policy"
+msgstr "Política de Re-Facturación"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:sales_team.field_crm_team__team_type
+msgid "Team Type"
+msgstr "Tipo de Equipo"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:mail.field_mail_activity_type__decoration_type
+msgid "Decoration Type"
+msgstr "Tipo de Decoración"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:mail.field_mail_activity_type__force_next
+msgid "Auto Schedule Next Activity"
+msgstr "Programar automáticamente la siguiente actividad"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:mail.field_mail_activity_type__default_next_type_id
+msgid "Default Next Activity"
+msgstr "Próxima Actividad Predeterminada"
+
+#. module: l10n_ec_nomina
+#: model:ir.model,name:l10n_ec_nomina.model_account_batch_download_wizard
+msgid "Account Batch download wizard"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model,name:l10n_ec_nomina.model_account_reconciliation_widget
+msgid "Account Reconciliation widget"
+msgstr "Widget de reconciliación de cuenta"
+
+#. module: l10n_ec_nomina
+#: code:addons/account_batch_payment/models/l10n_ec_nomina.py:75
+#, python-format
+msgid "All payments in the batch must belong to the same company."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: code:addons/account_batch_payment/models/l10n_ec_nomina.py:86
+#, python-format
+msgid "All payments in the batch must share the same payment method."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__amount
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.print_batch_payment
+msgid "Amount"
+msgstr "Importe"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__available_payment_method_ids
+msgid "Available Payment Method"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__journal_id
+msgid "Bank"
+msgstr "Banco"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_search
+msgid "Bank Journal"
+msgstr "Diario del banco"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "Batch Content"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:account.payment.method,name:l10n_ec_nomina.account_payment_method_batch_deposit
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.account_journal_dashboard_kanban_view_inherited
+msgid "Batch Deposit"
+msgstr "Grupo de cheques"
+
+#. module: l10n_ec_nomina
+#: model:ir.model,name:l10n_ec_nomina.model_report_account_batch_payment_print_batch_payment
+msgid "Batch Deposit Report"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model,name:l10n_ec_nomina.model_account_batch_payment
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__batch_payment_id
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__batch_payment_id
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_search
+msgid "Batch Payment"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.actions.act_window,name:l10n_ec_nomina.action_batch_payment_in
+#: model:ir.actions.act_window,name:l10n_ec_nomina.action_batch_payment_out
+#: model:ir.ui.menu,name:l10n_ec_nomina.menu_batch_payment_purchases
+#: model:ir.ui.menu,name:l10n_ec_nomina.menu_batch_payment_sales
+msgid "Batch Payments"
+msgstr "Lote de pagos"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__batch_type
+msgid "Batch Type"
+msgstr "Tipo de Pagos"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_download_wizard__batch_payment_id
+msgid "Batch payment from which the file has been generated."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.actions.act_window,help:l10n_ec_nomina.action_batch_payment_in
+#: model_terms:ir.actions.act_window,help:l10n_ec_nomina.action_batch_payment_out
+msgid ""
+"Batch payments allow you grouping different payments to ease\n"
+"                    reconciliation. They are also useful when depositing checks\n"
+"                    to the bank."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.download_xml_form
+msgid "Click here to download the generated file:"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.download_xml_form
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__payment_method_code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_ec_nomina
+#: code:addons/account_batch_payment/models/account_journal.py:57
+#: model:ir.actions.server,name:l10n_ec_nomina.action_account_create_batch_payment
+#, python-format
+msgid "Create Batch Payment"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.actions.act_window,help:l10n_ec_nomina.action_batch_payment_in
+msgid "Create a new customer batch payment"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.actions.act_window,help:l10n_ec_nomina.action_batch_payment_out
+msgid "Create a new vendor batch payment"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_payment_payroll__export_file_create_date
+msgid "Creation date of the related export file."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.print_batch_payment
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__date
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.print_batch_payment
+msgid "Date"
+msgstr "Fecha"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__display_name
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_report_account_batch_payment_print_batch_payment__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.download_xml_form
+msgid "Download export file"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_payment_payroll__export_file
+msgid "Export file related to this batch"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "Exported File"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__export_file
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__export_file
+msgid "File"
+msgstr "Archivo"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__file_generation_enabled
+msgid "File Generation Enabled"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__export_filename
+msgid "File Name"
+msgstr "Nombre del archivo"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__export_filename
+msgid "File name"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_download_wizard__export_file
+msgid "Generated XML file"
+msgstr "Archivo XML generado"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__export_file_create_date
+msgid "Generation Date"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__id
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__id
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_report_account_batch_payment_print_batch_payment__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_ec_nomina
+#: selection:account.batch.payment.payroll,batch_type:0
+msgid "Inbound"
+msgstr "Entrante"
+
+#. module: l10n_ec_nomina
+#: code:addons/account_batch_payment/models/account_journal.py:31
+#, python-format
+msgid "Inbound Batch Payments Sequence"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#. openerp-web
+#: code:addons/account_batch_payment/static/src/js/account_batch_payment_reconciliation.js:135
+#, python-format
+msgid "Incorrect Operation"
+msgstr "Operación incorrecta"
+
+#. module: l10n_ec_nomina
+#: model:ir.model,name:l10n_ec_nomina.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll____last_update
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_report_account_batch_payment_print_batch_payment____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.print_batch_payment
+msgid "Memo"
+msgstr "Circular"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_payment_payroll__export_filename
+msgid "Name of the export file generated for this batch"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_download_wizard__export_filename
+msgid "Name of the generated XML file"
+msgstr "Nombre del archivo XML generado"
+
+#. module: l10n_ec_nomina
+#: selection:account.batch.payment.payroll,state:0
+msgid "New"
+msgstr "Nuevo"
+
+#. module: l10n_ec_nomina
+#: selection:account.batch.payment.payroll,batch_type:0
+msgid "Outbound"
+msgstr "Saliente"
+
+#. module: l10n_ec_nomina
+#: code:addons/account_batch_payment/models/account_journal.py:17
+#, python-format
+msgid "Outbound Batch Payments Sequence"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__payment_method_id
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model,name:l10n_ec_nomina.model_account_payment
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__payment_ids
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: l10n_ec_nomina
+#: model:ir.actions.report,name:l10n_ec_nomina.action_print_batch_payment
+msgid "Print Batch Payment"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.actions.server,name:l10n_ec_nomina.action_account_print_batch_payment
+msgid "Print Batch Payments"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: selection:account.batch.payment.payroll,state:0
+msgid "Reconciled"
+msgstr "Conciliado"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__name
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "Register Payment"
+msgstr "Registrar pago"
+
+#. module: l10n_ec_nomina
+#. openerp-web
+#: code:addons/account_batch_payment/static/src/xml/account_reconciliation.xml:8
+#, python-format
+msgid "Select a Batch Payment"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: selection:account.batch.payment.payroll,state:0
+msgid "Sent"
+msgstr "Enviado"
+
+#. module: l10n_ec_nomina
+#. openerp-web
+#: code:addons/account_batch_payment/static/src/js/account_batch_payment_reconciliation.js:133
+#, python-format
+msgid ""
+"Some journal items from the selected batch payment are already selected in "
+"another reconciliation : "
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_payment_payroll__state
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_search
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_ec_nomina
+#: code:addons/account_batch_payment/models/l10n_ec_nomina.py:88
+#, python-format
+msgid ""
+"The batch must have the same payment method as the payments it contains."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: code:addons/account_batch_payment/models/l10n_ec_nomina.py:83
+#, python-format
+msgid "The batch must have the same type as the payments it contains."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: code:addons/account_batch_payment/models/l10n_ec_nomina.py:78
+#, python-format
+msgid ""
+"The journal of the batch payment and of the payments it contains must be the"
+" same."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_payment_payroll__payment_method_id
+msgid "The payment method used by the payments in this batch."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_search
+msgid "Unreconciled"
+msgstr "No conciliado"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "Validate"
+msgstr "Validar"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_batch_download_wizard__warning_message
+msgid "Warning"
+msgstr "Alerta"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_download_wizard__warning_message
+msgid "Warning message to display about the content of the downloadable file."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_batch_payment_payroll__file_generation_enabled
+msgid ""
+"Whether or not this batch payment should display the 'Generate File' button "
+"instead of 'Print' in form view."
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "auto ..."
+msgstr "auto ..."
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_batch_payment_form
+msgid "re-Generate Export File"
+msgstr ""
+
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__destination_journal_id
+msgid "Transfer To"
+msgstr "Transferir a"
+
+#. module: l10n_ec_nomina
+#: code:addons/account/models/account_payment.py:714
+#, python-format
+msgid "Transfer from %s"
+msgstr "Transferir desde %s"
+
+#. module: l10n_ec_nomina
+#: code:addons/account/models/account_payment.py:790
+#, python-format
+msgid "Transfer to %s"
+msgstr "Transferir a %s"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "Transfers"
+msgstr "Transferencias"
+
+#. module: l10n_ec_nomina
+#. openerp-web
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_tree
+#, python-format
+msgid "Amount"
+msgstr "Importe"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteo de archivos adjuntos"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_from_invoices
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_invoice_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_payment_payroll__writeoff_label
+msgid "Change label of the counterpart that will hold the payment difference"
+msgstr ""
+"Cambiar la etiqueta de la contraparte que mantendrá la diferencia de pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__company_id
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_payment_payroll__company_id
+msgid "Company related to this journal"
+msgstr "Compañía relacionada con este diario"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__currency_id
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: l10n_ec_nomina
+#: selection:l10n_ec_nomina.abstract.payment,partner_type:0
+#: selection:account.payment.payroll,partner_type:0
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_tree
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: l10n_ec_nomina
+#: code:addons/account/models/account_payment.py:769
+#, python-format
+msgid "Customer Credit Note"
+msgstr "Nota de crédito del cliente"
+
+#. module: l10n_ec_nomina
+#: code:addons/account/models/account_payment.py:767
+#, python-format
+msgid "Customer Payment"
+msgstr "Pago de cliente"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "Customer Payments"
+msgstr "Pagos de cliente"
+
+#. module: l10n_ec_nomina
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_term__note
+msgid "Description on the Invoice"
+msgstr "Descripción de la factura"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__destination_account_id
+msgid "Destination Account"
+msgstr "Cuenta de destino"
+
+#. openerp-web
+#: code:addons/account/static/src/xml/account_payment.xml:56
+#, python-format
+msgid "Date:"
+msgstr "Fecha:"
+
+#. module: l10n_ec_nomina
+#: selection:account.payment.payroll,state:0
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: l10n_ec_nomina
+#. openerp-web
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_from_invoices
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_invoice_form
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+#, python-format
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__move_name
+msgid "Journal Entry Name"
+msgstr "Nombre del Asiento contable"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__writeoff_label
+msgid "Journal Item Label"
+msgstr "Etiqueta de apunte contable."
+
+#. module: l10n_ec_nomina
+#: code:addons/account/models/account_payment.py:529
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_form
+#, python-format
+msgid "Journal Items"
+msgstr "Apuntes contables"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjuntos principales"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__communication
+msgid "Memo"
+msgstr "Circular"
+
+#. module: l10n_ec_nomina
+#. openerp-web
+#: code:addons/account/static/src/xml/account_payment.xml:64
+#, python-format
+msgid "Memo:"
+msgstr "Circular:"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Envío de Mensaje"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__move_line_ids
+msgid "Move Line"
+msgstr "Registro de movimiento"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__move_reconciled
+msgid "Move Reconciled"
+msgstr "Movimientos conciliados"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__message_has_error_counter
+msgid "Number of error"
+msgstr "Número de error"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_payment_payroll__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_payment_payroll__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,help:l10n_ec_nomina.field_account_payment_payroll__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leidos"
+
+#. module: l10n_ec_nomina
+#. openerp-web
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__partner_id
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+#, python-format
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__partner_type
+msgid "Partner Type"
+msgstr "Tipo de Empresa"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__amount
+msgid "Payment Amount"
+msgstr "Cantidad a pagar"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__payment_date
+msgid "Payment Date"
+msgstr "Fecha de pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__payment_difference
+msgid "Payment Difference"
+msgstr "Diferencia en pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__payment_difference_handling
+msgid "Payment Difference Handling"
+msgstr "Manejo de diferencias de pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__journal_id
+msgid "Payment Journal"
+msgstr "Diario de pago"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_form
+msgid "Payment Matching"
+msgstr "Asignación de Pagos"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__payment_method_id
+msgid "Payment Method Type"
+msgstr "Tipo de método de pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model,name:l10n_ec_nomina.model_account_payment_method
+msgid "Payment Methods"
+msgstr "Métodos de pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__payment_reference
+msgid "Payment Reference"
+msgstr "Referencia del pago"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__payment_type
+msgid "Payment Type"
+msgstr "Tipo de pago"
+
+#. module: l10n_ec_nomina
+#: code:addons/account/models/account_payment.py:370
+#: model:ir.actions.act_window,name:l10n_ec_nomina.action_account_payments
+#: model:ir.actions.act_window,name:l10n_ec_nomina.action_account_payments_payable
+#: model:ir.model,name:l10n_ec_nomina.model_account_payment
+#: model:ir.ui.menu,name:l10n_ec_nomina.menu_action_account_payments_payable
+#: model:ir.ui.menu,name:l10n_ec_nomina.menu_action_account_payments_receivable
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+#, python-format
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_ec_nomina
+#: code:addons/account/models/account_payment.py:444
+#, python-format
+msgid "Payments without a customer can't be matched"
+msgstr ""
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_from_invoices
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_invoice_form
+msgid "Post Difference In"
+msgstr "Publicar la diferencia en"
+
+#. module: l10n_ec_nomina
+#: selection:l10n_ec_nomina.move,state:0 selection:account.payment.payroll,state:0
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "Posted"
+msgstr "Publicado"
+
+#. module: l10n_ec_nomina
+#: selection:account.payment.payroll,state:0
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "Reconciled"
+msgstr "Conciliado"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment_payroll__show_partner_bank_account
+msgid "Show Partner Bank Account"
+msgstr "Mostrar cuenta bancaria del Contacto"
+
+#. module: l10n_ec_nomina
+#: model_terms:ir.ui.view,arch_db:l10n_ec_nomina.view_account_payment_search
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_ec_nomina
+#: model:ir.model.fields,field_description:l10n_ec_nomina.field_account_payment__state
+#, python-format
+msgid "Status"
+msgstr "Estado"
+
+#. module: l10n_ec_nomina
+#: selection:account.payment.payroll,partner_type:0
+msgid "Vendor"
+msgstr "Proveedor"

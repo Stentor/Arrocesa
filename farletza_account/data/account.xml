@@ -1,0 +1,1006 @@
+<odoo>
+    <data>
+        <!-- Account Types -->
+        <record model="account.account.type" id="data_account_type_capital">
+            <field name="name">Capital</field>
+            <field name="type">other</field>
+            <field name="internal_group">asset</field>
+            <field name="include_initial_balance" eval="True"/>
+        </record>
+        <record model="account.account.type" id="data_account_type_stock">
+            <field name="name">Inventario</field>
+            <field name="type">other</field>
+            <field name="internal_group">asset</field>
+            <field name="include_initial_balance" eval="True"/>
+        </record>
+        
+        <record id="farletza_chart_template" model="account.chart.template">
+            <field name="name">Farletza - Chart of Accounts</field>
+            <field name="currency_id" ref="base.USD"/>
+            <field name="bank_account_code_prefix"></field>
+            <field name="cash_account_code_prefix"></field>
+            <field name="transfer_account_code_prefix"></field>
+        </record>
+        <record id="account_account_61120004" model="account.account.template">
+            <field name="code">61120004</field>
+            <field name="name">XIV SUELDO</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6112"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61180003" model="account.account.template">
+            <field name="code">61180003</field>
+            <field name="name">OTROS MANTENIMIENTOS </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6118"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_131300008" model="account.account.template">
+            <field name="code">131300008</field>
+            <field name="name">RETENCION FUENTE</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_131"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_52110003" model="account.account.template">
+            <field name="code">52110003</field>
+            <field name="name">INSPECCIONES</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_521"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61160003" model="account.account.template">
+            <field name="code">61160003</field>
+            <field name="name">ENERGIA ELECTRICA</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6116"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_32210001" model="account.account.template">
+            <field name="code">32210001</field>
+            <field name="name">RESERVA LEGAL</field>
+            <field name="user_type_id" ref="data_account_type_capital"/>
+            <field name="group_id" ref="account_group_32"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_33310003" model="account.account.template">
+            <field name="code">33310003</field>
+            <field name="name">PERDIDA DEL EJERCICIO</field>
+            <field name="user_type_id" ref="data_account_type_capital"/>
+            <field name="group_id" ref="account_group_33"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21210005" model="account.account.template">
+            <field name="code">21210005</field>
+            <field name="name">VACACIONES</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2121"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41100004" model="account.account.template">
+            <field name="code">41100004</field>
+            <field name="name">DESCUENTO EN VENTAS 0%</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_411"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_112500000" model="account.account.template">
+            <field name="code">112500000</field>
+            <field name="name">CHEQUES EN TRANSITO </field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1125"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_111110001" model="account.account.template">
+            <field name="code">111110001</field>
+            <field name="name">CAJA CHICA  GYE</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_11111"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_51110003" model="account.account.template">
+            <field name="code">51110003</field>
+            <field name="name">MULTAS SISTEMA SENAE</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_511"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230014" model="account.account.template">
+            <field name="code">21230014</field>
+            <field name="name">IMPUESTO A LA RENTA EMPLEADOS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61240001" model="account.account.template">
+            <field name="code">61240001</field>
+            <field name="name">COMUNICACION NACIONAL</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6124"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230002" model="account.account.template">
+            <field name="code">21230002</field>
+            <field name="name">RETENCION FUENTE 2%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21210006" model="account.account.template">
+            <field name="code">21210006</field>
+            <field name="name">APORTE PATRONAL</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2121"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41100001" model="account.account.template">
+            <field name="code">41100001</field>
+            <field name="name">INGRESOS POR SERVICIOS 12%</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_411"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21210001" model="account.account.template">
+            <field name="code">21210001</field>
+            <field name="name">SUELDOS  </field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2121"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61120007" model="account.account.template">
+            <field name="code">61120007</field>
+            <field name="name">APORTE PATRONAL</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6112"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_121200004" model="account.account.template">
+            <field name="code">121200004</field>
+            <field name="name">DEPRECIACION EQUIPO DE COMPUTACION </field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1212"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_131300006" model="account.account.template">
+            <field name="code">131300006</field>
+            <field name="name">IVA PAGADO CONTRIBUYENTE ESPECIAL</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_131"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_42110001" model="account.account.template">
+            <field name="code">42110001</field>
+            <field name="name">RENTA POR INVERSIONES LOCALES</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_421"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61120006" model="account.account.template">
+            <field name="code">61120006</field>
+            <field name="name">FONDO DE RESERVA </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6112"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_52110007" model="account.account.template">
+            <field name="code">52110007</field>
+            <field name="name">DESCUENTO EN COSTO</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_521"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41200003" model="account.account.template">
+            <field name="code">41200003</field>
+            <field name="name">INGRESOS POR FLETE</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_412"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41100002" model="account.account.template">
+            <field name="code">41100002</field>
+            <field name="name">INGRESOS POR SERVICIOS EXPORTADOS</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_411"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_52110005" model="account.account.template">
+            <field name="code">52110005</field>
+            <field name="name">COSTO DE VENTA FLETES</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_521"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_52110001" model="account.account.template">
+            <field name="code">52110001</field>
+            <field name="name">VISTO BUENO EXPORTACIONES</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_521"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_131300004" model="account.account.template">
+            <field name="code">131300004</field>
+            <field name="name">ANTICIPO A NAVIERAS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_131"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230010" model="account.account.template">
+            <field name="code">21230010</field>
+            <field name="name">RETENCION IVA 30%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62111001" model="account.account.template">
+            <field name="code">62111001</field>
+            <field name="name">HONORARIOS</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6211"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_42110003" model="account.account.template">
+            <field name="code">42110003</field>
+            <field name="name">INGRESOS POR TIPO DE CAMBIO</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_421"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41200004" model="account.account.template">
+            <field name="code">41200004</field>
+            <field name="name">DESCUENTO EN VENTAS 12%</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_412"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61180002" model="account.account.template">
+            <field name="code">61180002</field>
+            <field name="name">MANTENIMIENTO DE LOCALES</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6118"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_131300003" model="account.account.template">
+            <field name="code">131300003</field>
+            <field name="name">ANTICIPO A PROVEEDORES</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_131"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62221006" model="account.account.template">
+            <field name="code">62221006</field>
+            <field name="name">FONDOS DE RESERVA</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6222"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_31110001" model="account.account.template">
+            <field name="code">31110001</field>
+            <field name="name">PARTICIPACION 1</field>
+            <field name="user_type_id" ref="data_account_type_capital"/>
+            <field name="group_id" ref="account_group_311"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61160002" model="account.account.template">
+            <field name="code">61160002</field>
+            <field name="name">INTERNET</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6116"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_112100002" model="account.account.template">
+            <field name="code">112100002</field>
+            <field name="name">CUENTAS POR COBRAR EXTERIOR</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="group_id" ref="account_group_1121"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_111200002" model="account.account.template">
+            <field name="code">111200002</field>
+            <field name="name">BANCO PICHINCHA</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="group_id" ref="account_group_1112"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_112600000" model="account.account.template">
+            <field name="code">112600000</field>
+            <field name="name">CREDITOS TRIBUTARIOS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1126"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230003" model="account.account.template">
+            <field name="code">21230003</field>
+            <field name="name">RETENCION FUENTE 8%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_52110004" model="account.account.template">
+            <field name="code">52110004</field>
+            <field name="name">TRAMITES DE ADUANA</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_521"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_112300000" model="account.account.template">
+            <field name="code">112300000</field>
+            <field name="name">OTRAS CUENTAS POR COBRAR</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="group_id" ref="account_group_1123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_112400000" model="account.account.template">
+            <field name="code">112400000</field>
+            <field name="name">PAGOS ANTICIPADOS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1124"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41100003" model="account.account.template">
+            <field name="code">41100003</field>
+            <field name="name">DESCUENTO EN VENTAS 12%</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_411"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61220003" model="account.account.template">
+            <field name="code">61220003</field>
+            <field name="name">XIII SUELDO</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6122"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_51110001" model="account.account.template">
+            <field name="code">51110001</field>
+            <field name="name">VISTO BUENO IMPORTACION</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_511"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21210002" model="account.account.template">
+            <field name="code">21210002</field>
+            <field name="name">XIII SUELDO</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2121"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_33310002" model="account.account.template">
+            <field name="code">33310002</field>
+            <field name="name">UTILIDAD DEL EJERCICIO</field>
+            <field name="user_type_id" ref="data_account_type_capital"/>
+            <field name="group_id" ref="account_group_33"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21210004" model="account.account.template">
+            <field name="code">21210004</field>
+            <field name="name">FONDO DE RESERVA </field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2121"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_31110002" model="account.account.template">
+            <field name="code">31110002</field>
+            <field name="name">PARTICIPACION 2</field>
+            <field name="user_type_id" ref="data_account_type_capital"/>
+            <field name="group_id" ref="account_group_311"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62241002" model="account.account.template">
+            <field name="code">62241002</field>
+            <field name="name">INTERNET</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6224"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230015" model="account.account.template">
+            <field name="code">21230015</field>
+            <field name="name">RETENCION DE DIVIDENDOS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61230001" model="account.account.template">
+            <field name="code">61230001</field>
+            <field name="name">CAPACITACION </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6123"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_51110004" model="account.account.template">
+            <field name="code">51110004</field>
+            <field name="name">COMISION AL EXTERIOR</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_511"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_51110002" model="account.account.template">
+            <field name="code">51110002</field>
+            <field name="name">FLETES INTERNOS</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_511"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230009" model="account.account.template">
+            <field name="code">21230009</field>
+            <field name="name">RETENCION IVA 20%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61160001" model="account.account.template">
+            <field name="code">61160001</field>
+            <field name="name">COMUNICACION NACIONAL</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6116"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_131300007" model="account.account.template">
+            <field name="code">131300007</field>
+            <field name="name">IVA CREDITO TRIBUTARIO</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_131"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61120003" model="account.account.template">
+            <field name="code">61120003</field>
+            <field name="name">XIII SUELDO</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6112"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230001" model="account.account.template">
+            <field name="code">21230001</field>
+            <field name="name">RETENCION FUENTE 1%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62231001" model="account.account.template">
+            <field name="code">62231001</field>
+            <field name="name">CAPACITACION </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6223"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61140001" model="account.account.template">
+            <field name="code">61140001</field>
+            <field name="name">CAPACITACION </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6114"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_32210002" model="account.account.template">
+            <field name="code">32210002</field>
+            <field name="name">RESERVA FACULTATIVA </field>
+            <field name="user_type_id" ref="data_account_type_capital"/>
+            <field name="group_id" ref="account_group_32"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_32210003" model="account.account.template">
+            <field name="code">32210003</field>
+            <field name="name">RESERVA ESPECIAL</field>
+            <field name="user_type_id" ref="data_account_type_capital"/>
+            <field name="group_id" ref="account_group_32"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41200006" model="account.account.template">
+            <field name="code">41200006</field>
+            <field name="name">DESCUENTO EN VENTAS FLETE </field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_412"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61130001" model="account.account.template">
+            <field name="code">61130001</field>
+            <field name="name">ARRIENDOS</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6113"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_52110002" model="account.account.template">
+            <field name="code">52110002</field>
+            <field name="name">FLETES INTERNOS</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_521"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62221004" model="account.account.template">
+            <field name="code">62221004</field>
+            <field name="name">XIV SUELDO</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6222"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61111001" model="account.account.template">
+            <field name="code">61111001</field>
+            <field name="name">SUELDOS</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6111"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_33310001" model="account.account.template">
+            <field name="code">33310001</field>
+            <field name="name">UTILIDAD EJERCICIO ANTERIOR</field>
+            <field name="user_type_id" ref="data_account_type_capital"/>
+            <field name="group_id" ref="account_group_33"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21140001" model="account.account.template">
+            <field name="code">21140001</field>
+            <field name="name">PROVISION DE COSTOS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_2114"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62211001" model="account.account.template">
+            <field name="code">62211001</field>
+            <field name="name">SUELDOS  </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6221"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_112200000" model="account.account.template">
+            <field name="code">112200000</field>
+            <field name="name">CUENTAS POR COBRAR EMPLEADOS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1122"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61240002" model="account.account.template">
+            <field name="code">61240002</field>
+            <field name="name">INTERNET</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6124"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230011" model="account.account.template">
+            <field name="code">21230011</field>
+            <field name="name">RETENCION IVA 70%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_121100004" model="account.account.template">
+            <field name="code">121100004</field>
+            <field name="name">EQUIPO DE COMPUTACION </field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1211"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61220005" model="account.account.template">
+            <field name="code">61220005</field>
+            <field name="name">VACACIONES</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6122"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61111002" model="account.account.template">
+            <field name="code">61111002</field>
+            <field name="name">HONORARIOS</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6111"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61100004" model="account.account.template">
+            <field name="code">61100004</field>
+            <field name="name">COMISION AMEX</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6110"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21210003" model="account.account.template">
+            <field name="code">21210003</field>
+            <field name="name">XIV SUELDO</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2121"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61140002" model="account.account.template">
+            <field name="code">61140002</field>
+            <field name="name">MOVILIZACION </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6114"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_111120000" model="account.account.template">
+            <field name="code">111120000</field>
+            <field name="name">CAJA GENERAL</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_11112"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41200005" model="account.account.template">
+            <field name="code">41200005</field>
+            <field name="name">DESCUENTO EN VENTAS SERVICIOS EXPORTADOS</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_412"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62221005" model="account.account.template">
+            <field name="code">62221005</field>
+            <field name="name">VACACIONES</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6222"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61211002" model="account.account.template">
+            <field name="code">61211002</field>
+            <field name="name">COMISIONES</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6121"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61220007" model="account.account.template">
+            <field name="code">61220007</field>
+            <field name="name">APORTE PATRONAL</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6122"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_121100002" model="account.account.template">
+            <field name="code">121100002</field>
+            <field name="name">MUEBLES Y ENSERES</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1211"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61140003" model="account.account.template">
+            <field name="code">61140003</field>
+            <field name="name">PARQUEO</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6114"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61180001" model="account.account.template">
+            <field name="code">61180001</field>
+            <field name="name">MANTENIMIENTO DE VEHICULOS </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6118"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41200002" model="account.account.template">
+            <field name="code">41200002</field>
+            <field name="name">INGRESOS POR SERVICIOS EXPORTADOS</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_412"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61220004" model="account.account.template">
+            <field name="code">61220004</field>
+            <field name="name">XIV SUELDO</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6122"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62221003" model="account.account.template">
+            <field name="code">62221003</field>
+            <field name="name">XIII SUELDO</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6222"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_51110005" model="account.account.template">
+            <field name="code">51110005</field>
+            <field name="name">DESCUENTO EN COSTO</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_511"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_121100001" model="account.account.template">
+            <field name="code">121100001</field>
+            <field name="name">EDIFICIOS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1211"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_131300005" model="account.account.template">
+            <field name="code">131300005</field>
+            <field name="name">IVA PAGADO</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_131"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21130001" model="account.account.template">
+            <field name="code">21130001</field>
+            <field name="name">CUENTAS POR PAGAR PROVEEDORES</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="group_id" ref="account_group_2113"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21240001" model="account.account.template">
+            <field name="code">21240001</field>
+            <field name="name">RETENCION FUENTE 1%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2124"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61220006" model="account.account.template">
+            <field name="code">61220006</field>
+            <field name="name">FONDOS DE RESERVA</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6122"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_52110006" model="account.account.template">
+            <field name="code">52110006</field>
+            <field name="name">VISTO BUENO EXTERIOR</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="group_id" ref="account_group_521"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62221007" model="account.account.template">
+            <field name="code">62221007</field>
+            <field name="name">APORTE PATRONAL</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6222"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61211001" model="account.account.template">
+            <field name="code">61211001</field>
+            <field name="name">SUELDOS  </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6121"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_112100001" model="account.account.template">
+            <field name="code">112100001</field>
+            <field name="name">CUENTAS POR COBRAR LOCALES</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="group_id" ref="account_group_1121"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230008" model="account.account.template">
+            <field name="code">21230008</field>
+            <field name="name">RETENCION IVA 10%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_111300001" model="account.account.template">
+            <field name="code">111300001</field>
+            <field name="name">INVERSIONES TEMPORALES</field>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="group_id" ref="account_group_1113"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_121200002" model="account.account.template">
+            <field name="code">121200002</field>
+            <field name="name">DEPRECIACION MUEBLES Y ENSERES</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1212"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21120001" model="account.account.template">
+            <field name="code">21120001</field>
+            <field name="name">CUENTAS POR PAGAR EXTERIOR</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="group_id" ref="account_group_2112"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230017" model="account.account.template">
+            <field name="code">21230017</field>
+            <field name="name">SRI POR PAGAR </field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62241001" model="account.account.template">
+            <field name="code">62241001</field>
+            <field name="name">COMUNICACION NACIONAL</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6224"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230013" model="account.account.template">
+            <field name="code">21230013</field>
+            <field name="name">IVA POR PAGAR 12%</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61170001" model="account.account.template">
+            <field name="code">61170001</field>
+            <field name="name">DEPRECIACION </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6117"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_21230016" model="account.account.template">
+            <field name="code">21230016</field>
+            <field name="name">IMPTO A LA RENTA COMPANIAS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_2123"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_121200001" model="account.account.template">
+            <field name="code">121200001</field>
+            <field name="name">DEPRECIACION EDIFICIOS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="group_id" ref="account_group_1212"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61230002" model="account.account.template">
+            <field name="code">61230002</field>
+            <field name="name">MOVILIZACION </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6123"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_61120005" model="account.account.template">
+            <field name="code">61120005</field>
+            <field name="name">VACACIONES</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6112"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_41200001" model="account.account.template">
+            <field name="code">41200001</field>
+            <field name="name">INGRESOS POR SERVICIOS 12%</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="group_id" ref="account_group_412"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_211100001" model="account.account.template">
+            <field name="code">211100001</field>
+            <field name="name">CUENTAS POR PAGAR  NAVIERAS</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="group_id" ref="account_group_2111"/>
+            <field name="reconcile">1</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+        <record id="account_account_62231002" model="account.account.template">
+            <field name="code">62231002</field>
+            <field name="name">MOVILIZACION </field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="group_id" ref="account_group_6223"/>
+            <field name="reconcile">0</field>
+            <field name="chart_template_id" ref="farletza_chart_template"/>
+        </record>
+
+          <!-- cuentas por defecto -->
+        <function  id="partner_account_receivable_default_set"
+                   model="ir.default" name="set"
+                   eval="('res.partner', 'property_account_receivable_id', ref('account_account_112100001'))"/>
+
+        <function  id="partner_account_payable_default_set"
+                   model="ir.default" name="set"
+                   eval="('res.partner', 'property_account_payable_id', ref('account_account_21130001'))"/>
+
+        <!--
+            Propiedades de cuentas por cobrar y por pagar
+        -->
+        <record model="ir.property" id="property_account_receivable">
+            <field name="name">property_account_receivable_id</field>
+            <field name="type">many2one</field>
+            <field name="fields_id" model="ir.model.fields"
+                   search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_receivable_id')]"/>
+            <field name="value" ref="account_account_112100001"/>
+        </record>
+
+        <record model="ir.property" id="property_account_payable">
+            <field name="name">property_account_payable_id</field>
+            <field name="type">many2one</field>
+            <field name="fields_id" model="ir.model.fields"
+                   search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_payable_id')]"/>
+            <field name="value" ref="account_account_21130001"/>
+        </record>
+
+    </data>
+</odoo>

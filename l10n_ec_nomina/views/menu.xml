@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+        <act_window  id="action_iess_sectorial_comision"  
+            name="Comisiones"  
+            res_model="iess.sectorial.comision"
+            view_mode="tree,form"  /> 
+
+        <act_window  id="action_iess_sectorial_rama"  
+            name="Ramas"  
+            res_model="iess.sectorial.rama"
+            view_mode="tree,form"  /> 
+
+        <act_window  id="action_iess_sectorial_cargo"  
+            name="Cargos"  
+            res_model="iess.sectorial.cargo"
+            view_mode="tree,form"  /> 
+
+        <act_window  id="action_gastos_personales"  
+            name="Gastos"  
+            res_model="hr.employee.gastos"
+            view_mode="tree,form"  /> 
+
+        <act_window  id="action_imp_renta_pernat"  
+            name="Impuestos"  
+            res_model="hr.impuesto.renta"
+            view_mode="tree,form"  />     
+
+        <menuitem  id="iess_sectorial"  
+            name="Codigos Sectoriales"  
+            parent="hr_payroll.menu_hr_payroll_configuration"
+            groups="hr_payroll.group_hr_payroll_manager"
+            sequence="99" />
+        
+        <menuitem  id="iess_sectorial_comission"  
+            name="Comisiones"  
+            action="action_iess_sectorial_comision"
+            groups="hr_payroll.group_hr_payroll_manager"
+            parent="iess_sectorial"
+            sequence="99" />
+
+        <menuitem  id="iess_sectorial_rama"  
+            name="Ramas"  
+            action="action_iess_sectorial_rama"
+            groups="hr_payroll.group_hr_payroll_manager"
+            parent="iess_sectorial"
+            sequence="99" />
+
+        <menuitem  id="iess_sectorial_cargo"  
+            name="Cargos"  
+            action="action_iess_sectorial_cargo"
+            groups="hr_payroll.group_hr_payroll_manager"
+            parent="iess_sectorial"
+            sequence="99" />
+
+        <menuitem  id="gastos"  
+            name="Gastos Personales"  
+            action="action_gastos_personales"
+            parent="hr_payroll.menu_hr_payroll_configuration"
+            groups="hr_payroll.group_hr_payroll_manager"
+            sequence="99" />
+
+        <menuitem  id="impuestos"  
+            name="Tabla Impuesto Renta"  
+            action="action_imp_renta_pernat"
+            parent="hr_payroll.menu_hr_payroll_configuration"
+            groups="hr_payroll.group_hr_payroll_manager"
+            sequence="99" />
+
+    </data>
+</odoo>

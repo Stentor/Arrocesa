@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_account_retention","account.retention","model_account_retention","account.group_account_invoice",1,1,1,1
+"access_ats_country","ats.country","model_ats_country",,1,0,0,0
+"access_ats_earning","ats.earning","model_ats_earning",,1,0,0,0

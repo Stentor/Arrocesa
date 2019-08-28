@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <record id="view_iess_sectorial_rama" model="ir.ui.view">
+            <field name="name">view_iess_sectorial_rama</field>
+            <field name="model">iess.sectorial.rama</field>
+	    <field name="arch" type="xml">
+            <form action="">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code" />
+                            <field name="comision_id"/>
+                        </group>
+                        <group>
+                            <field name="name" />
+                        </group>
+                    </group>
+                    <group>
+                        <field name="cargos_ids"/>
+                    </group>
+                </sheet>
+            </form>
+	    </field>
+	</record>
+
+    <record id="tree_iess_sectorial_rama" model="ir.ui.view">
+        <field name="name">tree_iess_sectorial_rama</field>
+        <field name="model">iess.sectorial.rama</field>
+        <field name="arch" type="xml">
+            <tree string="Ramas">
+                <field name="code"/>
+                <field name="name"/>
+                
+            </tree>
+        </field>
+    </record>
+    
+    </data>
+</odoo>

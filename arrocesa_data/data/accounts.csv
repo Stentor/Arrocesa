@@ -1,0 +1,877 @@
+name,code,type,reconcile
+CAJA GENERAL ,101010101,account.data_account_type_current_assets,1
+CAJA CHICA ,101010102,account.data_account_type_current_assets,0
+CAJA GENERAL PRODUCTORES ,101010103,account.data_account_type_current_assets,0
+BC0 DE GUAYAQUIL CTA CTE 807499-2 ,101010201,account.data_account_type_liquidity,1
+BCO PICHINCHA CTA CTE 33601637-04 ,101010202,account.data_account_type_liquidity,1
+BCO NAC DE FOMENTO CTA CTE 60-04368-1 ,101010203,account.data_account_type_liquidity,1
+BCO PRODUBANCO CTA CTE 02006113474 ,101010204,account.data_account_type_liquidity,1
+BCO INTERNACIONAL CTA CTE 1450610089 ,101010205,account.data_account_type_liquidity,1
+BCO PICHINCHA CTA CTE 2100183951 ,101010206,account.data_account_type_liquidity,1
+CUENTA DE INTEGRACION DE CAPITAL ,101010301,account.data_account_type_liquidity,0
+CERTIFICADO DE INVERSION BCO PICHINCHA ,101010302,account.data_account_type_liquidity,0
+INVERSIONES SWEEP ACCOUNT Y OVERNIGHT ,101010303,account.data_account_type_liquidity,0
+APERTURA CAPTACION FIJA PAV202000036001 ,101010304,account.data_account_type_liquidity,0
+APERTURA CAPTACION FIJA PAV202000038075 ,101010305,account.data_account_type_liquidity,0
+APERTURA CAPTACION FIJA PAS202000041488 ,101010306,account.data_account_type_liquidity,0
+APERTURA CAPTACION FIJA PAV202000044181 ,101010307,account.data_account_type_liquidity,0
+APERTURA CAPTACION FIJA PAV202000045889 ,101010308,account.data_account_type_liquidity,0
+APERTURA INVERSION C101292 ,101010309,account.data_account_type_liquidity,0
+APERTURA INVERSION C101503 ,101010310,account.data_account_type_liquidity,0
+APERTURA INVERSION C101645 ,101010311,account.data_account_type_liquidity,0
+APERTURA INVERSION C102389 ,101010312,account.data_account_type_liquidity,0
+CUENTAS POR COBRAR PRODUCTORES ,101020101,account.data_account_type_receivable,1
+CUENTAS POR COBRAR DE CHEQUES POSFECHADOS,101020102,account.data_account_type_receivable,1
+CUENTAS POR COBRAR DE CHEQUES PROTESTADOS,101020103,account.data_account_type_receivable,1
+PROVISION CUENTAS INCOBRABLES ,101020201,account.data_account_type_receivable,1
+CUENTAS POR COBRAR ACCIONISTAS ,101020401,account.data_account_type_receivable,1
+CXC EMPLEADOS ,101020501,account.data_account_type_receivable,1
+ANTICIPOS A EMPLEADOS ,101020502,account.data_account_type_receivable,1
+INTERESES POR COBRAR PROVEEDORES ,101020503,account.data_account_type_receivable,1
+OTRAS CUENTAS POR COBRAR ,101020504,account.data_account_type_receivable,1
+ANTICIPOS A PROVEEDORES ,101020505,account.data_account_type_receivable,1
+OTROS ANTICIPOS ENTREGADOS ,101020506,account.data_account_type_receivable,1
+INVENTARIOS DE MATERIA PRIMA ,101030101,account.data_account_type_receivable,1
+INVENTARIO PROMOCIONAL ,101030201,account.data_account_type_receivable,1
+PRODUCTO TERMINADO ,101030202,account.data_account_type_receivable,1
+MATERIALES DIRECTO DE PRODUCCION ,101030401,account.data_account_type_receivable,1
+MATERIALES ELECTRICOS ,101030402,account.data_account_type_receivable,1
+REPUESTOS DE VEHICULOS ,101030403,account.data_account_type_receivable,1
+REPUESTOS DE MAQUINARIAS ,101030404,account.data_account_type_receivable,1
+SUMINISTROS DE OFICINA ,101030405,account.data_account_type_receivable,1
+BODEGA DE REPUESTOS DE PILADORA ,101030406,account.data_account_type_receivable,1
+HERRAMIENTAS DE TALLER ,101030407,account.data_account_type_receivable,1
+BODEGA DE REPUESTOS DE VEHICULOS ,101030408,account.data_account_type_receivable,1
+MATERIALES DE CONTRUCCION ,101030409,account.data_account_type_receivable,1
+RESPUESTOS DE SILOS ,101030410,account.data_account_type_receivable,1
+SERVICIOS DE PILADA ,101030411,account.data_account_type_receivable,1
+SEGUROS PAGADOS POR ANTICIPADO ,101040101,account.data_account_type_current_assets,0
+ARRIENDOS PAGADOS POR ANTICIPADO ,101040102,account.data_account_type_current_assets,0
+CRÉDITO TRIBUTARIO A FAVOR DE LA EMPRESA (IVA) ,101050101,account.data_account_type_current_assets,1
+CRÉDITO TRIBUTARIO A FAVOR DE LA EMPRESA ( I. R.) ,101050102,account.data_account_type_current_assets,1
+ANTICIPO DE IMPUESTO A LA RENTA ,101050103,account.data_account_type_current_assets,1
+RETENCION EN LA FUENTE CLIENTES ,101050104,account.data_account_type_current_assets,1
+CREDITO TRIBUTARIO IVA PAGADO EN COMPRAS ,101050105,account.data_account_type_current_assets,1
+RECLAMOS TRIBUTARIOS ,101050106,account.data_account_type_current_assets,1
+CREDITO TRIBUTARIO IR 2007-08-09-10 ,101050107,account.data_account_type_current_assets,1
+CREDITO TRIBUTARIO ,101050108,account.data_account_type_current_assets,1
+CREDITO IR 2009 ,101050109,account.data_account_type_current_assets,1
+CREDITO IR 2010 ,101050110,account.data_account_type_current_assets,1
+CREDITO TRIBUTARIO IR 2011 ,101050111,account.data_account_type_current_assets,1
+CT IR 2012 ,101050112,account.data_account_type_current_assets,1
+RETENCIONES EN LA FTE RENDIMIENTO FINANC ,101050113,account.data_account_type_current_assets,1
+CREDITO TRIBUTARIO IR 2013 ,101050114,account.data_account_type_current_assets,1
+CT IR 2014 ,101050115,account.data_account_type_current_assets,1
+CT IR 2015 ,101050116,account.data_account_type_current_assets,1
+RETENCIONES EN EL IVA CLIENTES ,101050117,account.data_account_type_current_assets,1
+CREDITO TRIBUTARIO 2016 ,101050118,account.data_account_type_current_assets,1
+CREDITO TRIBUTARIO IR 2017 ,101050119,account.data_account_type_current_assets,1
+CREDITO TRIBUTARIO IR 2018 ,101050120,account.data_account_type_current_assets,1
+GASTOS DE CONSTITUCIòN ,101060101,account.data_account_type_current_assets,0
+GASTOS DE PREOPERACIONES ,101060102,account.data_account_type_current_assets,0
+ACTIVOS NO CAPITALIZABLES ,101060103,account.data_account_type_current_assets,0
+IMPUESTOS ,101060104,account.data_account_type_current_assets,0
+DEPOSITOS EN GARANTIA ,101060105,account.data_account_type_current_assets,0
+REPARACION Y MANTENIMIENTO ,101060106,account.data_account_type_current_assets,0
+TERRENO,102010101,account.data_account_type_current_assets,0
+TERRENO REVALORIZACION ,102010102,account.data_account_type_current_assets,0
+REVALORIZACION TERRENOS ,102010103,account.data_account_type_current_assets,0
+SUITE BARCELONA 1-055-O ,102010201,account.data_account_type_current_assets,0
+IMPORTACIONES EN TRANSITO ,102010301,account.data_account_type_current_assets,0
+CONSTRUCCION EN CURSO,102010302,account.data_account_type_current_assets,0
+INSTALACIONES PLANTA,102010401,account.data_account_type_current_assets,0
+INSTALACION DE OFICINAS ,102010402,account.data_account_type_current_assets,0
+MUEBLES Y ENSERES VARIOS ,102010501,account.data_account_type_current_assets,0
+MAQUINARIAS Y EQUIPOS,102010601,account.data_account_type_current_assets,0
+EQUIPOS DE COMPUTACION,102010801,account.data_account_type_current_assets,0
+"VEHÍCULOS, EQUIPOS DE TRANSPORTE Y EQUIPO CAMINERO MÓVIL ",102010901,account.data_account_type_current_assets,0
+"OTROS PROPIEDADES, PLANTA Y EQUIPO ",102011001,account.data_account_type_current_assets,0
+DEPREC ACUM EDIFICIOS ,102011201,account.data_account_type_current_assets,0
+DEPREC ACUM INSTALACIONES ,102011202,account.data_account_type_current_assets,0
+DEPREC ACUM MAQ EQUIPOS ,102011203,account.data_account_type_current_assets,0
+DEPREC ACUM VEHICULOS ,102011204,account.data_account_type_current_assets,0
+DEPREC ACUM MUEBLES Y ENSERES ,102011205,account.data_account_type_current_assets,0
+DEPREC ACUM EQ COMPUTACION ,102011206,account.data_account_type_current_assets,0
+DEPREC ACUM EQ COMUNICACION ,102011207,account.data_account_type_current_assets,0
+DEPREC ACUM EQ DE OFICINA ,102011208,account.data_account_type_current_assets,0
+REVALORIZACION INSTALACIONES ,102011301,account.data_account_type_current_assets,0
+DEPREC POR REVALORIZAC INSTALACIONES ,102011302,account.data_account_type_current_assets,0
+IMPUESTO DIFERIDO POR JUBILAION PATRONAL ,102020101,account.data_account_type_current_assets,0
+IMPUESTO DIFERIDO POR DESAHUCIO ,102020102,account.data_account_type_current_assets,0
+GASTOS ANTICIPADOS LP ,102020201,account.data_account_type_current_assets,0
+PRIMAS DE SEGUROS ,102020202,account.data_account_type_current_assets,0
+PUBLICIDAD ,102020203,account.data_account_type_current_assets,0
+IMPUESTOS Y CONTRIBUCIONES ,102020204,account.data_account_type_current_assets,0
+MATENIMIENTO Y REPARACIONES ,102020205,account.data_account_type_current_assets,0
+INTERESES Y COMISIONES BANCARIAS ,102020206,account.data_account_type_current_assets,0
+SUMINISTROS DE OFICINA ,102020207,account.data_account_type_current_assets,0
+OTROS GASTOS ANTICIPADOS ,102020208,account.data_account_type_current_assets,0
+CREDITO IR 2011 ,102020209,account.data_account_type_current_assets,0
+CARGOS DIFERIDOS LP ,102020210,account.data_account_type_current_assets,0
+GASTOS DE INVERSION Y DESARROLLO ,102020211,account.data_account_type_current_assets,0
+GASTOS DE PREOPERACION ,102020212,account.data_account_type_current_assets,0
+ACTIVOS NO CAPITALIZABLES ,102020213,account.data_account_type_current_assets,0
+IMPUESTOS ,102020214,account.data_account_type_current_assets,0
+DEPOSITOS Y GARANTIAS ,102020215,account.data_account_type_current_assets,0
+REPARACION Y MANTENIMIENTO ,102020216,account.data_account_type_current_assets,0
+PROVEEDORE DE ARROZ ,201010101,account.data_account_type_payable,1
+PROVEEDORES DE MATERIALES ,201010102,account.data_account_type_payable,1
+PROVISION GASTOS OPERACIONALES ,201010103,account.data_account_type_payable,1
+FACTURAS POR RECIBIR,201010104,account.data_account_type_payable,1
+CTAS CUENTAS POR PAGAR ,201010105,account.data_account_type_payable,1
+PRESTAMO BANCARIO BANCO DE GUAYAQUIL ,201020101,account.data_account_type_payable,1
+SOBREGIRO BANC BCO GUAYAQUIL ,201020102,account.data_account_type_payable,1
+PRESTAMO BCO NAC FOMENTO ,201020201,account.data_account_type_payable,1
+SOBREGIRO BANC NAC FOMENTO ,201020202,account.data_account_type_payable,1
+INTERESES PAG BCO NAC FOMENTO ,201020203,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 122716800 ,201020301,account.data_account_type_payable,1
+SOBREGIRO BANC PICHINCHA ,201020302,account.data_account_type_payable,1
+PRESTAM BCO PICHI CONTR N#0139771400 ,201020303,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0161526200 ,201020304,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0166255400 ,201020305,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0180009100 ,201020306,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0188949000 ,201020307,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0189121100 ,201020308,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0194179800 ,201020309,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0195632200 ,201020310,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0205825200 ,201020311,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0206250500 ,201020312,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0211668900 ,201020313,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0214643900 ,201020314,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0220460500 ,201020315,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0228725300 ,201020316,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0229820200 ,201020317,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0234277000 ,201020318,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0236046100 ,201020319,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0240334200 ,201020320,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0245560200 ,201020321,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0247197900 ,201020322,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0254158300 ,201020323,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0254367100 ,201020324,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0254690000 ,201020325,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0277900800 ,201020326,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0279819700 ,201020327,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0282407200 ,201020328,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0297773100 ,201020329,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0298923600 ,201020330,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0298923300 ,201020331,account.data_account_type_payable,1
+PREST BCO PICHINCHA CONT 0307840600 ,201020332,account.data_account_type_payable,1
+BANCO PRODUBANCO ,201020333,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020009434300 ,201020334,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020009573100 ,201020335,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020009830900 ,201020336,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020011045300 ,201020337,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020011099600 ,201020338,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020012962800 ,201020339,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020013929100 ,201020340,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020013807100 ,201020341,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020015490400 ,201020342,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020015542600 ,201020343,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020016281400 ,201020344,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020016966800 ,201020345,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020017397800 ,201020346,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020017903700 ,201020347,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020017968000 ,201020348,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CCI20200001888 ,201020349,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020020732300 ,201020350,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020020777000 ,201020351,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020020853900 ,201020352,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR2020021043700 ,201020353,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR20200240428000 ,201020354,account.data_account_type_payable,1
+PRESTAM BCO PROD CONT CAR20200242711000 ,201020355,account.data_account_type_payable,1
+PRESTAM BCO PROD CONTR CAR20200244906 ,201020356,account.data_account_type_payable,1
+IMPUESTO AL VALOR AGREGADO ,201040101,account.data_account_type_current_liabilities,1
+IVA COBRADO EN VENTAS ,201040102,account.data_account_type_current_liabilities,1
+RETENCIONES EN EL IVA ,201040103,account.data_account_type_current_liabilities,1
+RT 30% IVA COMPRA DE BIENES (725) ,201040104,account.data_account_type_current_liabilities,1
+RT 70% IVA SERVICIOS CONTRATADOS (729) ,201040105,account.data_account_type_current_liabilities,1
+RT 100% HONORARIOS PROFESIONALES (731) ,201040106,account.data_account_type_current_liabilities,1
+RT 100% IVA ARREND P NAT (811) ,201040107,account.data_account_type_current_liabilities,1
+RT 100% IVA LIQ COMPRAS (815) ,201040108,account.data_account_type_current_liabilities,1
+RT 0 % IVA ,201040109,account.data_account_type_current_liabilities,1
+RT 10% IVA COMPRA DE BIENES CE (721) ,201040110,account.data_account_type_current_liabilities,1
+RT 20% IVA COMPRA DE SERVICIOS CE (723) ,201040111,account.data_account_type_current_liabilities,1
+RETENCIONES EN LA FUENTE ,201040112,account.data_account_type_current_liabilities,1
+RT 1% RELACION DE DEPENDENCIA(301) ,201040113,account.data_account_type_current_liabilities,1
+RT 8% HONORARIOS P NATURALES (303) ,201040114,account.data_account_type_current_liabilities,1
+RT 25% PAGO LOCAL EXTRANJERO S O (305) ,201040115,account.data_account_type_current_liabilities,1
+RT 1% COMPRAS MATERIA PRIMA (306) ,201040116,account.data_account_type_current_liabilities,1
+RT 1% POR SUMINISTROS Y MATERIALES(309) ,201040117,account.data_account_type_current_liabilities,1
+RT 1% POR REPUESTOS Y HERRAMIENTAS(310) ,201040118,account.data_account_type_current_liabilities,1
+RT 1% COMPRA ACTIVOS FIJOS(312) ,201040119,account.data_account_type_current_liabilities,1
+RT 1% ACTIVOS CORRIENTES(NO USAR) ,201040120,account.data_account_type_current_liabilities,1
+RT 1% SERVICIOS(NO USAR) ,201040121,account.data_account_type_current_liabilities,1
+RT 1% POR SERVICIO TRANSPORTE(313) ,201040122,account.data_account_type_current_liabilities,1
+RT 8% NOTARIOS Y REGISTRADORES (316) ,201040123,account.data_account_type_current_liabilities,1
+RT 1% POR PROMOCION Y PUBLICIDAD(318) ,201040124,account.data_account_type_current_liabilities,1
+RT 1% ARREND MERCANTIL(319) ,201040125,account.data_account_type_current_liabilities,1
+RT 8% ARREND BIENES INMUEBLES P N (320) ,201040126,account.data_account_type_current_liabilities,1
+RT 1% POR SEGUROS Y REASEGUROS(322) ,201040127,account.data_account_type_current_liabilities,1
+RT 1% POR OTROS SERVICIOS(329) ,201040128,account.data_account_type_current_liabilities,1
+RT 1% POR AGUA ENERGIA Y TELECOM(331) ,201040129,account.data_account_type_current_liabilities,1
+RT 1% POR LUBRICANTES(311) ,201040130,account.data_account_type_current_liabilities,1
+RT 1% CPRA LOC BIENES NO PRODUCIDO(307) ,201040131,account.data_account_type_current_liabilities,1
+RT 2% POR SUMINISTROS Y MATERIALES(309) ,201040132,account.data_account_type_current_liabilities,1
+RT 2% POR REPUESTOS Y HERRAMIENTAS(310) ,201040133,account.data_account_type_current_liabilities,1
+RT 2% POR LUBRICANTES(311) ,201040134,account.data_account_type_current_liabilities,1
+RT 2% POR ACTIVOS FIJOS(312) ,201040135,account.data_account_type_current_liabilities,1
+RT 2% POR PROMOCIóN Y PUBLICIDAD(318) ,201040136,account.data_account_type_current_liabilities,1
+RT 2% POR SEGUROS Y REASEGUROS(322) ,201040137,account.data_account_type_current_liabilities,1
+RT 2% POR OTROS SERVICIOS(329) ,201040138,account.data_account_type_current_liabilities,1
+RT 2% POR MATERIA PRIMA(306) ,201040139,account.data_account_type_current_liabilities,1
+RT 2% CPRA LOC BIENES NO PRODUCIDO(307) ,201040140,account.data_account_type_current_liabilities,1
+RT 2% POR AGUA Y TELECOMUNICACIONES(331) ,201040141,account.data_account_type_current_liabilities,1
+RT 8% HONORARIOS PROF Y DIETAS (303)* ,201040142,account.data_account_type_current_liabilities,1
+RT 8% PREDOM EL INTELECTO(304)* ,201040143,account.data_account_type_current_liabilities,1
+RT 2% PREDOMIN MANO OBRA (307)* ,201040144,account.data_account_type_current_liabilities,1
+RT 2% ENTRE SOCIEDADES (308)* ,201040145,account.data_account_type_current_liabilities,1
+RT 1% PUBLICIDAD Y PROM (309)* ,201040146,account.data_account_type_current_liabilities,1
+RT 1% TRANSP PRIV PASJ O SERV PUB (310)* ,201040147,account.data_account_type_current_liabilities,1
+RT 1% OTRAS RTE APLICABLES AL 1% (340)* ,201040148,account.data_account_type_current_liabilities,1
+RT 2% OTRAS RTE APLICAB AL 2% (341)* ,201040149,account.data_account_type_current_liabilities,1
+RT 8% OTRAS RT APLICAB AL 8% (342)* ,201040150,account.data_account_type_current_liabilities,1
+RT 1% TRANSF BIENES MUEB NAT CORP(312)* ,201040151,account.data_account_type_current_liabilities,1
+COMPRAS NO SUJETAS A RETENCION ,201040152,account.data_account_type_current_liabilities,1
+RT 10% HONORARIOS PROF Y DIETAS (303)* ,201040153,account.data_account_type_current_liabilities,1
+OTROS PAGOS ,201040154,account.data_account_type_current_liabilities,1
+RT 1% COMPRAS DE BIENES AGRICOLAS 312A ,201040155,account.data_account_type_current_liabilities,1
+RT 2% OTRAS RTE APLICAB AL 2% (344) ,201040156,account.data_account_type_current_liabilities,1
+RT 0% COMPRAS NO DEDUCIBLES 332* ,201040157,account.data_account_type_current_liabilities,1
+IMPUESTO A LA RENTA PERSONAL ,201040158,account.data_account_type_current_liabilities,1
+IMPUESTO A LA RENTA POR PAGAR ,201040201,account.data_account_type_current_liabilities,1
+DECIMO TERCER SUELDO ,201040301,account.data_account_type_current_liabilities,1
+DECIMO CUARTO SUELDO ,201040302,account.data_account_type_current_liabilities,1
+VACACIONES ,201040303,account.data_account_type_current_liabilities,1
+FONDOS DE RESERVA ,201040304,account.data_account_type_current_liabilities,0
+APORTE PATRONAL-IECE-SECAP ,201040305,account.data_account_type_current_liabilities,0
+BONIFICACION ANUAL PATRONAL ,201040306,account.data_account_type_current_liabilities,1
+OTROS BENEFICIOS POR PAGAR ,201040307,account.data_account_type_current_assets,0
+COBERTURA DE SALUD CONYUGAL TRABAJADORES ,201040308,account.data_account_type_current_assets,0
+APORTE IND 9 45% IESS-PAT 12 15% ,201040309,account.data_account_type_current_liabilities,0
+PRESTAMOS QUIROG -HIPOT ,201040310,account.data_account_type_current_liabilities,1
+OTRAS RETENCIONES ,201040311,account.data_account_type_current_assets,0
+COMISARIATOS ,201070314,account.data_account_type_current_assets,0
+PRESTAMOS HIPOTECARIOS ,201070315,account.data_account_type_current_liabilities,1
+MULTAS REGLAMENTO - CONTRIBUC SOLIDARIA ,201070316,account.data_account_type_current_liabilities,1
+RETENCION EXTENSION IESS ,201070317,account.data_account_type_current_assets,0
+NOMINAS POR PAGAR ,201040401,account.data_account_type_current_liabilities,1
+SUELDOS ,201040402,account.data_account_type_current_liabilities,1
+SUELDOS GERENCIA ,201040403,account.data_account_type_current_liabilities,1
+PARTICIPACION TRABAJADORES 15% UTILIDADE ,201040501,account.data_account_type_current_assets,0
+ACCIONISTAS ,201040701,account.data_account_type_current_assets,0
+ANTICIPO DE CLIENTES ,201040801,account.data_account_type_current_assets,0
+CUENTAS Y DOCUMENTOS POR PAGAR L/P,202020101,account.data_account_type_current_assets,0
+BANCO DEL PICHINCHA CREDITO $439000 ,202030101,account.data_account_type_current_assets,0
+PRODUBANCO CREDITO $250000 ,202030102,account.data_account_type_current_assets,0
+PRESTAMO PRODUBANCO CONTR CAR20200138071 ,202030103,account.data_account_type_current_assets,0
+PRESTAM0 PICHINCHA CONT 282407200 ,202030104,account.data_account_type_current_assets,0
+PRESTAMO BCO PICHICHA CONT 0297773100 ,202030105,account.data_account_type_current_assets,0
+PRESTAMO BCO PICHINCHA CONT 0298923300 ,202030106,account.data_account_type_current_assets,0
+PRESTAMO BCO PICHINCHA CONT 0298923600 ,202030107,account.data_account_type_current_assets,0
+PRESTAMO PRODUBANCO CNTR CAR 20200012962 ,202030108,account.data_account_type_current_assets,0
+PRESTAMO PRODUBANCO 500MM 2006113474 ,202030109,account.data_account_type_current_assets,0
+PRESTAMO BCO PICHINCHA CONT 0307840600 ,202030110,account.data_account_type_current_assets,0
+PRESTAMO BCO PRODUBANCO CAR2220024042800 ,202030111,account.data_account_type_current_assets,0
+PRESTAMO BCO PRODUBANCO CAR2020024271100 ,202030112,account.data_account_type_current_assets,0
+PRESTAMO BCO PRODUBANCO CAR2020024042800 ,202030113,account.data_account_type_current_assets,0
+CUENTAS POR PAGAR ACCIONISTAS LP ,202040101,account.data_account_type_current_assets,0
+CEVALLOS CAñIZARES KERRY ,202040102,account.data_account_type_current_assets,0
+OTROS PAGOS COMERCIALES ,202040103,account.data_account_type_current_assets,0
+PROVISION BONIFICACION POR DESAHUCIO ,202050201,account.data_account_type_current_assets,0
+CEVALLOS CAÑIZARES KERRY ,301010101,data_account_type_capital,0
+ZUÑIGA ORELLANA JORGE ,301010102,data_account_type_capital,0
+SARMIENTO ORELLANA MARIANA(CAP) ,301010103,data_account_type_capital,0
+CEVALLOS CAÑIZARES KERRY(AP FUT AUM CAP) ,302010101,data_account_type_capital,0
+SARMIENTO ORELLANA MARIANA(PAT) ,302010102,data_account_type_capital,0
+ZUÑIGA ORELLANA JORGE(PAT) ,302010103,data_account_type_capital,0
+RESERVA LEGAL ,303010001,data_account_type_capital,0
+ADOPCION NIIF POR PRIMERA VEZ ,303020301,data_account_type_capital,0
+UTILIDAD 2010 ,305010101,data_account_type_capital,0
+UTILIDAD 2011 ,305010102,data_account_type_capital,0
+UTILIDAD 2012 ,305010103,data_account_type_capital,0
+UTILIDAD 2013 ,305010104,data_account_type_capital,0
+UTILIDADES 2014 ,305010105,data_account_type_capital,0
+UTILIDAD 2015 ,305010106,data_account_type_capital,0
+UTILIDAD 2018 ,305010107,data_account_type_capital,0
+UTILIDAD 2017 ,305010108,data_account_type_capital,0
+UTILIDAD 2016 ,305010109,data_account_type_capital,0
+GANANCIAS Y PERDIDAS ACTUARIALES ACUMULA ,305030101,data_account_type_capital,0
+VENTA DE BIENES TARIFA 0%,401010101,account.data_account_type_other_income,0
+VENTA DE BIENES TARIFA 12%,401010102,account.data_account_type_other_income,0
+PRESTACIÓN DE SERVICIOS 0%,401010201,account.data_account_type_other_income,0
+PRESTACIÓN DE SERVICIOS 12%,401010202,account.data_account_type_other_income,0
+DESCUENTO TARIFA 0%,401010301,account.data_account_type_other_income,0
+DESCUENTO TARIFA 12%,401010302,account.data_account_type_other_income,0
+DEVOLUCION TARIFA 0%,401010401,account.data_account_type_other_income,0
+DEVOLUCION TARIFA 12%,401010402,account.data_account_type_other_income,0
+ALQUILER BIENES INMUEBLES ,411010101,account.data_account_type_other_income,0
+ALQUILER TERRENO YAGUACHI ,411010102,account.data_account_type_other_income,0
+SERVICIOS DE PILADORA ,411010103,account.data_account_type_other_income,0
+SERVICIO DE TRANSPORTE ,411010104,account.data_account_type_other_income,0
+POMAS ,411010105,account.data_account_type_other_income,0
+VIAJES DE TAMO ,411010106,account.data_account_type_other_income,0
+SERVICIO REPROCESO ARROZ BLANCO NATURAL ,411010107,account.data_account_type_other_income,0
+SERVICIO DE PESADO ,411010108,account.data_account_type_other_income,0
+INTERESES GANADOS ,411010201,account.data_account_type_other_income,0
+INTERESES BANCARIOS ,411010202,account.data_account_type_other_income,0
+OTROS INGRESOS FINANCIEROS ,411010203,account.data_account_type_other_income,0
+INTERESES GANADOS INV SWEEP ACCOUNT ,411010204,account.data_account_type_other_income,0
+OTROS INGRESOS ,411010205,account.data_account_type_other_income,0
+GANANCIAS EN VENTAS DE ACTIVOS FIJOS ,411010206,account.data_account_type_other_income,0
+SOBRANTES DE INVENTARIOS ,411010207,account.data_account_type_other_income,0
+VARIOS ,411010208,account.data_account_type_other_income,0
+DEVOLUCION(RECLAMOS) POR SINIESTROS ,411010209,account.data_account_type_other_income,0
+ARROZ CASCARA HÚMEDO GRANO EXTRA LARGO,510101101,account.data_account_type_direct_costs,0
+ARROZ CASCARA HÚMEDO GRANO LARGO,510101102,account.data_account_type_direct_costs,0
+ARROZ PILADO GRANO LARGO,510101103,account.data_account_type_direct_costs,0
+ARROZ PRECOCIDO GRANO LARGO ,510101104,account.data_account_type_direct_costs,0
+ARROZ CASCARA SECO GRANO EXTRA LARGO,510102101,account.data_account_type_direct_costs,0
+ARROZ CASCARA SECO LARGO,510102102,account.data_account_type_direct_costs,0
+ARROZ PILADO EXTRA LARGO NATURAL,510102201,account.data_account_type_direct_costs,0
+arroz pilado largo natural,510102202,account.data_account_type_direct_costs,0
+ARROZ PILADO EXTRA LARGO NATURAL COMPRADO,510102203,account.data_account_type_direct_costs,0
+ARROZ PILADO LARGO NATURAL COMPRADO,510102204,account.data_account_type_direct_costs,0
+Arroz Reserva Especial Natural listo para ensacar ó empacar,510102301,account.data_account_type_direct_costs,0
+Arroz Reserva Especial Envejecido listo para ensacar ó empacar,510102302,account.data_account_type_direct_costs,0
+Arroz Casa del Arroz Gourmet Natural listo para ensacar ó empacar,510102303,account.data_account_type_direct_costs,0
+Arroz Casa del Arroz Gourmet Envejecido listo para ensacar ó empacar,510102304,account.data_account_type_direct_costs,0
+Arroz Casa del Arroz Macareño Envejecido listo para ensacar ó empacar,510102305,account.data_account_type_direct_costs,0
+Arroz Gustadina Natural Extra Largo listo para vitaminizar,510102306,account.data_account_type_direct_costs,0
+Arroz Gustadina Envejecido Extra Largo listo para vitaminizar,510102307,account.data_account_type_direct_costs,0
+Arroz Rendidor Envejecido Extra Largo listo para empacar ,510102308,account.data_account_type_direct_costs,0
+Arroz Gustadina Natural Nestle Extra Largo listo para empacar,510102309,account.data_account_type_direct_costs,0
+Arroz Santa María Reserva Especial Envejecido Extra Largo listo para ensacar ,510102310,account.data_account_type_direct_costs,0
+Arroz Arnejo's Natural listo para ensacar ó empacar,510102311,account.data_account_type_direct_costs,0
+Arroz Arnejo's Envejecido listo para ensacar ó empacar,510102312,account.data_account_type_direct_costs,0
+Arroz Lira Express Natural listo para ensacar ó empacar,510102313,account.data_account_type_direct_costs,0
+Arroz Lira Express Envejecido listo para ensacar ó empacar,510102314,account.data_account_type_direct_costs,0
+Arroz Rendidor Natural Largo listo para ensacar ó empacar,510102315,account.data_account_type_direct_costs,0
+Arroz Blanco Natural Largo listo para ensacar ó empacar,510102316,account.data_account_type_direct_costs,0
+Arroz Santa María Envejecido Largo listo para ensacar ó empacar,510102317,account.data_account_type_direct_costs,0
+Arroz Good Rice's Envejecido Largo listo para ensacar ó empacar,510102318,account.data_account_type_direct_costs,0
+Arroz pilado extra largo Envejecido,510102401,account.data_account_type_direct_costs,0
+Arroz pilado largo Envejecido,510102402,account.data_account_type_direct_costs,0
+Arroz Gustadina Vitaminas Natural Extra Largo listo para empacar,510102501,account.data_account_type_direct_costs,0
+Arroz Gustadina Vitaminas Envejecido Extra Largo listo para empacar,510102502,account.data_account_type_direct_costs,0
+Arroz Casa del Arroz Gourmet Integral listo para ensacar ó empacar,510102601,account.data_account_type_direct_costs,0
+Arroz Gustadina Integral Integral listo para ensacar ó empacar,510102602,account.data_account_type_direct_costs,0
+Reserva Especial Natural Saco QQ - 45.36 KG - 100 Lb,510103101,account.data_account_type_direct_costs,0
+Reserva Especial Envejecido Saco QQ - 45.36 KG - 100 Lb,510103102,account.data_account_type_direct_costs,0
+Casa del Arroz Macareño Envejecido Saco QQ - 45.36 KG - 100 Lb,510103103,account.data_account_type_direct_costs,0
+Arnejo's Natural Saco QQ - 45.36 KG - 100 Lb,510103104,account.data_account_type_direct_costs,0
+Arnejo's Envejecido Saco QQ - 45.36 KG - 100 Lb,510103105,account.data_account_type_direct_costs,0
+Lira Express Envejecido QQ - 45.36 KG - 100 Lb,510103106,account.data_account_type_direct_costs,0
+Arroz Blanco Natural QQ - 45.36 KG - 100 Lb,510103107,account.data_account_type_direct_costs,0
+Santa María Envejecido QQ - 45.36 KG - 100 Lb,510103108,account.data_account_type_direct_costs,0
+Arroz Good Rice's Envejecido QQ - 45.36 KG - 100 Lb,510103109,account.data_account_type_direct_costs,0
+Reserva Especial Natural Arroba 11.34 KG,510103201,account.data_account_type_direct_costs,0
+Reserva Especial Envejecido Arroba 11.34 KG,510103202,account.data_account_type_direct_costs,0
+Casa del Arroz Macareño Envejecido 10 KG,510103203,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Saco 10 KG Extra Largo,510103204,account.data_account_type_direct_costs,0
+Arroz Rendidor Envejecido Extra Largo Arroba 11.34 KG,510103205,account.data_account_type_direct_costs,0
+Santa María Reserva Especial Envejecido Extra Largo Arroba 11.34 KG,510103206,account.data_account_type_direct_costs,0
+Arnejo's Natural Arroba 25 Lbs,510103207,account.data_account_type_direct_costs,0
+Arnejo's Envejecido Arroba 25 Lbs,510103208,account.data_account_type_direct_costs,0
+Lira Express Natural Arroba 11.34 KG,510103209,account.data_account_type_direct_costs,0
+Lira Express Envejecido Arroba 11.34 KG,510103210,account.data_account_type_direct_costs,0
+Rendidor Natural Saco 10 KG ,510103211,account.data_account_type_direct_costs,0
+Santa María Envejecido Arroba 11.34 KG,510103212,account.data_account_type_direct_costs,0
+Good Rice's Envejecido Arroba 11.34 KG,510103213,account.data_account_type_direct_costs,0
+Reserva Especial Natural Funda 2 KG,510103301,account.data_account_type_direct_costs,0
+Reserva Especial Envejecido Funda 2 KG,510103302,account.data_account_type_direct_costs,0
+Casa del Arroz Gourmet Integral Funda 1 KG,510103303,account.data_account_type_direct_costs,0
+Casa del Arroz Gourmet Natural Funda 1 KG,510103304,account.data_account_type_direct_costs,0
+Casa del Arroz Gourmet Envejecido Funda 1 KG,510103305,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 2 KG Extra Largo,510103306,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 5 KG Extra Largo,510103307,account.data_account_type_direct_costs,0
+Gustadina Integral Integral Funda 2 KG,510103308,account.data_account_type_direct_costs,0
+Gustadina Vitaminas 2KG Envejecido Extra Largo ,510103309,account.data_account_type_direct_costs,0
+Gustadina Vitaminas 5KG Envejecido Extra Largo,510103310,account.data_account_type_direct_costs,0
+Gustadina 10 LB Natural Extra Largo Nestle ,510103311,account.data_account_type_direct_costs,0
+Arnejo's Natural Funda 2 KG,510103312,account.data_account_type_direct_costs,0
+Arnejo's Natural Funda 5 KG,510103313,account.data_account_type_direct_costs,0
+Arnejo's Envejecido Funda 2 KG,510103314,account.data_account_type_direct_costs,0
+Arnejo's Envejecido Funda 5 KG,510103315,account.data_account_type_direct_costs,0
+Lira Express Natural Funda 2 KG,510103316,account.data_account_type_direct_costs,0
+Lira Express Natural Funda 5 KG,510103317,account.data_account_type_direct_costs,0
+Lira Express Envejecido Funda 454 GR - 1 Lb,510103318,account.data_account_type_direct_costs,0
+Lira Express Envejecido Funda 1 KG,510103319,account.data_account_type_direct_costs,0
+Lira Express Envejecido Funda 2 KG,510103320,account.data_account_type_direct_costs,0
+Lira Express Envejecido Funda 5 KG,510103321,account.data_account_type_direct_costs,0
+Rendidor Natural Funda 2 KG ,510103322,account.data_account_type_direct_costs,0
+Rendidor Natural Funda 5 KG ,510103323,account.data_account_type_direct_costs,0
+Santa María Envejecido Funda 4 Lb ,510103324,account.data_account_type_direct_costs,0
+Santa María Envejecido Funda 10 Lb ,510103325,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 454 GR - 1 Lb Extra Largo,510103401,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 908 GR - 2 Lb Extra Largo,510103402,account.data_account_type_direct_costs,0
+Gustadina Integral Integral Funda 1 KG,510103403,account.data_account_type_direct_costs,0
+Lira Express Natural Funda 454 GR - 1 Lb,510103404,account.data_account_type_direct_costs,0
+Lira Express Natural Funda 1 KG,510103405,account.data_account_type_direct_costs,0
+Reserva Especial Natural Funda 2 KG enfardado 13 u. maquina,510103501,account.data_account_type_direct_costs,0
+Reserva Especial Envejecido Funda 2 KG enfardado 13 u. maquina,510103502,account.data_account_type_direct_costs,0
+Casa del Arroz Gourmet Integral Funda 1 KG enfardado 30 u. maquina,510103503,account.data_account_type_direct_costs,0
+Casa del Arroz Gourmet Natural Funda 1 KG enfardado 30 u. maquina,510103504,account.data_account_type_direct_costs,0
+Casa del Arroz Gourmet Envejecido Funda 1 KG enfardado 30 u. maquina,510103505,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 2KG Extra largo 13 u. maquina ,510103506,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 2KG Extra largo 15 u. maquina ,510103507,account.data_account_type_direct_costs,0
+Gustadina Integral Funda 2 KG enfardado 13 u. maquina,510103508,account.data_account_type_direct_costs,0
+Gustadina Integral Funda 2 KG enfardado 15 u. maquina ,510103509,account.data_account_type_direct_costs,0
+Gustadina Vitaminas 2KG Envejecido Extra largo 13 u. maquina ,510103510,account.data_account_type_direct_costs,0
+Gustadina Vitaminas 2KG Envejecido Extra largo 15 u. maquina ,510103511,account.data_account_type_direct_costs,0
+Gustadina Vitaminas 5KG Envejecido Extra Largo 6 u. maquina ,510103512,account.data_account_type_direct_costs,0
+Gustadina 10 LB Natural Extra Largo Nestle 5 u. ,510103513,account.data_account_type_direct_costs,0
+Arnejo's Natural Funda 2 KG 13 u. máquina ,510103514,account.data_account_type_direct_costs,0
+Arnejo's Natural Funda 5 KG 6 u. máquina ,510103515,account.data_account_type_direct_costs,0
+Arnejo's Envejecido Funda 2 KG 13 u. máquina ,510103516,account.data_account_type_direct_costs,0
+Arnejo's Envejecido Funda 5 KG 6 u. máquina ,510103517,account.data_account_type_direct_costs,0
+Lira Express Natural Funda 1 KG 30 u. máquina ,510103518,account.data_account_type_direct_costs,0
+Lira Express Natural Funda 2 KG 13 u. máquina ,510103519,account.data_account_type_direct_costs,0
+Lira Express Natural Funda 5 KG 6 u. máquina ,510103520,account.data_account_type_direct_costs,0
+Lira Express Envejecido Funda 1 KG 30 u. máquina ,510103521,account.data_account_type_direct_costs,0
+Lira Express Envejecido Funda 2 KG 13 u. máquina ,510103522,account.data_account_type_direct_costs,0
+Lira Express Envejecido Funda 5 KG 6 u. máquina ,510103523,account.data_account_type_direct_costs,0
+Rendidor Natural Funda 2 KG 13 u. máquina ,510103524,account.data_account_type_direct_costs,0
+Rendidor Natural Funda 2 KG 15 u. máquina ,510103525,account.data_account_type_direct_costs,0
+Rendidor Natural Funda 5 KG 6 u. máquina ,510103526,account.data_account_type_direct_costs,0
+Santa María Envejecido Funda 4 Lb 13 u. máquina,510103527,account.data_account_type_direct_costs,0
+Santa María Envejecido Funda 10 Lb 6 u. máquina,510103528,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 454 GR - 1Lb 24 u.,510103601,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 2 Lb Extra Largo 30 U.,510103602,account.data_account_type_direct_costs,0
+Lira Express Natural Funda 454 GR - 1Lb 24 u. máquina ,510103603,account.data_account_type_direct_costs,0
+Lira Express Envejecido Funda 454 GR - 1Lb 24 u. máquina ,510103604,account.data_account_type_direct_costs,0
+Reserva Especial Natural Funda 2 KG ensacado 13 u. manual ,510103701,account.data_account_type_direct_costs,0
+Reserva Especial Envejecido Funda 2 KG ensacado 13 u. manual ,510103702,account.data_account_type_direct_costs,0
+Gustadina Vitaminas Natural Funda 454 GR - 1Lb 10 u.,510103703,account.data_account_type_direct_costs,0
+ARROCILLO 1/2,510103801,account.data_account_type_direct_costs,0
+ARROCILLO 3/4,510103802,account.data_account_type_direct_costs,0
+ARROCILLO ENVEJECIDO,510103803,account.data_account_type_direct_costs,0
+POLVILLO,510103804,account.data_account_type_direct_costs,0
+TAMO,510103805,account.data_account_type_direct_costs,0
+JORNALES ,510201101,account.data_account_type_direct_costs,0
+OTROS HABERES ,510201102,account.data_account_type_direct_costs,0
+MOVILIDAD ,510201103,account.data_account_type_direct_costs,0
+HORAS EXTRAS ,510201104,account.data_account_type_direct_costs,0
+OTROS BENEFICIOS ,510201105,account.data_account_type_direct_costs,0
+DECIMO TERCER SUELDO ,510201106,account.data_account_type_direct_costs,0
+DECIMO CUARTO SUELDO ,510201107,account.data_account_type_direct_costs,0
+VACACIONES ,510201108,account.data_account_type_direct_costs,0
+FONDOS DE RESERVA ,510201109,account.data_account_type_direct_costs,0
+APORTE PATRONAL IECE-SECAP ,510201110,account.data_account_type_direct_costs,0
+CUADRILLAS Y ESTIBADORES ,510201111,account.data_account_type_direct_costs,0
+ALIMENTACION ,510201112,account.data_account_type_direct_costs,0
+UNIFORMES ,510201113,account.data_account_type_direct_costs,0
+TRANSPORTE ,510201114,account.data_account_type_direct_costs,0
+SERVICIOS PRESTADOS ,510201115,account.data_account_type_direct_costs,0
+CAPACITACION ,510201116,account.data_account_type_direct_costs,0
+INDEMNIZACIONES FUTURAS ,510201117,account.data_account_type_direct_costs,0
+COMISARIATO ,510201118,account.data_account_type_direct_costs,0
+ATENCION MEDICA ,510201119,account.data_account_type_direct_costs,0
+SEGUROS DE VIDA EMPLEADOS ,510201120,account.data_account_type_direct_costs,0
+BONO NAVIDEÑO ,510201121,account.data_account_type_direct_costs,0
+AGASAJOS EMPLEADOS ,510201122,account.data_account_type_direct_costs,0
+UNIFORMES DEL PERSONAL ,510201123,account.data_account_type_direct_costs,0
+MANO DE OBRA INDIRECTA ,510201124,account.data_account_type_direct_costs,0
+BONIFICIACION TIEMPO SERVICIO ,510201125,account.data_account_type_direct_costs,0
+JUBILACION PATRONAL ,510201126,account.data_account_type_direct_costs,0
+BONIFICACION PRODUCCION ,510201127,account.data_account_type_direct_costs,0
+TRANSFERENCIA MANO DE OBRA ENVEJECIDO ,510201128,account.data_account_type_direct_costs,0
+TRANSFERENCIA DE COSTOS ,510201129,account.data_account_type_direct_costs,0
+MANO DE OBRA DIRECTA ENVEJECIDO ,510201130,account.data_account_type_direct_costs,0
+SUELDOS ENVEJECIDO ,510201131,account.data_account_type_direct_costs,0
+BENEFICIOS SOCIALES ENVEJECIDOS ,510201132,account.data_account_type_direct_costs,0
+CUADRILLAS Y ESTIBADORES QUITO ,510201133,account.data_account_type_direct_costs,0
+OTROS EGRESOS - MERMA,510301101,account.data_account_type_direct_costs,0
+MERMA DE DISTRIBUCION ,510301102,account.data_account_type_direct_costs,0
+MANT REP MAQUINARIA ,510401101,account.data_account_type_direct_costs,0
+MANT Y REP VEHICULO ,510401102,account.data_account_type_direct_costs,0
+MANT Y REP MONTACARGA ,510401103,account.data_account_type_direct_costs,0
+MANT INSTALACIONES PRODUCCION ,510401104,account.data_account_type_direct_costs,0
+MANT Y REP PILADORA ,510401105,account.data_account_type_direct_costs,0
+MANT Y REP SECADORES ,510401106,account.data_account_type_direct_costs,0
+MANTEN Y REP BASCULA ,510401107,account.data_account_type_direct_costs,0
+MANT Y REP BOBCAT ,510401108,account.data_account_type_direct_costs,0
+MANT Y REP EQUI PRODUCCION ,510401109,account.data_account_type_direct_costs,0
+MANTENIMIENTO Y REPARACION DE HORNOS ,510401110,account.data_account_type_direct_costs,0
+MANT BODEGA DE PRODUCTOS TERMINADOS ,510401111,account.data_account_type_direct_costs,0
+MANT DE CERRAMIENTO DE PILADORA ,510401112,account.data_account_type_direct_costs,0
+MANT RELLENO DE TERRENO EXTERNO PILADORA ,510401113,account.data_account_type_direct_costs,0
+MANT Y REP DE SILOS ,510401114,account.data_account_type_direct_costs,0
+MANT Y REPARACION DE SELECTORA ,510401115,account.data_account_type_direct_costs,0
+MANT Y REP DE VOLCADORA ,510401116,account.data_account_type_direct_costs,0
+MANT Y REP DE ENVASADORA AUTOMATICA ,510401117,account.data_account_type_direct_costs,0
+MANT Y REP DE PRELIMPIA ,510401118,account.data_account_type_direct_costs,0
+MANT Y REP DE TOLVAS ,510401119,account.data_account_type_direct_costs,0
+MANT DE ENFARDADORA Y EMPACADORA ,510401120,account.data_account_type_direct_costs,0
+MANT INSTALACIONES ELECTRICAS PN ,510401121,account.data_account_type_direct_costs,0
+OBRAS Y MEJORAS EN PLANTA ,510401122,account.data_account_type_direct_costs,0
+ELECTRICIDAD ,510401201,account.data_account_type_direct_costs,0
+COMBUSTIBLES ,510401202,account.data_account_type_direct_costs,0
+MUESTRAS DE PRODUCTOS,510401203,account.data_account_type_direct_costs,0
+HERRAMIENTA DE PRODUCCION ,510401204,account.data_account_type_direct_costs,0
+TRANSPORTE DE ARROZ ,510401205,account.data_account_type_direct_costs,0
+GAS ,510401206,account.data_account_type_direct_costs,0
+FUMIGACION Y QUIMICOS ,510401207,account.data_account_type_direct_costs,0
+ASESORAMIENTO TECNICO ,510401208,account.data_account_type_direct_costs,0
+MOVILIZACION ,510401209,account.data_account_type_direct_costs,0
+PONTAZGO ,510401210,account.data_account_type_direct_costs,0
+IMPUESTOS Y CONTRIBUCIONES ,510401211,account.data_account_type_direct_costs,0
+COMUNICACIONES Y RADIOS ,510401212,account.data_account_type_direct_costs,0
+MATRICULACION DE VEHICULOS Y CITACIONES ,510401213,account.data_account_type_direct_costs,0
+TRABAJOS DE IMPRENTA PRODUCCION ,510401214,account.data_account_type_direct_costs,0
+UTILES DE OFICINA PRODUCCION ,510401215,account.data_account_type_direct_costs,0
+SEGUROS ,510401216,account.data_account_type_direct_costs,0
+PEAJES PRODUCCION ,510401217,account.data_account_type_direct_costs,0
+MATERIALES DIRECTO DE PRODUCCION ,510401218,account.data_account_type_direct_costs,0
+SERVICIO DE BASCULA ,510401219,account.data_account_type_direct_costs,0
+TRANSPORTE DE MATERIALES ,510401220,account.data_account_type_direct_costs,0
+CYREL PARA SACOS ,510401221,account.data_account_type_direct_costs,0
+SERVICIO DE MAQUILA ,510401222,account.data_account_type_direct_costs,0
+BODEGA ARROCESA S A ,510401223,account.data_account_type_direct_costs,0
+MUESTRAS ,510401224,account.data_account_type_direct_costs,0
+TRANSPORTE DE MATERIA PRIMA ,510401225,account.data_account_type_direct_costs,0
+SERVICIO DE SECADO DE ARROZ ,510401226,account.data_account_type_direct_costs,0
+IVA QUE SE CARGA AL COSTO ,510401227,account.data_account_type_direct_costs,0
+ALMACENAMIENTO Y BODEGAJE ,510401228,account.data_account_type_direct_costs,0
+ASESOR EMPRE SIST ALMACENAJE ,510401229,account.data_account_type_direct_costs,0
+SERVICIO DE PILADA ,510401230,account.data_account_type_direct_costs,0
+REEMBOLSO DE GASTOS ,510401231,account.data_account_type_direct_costs,0
+BONIFICACION TIEMPO SERVICIO PRODUCCION ,510401232,account.data_account_type_direct_costs,0
+OTROS BIENES ,510401233,account.data_account_type_direct_costs,0
+TRANSPORTES Y FLETES ,510401234,account.data_account_type_direct_costs,0
+ROLLOS PARA EMPAQUETADO ,510401235,account.data_account_type_direct_costs,0
+DIESEL PRODUCCION ,510401236,account.data_account_type_direct_costs,0
+TRANSFERENCIA DE COSTOS ,510401237,account.data_account_type_direct_costs,0
+Sello de sguridad ,510401301,account.data_account_type_direct_costs,0
+Piola enfardado,510401302,account.data_account_type_direct_costs,0
+Piola ensacado,510401303,account.data_account_type_direct_costs,0
+suministro de empaquetado,510401304,account.data_account_type_direct_costs,0
+Funda Reserva Especial Natural 2kg,510401305,account.data_account_type_direct_costs,0
+Funda Reserva Especial Envejecido 2kg,510401306,account.data_account_type_direct_costs,0
+Plástico para enfardar,510401307,account.data_account_type_direct_costs,0
+Funda Casa del Arroz Gourmet Integral 1KG,510401308,account.data_account_type_direct_costs,0
+Funda Casa del Arroz Gourmet Natural 1KG,510401309,account.data_account_type_direct_costs,0
+Funda Casa del Arroz Gourmet Envejecido 1KG,510401310,account.data_account_type_direct_costs,0
+Funda Gustadina Vitaminas 454 GR - 1 Lb Natural Extra Largo,510401311,account.data_account_type_direct_costs,0
+Funda Gustadina Vitaminas 908 GR - 2 Lb Natural Extra Largo,510401312,account.data_account_type_direct_costs,0
+Funda Gustadina Vitaminas 2 KG Natural Extra Largo,510401313,account.data_account_type_direct_costs,0
+Funda Gustadina Vitaminas 5 KG Natural Extra Largo,510401314,account.data_account_type_direct_costs,0
+Funda Gustadina Vitaminas 2 Lb Natural Extra Largo,510401315,account.data_account_type_direct_costs,0
+Funda Gustadina Integral 1 KG,510401316,account.data_account_type_direct_costs,0
+Funda Gustadina Integral 2 KG,510401317,account.data_account_type_direct_costs,0
+Funda Gustadina Vitaminas 2 KG Envejecido Extra Largo,510401318,account.data_account_type_direct_costs,0
+Funda Gustadina Vitaminas 5 KG Envejecido Extra Largo,510401319,account.data_account_type_direct_costs,0
+Funda Gustadina 10 LB Natural Nestle Extra Largo ,510401320,account.data_account_type_direct_costs,0
+Funda Arnejo's Natural 2 KG,510401321,account.data_account_type_direct_costs,0
+Funda Arnejo's Natural 5 KG,510401322,account.data_account_type_direct_costs,0
+Funda Arnejo's Envejecido 2 KG,510401323,account.data_account_type_direct_costs,0
+Funda Arnejo's Envejecido 5 KG,510401324,account.data_account_type_direct_costs,0
+Funda Lira Express Natural 454 GR - 1 Lb,510401325,account.data_account_type_direct_costs,0
+Funda Lira Express Natural 1 KG,510401326,account.data_account_type_direct_costs,0
+Funda Lira Express Natural 2 KG,510401327,account.data_account_type_direct_costs,0
+Funda Lira Express Natural 5 KG,510401328,account.data_account_type_direct_costs,0
+Funda Lira Express Envejecido 454 GR - 1 Lb,510401329,account.data_account_type_direct_costs,0
+Funda Lira Express Envejecido 1 KG,510401330,account.data_account_type_direct_costs,0
+Funda Lira Express Envejecido 2 KG,510401331,account.data_account_type_direct_costs,0
+Funda Lira Express Envejecido 5 KG,510401332,account.data_account_type_direct_costs,0
+Funda Rendidor 2KG Natural Largo,510401333,account.data_account_type_direct_costs,0
+Funda Rendidor 5KG Natural Largo,510401334,account.data_account_type_direct_costs,0
+Funda Santa María 4 Lb Envejecido Largo ,510401335,account.data_account_type_direct_costs,0
+Funda Santa María 10 Lb Envejecido Largo ,510401336,account.data_account_type_direct_costs,0
+suministro de ensacado,510401337,account.data_account_type_direct_costs,0
+Saco Reserva Especial Natural Arroba 25 lbs,510401338,account.data_account_type_direct_costs,0
+Saco Reserva Especial Natural 45.36 GK,510401339,account.data_account_type_direct_costs,0
+Saco Reserva Especial Envejecido Arroba 25 lbs,510401340,account.data_account_type_direct_costs,0
+Saco Reserva Especial Envejecido 45.36 GK,510401341,account.data_account_type_direct_costs,0
+Saco Casa del Arroz Macareño Envejecido 10 KG,510401342,account.data_account_type_direct_costs,0
+Saco Casa del Arroz Macareño Envejecido 45.36 GK,510401343,account.data_account_type_direct_costs,0
+Saco Gustadina Vitaminas 10 KG Natural Extra Largo,510401344,account.data_account_type_direct_costs,0
+Saco Arroz Rendidor Envejecido Extra Largo Arroba 11.34 KG,510401345,account.data_account_type_direct_costs,0
+Saco Santa María Reserva Especial Envejecido Extra Largo Arroba 11.34 KG,510401346,account.data_account_type_direct_costs,0
+Saco Arnejo's Natural Arroba 25 Lbs,510401347,account.data_account_type_direct_costs,0
+Saco Arnejo's Natural Arroba 100 Lbs,510401348,account.data_account_type_direct_costs,0
+Saco Arnejo's Envejecido Arroba 25 Lbs,510401349,account.data_account_type_direct_costs,0
+Saco Arnejo's Envejecido Arroba 100 Lbs,510401350,account.data_account_type_direct_costs,0
+"Saco Lira Express Natural Arroba 11,34 KG",510401351,account.data_account_type_direct_costs,0
+"Saco Lira Express Envejecido Arroba 11,34 KG",510401352,account.data_account_type_direct_costs,0
+Saco Lira Express Envejecido QQ - 45.36 KG - 100 Lb,510401353,account.data_account_type_direct_costs,0
+Saco Rendidor Natural Largo,510401354,account.data_account_type_direct_costs,0
+Saco Arroz Blanco Natural Largo,510401355,account.data_account_type_direct_costs,0
+Saco Santa María Envejecido Arroba- 11.34 KG,510401356,account.data_account_type_direct_costs,0
+Saco Santa María Envejecido QQ,510401357,account.data_account_type_direct_costs,0
+Saco Good Rice's Envejecido QQ - 45.36 KG - 100 Lb,510401358,account.data_account_type_direct_costs,0
+ELECTRICIDAD ,510401401,account.data_account_type_direct_costs,0
+SUMINISTROS DE PRODUCCION ENVEJECIDO ,510401402,account.data_account_type_direct_costs,0
+MANTENIMIENTO Y REPARACION HORNOS ,510401403,account.data_account_type_direct_costs,0
+DEPRECIACION HORNOS ,510401404,account.data_account_type_direct_costs,0
+COSTO DE MANO DE OBRA ENVEJECIDO ,510401405,account.data_account_type_direct_costs,0
+SACOS ARROZ VIEJO ,510401406,account.data_account_type_direct_costs,0
+GASTOS DEL PERSONAL ,610101101,account.data_account_type_expenses,0
+SUELDOS Y SALARIOS ,610101102,account.data_account_type_expenses,0
+OTROS HABERES ,610101103,account.data_account_type_expenses,0
+MOVILIZACION ,610101104,account.data_account_type_expenses,0
+SOBRETIEMPOS ,610101105,account.data_account_type_expenses,0
+OTROS BENEFICIOS ,610101106,account.data_account_type_expenses,0
+DECIMO TERCER SUELDO ,610101107,account.data_account_type_expenses,0
+DECIMO CUARTO SUELDO ,610101108,account.data_account_type_expenses,0
+VACACIONES ,610101109,account.data_account_type_expenses,0
+FONDOS DE RESERVA ,610101110,account.data_account_type_expenses,0
+APORTE PATRONAL-IECE-SECAP ,610101111,account.data_account_type_expenses,0
+ALIMENTACION ,610101112,account.data_account_type_expenses,0
+UNIFORMES ,610101113,account.data_account_type_expenses,0
+TRANSPORTES ,610101114,account.data_account_type_expenses,0
+SERVICIOS PRESTADOS ,610101115,account.data_account_type_expenses,0
+CAPACITACION ,610101116,account.data_account_type_expenses,0
+INDEMNIZACIONES FUTURAS ,610101117,account.data_account_type_expenses,0
+COMISARIATO ,610101118,account.data_account_type_expenses,0
+ATENCION MEDICA ,610101119,account.data_account_type_expenses,0
+SEGUROS DE VIDA ,610101120,account.data_account_type_expenses,0
+BONO NAVIDEÑO ,610101121,account.data_account_type_expenses,0
+AGASAJOS EMPLEADOS ,610101122,account.data_account_type_expenses,0
+COMPONENTE SALARIAL ,610101123,account.data_account_type_expenses,0
+GASTO POR JUBILACION PATRONAL ,610101124,account.data_account_type_expenses,0
+GASTO PROVISION BONIFICACION POR DESAHUC ,610101125,account.data_account_type_expenses,0
+SALARIO DIGNO ADMINISTRACION ,610101126,account.data_account_type_expenses,0
+GASTOS POR IMPUESTO DIFERIDO X DESAHUCIO ,610101127,account.data_account_type_expenses,0
+GASTOS POR IMPUESTO DIFERIDO * JUBILACIO ,610101128,account.data_account_type_expenses,0
+MANO DE OBRA ,610101201,account.data_account_type_expenses,0
+MATERIALES ,610101202,account.data_account_type_expenses,0
+COSTOS DE PRODUCCIÓN ,610101203,account.data_account_type_expenses,0
+MANTEN VEHICULOS ,610102101,account.data_account_type_expenses,0
+MANTEN EQUIPOS DE OFICINA ,610102102,account.data_account_type_expenses,0
+MANTEN INSTALACIONES ,610102103,account.data_account_type_expenses,0
+MANTEN EQ DE COMPUTACION ,610102104,account.data_account_type_expenses,0
+MATERIALES DE LIMPIEZA ,610102105,account.data_account_type_expenses,0
+MANT/REP Y COMBUSTIBLE -RODEO ,610102106,account.data_account_type_expenses,0
+MANT/REP Y COMBUSTIBLE-NISSAN ,610102107,account.data_account_type_expenses,0
+MANT Y REP OFICINA ,610102108,account.data_account_type_expenses,0
+MANTEN MUEBLES Y ENSERES ,610102109,account.data_account_type_expenses,0
+MATERIALES PARA LA OFICINA ,610102110,account.data_account_type_expenses,0
+FRECUENCIAS Y RADIOS ,610102111,account.data_account_type_expenses,0
+MANTENIMIENTO INSTALACIONES ESTADIO ,610102112,account.data_account_type_expenses,0
+MANTENIMIENTO CAMARAS Y VIGILANCIA ,610102113,account.data_account_type_expenses,0
+TRANSPORTE (RELLENO) ,610102114,account.data_account_type_expenses,0
+ALQUILER DE BODEGAS ,610103101,account.data_account_type_expenses,0
+ALQUILER DE EQUIPO (INTERNET) ,610103102,account.data_account_type_expenses,0
+ALQUILER DE BIEN INMUEBLE ,610103103,account.data_account_type_expenses,0
+SEGUROS BOLIVAR ,610103201,account.data_account_type_expenses,0
+SEGUROS HUNTER ,610103202,account.data_account_type_expenses,0
+RIO GUAYAS CIA DE SEGUROS Y REASEGUROS ,610103203,account.data_account_type_expenses,0
+CHEVYSTAR ,610103204,account.data_account_type_expenses,0
+SOAT ,610103205,account.data_account_type_expenses,0
+ACE SEGUROS ,610103206,account.data_account_type_expenses,0
+SEGUROS DE VIDA ,610103207,account.data_account_type_expenses,0
+RECORRIDOS ,610103301,account.data_account_type_expenses,0
+TAXIS Y MOVILIZACIONES ,610103302,account.data_account_type_expenses,0
+COMBUSTIBLES ADM ,610103303,account.data_account_type_expenses,0
+PEAJES ADMINISTRACION ,610103304,account.data_account_type_expenses,0
+AGUA POTABLE ,610103401,account.data_account_type_expenses,0
+ENERGIA ELECTRICA ,610103402,account.data_account_type_expenses,0
+TELEFONO ,610103403,account.data_account_type_expenses,0
+TELEFONO CELULAR ,610103404,account.data_account_type_expenses,0
+FRECUENCIA DE RADIOS ,610103405,account.data_account_type_expenses,0
+COURRIERS CORREO ,610103406,account.data_account_type_expenses,0
+ASESORIA LEGAL ,610103501,account.data_account_type_expenses,0
+ASESORIA FINANCIERA ,610103502,account.data_account_type_expenses,0
+AUDITORIA Y CONSULTORIA ,610103503,account.data_account_type_expenses,0
+SEGURIDAD Y VIGILANCIA ,610103504,account.data_account_type_expenses,0
+ASESORIAS EN SISTEMAS ,610103505,account.data_account_type_expenses,0
+SERVICIOS CONTABLES ,610103506,account.data_account_type_expenses,0
+SERVICIOS EVENTUALES ,610103507,account.data_account_type_expenses,0
+AVALUOS ,610103508,account.data_account_type_expenses,0
+HONORARIOS PROFESIONALES ,610103509,account.data_account_type_expenses,0
+PAGO A NOTARIOS ,610103510,account.data_account_type_expenses,0
+IMPLEMENTACION DE BPM ,610103511,account.data_account_type_expenses,0
+SERVICIOS DE CONSULTORIAS SEGURIDAD OCUP ,610103512,account.data_account_type_expenses,0
+SERVICIOS EVALUACION MEDICA PERSONAL ,610103513,account.data_account_type_expenses,0
+IMPLEMENTACION ERP-OPA CONTABLE ,610103514,account.data_account_type_expenses,0
+ASESORIA LICENCIA AMBIENTAL ,610103515,account.data_account_type_expenses,0
+ATENCION A CLIENTES ,610104101,account.data_account_type_expenses,0
+ATENCION AL PERSONAL ,610104102,account.data_account_type_expenses,0
+ATENCION A ADMINISTRADORES ,610104103,account.data_account_type_expenses,0
+GASTOS DE REPRESENTACION ,610104104,account.data_account_type_expenses,0
+AFILIACIONES CUOTAS Y SUSCRIPCIONES ,610104105,account.data_account_type_expenses,0
+HOSPEDAJE ,610104201,account.data_account_type_expenses,0
+ALIMENTACION ,610104202,account.data_account_type_expenses,0
+VIATICOS ,610104203,account.data_account_type_expenses,0
+COMBUSTIBLES Y LUBRICANTES ,610104204,account.data_account_type_expenses,0
+OTROS GASTOS DE VIAJES ,610104205,account.data_account_type_expenses,0
+PEAJES ADMINISTRACION ,610104206,account.data_account_type_expenses,0
+GASTOS DE VIAJES LOCALES ,610104207,account.data_account_type_expenses,0
+SUELDOS Y SALARIOS ,620101101,account.data_account_type_expenses,0
+JORNALES ,620101102,account.data_account_type_expenses,0
+OTROS HABERES ,620101103,account.data_account_type_expenses,0
+MOVILIDAD ,620101104,account.data_account_type_expenses,0
+HORAS EXTRAS ,620101105,account.data_account_type_expenses,0
+OTROS BENEFICIOS ,620101106,account.data_account_type_expenses,0
+DECIMO TERCER SUELDO ,620101107,account.data_account_type_expenses,0
+DECIMO CUARTO SUELDO ,620101108,account.data_account_type_expenses,0
+VACACIONES ,620101109,account.data_account_type_expenses,0
+FONDOS DE RESERVA ,620101110,account.data_account_type_expenses,0
+APORTE PATRONAL-IECE-SECAP ,620101111,account.data_account_type_expenses,0
+CUADRILLAS Y ESTIBADORES ,620101112,account.data_account_type_expenses,0
+ALIMENTACION ,620101113,account.data_account_type_expenses,0
+UNIFORMES ,620101114,account.data_account_type_expenses,0
+TRANSPORTE ,620101115,account.data_account_type_expenses,0
+SERVICIOS PRESTADOS ,620101116,account.data_account_type_expenses,0
+CAPACITACION ,620101117,account.data_account_type_expenses,0
+INDEMNIZACIONES LABORALES ,620101118,account.data_account_type_expenses,0
+COMISARIATO ,620101119,account.data_account_type_expenses,0
+ATENCION MEDICA ,620101120,account.data_account_type_expenses,0
+SEGURO DE VIDA ,620101121,account.data_account_type_expenses,0
+BONO NAVIDEÑO ,620101122,account.data_account_type_expenses,0
+AGASAJOS EMPLEADOS ,620101123,account.data_account_type_expenses,0
+MUESTRAS ,620101124,account.data_account_type_expenses,0
+SERVICIO DE RENTA INTERNA ,620101125,account.data_account_type_expenses,0
+BONIFICACION TIEMPO SERVICIO VENTAS ,620101126,account.data_account_type_expenses,0
+GASTOS DE VIAJES ,620102101,account.data_account_type_expenses,0
+HOSPEDAJES ,620102102,account.data_account_type_expenses,0
+ALIMENTACION ,620102103,account.data_account_type_expenses,0
+VIATICOS ,620102104,account.data_account_type_expenses,0
+COMBUSTIBLES Y LUBRICANTES ,620102105,account.data_account_type_expenses,0
+OTROS GASTOS DE VIAJES ,620102106,account.data_account_type_expenses,0
+TRANSPORTES Y MOVILIZACIONES ,620102107,account.data_account_type_expenses,0
+RECORRIDOS ,620102108,account.data_account_type_expenses,0
+TAXIS Y MOVILIZACIONES ,620102109,account.data_account_type_expenses,0
+SERVICIO DE ENTREGA (PALLETS) ,620102110,account.data_account_type_expenses,0
+GASTOS DE GESTION ,620102111,account.data_account_type_expenses,0
+ATENCION A CLIENTES ,620102112,account.data_account_type_expenses,0
+OBSEQUIOS Y MUESTRAS ,620102113,account.data_account_type_expenses,0
+ALICUOTA SUITE 1-055-O ESTADIO MONUMENTA ,620102114,account.data_account_type_expenses,0
+PROMOCIONES EN VENTAS(ATUNES ,620102115,account.data_account_type_expenses,0
+OTROS GASTOS ,620102116,account.data_account_type_expenses,0
+OTROS GASTOS DE VENTAS ,620102117,account.data_account_type_expenses,0
+COMISIONES POR VENTAS ,620102118,account.data_account_type_expenses,0
+TRANSPORTE EN VENTAS ,620102119,account.data_account_type_expenses,0
+AUTOCONSUMO ,620102120,account.data_account_type_expenses,0
+BAJA DE CUENTAS PRODUCTORES ,620102121,account.data_account_type_expenses,0
+ENVIOS Y MUESTRAS ,620102122,account.data_account_type_expenses,0
+ANALISIS LABORATORIOS PRODUCTOS VENTAS ,620102123,account.data_account_type_expenses,0
+SUMINISTROS DE OFICINA ,620102124,account.data_account_type_expenses,0
+DONACIONES ,620102125,account.data_account_type_expenses,0
+GASTOS DE PUBLICIDAD Y PROMOCION ,630101101,account.data_account_type_expenses,0
+PUBLICIDAD ,630101102,account.data_account_type_expenses,0
+PROMOCION ,630101103,account.data_account_type_expenses,0
+OBSEQUIOS Y REGALIAS ,630101104,account.data_account_type_expenses,0
+GASTOS POR RETENCIONES ASUMIDAS ,640101101,account.data_account_type_expenses,0
+COMISARIATOS ,640101102,account.data_account_type_expenses,0
+PARQUEO Y GARAJE ,640101103,account.data_account_type_expenses,0
+TRAMITES LEGALES ,640101104,account.data_account_type_expenses,0
+GTOS PERSONALES ,640101105,account.data_account_type_expenses,0
+MEDICINAS ,640101106,account.data_account_type_expenses,0
+COMISIONES EN COMPRAS ,640101107,account.data_account_type_expenses,0
+MULTAS Y CITACIONES DE TRANSITO ,640101108,account.data_account_type_expenses,0
+LIQUIDACION DE HABERES ,640101109,account.data_account_type_expenses,0
+GASTOS VARIOS ADMINISTRATIVOS ,640101110,account.data_account_type_expenses,0
+IVA QUE SE CARGA AL GASTO ,640101111,account.data_account_type_expenses,0
+MULTAS COMISION DE TRANSITO ,640101112,account.data_account_type_expenses,0
+ALIMENTACION Y REFRIGERIOS ,640101113,account.data_account_type_expenses,0
+MULTAS SUPERCIA ,640101114,account.data_account_type_expenses,0
+BIENES Y SERVICIOS SIN COMPROBANTES ,640101115,account.data_account_type_expenses,0
+MULTAS SRI ,640101116,account.data_account_type_expenses,0
+CAPACITACION ,640101117,account.data_account_type_expenses,0
+TELEFONIA CELULAR ,640101118,account.data_account_type_expenses,0
+SERVICIOS DE EMPRESAS ,640101119,account.data_account_type_expenses,0
+ALIMENTOS PARA OFICINA ,640101120,account.data_account_type_expenses,0
+MOVILIZACION ,640101121,account.data_account_type_expenses,0
+SEGURO DE VIDA GERENCIA ,640101122,account.data_account_type_expenses,0
+GASTOS GERENCIALES ,640101123,account.data_account_type_expenses,0
+GASTOS GERENCIALES (KCC-MSO) ,640101124,account.data_account_type_expenses,0
+RESERVAS CUENTAS INCOBRABLES ,640101125,account.data_account_type_expenses,0
+OTROS ACTIVOS ,640101126,account.data_account_type_expenses,0
+SUSCRIPCIONES Y AFILIACIONES ,640101201,account.data_account_type_expenses,0
+CAMARA DE COMERCIO ,640101202,account.data_account_type_expenses,0
+CODIGO DE BARRA ,640101203,account.data_account_type_expenses,0
+IMPUESTOS Y CONTRIBUCIONES ,640101204,account.data_account_type_expenses,0
+IMPUESTOS FISCALES ,640101205,account.data_account_type_expenses,0
+IMPUESTOS PREDIALES ,640101206,account.data_account_type_expenses,0
+IMPUESTOS MUNICIPALES ,640101207,account.data_account_type_expenses,0
+CONTRIBUC SUPER CIAS ,640101208,account.data_account_type_expenses,0
+MATRICULACION DE VEHICULOS ,640101209,account.data_account_type_expenses,0
+CUERPO DE BOMBEROS ,640101210,account.data_account_type_expenses,0
+MINISTERIO DE AGRICULTURA Y GANADERIA ,640101211,account.data_account_type_expenses,0
+MINISTERIO DE SALUD PUBLICA ,640101212,account.data_account_type_expenses,0
+CORP COM AGROPECUARIOS ,640101213,account.data_account_type_expenses,0
+JUNTA DE BENEFICENCIA ,640101214,account.data_account_type_expenses,0
+TRAMITES MUNICIPALES ,640101215,account.data_account_type_expenses,0
+PERMISO HIDROCARBUROS GLP(AUSTROGAS) ,640101216,account.data_account_type_expenses,0
+PERMISO MINISTERIO DE GOBIERNO Y POLICIA ,640101217,account.data_account_type_expenses,0
+MINISTERIO DEL AMBIENTE ,640101218,account.data_account_type_expenses,0
+AFILIACIONES ECOP ,640101219,account.data_account_type_expenses,0
+CREDITO TRIBUTARIO AÑOS ANTERIORES ,640101220,account.data_account_type_expenses,0
+MINISTERIO DE RELACIONES LABORABLES ,640101221,account.data_account_type_expenses,0
+CONTRIBUCION SOLIDARIA/UTILIDADES SRI ,640101222,account.data_account_type_expenses,0
+AGENCIA NACIONAL DE REGULACION CONTROL Y ,640101223,account.data_account_type_expenses,0
+TRAMITES LEGALES ,640101224,account.data_account_type_expenses,0
+DEPREC ACUM EDIFICIOS ,650101101,account.data_account_type_expenses,0
+DEPREC ACUM INSTALACIONES ,650101102,account.data_account_type_expenses,0
+DEPREC ACUM MAQ EQUIPOS ,650101103,account.data_account_type_expenses,0
+DEPREC ACUM VEHICULOS ,650101104,account.data_account_type_expenses,0
+DEPREC ACUM MUEBLES Y ENSERES ,650101105,account.data_account_type_expenses,0
+DEPREC ACUM EQ COMPUTACION ,650101106,account.data_account_type_expenses,0
+DEPREC ACUM EQ COMUNICACION ,650101107,account.data_account_type_expenses,0
+DEPREC ACUM EQ DE OFICINA ,650101108,account.data_account_type_expenses,0
+AMORTIZACION DE DIFERIDOS ,650101201,account.data_account_type_expenses,0
+INTANGIBLES ,650101202,account.data_account_type_expenses,0
+OTROS ACTIVOS ,650101203,account.data_account_type_expenses,0
+INVENTARIOS ,650101204,account.data_account_type_expenses,0
+INSTRUMENTOS FINANCIEROS ,650101205,account.data_account_type_expenses,0
+PRESTAMOS A TERCEROS ,660101101,account.data_account_type_expenses,0
+INTERESES ,660101102,account.data_account_type_expenses,0
+COMISIONES ,660101103,account.data_account_type_expenses,0
+SOBREGIROS ,660101104,account.data_account_type_expenses,0
+IMPUESTOS PRESTAMOS BANCARIOS ,660101105,account.data_account_type_expenses,0
+INTERESES Y MULTAS ,660101106,account.data_account_type_expenses,0
+BANCO GUAYAQUIL ,660101107,account.data_account_type_expenses,0
+INTERESES BCO GUAYAQUIL ,660101108,account.data_account_type_expenses,0
+COMISIONES BANCARIAS ,660101109,account.data_account_type_expenses,0
+BCO NAC FOMENTO ,660101110,account.data_account_type_expenses,0
+INTERESES BCO NAC FOMENTO ,660101111,account.data_account_type_expenses,0
+VISA BANCO PICHINCHA ,660101112,account.data_account_type_expenses,0
+VISA CORPORATIVA ARROCESA S A ,660101113,account.data_account_type_expenses,0
+BANCO PICHINCHA C A ,660101114,account.data_account_type_expenses,0
+GASTOS BANCO PICHINCHA ,660101115,account.data_account_type_expenses,0
+INTERESES BCO PICHINCHA ,660101116,account.data_account_type_expenses,0
+BANCO PRODUBANCO ,660101117,account.data_account_type_expenses,0
+GASTOS BANCO PRODUBANCO ,660101118,account.data_account_type_expenses,0
+INTERESES BCO PRODUBANCO ,660101119,account.data_account_type_expenses,0
+TARJETAS DE CREDITOS ,660101120,account.data_account_type_expenses,0
+TARIFA POR CONSUMO ,660101121,account.data_account_type_expenses,0
+INTERESES POR DIFERIDOS ,660101122,account.data_account_type_expenses,0
+IMPUESTO SALIDA DE DIVISAS ,660101123,account.data_account_type_expenses,0
+CONSUMO TARJETAS DE CREDITO ARROCESA ,660101124,account.data_account_type_expenses,0
+BANCO INTERNACIONAL ,660101125,account.data_account_type_expenses,0
+GASTOS BANCO INTERNACIONAL ,660101126,account.data_account_type_expenses,0
+DINERS CLUB CORPORATIVA ARROCESA S A ,660101127,account.data_account_type_expenses,0
+VISA B G ,660101128,account.data_account_type_expenses,0
+AMERICAN EXPRESS ,660101129,account.data_account_type_expenses,0
+MASTERCARD ,660101130,account.data_account_type_expenses,0
+ETA-FASHION ,660101131,account.data_account_type_expenses,0
+CONSUMO TARJETAS DE CREDITO INTERNACIONA ,660101132,account.data_account_type_expenses,0
+SERVICIOS PRESTADOS ,670101101,account.data_account_type_expenses,0
+OTRAS BONIFICACIONES ,670101102,account.data_account_type_expenses,0
+COURRIERS CORREO ND ,670101103,account.data_account_type_expenses,0
+ALIMENTACION OFC ,670101104,account.data_account_type_expenses,0
+VARIOS (N/D) ,670101105,account.data_account_type_expenses,0
+SEGUROS ND ,670101106,account.data_account_type_expenses,0
+SUMINISTRO Y PAPELERIA OFC ,670101107,account.data_account_type_expenses,0
+TRAMITES Y COIMAS ,670101108,account.data_account_type_expenses,0
+GASTOS POR RETECION ASUMIDAS ND ,670101109,account.data_account_type_expenses,0
+MANT Y REP VEHICULO ,670101110,account.data_account_type_expenses,0
+MANT  &amp; REP OFICINA ,670101111,account.data_account_type_expenses,0
+MANT  &amp; REP EQ OFIC ,670101112,account.data_account_type_expenses,0
+MANT  &amp; REP EQ DE COMPUTACIóN ,670101113,account.data_account_type_expenses,0
+INTERESES PAGADOS A TERCEROS ,670101114,account.data_account_type_expenses,0
+AYUDAS Y DONACIONES ,670101115,account.data_account_type_expenses,0
+PUBLICIDAD ND CAMISETAS GORRAS ETC ,670101116,account.data_account_type_expenses,0
+SERVICIOS BASICOS (AGUA LUZ TELEF) ,670101117,account.data_account_type_expenses,0
+IMPUESTOS ASUMIDOS ,670101118,account.data_account_type_expenses,0
+LIQ DE GASTOS ND ,670101119,account.data_account_type_expenses,0
+OTROS EGRESOS NO OPERACIONALES ,670101120,account.data_account_type_expenses,0
+OTROS EGRESOS ,670101121,account.data_account_type_expenses,0
+AJUSTES DE INVENTARIOS ,670101122,account.data_account_type_expenses,0
+PERDIDA EN VENTAS DE ACTIVO ,670101123,account.data_account_type_expenses,0
+CIERRE DEL EJERCICIO ,670101124,account.data_account_type_expenses,0
+GASTO POR PROVISION DE CUENTA INCOBRABLE ,670101125,account.data_account_type_expenses,0
+GASTO PARTICIPACION TRABAJADORES ,670101126,account.data_account_type_expenses,0
+GASTOS IMPUESTO A LA RENTA ,670101127,account.data_account_type_expenses,0
+GASTOS NO DEDUCIBLES ,670101128,account.data_account_type_expenses,0

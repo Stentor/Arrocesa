@@ -1,0 +1,16 @@
+id,name
+arrocesa_route_001,RECEPCION MP CÁSCARA HÚMEDO
+arrocesa_route_002,SECADO
+arrocesa_route_003,PILADO
+arrocesa_route_004,SELECCIÓN
+arrocesa_route_005,ENVEJECIDO
+arrocesa_route_006,VITAMINIZADO
+arrocesa_route_007,ENSACADO LINEA 1 Y 2
+arrocesa_route_008,EMPAQUETADO LINEAS 3 Y 4
+arrocesa_route_009,EMPAQUETADO LINEA 5
+arrocesa_route_010,ARROZ INTEGRAL
+arrocesa_route_011,ENFARDADORA 1 ARROCESA
+arrocesa_route_012,ENFARDADORA 2 PRONACA
+arrocesa_route_013,ENFARDADO MANUAL 
+arrocesa_route_014,POLICHADO
+arrocesa_route_015,RECEPCIÓN MP PILADO 

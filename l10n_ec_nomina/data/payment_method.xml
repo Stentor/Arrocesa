@@ -1,0 +1,14 @@
+<odoo>
+    <data noupdate="1">
+        <record id="payment_method_transfer" model="account.payment.method">
+            <field name="code">tranfer</field>
+            <field name="name">Tranferencia Bancaria</field>
+            <field name="payment_type">outbound</field>
+        </record>
+        <record id="payment_method_check" model="account.payment.method">
+            <field name="code">check</field>
+            <field name="name">Cheque</field>
+            <field name="payment_type">outbound</field>
+        </record>
+    </data>
+</odoo>

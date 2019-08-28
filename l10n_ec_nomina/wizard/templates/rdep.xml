@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<rdep>
+    <numRuc>0900206715001</numRuc>
+    <anio>2018</anio>
+
+<retRelDep>
+{% for employee in employees %}
+<datRetRelDep>
+    <empleado>
+        <benGalpg>{{ employee.benGalpg }}</benGalpg>
+        <enfcatastro>{{ employee.enfcatastro }}</enfcatastro>
+        <tipIdRet>{{ employee.tipIdRet }}</tipIdRet>
+        <idRet>{{ employee.idRet }}</idRet>
+        <apellidoTrab>{{ employee.apellidoTrab }}</apellidoTrab>
+        <nombreTrab>{{ employee.nombreTrab }}</nombreTrab>
+        <estab>{{ employee.estab }}</estab>
+        <residenciaTrab>{{ employee.residenciaTrab }}</residenciaTrab>
+        <paisResidencia>{{ employee.paisResidencia }}</paisResidencia>
+        <aplicaConvenio>{{ employee.aplicaConvenio }}</aplicaConvenio>
+        <tipoTrabajDiscap>{{ employee.tipoTrabajDiscap }}</tipoTrabajDiscap>
+        <porcentajeDiscap>{{ employee.porcentajeDiscap }}</porcentajeDiscap>
+        <tipIdDiscap>{{ employee.tipIdDiscap }}</tipIdDiscap>
+        <idDiscap>{{ employee.idDiscap }}</idDiscap>
+    </empleado>
+    <suelSal>{{ employee.suelSal }}</suelSal>
+    <sobSuelComRemu>{{ employee.sobSuelComRemu }}</sobSuelComRemu>
+    <partUtil>{{ employee.partUtil }}</partUtil>
+    <intGrabGen>{{ employee.intGrabGen }}</intGrabGen>
+    <impRentEmpl>{{ employee.impRentEmpl }}</impRentEmpl>
+    <decimTer>{{ employee.decimTer }}</decimTer>
+    <decimCuar>{{ employee.decimCuar }}</decimCuar>
+    <fondoReserva>{{ employee.fondoReserva }}</fondoReserva>
+    <salarioDigno>{{ employee.salarioDigno }}</salarioDigno>
+    <otrosIngRenGrav>{{ employee.otrosIngRenGrav }}</otrosIngRenGrav>
+    <ingGravConEsteEmpl>{{ employee.ingGravConEsteEmpl }}</ingGravConEsteEmpl>
+    <sisSalNet>{{ employee.sisSalNet }}</sisSalNet>
+    <apoPerIess>{{ employee.apoPerIess }}</apoPerIess>
+    <aporPerIessConOtrosEmpls>{{ employee.aporPerIessConOtrosEmpls }}</aporPerIessConOtrosEmpls>
+    <deducVivienda>{{ employee.deducVivienda }}</deducVivienda>
+    <deducSalud>{{ employee.deducSalud }}</deducSalud>
+    <deducEducartcult>{{ employee.deducEducartcult }}</deducEducartcult>
+    <deducAliement>{{ employee.deducAliement }}</deducAliement>
+    <deducVestim>{{ employee.deducVestim }}</deducVestim>
+    <exoDiscap>{{ employee.exoDiscap }}</exoDiscap>
+    <exoTerEd>{{ employee.exoTerEd }}</exoTerEd>
+    <basImp>{{ employee.basImp }}</basImp>
+    <impRentCaus>{{ employee.impRentCaus }}</impRentCaus>
+    <valRetAsuOtrosEmpls>{{ employee.valRetAsuOtrosEmpls }}</valRetAsuOtrosEmpls>
+    <valImpAsuEsteEmpl>{{ employee.valImpAsuEsteEmpl }}</valImpAsuEsteEmpl>
+    <valRet>{{ employee.valRet }}</valRet>
+</datRetRelDep>
+{% endfor %}
+
+</retRelDep>
+</rdep>

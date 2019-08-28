@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+         <record id="view_employee_bank_form" model="ir.ui.view">
+            <field name="name">EmployeeBank</field>
+            <field name="model">res.partner.bank</field>
+            <field name="inherit_id" ref="base.view_partner_bank_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='acc_type']" position="after">
+                    
+                    <field name="tipo_cuenta"/>
+                                        
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+
+
+
+
+
+
+
+
+
+
+
+

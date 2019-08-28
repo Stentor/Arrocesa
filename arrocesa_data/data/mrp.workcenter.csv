@@ -1,0 +1,16 @@
+id,name
+arrocesa_work_center_00,RECEPCION MP CÁSCARA HÚMEDO
+arrocesa_work_center_01,SECADO
+arrocesa_work_center_02,PILADO
+arrocesa_work_center_03,SELECCIÓN
+arrocesa_work_center_04,ENVEJECIDO
+arrocesa_work_center_05,VITAMINIZADO
+arrocesa_work_center_06,ENSACADO LINEA 1 Y 2
+arrocesa_work_center_07,EMPAQUETADO LINEAS 3 Y 4
+arrocesa_work_center_08,EMPAQUETADO LINEA 5
+arrocesa_work_center_09,ARROZ INTEGRAL
+arrocesa_work_center_10,ENFARDADORA 1 ARROCESA
+arrocesa_work_center_11,ENFARDADORA 2 PRONACA
+arrocesa_work_center_12,ENFARDADO MANUAL 
+arrocesa_work_center_13,POLICHADO
+arrocesa_work_center_14,RECEPCIÓN MP PILADO 

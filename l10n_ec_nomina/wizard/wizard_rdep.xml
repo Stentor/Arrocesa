@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="wizard_export_rdep_form" model="ir.ui.view">
+            <field name="name">Exportar RDEP XML</field>
+            <field name="model">wizard.rdep</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Exportar Archivo RDEP" version="1.0">
+                    <field name="state" invisible="1"/>
+                    <separator string="Se exportara la información de los empleados de la empresa a la que pertenece el usuario actual." colspan="4"/>
+                    <group states="choose" col="2">
+                        <field name="company_id" required="1" options="{'no_open': True}" groups="base.group_multi_company"/>
+                        <field name="period_id"/>
+                        <field name="no_validate"/>
+                        <field name="num_estab_ruc"/>
+                    </group>
+                    <group states="export">
+                        <separator string="Archivo generado correctamente, guardelo en su ubicación de preferencia." colspan="4"/>
+                        <field name="fcname" invisible="1"/>
+                        <field name="data" filename="fcname" widget="download_link" readonly="1"/>
+                    </group>
+                    <group states="export_error">
+                        <separator string="Error de validacion del xml." colspan="4"/>
+                        <field name="fcname_errores" invisible="1"/>
+                        <field name="error_data" filename="fcname_errores" widget="download_link" readonly="1"/>
+                        <field name="fcname" invisible="1"/>
+                        <field name="data" filename="fcname" widget="download_link" readonly="1"/>
+                    </group>
+                    <footer class="oe_right">
+                        <button icon="gtk-cancel" class="oe_link" special="cancel" states="choose" string="Cancelar"/>
+                        <button icon="fas fa-download" name="act_export_rdep" states="choose" string="Exportar XML" type="object"/>
+                        <button icon="gtk-ok" states="export" string="Cerrar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_export_rdep" model="ir.actions.act_window">
+            <field name="name">Exportar Retenciones en la Fuente Bajo Relacion de Depencia</field>
+            <field name="res_model">wizard.rdep</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem action="action_export_rdep" id="menu_export_rdep" sequence="2" parent="l10n_ec_withholding.menu_sri_reporting"/>
+
+    </data>
+</odoo>

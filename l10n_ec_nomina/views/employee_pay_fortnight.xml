@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+
+        <record id="view_employee_filter" model="ir.ui.view">
+            <field name="name">Employee</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='inactive']" position="after">
+                    
+                    <separator/>
+                    <filter string="Pago Quincenal" name="pago_quincenal" domain="[('pago_quincenal', '=', True)]"/>
+                            
+                </xpath>
+            </field>
+        </record>
+
+        <act_window name="Generar Pago Quincena"
+            res_model="hr.wizard.pay"
+            src_model="hr.employee"
+            key2="client_action_multi" 
+            view_mode="form" target="new"
+            view_type="form"
+            id="fortnight_pay_wizard" />  
+
+        
+    </data>
+</odoo>    

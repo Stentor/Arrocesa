@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_l10n_ec_remision_guia_remision,l10n_ec_remision.guia_remision,model_account_guia_remision,"account.group_account_invoice",1,1,1,1
+access_l10n_ec_remision_guia_remision_line,l10n_ec_remision.guia_remision_line,model_account_guia_remision_line,"account.group_account_invoice",1,1,1,1
+access_l10n_ec_remision_remision_route,l10n_ec_remision.remision_route,model_remision_route,"account.group_account_invoice",1,1,1,1
+access_l10n_ec_remision_guia_remision,l10n_ec_remision.guia_remision,model_account_guia_remision,"stock.group_stock_user",1,1,1,1
+access_l10n_ec_remision_guia_remision_line,l10n_ec_remision.guia_remision_line,model_account_guia_remision_line,"stock.group_stock_user",1,1,1,1
+access_l10n_ec_remision_remision_route,l10n_ec_remision.remision_route,model_remision_route,"stock.group_stock_user",1,1,1,1

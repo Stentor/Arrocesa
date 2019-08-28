@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+        <record id="mrp_production_analytic_postings_view" model="ir.ui.view">
+            <field name="name">analytic.postings.mrp.production.form</field>
+            <field name="model">mrp.production</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+            <field name="arch" type="xml">
+                <button name="button_scrap" position="replace">
+                    <button name="button_scrap" type="object" string="Scrap" attrs="{'invisible': ['|', ('availability', '=', 'none'), ('state', 'in', ('cost','cancel'))]}"/>
+                </button>
+                <button name="action_cancel" position="after">
+                    <button name="action_economical_closure" type="object" string="Financial Closure" attrs="{'invisible': [('state', 'not in', 'done')]}"/>
+                </button>
+                <button name="%(stock.action_stock_report)d" position="replace">
+                    <button name="%(stock.action_stock_report)d" icon="fa-arrow-up" class="oe_stat_button" string="Traceability Report" type="action" states="done,cost" groups="stock.group_production_lot"/>
+                </button>
+                <field name="state" position="replace">
+                    <field name="state" widget="statusbar" statusbar_visible="confirmed,planned,progress,done,cost,"/>
+                </field>
+                <field name="company_id" position="after">
+                    <field name="financial_closed" invisible='1'/>
+                </field>
+            </field>
+        </record>
+        
+        <record id="mrp_production_new_tree" model="ir.ui.view">
+            <field name="name">new.mrp.production.tree</field>
+            <field name="model">mrp.production</field>
+            <field name="priority">15</field>
+            <field name="arch" type="xml">
+                <tree decoration-bf="message_needaction==True" default_order="date_planned_start desc" decoration-info="state=='confirmed'" decoration-danger="date_planned_start&lt;current_date and state not in ('cost','cancel')" decoration-muted="state in ('cost','cancel')" string="Manufacturing Orders">
+<field name="message_needaction" invisible="1"/>
+                    <field name="name"/>
+                    <field name="date_planned_start"/>
+                    <field name="product_id"/>
+                    <field name="product_qty" sum="Total Qty" string="Quantity"/>
+                    <field name="product_uom_id" string="Unit of Measure" options="{'no_open':True,'no_create':True}" groups="product.group_uom"/>
+                    <field name="availability"/>
+                    <field name="routing_id" groups="mrp.group_mrp_routings"/>
+                    <field name="origin"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
+                    

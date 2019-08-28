@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <template id="report_liq_vacaciones">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="row">
+                        <h4><strong><span t-esc="res_company.name"/></strong></h4>
+                    </div>
+                    <div class="row">
+                        <center><h2><strong>LIQUIDACION DE VACACIONES</strong></h2></center>
+                    </div>
+                    <br/><br/>
+                    <div>
+                        <div class="col">
+                            <div class="row">
+                                <span><strong>NOMBRE DEL EMPLEADO </strong></span>
+                                <span t-esc="o.name.name"/>
+                            </div>
+                            <div class="row">
+                                <span><strong>CARGO</strong></span>
+                                <span t-esc="o.name.job_id.name"/>
+                            </div>
+                            <div class="row">
+                                <span><strong>SALARIO</strong></span>
+                                <span t-esc="o.contract_id.wage"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><strong>FECHA CORTE DE VACIONES</strong></span>
+                            </div>
+                            <div class="col-2">
+                                <span t-esc="o.date_end"/>
+                            </div>
+                            <div class="col-4">
+                                <span><strong>FECHA DE INGRESO</strong></span>
+                            </div>
+                            <div class="col-2">
+                                <span t-esc="o.date_start"/>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <span><strong>DIAS DE VACIONES A GOZAR</strong></span>
+                                <span t-esc="o.calcule_days()" />
+                            </div>
+                        </div><br/><br/>
+
+                        <div class="row" style="background-color: silver;">
+                            <div class="col-3" style="padding-center: 0px;  border: 1px solid black;">
+                                <span><strong>MES</strong></span>
+                            </div>
+                            <div class="col-2" style="padding-center: 0px;  border: 1px solid black;">
+                                <span><strong>SUELDO</strong></span>
+                            </div>
+                            <div class="col-2" style="padding-center: 0px;  border: 1px solid black;">
+                                <span><strong>EXTRAS</strong></span>
+                            </div>
+                            <div class="col-3" style="padding-center: 0px;  border: 1px solid black;">
+                                <span><strong>TOTAL REMUNERACIONES</strong></span>
+                            </div>
+                            <div class="col-2" style="padding-center: 0px;  border: 1px solid black;">
+                                <span><strong>PROVISION VACACIONES</strong></span>
+                            </div>
+                        </div>
+
+                        <t t-foreach="o.name.slip_ids" t-as="payroll">
+                            <t t-if="payroll.date_to &gt;= o.date_start and payroll.date_from &lt;= o.date_end and payroll.state == 'paid'">
+                                <div class="row" >
+                                    <div class="col-3" style="padding-left: 0px;  border: 1px solid black;">
+                                        <span t-esc="payroll.date_to.strftime('%m-%Y')" t-lang="o.name.partner_id.lang"/>
+                                    </div>
+                                    <t t-foreach="payroll.line_ids" t-as="line">
+                                        <t t-if="line.code == 'BASIC'">
+                                        <div class="col-2" style="padding-left: 0px;  border: 1px solid black;">
+                                            <span>$</span><span t-esc="'%.2f' % line.total"/>
+                                        </div>
+                                        </t>
+                                    </t>
+                                    <div class="col-2" style="padding-left: 0px;  border: 1px solid black;">
+                                        <t t-foreach="payroll.line_ids" t-as="lines">
+                                            <t t-if="lines.code == 'HorExt'">
+                                                <span>$</span><span t-esc="'%.2f' % lines.total"/>
+                                            </t>
+                                        </t>
+                                    </div>
+                                    <t t-foreach="payroll.line_ids" t-as="lines">
+                                        <t t-if="lines.name == 'Vacaciones'">
+                                            <div class="col-3" style="padding-left: 0px;  border: 1px solid black;">
+                                                <span>$</span><span t-esc="'%.2f' % (lines.total * 24)"/>
+                                            </div>
+                                            <div class="col-2" style="padding-left: 0px;  border: 1px solid black;">
+                                                <span>$</span><span t-esc="'%.2f' % lines.total"/>
+                                            </div>
+                                        </t>
+                                    </t>
+                                </div>
+                            </t>
+                        </t>
+                    </div>
+                    <div class="row" aling="right">
+                        <div class="col-3"><span></span></div>
+                        <div class="col-2"><span></span></div>
+                        <div class="col-2"><span></span></div>
+                        <div class="col-3" style="background-color: silver; padding-left: 0px;  border: 1px solid black;"><span><strong>TOTAL</strong></span></div>
+                        <div class="col-2" style="background-color: silver; padding-left: 0px;  border: 1px solid black;"><strong><span>$</span><t t-esc="'%.2f' % o.calcule_total_vacation(o.name.slip_ids)"/></strong></div>
+                    </div> 
+                    <br/><br/><br/>
+                    <div class="row">
+                        <div class="col-2">
+                            <span>          </span>
+                        </div>
+                        <div class="col-3" style=" border-top: 1px solid black;">
+                            <span>Elaborador por</span>
+                        </div>
+                        <div class="col-2">
+                            <span>          </span>
+                        </div>
+                        <div class="col-3" style=" border-top: 1px solid black;">
+                            <span>Recibido por</span>
+                        </div>
+                    </div>                       
+
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+
+        
+    </data>
+</odoo>

@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record id="hr_settlement_type_tree" model="ir.ui.view">
+            <field name="name">hr.settlement.type.tree</field>
+            <field name="model">hr.settlement.type</field>
+            <field name="arch" type="xml">
+                <tree editable="top" string="Settlement Type">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="hr_settlement_type_action" model="ir.actions.act_window">
+            <field name="name">Tipos de Renuncia</field>
+            <field name="res_model">hr.settlement.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="hr_settlement_type_tree"/>
+        </record>
+
+        <menuitem id="menu_hr_settlement_type" name="Tipos de Renuncia" action="hr_settlement_type_action"
+            parent="hr_payroll.menu_hr_payroll_configuration" sequence="10" groups="hr_payroll.group_hr_payroll_manager"/>
+        
+    </data>
+</odoo>

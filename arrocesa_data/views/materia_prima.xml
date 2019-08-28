@@ -1,0 +1,71 @@
+<odoo>
+    <data>
+        <record id="view_product_form" model="ir.ui.view">
+            <field name="name">Product</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Materia Prima">
+                        <group>
+                            <group>
+                                <field name='is_prime_material'/>
+                            </group>
+                            <group>
+                                <field name="price_magap"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_materia_prima_form" model="ir.ui.view">
+            <field name="name">Materia Prima</field>
+            <field name="model">arrocesa.materia.prima.purchase</field>            
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="make_purchase" string="Procesar" type="object" states="draft"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="partner_id" domain="[('customer','=', True)]"/>
+                                <field name="product_id" domain="[('is_prime_material','=', True)]"/>
+                                <field name="uom_id"/>
+                                <field name="pact_price"/>
+                            </group>
+                            <group>
+                                <field name="balance_id"/>
+                                <field name="uom_mod_id"/>
+                                <field name="qty"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <act_window  id="materia_prima_purchase_action"  
+            name="Materia Prima"  
+            res_model="arrocesa.materia.prima.purchase"
+            view_mode="tree,form"  /> 
+
+        <menuitem  id="ateria_prima_purchase_menu"  
+            name="Materia Prima"  
+            action="materia_prima_purchase_action"
+            groups="hr_payroll.group_hr_payroll_manager"
+            parent="purchase.menu_procurement_management"
+            sequence="01" />
+
+
+
+    </data>
+</odoo>

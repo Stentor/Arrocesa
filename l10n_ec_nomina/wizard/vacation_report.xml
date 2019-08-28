@@ -1,0 +1,75 @@
+<odoo>
+    <data>
+        <report
+        id="hr_vacations_report"
+        model="report.liq_vacation"
+        string="LIQUIDACION DE VACACIONES"
+        report_type="qweb-pdf"
+        name="l10n_ec_nomina.report_liq_vacaciones"
+        file="l10n_ec_nomina.report_liq_vacaciones"
+        attachment_use="True"
+        attachment="('LIQUIDACION DE VACACIONES '+(object.name.name or '').replace('/','')+'.pdf')"
+        />
+
+        <!-- <record id="hr_vacation_report_tree" model="ir.ui.view">
+            <field name="name">Liquidation.report.tree</field>
+            <field name="model">report.liq_vacation</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="contract_id" invisible="1"/>
+                </tree>
+            </field>
+        </record> -->
+
+
+        <record id="hr_vacation_report_wizard" model="ir.ui.view">
+            <field name="name">Liquidacion de Vacaciones</field>
+            <field name="model">report.liq_vacation</field>
+            <field name="arch" type="xml">
+                <form>
+                    <h2>Liquidacion de Vacaciones</h2>
+                    <group>
+                        <field name="name" options="{'no_create':True}"/>
+                    </group>
+                    <group col="4">
+                        <field name="date_start"/>
+                        <field name="date_end"/>
+                        <field name="pay_id"/>
+                        <field name="state" readonly="1" invisible="1" />
+                        <field name="contract_id" invisible="1"/>
+                    </group>
+                    <footer>
+                        <button name="print_liquidation" states="draft" string="Imprimir" type="object" class="btn btn-primary" icon="fa-print"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_vacation_report_action" model="ir.actions.act_window">
+            <field name="name">Liquidacion de Vacaciones</field>
+            <field name="res_model">report.liq_vacation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="hr_vacation_report_wizard"/>
+            <field name="target">new</field>
+        </record>
+
+        <!-- <record id="hr_vacation_report_action2" model="ir.actions.act_window">
+            <field name="name">Liquition.report.action</field>
+            <field name="res_model">report.liq_vacation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="hr_vacation_report_tree"/>
+        </record> -->
+
+        <menuitem id="menu_hr_payroll_report" name="Reportes" parent="hr_payroll.menu_hr_payroll_root" sequence="20"/>
+        <menuitem id="menu_hr_payroll_report_liq_vacation" name="Liquidacion de Vacaciones" action="hr_vacation_report_action"
+            parent="menu_hr_payroll_report" sequence="1" groups="hr_payroll.group_hr_payroll_manager"/>
+        <!-- <menuitem id="menu_hr_payroll_liq_vacation" name="Liquidacion" action="hr_vacation_report_action2"
+            parent="menu_hr_payroll_report" sequence="2" groups="hr_payroll.group_hr_payroll_manager"/> -->
+    
+    </data>
+</odoo>

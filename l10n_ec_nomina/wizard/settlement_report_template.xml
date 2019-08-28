@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <template id="template_settlement_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div>
+                            <center><h2><span><strong>LIQUIDACION DE FINIQUITO</strong></span></h2></center>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><strong>Nombres del Colaborador</strong></span>
+                            </div>
+                            <div>
+                                <span t-esc="o.name.name"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><strong>Fecha de Ingreso</strong></span>
+                            </div>
+                            <div class="col-2">
+                                <span t-esc="o.date_start"/>
+                            </div>
+                            <div class="col-4">
+                                <span><strong>Fecha de Salida</strong></span>
+                            </div>
+                            <div class="col-2">
+                                <span t-esc="o.date_end"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><strong>Cedula</strong></span>
+                            </div>
+                            <div class="col-2">
+                                <span t-esc="o.name.identification_id"/>
+                            </div>
+                            <div class="col-4">
+                                <span><strong>Localidad/Area</strong></span>
+                            </div>
+                            <div class="col-2">
+                                <span t-esc="o.name.address_id.street or 'No Registrado'"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><strong>Motivo</strong></span>
+                            </div>
+                            <div>
+                                <span t-esc="o.settlement_id.name"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><strong>Sueldo</strong></span>
+                            </div>
+                            <div>
+                                <span t-esc="o.contract_id.wage"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><strong>Tipo de Contrato</strong></span>
+                            </div>
+                            <div>
+                                <span t-esc="o.contract_id.struct_id.name" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><strong>Cargo</strong></span>
+                            </div>
+                            <div>
+                                <span t-esc="o.contract_id.job_id.name"/>
+                            </div>
+                        </div>
+                        <div class="row" style="background-color: silver; margin-top: 16px; border: 1px solid black;">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <span><strong>CONCEPTO</strong></span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span><strong>DIAS</strong></span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span><strong>VALORES</strong></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <center><span>Sueldo (Proporcional)</span></center>
+                                <div class="row">
+                                    <div class="col-5" style="border: 1px solid black;">
+                                        <span t-esc="o.date_end.replace(day=1)"/>
+                                    </div>
+                                    <div class="col-2" style="border: 1px solid black;">
+                                        <span>al</span>
+                                    </div>
+                                    <div class="col-5" style="border: 1px solid black;">
+                                        <span t-esc="o.date_end"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <t t-foreach="o.payslip_id.worked_days_line_ids" t-as="days">
+                                    <t t-if="days.code == 'WORK100'">
+                                        <span t-esc="days.number_of_days" />
+                                    </t>
+                                </t>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <t t-foreach="o.payslip_id.line_ids" t-as="salary">
+                                    <t t-if="salary.code == 'BASIC'">
+                                        <span>$</span><span t-esc="'%.2f' % salary.total" />
+                                    </t>
+                                </t>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <center><span>Decimo XIII Sueldo (Proporcional)</span></center>
+                                <div class="row">
+                                    <div class="col-5" style="border: 1px solid black;">
+                                        <span t-esc="o.calcule_XIII_date()[0]"/>
+                                    </div>
+                                    <div class="col-2" style="border: 1px solid black;">
+                                        <span>al</span>
+                                    </div>
+                                    <div class="col-5" style="border: 1px solid black;">
+                                        <span t-esc="o.calcule_XIII_date()[1]"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span> </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span>$</span><span t-esc="'%.2f' % o.calcule_sayings('ProvDec13')"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <center><span>Decimo XIV Sueldo (Proporcional)</span></center>
+                                <div class="row">
+                                    <div class="col-5" style="border: 1px solid black;">
+                                        <span t-esc="o.calcule_XIV_date()[0]"/>
+                                    </div>
+                                    <div class="col-2" style="border: 1px solid black;">
+                                        <span>al</span>
+                                    </div>
+                                    <div class="col-5" style="border: 1px solid black;">
+                                        <span t-esc="o.calcule_XIV_date()[1]"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span> </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span>$</span><span t-esc="'%.2f' % o.calcule_sayings('ProvDec14')"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <center><span>Vacaciones (Proporcional)</span></center>
+                                <div class="row">
+                                    <div class="col-5" style="border: 1px solid black;">
+                                        <span t-esc="o.date_start.strftime('%Y')"/>
+                                        <span t-esc="o.date_end.strftime('%Y')"/>
+                                    </div>
+                                    <div class="col-2" style="border: 1px solid black;">
+                                        <span>al</span>
+                                    </div>
+                                    <div class="col-5" style="border: 1px solid black;">
+                                        <span t-esc="o.date_end.strftime('%d de %B del %Y')"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span>22</span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <t t-foreach="o.payslip_id.line_ids" t-as="payslip">
+                                    <t t-if="payslip.code == 'Vaca'">
+                                        <span>$</span><span t-esc="'%.2f' % (o.calcule_sayings('Vaca'))"/>
+                                    </t>
+                                </t>                            
+                            </div>
+                        </div>
+                        <t t-foreach="o.payslip_id.line_ids" t-as="payslip">
+                            <t t-if="payslip.code in ('Comi','FonResvM','Movil','DescAlim')">
+                                <div class="row">
+                                    <div class="col-7" style="border: 1px solid black;">
+                                        <span t-esc="payslip.name"/>
+                                    </div>
+                                    <div class="col-2" style="border: 1px solid black;">
+                                        <span> </span>
+                                    </div>
+                                    <div class="col-3" style="border: 1px solid black;">
+                                        <span>$</span><span t-esc="'%.2f' % payslip.total"/>
+                                    </div>
+                                </div>
+                            </t>
+                            <t t-if="payslip.code in ('Dec13Men','Dec14Men') and payslip.total != 0">
+                                <div class="row">
+                                    <div class="col-7" style="border: 1px solid black;">
+                                        <span t-esc="payslip.name"/>
+                                    </div>
+                                    <div class="col-2" style="border: 1px solid black;">
+                                        <span> </span>
+                                    </div>
+                                    <div class="col-3" style="border: 1px solid black;">
+                                        <span>$</span><span t-esc="'%.2f' % payslip.total"/>
+                                    </div>
+                                </div>
+                            </t>
+                            
+                        </t>
+                        <div class="row" style="background-color: silver; margin-top: 10px; border: 1px solid black;">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <span><strong>CONCEPTO</strong></span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span><strong>HORAS</strong></span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span><strong>VALORES</strong></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <span>Horas Extras 25% Jornada Nocturna</span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span>   </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <t t-foreach="o.payslip_id.line_ids" t-as="payslip">
+                                    <t t-if="payslip.code == 'HorExt'">
+                                        <span>$</span><span t-esc="'%.2f' % payslip.total"/>
+                                    </t>
+                                </t>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <span>Horas Extras 50%</span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span>   </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <t t-foreach="o.payslip_id.line_ids" t-as="payslip">
+                                    <t t-if="payslip.code == 'HorSupl'">
+                                        <span>$</span><span t-esc="'%.2f' % payslip.total"/>
+                                    </t>
+                                </t>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <span>Horas Extras 100%</span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span>   </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span>$0</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <span>Feriados</span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span>   </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span>$0</span>
+                            </div>
+                        </div>
+                        <p style="page-break-before:always;"></p>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-7" style="background-color: silver; border: 1px solid black;">
+                                <span>Indemnizaciones</span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span>   </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span>$</span><span t-esc="'%.2f' % o.amount"/>
+                            </div>
+                        </div>
+                        <div class="row" style="background-color: silver; margin-top: 10px;">
+                            <div class="col-12" style="border: 1px solid black;">
+                                <span><strong>Calculo de Indemnizaciones</strong></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <span>Art.189</span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span> * 100% * </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <t t-if="o.settlement_id.code.upper() == 'INTEMPESTIVO'">
+                                    <span>$</span><span t-esc="'%.2f' % (o.contract_id.wage * o.diff_year())"/>
+                                </t>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7" style="border: 1px solid black;">
+                                <span>Art.185</span>
+                            </div>
+                            <div class="col-2" style="border: 1px solid black;">
+                                <span> * 25% * </span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span>$</span><span t-esc="'%.2f' % (o.contract_id.wage * 0.25 * o.diff_year())"/>
+                            </div>
+                        </div>
+                        <div class="row" style="background-color: silver; margin-top: 10px;">
+                            <div class="col-9" style="border: 1px solid black;">
+                                <span><strong>TOTAL INGRESOS</strong></span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <t t-foreach="o.payslip_id.line_ids" t-as="payslip">
+                                    <t t-if="payslip.code == 'Vaca'">
+                                        <span>$</span><span t-esc="'%.2f' % (o.calcule_total_income())"/>
+                                    </t>
+                                </t>
+                            </div>
+                        </div>
+                        <div class="row" style="background-color: silver; margin-top: 10px; border: 1px solid black;">
+                            <div class="col-12">
+                                <span><strong>DESCUENTOS</strong></span>
+                            </div>
+                        </div>
+                        <t t-foreach="o.payslip_id.line_ids" t-as="payroll">
+                            <t t-if="payroll.category_id.name == 'Descuentos' and payroll.total != 0">
+                                <div class="row">
+                                    <div class="col-9" style="border: 1px solid black;">
+                                        <span t-esc="payroll.name"/>
+                                    </div>
+                                    <div class="col-3" style="border: 1px solid black;">
+                                        <span t-esc="'%.2f' % payroll.total"/>
+                                    </div>
+                                </div>
+                            </t>
+                        </t>
+                        <div class="row" style="background-color: silver; margin-top: 10px;">
+                            <div class="col-9" style="border: 1px solid black;">
+                                <span><strong>TOTAL DESCUENTOS</strong></span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <span>$</span><span t-esc="'%.2f' % o.calcule_total_expenses()"/>
+                            </div>
+                        </div>
+                        <div class="row" style="background-color: silver; margin-top: 10px;">
+                            <div class="col-9" style="border: 1px solid black;">
+                                <span><strong>NETO A RECIBIR</strong></span>
+                            </div>
+                            <div class="col-3" style="border: 1px solid black;">
+                                <t t-foreach="o.payslip_id.line_ids" t-as="payslip">
+                                    <t t-if="payslip.code == 'Vaca'">
+                                        <span>$</span><span t-esc="'%.2f' % (o.calcule_total_income() - o.calcule_total_expenses())"/>
+                                    </t>
+                                </t>
+                            </div>
+                        </div><br/><br/>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-1"/>
+                            <div class="col-3" style="border-top: 1px solid black;">
+                                <center><span><strong>Liquidador</strong></span></center>
+                            </div>
+                            <div class="col-1"/>
+                            <div class="col-3" style="border-top: 1px solid black;">
+                                <center><span><strong>Aprobado</strong></span></center>
+                            </div>
+                            <div class="col-1"/>
+                            <div class="col-3" style="border-top: 1px solid black;">
+                                <center><span><strong>Ex-Empleado</strong></span></center>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+    </data>
+</odoo>

@@ -1,0 +1,17 @@
+id,name,partner_id/id,code
+arrocesa_almacen_1,Bodega de Producto Terminado 1,base.main_partner,BPT1
+arrocesa_almacen_2,Bodega de Producto Terminado 2,base.main_partner,BPT2
+arrocesa_almacen_3,Bodega de Material de Empaquetado 1,base.main_partner,BME1
+arrocesa_almacen_4,Bodega de Material de Empaquetado 2,base.main_partner,BME2
+arrocesa_almacen_5,Bodega de Suministros 1,base.main_partner,BS1
+arrocesa_almacen_6,SILOS PULMÓN CÁSCARA HUMEDO (x 3),base.main_partner,SPCH
+arrocesa_almacen_7,SILOS PULMON SECO (x 2),base.main_partner,SPC
+arrocesa_almacen_8,SILOS DE ALMACENAMIENTO CÁSCARA SECO (x 7),base.main_partner,SACS
+arrocesa_almacen_9,SILOS ALIMENTADOR PILADORA (x2 TRÁNSITO),base.main_partner,SAP
+arrocesa_almacen_10,TOLVAS DE PRODUCCIÓN  (x 6),base.main_partner,TP
+arrocesa_almacen_11,TOLVAS DE ALMACENAMIENTO ENVEJECIDO (X4),base.main_partner,TAE
+arrocesa_almacen_12,BODEGA DE REPROCESO (VIRTUAL),base.main_partner,BR
+arrocesa_almacen_13,PRODUCTO LISTO A ENFARDAR (VIRTUAL),base.main_partner,BLE
+arrocesa_almacen_14,BODEGA DE MP  (VIRTUAL),base.main_partner,BMP
+arrocesa_almacen_15,PRODUCTO TERMINADO (VIRTUAL),base.main_partner,BT
+arrocesa_almacen_16,TOLVA SUBPRODUCTO,base.main_partner,TS
